@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
@@ -12,6 +13,21 @@ function App() {
       <div>
         <Login_Page />
       </div>
+=======
+/** @format */
+
+import React, { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Header from "./components/Header/header";
+import Workspace from "./components/workspace_header/workspace_header";
+
+function App() {
+  return (
+    <>
+      <Header />
+>>>>>>> da97aded162ef1577280cc8562bfdb6506283311
     </>
   );
 }
