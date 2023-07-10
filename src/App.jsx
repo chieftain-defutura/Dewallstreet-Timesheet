@@ -1,6 +1,22 @@
 <<<<<<< HEAD
 import { useState } from "react";
+<<<<<<< HEAD
 
+=======
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Login_Page from "./components/Login_page/login_page";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <div>
+        <Login_Page />
+      </div>
+>>>>>>> bc8810b2481a491c3065cf00bc9564118dcf564c
 =======
 /** @format */
 
