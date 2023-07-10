@@ -1,23 +1,27 @@
+/** @format */
+
 @font-face {
-  font-family:"Gilroy-Bold" ;
+  font-family: "Gilroy-Bold";
   src: url(./assets/fonts/Gilroy-Bold.ttf);
 }
 @font-face {
-  font-family:"Gilroy-Light" ;
+  font-family: "Gilroy-Light";
   src: url(./assets/fonts/Gilroy-Light.ttf);
 }
 @font-face {
-  font-family:"Gilroy-Medium" ;
+  font-family: "Gilroy-Medium";
   src: url(./assets/fonts/Gilroy-Medium.ttf);
 }
 @font-face {
-  font-family:"Gilroy-Regular" ;
+  font-family: "Gilroy-Regular";
   src: url(./assets/fonts/Gilroy-Regular.ttf);
 }
-  
 
 :root {
- --font-bold:"Gilroy-Bold"
+  --font-bold: "Gilroy-Bold";
+  --font-Light: "Gilroy-Light";
+  --font-Medium: "Gilroy-Medium";
+  --font-Regular: "Gilroy-Regular";
   line-height: 1.5;
   font-weight: 400;
 
