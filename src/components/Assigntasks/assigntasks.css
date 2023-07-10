@@ -1,0 +1,17 @@
+.clock_work,
+.task_board {
+  font-family: Gilroy-Bold;
+}
+.horizontal_line {
+  border: 1px solid rgb(51, 50, 50);
+  width: 50px;
+}
+.clock_work a,
+.task_board a {
+  color: white;
+}
+.assign_tasks_main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
