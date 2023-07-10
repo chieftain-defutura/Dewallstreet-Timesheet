@@ -1,0 +1,65 @@
+.Login_page {
+  position: absolute;
+  left: 600px;
+  bottom: 200px;
+  color: white;
+  font-family: "Gilroy-Bold";
+  background-color: rgb(24, 24, 24);
+  border-bottom: 1.1em;
+  width: 450px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 20px;
+  align-content: center;
+  justify-content: center;
+}
+.Login_page > img {
+}
+.emptyline {
+  border-bottom: 2px solid grey;
+}
+.login_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.user_name,
+.user_password {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.Login_page > input {
+  padding: 10px;
+  outline: none;
+  color: grey;
+  background-color: rgb(24, 24, 24);
+  font-size: 15px;
+}
+.Login_page > button {
+  background-color: rgb(108, 243, 108);
+  color: white;
+  font-size: 20px;
+}
+.access {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.passcode {
+  border: 2px solid grey;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.passcode > input {
+  padding: 10px;
+  outline: none;
+  color: grey;
+  background-color: rgb(24, 24, 24);
+  font-size: 15px;
+  border: none;
+}
