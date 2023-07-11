@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // /** @format */
 
  <<<<<<< HEAD
@@ -50,6 +51,25 @@ import Task from "./components/Assigntasks";
        <Header />
  >>>>>>> da97aded162ef1577280cc8562bfdb6506283311
      </>
+=======
+import { useState } from "react";
+import "./App.css";
+import Login_Page from "./components/Login_page/login_page";
+import Task from "./components/Assigntasks";
+import Header from "./components/Header/header";
+import { Route, Router, Routes } from "react-router-dom";
+import Homepage from "./pages/Home";
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
+    </>
+>>>>>>> cad42f181cc19862635df3e50b08e8052dc8eeb1
   );
  }
 
