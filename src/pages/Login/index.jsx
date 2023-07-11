@@ -1,11 +1,10 @@
 import React from "react";
 import Login_Page from "../../components/Login_page/login_page";
-import Task from "../../components/Assigntasks";
-const Homepage = () => {
+const Login = () => {
   return (
     <div>
-      <Task />
+      <Login_Page />
     </div>
   );
 };
-export default Homepage;
+export default Login;
