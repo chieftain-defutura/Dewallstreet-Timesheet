@@ -3,30 +3,29 @@ import "./timelinegraph.css";
 const Timelinegraph = () => {
   return (
     <div>
-      <select>
-        <option value="Grace Time">Grace Time</option>
-        <option value="Week">Week</option>
-        <option value="Months">Months</option>
-        <option value="Year">Year</option>
-      </select>
-      {/* <select id="cars" name="carlist" form="carform">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="opel">Opel</option>
-        <option value="audi">Audi</option>
-      </select> */}
       <div className="timeline_header">
         <form>
-          {/* <input type="text" placeholder=""/> */}
-          {/* <select>
+          <select>
             <option value="Grace Time">Grace Time</option>
             <option value="Week">Week</option>
             <option value="Months">Months</option>
             <option value="Year">Year</option>
-          </select> */}
-
-          <label for="cars">Choose a car:</label>
+          </select>
         </form>
+        <div className="time_period">
+          <div className="week">
+            <p>Week</p>
+            <div className="horizontal_line_week"></div>
+          </div>
+          <div className="month">
+            <p>Months</p>
+            <div className="horizontal_line"></div>
+          </div>
+          <div className="year">
+            <p>Year</p>
+            <div className="horizontal_line"></div>
+          </div>
+        </div>
       </div>
     </div>
   );

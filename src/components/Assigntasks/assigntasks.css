@@ -1,10 +1,11 @@
 .clock_work,
 .task_board {
-  font-family: Gilroy-Bold;
+  font-family: Gilroy-Medium;
+  font-size: 16px;
 }
 .horizontal_line {
   border: 1px solid rgb(51, 50, 50);
-  width: 50px;
+  width: 80px;
 }
 .clock_work a,
 .task_board a {

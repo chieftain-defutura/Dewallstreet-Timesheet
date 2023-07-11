@@ -1,6 +1,31 @@
-.timeline_graph > select option {
-  background-color: white;
+.timeline_header {
+  font-family: Gilroy-Medium;
+  color: white;
+  font-size: 13px;
+  display: flex;
+  gap: 180px;
 }
-/* #selection{
-    color: white;
-} */
+.timeline_header form select {
+  width: 140px;
+  padding: 10px;
+  background-color: rgb(37, 36, 36);
+  color: white;
+  border: 0.1px solid rgb(23, 20, 20);
+  font-family: Gilroy-Medium;
+  outline: none;
+}
+.time_period {
+  display: flex;
+  gap: 50px;
+}
+.horizontal_line_week {
+  border-bottom: 1px solid white;
+  width: 80px;
+}
+.week,
+.month,
+.year {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
