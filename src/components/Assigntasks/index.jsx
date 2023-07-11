@@ -5,6 +5,7 @@ import Assigntasks from "./assigntasks";
 import Timelinegraph from "../Timelinegraph/timelinegraph";
 import Homeheader from "../Header/Homeheader";
 import Timer from "./Timebar/time";
+import WorkingHours from "./WorkingHours";
 
 const Task = () => {
   return (
@@ -13,6 +14,7 @@ const Task = () => {
       <Assigntasks />
       <Timelinegraph />
       <Timer />
+      <WorkingHours />
     </div>
   );
 };
