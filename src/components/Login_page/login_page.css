@@ -2,7 +2,7 @@
   position: absolute;
   left: 600px;
   bottom: 200px;
-  color: white;
+  color: rgb(53, 45, 45);
   font-family: "Gilroy-Bold";
   background-color: rgb(24, 24, 24);
   border-bottom: 1.1em;
@@ -14,8 +14,6 @@
   gap: 20px;
   align-content: center;
   justify-content: center;
-}
-.Login_page > img {
 }
 .emptyline {
   border-bottom: 2px solid grey;
