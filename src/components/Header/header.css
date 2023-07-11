@@ -1,4 +1,7 @@
 /** @format */
 .header_main {
   background-color: black;
+  padding: 12px 32px;
+  width: 1540px;
+  border-bottom: 1px solid var(--line, #1e1e1e);
 }
