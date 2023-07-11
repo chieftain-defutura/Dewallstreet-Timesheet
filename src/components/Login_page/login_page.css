@@ -2,26 +2,33 @@
   position: absolute;
   left: 600px;
   bottom: 200px;
-  color: rgb(53, 45, 45);
-  font-family: "Gilroy-Bold";
-  background-color: rgb(24, 24, 24);
+  color: var(--canvas, #fff);
+  font-family: "Gilroy-bold";
+  background-color: #141414;
+  box-shadow: 0px 0px 64px 0px rgba(0, 0, 0, 0.8);
   border-bottom: 1.1em;
-  width: 450px;
-  padding: 20px 40px;
+  padding: 16px 24px;
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  gap: 20px;
+  gap: 16px;
   align-content: center;
   justify-content: center;
+  text-shadow: 10.804594993591309px 10.804594993591309px 324.1378479003906px 0px
+    rgba(183, 183, 183, 0.5);
+  font-size: 18px;
 }
 .emptyline {
-  border-bottom: 2px solid grey;
+  width: 344px;
+  height: 1px;
+  background-color: #1e1e1e;
 }
 .login_main {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 259px;
 }
 .user_name,
 .user_password {
@@ -29,35 +36,59 @@
   flex-direction: row;
   gap: 10px;
 }
-.Login_page > input {
+.Login_page input {
   padding: 10px;
   outline: none;
-  color: grey;
+  color: var(--labler-tight, #575757);
   background-color: rgb(24, 24, 24);
   font-size: 15px;
+  font-family: "Gilroy-regular";
+  border: 1px solid var(--line, #1e1e1e);
+}
+.username_section > input,
+.passcode > input {
+  display: flex;
+  width: 344px;
+  padding: 12px;
+  align-items: center;
+}
+.passcode {
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 .Login_page > button {
-  background-color: rgb(108, 243, 108);
-  color: white;
-  font-size: 20px;
+  background-color: var(--green, #00ce53);
+  font-family: "Gilroy-bold";
+  align-items: center;
+  justify-content: center;
+  width: 344px;
+  padding: 12px 0;
+  gap: 8px;
+  display: flex;
 }
 .access {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  color: #fff;
+  font-size: 20px;
   gap: 10px;
 }
-.passcode {
-  border: 2px solid grey;
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
+.Login_page h5 {
+  color: var(--canvas, #fff);
+  text-align: center;
+  font-family: "gilroy-regular";
+  font-size: 12px;
 }
-.passcode > input {
-  padding: 10px;
-  outline: none;
-  color: grey;
-  background-color: rgb(24, 24, 24);
-  font-size: 15px;
-  border: none;
+.passcode_section,
+.username_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+.Login_page > img {
+  position: relative;
+  left: 120px;
 }
