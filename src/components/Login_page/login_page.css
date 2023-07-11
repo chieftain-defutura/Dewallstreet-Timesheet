@@ -1,7 +1,7 @@
 .Login_page {
   position: absolute;
-  left: 700px;
-  bottom: 150px;
+  left: 620px;
+  bottom: 100px;
   color: var(--canvas, #fff);
   font-family: "Gilroy-bold";
   background-color: #141414;
