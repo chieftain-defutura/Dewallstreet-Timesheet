@@ -16,7 +16,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Login />} />
-
         <Route path="/home" element={<Homepage />} />
       </Routes>
     </>
