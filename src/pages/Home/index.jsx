@@ -1,6 +1,7 @@
 import React from "react";
-import Login_Page from "../../components/Login_page/login_page";
 import Task from "../../components/Assigntasks";
+import App from "../../App";
+
 const Homepage = () => {
   return (
     <div>

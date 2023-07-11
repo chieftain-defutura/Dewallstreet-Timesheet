@@ -22,6 +22,9 @@
   border-bottom: 1px solid white;
   width: 80px;
 }
+.time_period a {
+  color: white;
+}
 .week,
 .month,
 .year {
