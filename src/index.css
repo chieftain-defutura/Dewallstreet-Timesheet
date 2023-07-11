@@ -51,11 +51,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-<<<<<<< HEAD
-  background-color: black;
-=======
   background-color: rgba(0, 0, 0, 0.933);
->>>>>>> bc8810b2481a491c3065cf00bc9564118dcf564c
 }
 
 h1 {
