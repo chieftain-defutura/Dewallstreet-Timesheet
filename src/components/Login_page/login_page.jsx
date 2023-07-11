@@ -6,6 +6,7 @@ import user from "../../assets/icons/user.svg";
 import lock from "../../assets/icons/lock.svg";
 import eye from "../../assets/icons/eye.svg";
 import fingerprint from "../../assets/icons/fingerprint.svg";
+import Button from "../Button";
 const Login_Page = () => {
   return (
     <div className="Login_page">
@@ -38,13 +39,13 @@ const Login_Page = () => {
           <img src={eye} alt="eye" width="20px" />
         </div>
       </div>
-
-      <button>
+      <Button props="Access" />
+      {/* <button>
         <div className="access">
           <img src={fingerprint} alt="fingerprint" width="25px" />
           <h4>Access</h4>
         </div>
-      </button>
+      </button> */}
     </div>
   );
 };

@@ -1,0 +1,17 @@
+.Button_main {
+  background-color: var(--green, #00ce53);
+  font-family: "Gilroy-bold";
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 0;
+  gap: 8px;
+  display: flex;
+}
+.access {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  font-size: 20px;
+  gap: 10px;
+}
