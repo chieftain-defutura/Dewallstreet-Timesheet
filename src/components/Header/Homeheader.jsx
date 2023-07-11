@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+import "./Homeheader.css";
 import logo from "../../assets/icons/name.svg";
 const Homeheader = () => {
   return (
