@@ -11,6 +11,7 @@
 .hours_att {
   display: flex;
   /* width: 106px; */
+  width: fit-content;
   flex-direction: column;
   justify-content: center;
   color: var(--canvas, #fff);
