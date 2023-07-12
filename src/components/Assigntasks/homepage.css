@@ -1,3 +1,11 @@
 .homepage_main {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+}
+.hours_deduction {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }

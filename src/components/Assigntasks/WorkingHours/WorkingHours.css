@@ -28,8 +28,8 @@
 }
 .clock_timing h5 {
   color: var(--labler-tight, #575757);
-  font-family: Gilroy;
-  font-size: 14px;
+  font-family: Gilroy-medium;
+  font-size: 17px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -60,7 +60,7 @@
 .checkin_seconds {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 100px;
 }
 .time_checkinhours {
   display: flex;
@@ -136,6 +136,12 @@
   width: 696px;
   height: 16px;
   background: #1e1e1e;
-  bottom: 230px;
+  bottom: 550px;
   position: absolute;
+}
+.workingcheckin_page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 100px;
 }

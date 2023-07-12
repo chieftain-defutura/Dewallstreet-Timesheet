@@ -40,11 +40,11 @@
 }
 .horizontal_line_graph {
   border: 0.1px solid rgb(23, 20, 20);
-  width: 500px;
+  width: 560px;
 }
 .total_days {
   display: flex;
-  gap: 22px;
+  justify-content: space-between;
 }
 .graph {
   display: flex;
@@ -58,14 +58,14 @@
 .week_days {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 50px;
 }
 .timeline_graph_main {
   background-color: rgb(13, 13, 13);
-  padding: 15px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
 }
 .days {
   display: flex;
@@ -74,7 +74,8 @@
 }
 .days > #outline_graph {
   position: absolute;
-  bottom: 208px;
+  bottom: 550px;
+  left: 345px;
 }
 .month > div,
 .year > div {
