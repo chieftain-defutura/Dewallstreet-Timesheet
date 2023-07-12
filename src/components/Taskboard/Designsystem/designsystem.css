@@ -11,7 +11,7 @@
   border-bottom: 1px solid var(--canvas, #fff);
   background: #141414;
 }
-.log_link > button {
+.log_link > a {
   color: var(--canvas, #fff);
   font-family: "Gilroy-Light";
   font-size: 14px;
@@ -28,7 +28,7 @@
   align-items: center;
   border-bottom: 1px solid var(--line, #1e1e1e);
 }
-.commit_link > link {
+.commit_link > a {
   color: var(--labler-tight, #575757);
   font-family: " Gilroy-Light";
   font-size: 14px;
@@ -44,7 +44,7 @@
   align-items: center;
   border-bottom: 1px solid var(--line, #1e1e1e);
 }
-.audits_link > li {
+.audits_link > a {
   color: var(--labler-tight, #575757);
   font-family: " Gilroy-Light";
   font-size: 14px;
@@ -52,7 +52,7 @@
   font-weight: 500;
   line-height: normal;
 }
-.backlog_button {
+.backlog_link {
   display: flex;
   height: 48px;
   padding: 16px 36px 16px 37px;
@@ -60,7 +60,7 @@
   align-items: center;
   border-bottom: 1px solid var(--line, #1e1e1e);
 }
-.backlog_button > button {
+.backlog_link > a {
   color: var(--labler-tight, #575757);
   font-family: " Gilroy-Light";
   font-size: 14px;
