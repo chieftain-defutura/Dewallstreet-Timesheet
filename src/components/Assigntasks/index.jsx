@@ -11,9 +11,11 @@ const Task = () => {
   return (
     <div className="">
       <Homeheader />
+      {/* <div className="home_main"> */}
       <Assigntasks />
       <Timelinegraph />
       <Timer />
+      {/* </div> */}
       <WorkingHours />
     </div>
   );

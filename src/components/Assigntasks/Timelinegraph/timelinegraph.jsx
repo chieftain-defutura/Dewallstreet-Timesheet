@@ -1,62 +1,10 @@
 import React from "react";
-// import {
-//   Chart as ChartJS,
-//   CategoryScale,
-//   LinearScale,
-//   PointElement,
-//   LineElement,
-//   Title,
-//   Tooltip,
-//   Legend,
-// } from 'chart.js';
-// import faker from 'faker';
-
-// ChartJS.register(
-//   CategoryScale,
-//   LinearScale,
-//   PointElement,
-//   LineElement,
-//   Title,
-//   Tooltip,
-//   Legend
-// );
-
-// export const options = {
-//   responsive: true,
-//   plugins: {
-//     legend: {
-//       position: 'top' as const='top',
-//     },
-//     title: {
-//       display: true,
-//       text: 'Chart.js Line Chart',
-//     },
-//   },
-// };
-
-// const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-
-// export const data = {
-//   labels,
-//   datasets: [
-//     {
-//       label: 'Dataset 1',
-//       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-//       borderColor: 'rgb(255, 99, 132)',
-//       backgroundColor: 'rgba(255, 99, 132, 0.5)',
-//     },
-//     {
-//       label: 'Dataset 2',
-//       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-//       borderColor: 'rgb(53, 162, 235)',
-//       backgroundColor: 'rgba(53, 162, 235, 0.5)',
-//     },
-//   ],
-// };
+import graphchart from "../../../assets/images/graphchart.svg";
+import graphchartoutline from "../../../assets/images/graphchartoutline.svg";
 import "./timelinegraph.css";
 const Timelinegraph = () => {
   return (
-    <div>
+    <div className="timeline_graph_main">
       <div className="timeline_header">
         <form>
           <select>
@@ -78,6 +26,40 @@ const Timelinegraph = () => {
           <div className="year">
             <a href="#">Year</a>
             <div className="horizontal_line"></div>
+          </div>
+        </div>
+      </div>
+      <div className="graph">
+        <div className="total_weeks">
+          <div className="week_days">
+            <h4>W4</h4>
+            <h4>W3</h4>
+            <h4>W2</h4>
+            <h4>W1</h4>
+          </div>
+          <div className="vertical_line_graph"></div>
+        </div>
+        <div className="days">
+          <img id="outline_graph" src={graphchartoutline} alt="image" />
+          <img src={graphchart} alt="image" />
+          <div className="horizontal_line_graph"></div>
+          <div className="total_days">
+            <h5>1</h5>
+            <h5>2</h5>
+            <h5>3</h5>
+            <h5>4</h5>
+            <h5>5</h5>
+            <h5>6</h5>
+            <h5>7</h5>
+            <h5>8</h5>
+            <h5>9</h5>
+            <h5>10</h5>
+            <h5>11</h5>
+            <h5>12</h5>
+            <h5>13</h5>
+            <h5>14</h5>
+            <h5>15</h5>
+            <h5>16</h5>
           </div>
         </div>
       </div>
