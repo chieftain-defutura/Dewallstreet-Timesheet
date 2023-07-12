@@ -1,11 +1,12 @@
 .workinghours_main {
+  background-color: #141414;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
-  background: #141414;
-  background-color: #141414;
+  padding: 24px;
+  width: 39%;
 }
 .check_workinghours > h4 {
   color: var(--canvas, #fff);
@@ -14,58 +15,19 @@
   font-family: "Gilroy-Bold";
   font-size: 20px;
 }
-.circle-wrap {
-  margin: 150 auto;
-  width: 50px;
-  height: 50px;
-  background: #252525;
-  border-radius: 50%;
+.check_workinghours {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
 }
-.circle-wrap .circle .mask,
-.circle-wrap .circle .fill {
-  width: 30px;
-  height: 10px;
-  position: absolute;
-  border-radius: 50%;
+.clock_timing {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  flex-direction: row;
 }
-
-.circle-wrap .circle .mask {
-  clip: rect(0px, 150px, 150px, 75px);
-}
-
-.circle-wrap .inside-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: black;
-  line-height: 40px;
-  text-align: center;
-  margin-top: 5px;
-  margin-left: 5px;
-  color: #ffffff;
-  position: absolute;
-  font-weight: 700;
-  font-size: 1.5em;
-}
-.mask .fill {
-  clip: rect(50px, 600px, 600px, 50px);
-  background-color: green;
-}
-.mask.full,
-.circle .fill {
-  animation: fill ease-in-out 3s;
-  transform: rotate(135deg);
-}
-
-@keyframes fill {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(135deg);
-  }
-}
-.clock_timing > h5 {
+.clock_timing h5 {
   color: var(--labler-tight, #575757);
   font-family: Gilroy;
   font-size: 14px;
@@ -77,10 +39,100 @@
   display: flex;
   padding: 12px;
   align-items: center;
-  gap: 24px;
+  gap: 10px;
   background-color: #1e1e1e;
 }
-.checkin_seconds > h5 {
-  color: white;
-  font-family: "Gilroy-medium";
+.check > h5 {
+  color: var(--canvas, #fff);
+  font-family: "Gilroy-regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.check > h4 {
+  color: var(--canvas, #fff);
+  font-family: "Gilroy-bold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.checkin_seconds {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.time_checkinhours {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 90px;
+}
+
+.checkin > button {
+  display: flex;
+  width: 132px;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.check {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.centeremptyline {
+  width: 696px;
+  height: 1px;
+  background: #1e1e1e;
+}
+.checkin_levels {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  width: 696px;
+  padding-top: 24px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.first_level,
+.second_level,
+.third_level,
+.fourth_level {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: #1e1e1e;
+  z-index: 1;
+}
+.firstlevel_timing,
+.secondlevel_timing,
+.thirdlevel_timing,
+.fourthlevel_timing {
+  display: flex;
+  flex-direction: column;
+  color: var(--labler-tight, #575757);
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  gap: 5px;
+}
+.level_crossing {
+  width: 696px;
+  height: 16px;
+  background: #1e1e1e;
+  bottom: 230px;
+  position: absolute;
 }

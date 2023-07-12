@@ -74,7 +74,8 @@
   position: absolute;
   bottom: 208px;
 }
-.month > div {
+.month > div,
+.year > div {
   border: 1px solid rgb(21, 20, 20);
   width: 64px;
 }

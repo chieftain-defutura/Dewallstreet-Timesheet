@@ -39,13 +39,7 @@ const Login_Page = () => {
           <img src={eye} alt="eye" width="20px" />
         </div>
       </div>
-      <Button props="Access" />
-      {/* <button>
-        <div className="access">
-          <img src={fingerprint} alt="fingerprint" width="25px" />
-          <h4>Access</h4>
-        </div>
-      </button> */}
+      <Button props="Access" image={fingerprint} />
     </div>
   );
 };
