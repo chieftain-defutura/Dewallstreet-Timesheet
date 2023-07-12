@@ -1,7 +1,7 @@
 .Login_page {
-  position: absolute;
+  /* position: absolute;
   left: 620px;
-  bottom: 100px;
+  bottom: 100px; */
   color: var(--canvas, #fff);
   font-family: "Gilroy-bold";
   background-color: #141414;
@@ -40,7 +40,7 @@
   padding: 10px;
   outline: none;
   color: var(--labler-tight, #575757);
-  background-color: rgb(24, 24, 24);
+  /* background-color: rgb(24, 24, 24); */
   font-size: 15px;
   font-family: "Gilroy-regular";
   border: 1px solid var(--line, #1e1e1e);
@@ -52,13 +52,18 @@
   width: 100%;
   padding: 12px;
   align-items: center;
+  background-color: #141414;
 }
 .passcode {
   display: flex;
   flex-direction: row;
   position: relative;
-  background-color: rgb(24, 24, 24);
+  background-color: #141414;
+  border: 1px solid var(--line, #1e1e1e);
   width: 100%;
+}
+.passcode > input {
+  border-right: none;
 }
 .Login_page > button {
   background-color: var(--green, #00ce53);

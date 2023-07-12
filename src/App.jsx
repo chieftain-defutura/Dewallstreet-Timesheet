@@ -10,8 +10,6 @@ import Homepage from "./pages/Home";
 import Login from "./pages/Login";
 import Taskpage from "./pages/Taskpage";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Routes>

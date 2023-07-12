@@ -36,14 +36,14 @@ const WorkingHours = () => {
               </div>
             </div>
             <div className="checkin">
-              <img src={suitcase} alt="suitcase" />
               <div className="checkin_seconds">
+                <img src={suitcase} alt="suitcase" />
                 <div className="check">
                   <h5>Morning check in starts in</h5>
-                  <h4>05m 00s</h4>{" "}
+                  <h4>05m 00s</h4>
                 </div>
-                <Button props="Check in" image={checkin} />
               </div>
+              <Button props="Check in" image={checkin} />
             </div>
           </div>
           <div className="centeremptyline"></div>
