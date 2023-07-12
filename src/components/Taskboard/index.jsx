@@ -2,7 +2,7 @@
 
 import React from "react";
 import Homeheader from "../Header/Homeheader";
-import Designpage from "./Designsystem/designsystem";
+import Designpage from "./Logs/Logs";
 
 const Taskboard = () => {
   return (

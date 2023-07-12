@@ -11,19 +11,19 @@
 }
 .hours_att {
   display: flex;
-  /* width: fit-content; */
-  /* width: 106px; */
+
+  width: 106px;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   color: var(--canvas, #fff);
   text-align: right;
   font-family: "Gilroy-medium";
-  font-size: 15px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 19.5px;
 }
-/* .hours_att > P {
+.hours_att > P {
   font-size: 14px;
 }
 .hours_att > h5 {
@@ -34,15 +34,15 @@
 }
 .hours_ded > p {
   font-size: 14px;
-} */
+}
 .hours_ded {
   display: flex;
-  /* width: 106px; */
+  width: 106px;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   color: var(--canvas, #fff);
   font-family: Gilroy-medium;
-  font-size: 15px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 19.5px;
