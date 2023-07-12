@@ -28,8 +28,8 @@
 }
 .clock_timing h5 {
   color: var(--labler-tight, #575757);
-  font-family: Gilroy;
-  font-size: 14px;
+  font-family: Gilroy-medium;
+  font-size: 17px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -60,7 +60,7 @@
 .checkin_seconds {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 100px;
 }
 .time_checkinhours {
   display: flex;
@@ -108,11 +108,14 @@
   padding: 16px;
   justify-content: center;
   align-items: center;
+  align-content: center;
   flex-shrink: 0;
   border-radius: 40px;
   background: #1e1e1e;
   z-index: 1;
+  text-align: center;
 }
+
 .firstlevel_timing,
 .secondlevel_timing,
 .thirdlevel_timing,
@@ -121,17 +124,24 @@
   flex-direction: column;
   color: var(--labler-tight, #575757);
   text-align: center;
-  font-family: Gilroy;
+  font-family: "Gilroy-bold";
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   gap: 5px;
+  align-items: center;
 }
 .level_crossing {
   width: 696px;
   height: 16px;
   background: #1e1e1e;
-  bottom: 230px;
+  bottom: 550px;
   position: absolute;
+}
+.workingcheckin_page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 100px;
 }

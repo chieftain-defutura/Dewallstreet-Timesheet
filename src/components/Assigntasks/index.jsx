@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+import "./homepage.css";
 import Assigntasks from "./assigntasks";
 import Timelinegraph from "./Timelinegraph/timelinegraph";
 import Homeheader from "../Header/Homeheader";
@@ -11,11 +12,12 @@ const Task = () => {
   return (
     <>
       <Homeheader />
-
-      <div className="">
+      <div className="homepage_main">
         <Assigntasks />
-        <Timelinegraph />
-        <Timer />
+        <div className="hours_deduction">
+          <Timelinegraph />
+          <Timer />
+        </div>
         <WorkingHours />
       </div>
     </>

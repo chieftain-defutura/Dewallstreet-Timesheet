@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import graphchart from "../../../assets/images/graphchart.svg";
 import graphchartoutline from "../../../assets/images/graphchartoutline.svg";
@@ -41,8 +43,13 @@ const Timelinegraph = () => {
           <div className="vertical_line_graph"></div>
         </div>
         <div className="days">
-          <img id="outline_graph" src={graphchartoutline} alt="image" />
-          <img src={graphchart} alt="image" />
+          {/* <img
+            id="outline_graph"
+            src={graphchartoutline}
+            alt="image"
+            width="560px"
+          /> */}
+          <img src={graphchart} alt="image" width="560px" height="310px" />
           <div className="horizontal_line_graph"></div>
           <div className="total_days">
             <h5>1</h5>
