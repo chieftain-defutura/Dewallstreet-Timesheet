@@ -4,6 +4,11 @@ import React from "react";
 import "./designsystem.css";
 
 const Designpage = () => {
+  const Designlist = [
+    {
+      Title: "Design system",
+    },
+  ];
   return (
     <div className="design_links">
       <div className="log_link">
