@@ -36,7 +36,7 @@
 }
 .vertical_line_graph {
   border: 0.1px solid rgb(23, 20, 20);
-  height: 178px;
+  height: 200px;
 }
 .horizontal_line_graph {
   border: 0.1px solid rgb(23, 20, 20);
@@ -58,7 +58,7 @@
 .week_days {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
 }
 .timeline_graph_main {
   background-color: rgb(13, 13, 13);
@@ -70,12 +70,7 @@
 .days {
   display: flex;
   flex-direction: column;
-  gap: -10px;
-}
-.days > #outline_graph {
-  position: absolute;
-  bottom: 530px;
-  left: 345px;
+  gap: 8px;
 }
 .month > div,
 .year > div {

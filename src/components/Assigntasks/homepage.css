@@ -1,8 +1,16 @@
 .homepage_main {
   display: flex;
+  /* flex-wrap: wrap; */
+
   flex-direction: row;
   justify-content: space-between;
   padding: 30px;
+  gap: 30px;
+}
+@media (max-width: 1000px) {
+  .homepage_main {
+    display: flex;
+  }
 }
 .hours_deduction {
   display: flex;
