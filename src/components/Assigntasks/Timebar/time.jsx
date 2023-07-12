@@ -11,6 +11,7 @@ const Timer = () => {
         <h5>32/40</h5>
         <p>hours attended</p>
       </div>
+      <div className="timer_verticalline"></div>
       <div className="hours_ded">
         <h5>8</h5>
         <p> hours deduction</p>
