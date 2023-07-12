@@ -9,13 +9,16 @@ import WorkingHours from "./WorkingHours";
 
 const Task = () => {
   return (
-    <div className="">
+    <>
       <Homeheader />
-      <Assigntasks />
-      <Timelinegraph />
-      <Timer />
-      <WorkingHours />
-    </div>
+
+      <div className="">
+        <Assigntasks />
+        <Timelinegraph />
+        <Timer />
+        <WorkingHours />
+      </div>
+    </>
   );
 };
 
