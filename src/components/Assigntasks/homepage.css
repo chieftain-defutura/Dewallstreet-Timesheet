@@ -9,11 +9,11 @@
   padding: 30px;
   gap: 30px;
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .homepage_main {
     display: flex;
   }
-}
+} */
 .hours_deduction {
   display: flex;
   flex-direction: column;
