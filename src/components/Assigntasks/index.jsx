@@ -11,8 +11,7 @@ const Task = () => {
   return (
     <>
       <Homeheader />
-
-      <div className="">
+      <div className="homepage_main">
         <Assigntasks />
         <Timelinegraph />
         <Timer />

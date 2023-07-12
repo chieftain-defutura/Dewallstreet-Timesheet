@@ -1,0 +1,14 @@
+.Toasts_main {
+  display: flex;
+  padding: 4px 16px;
+  gap: 10px;
+  background: #1e1e1e;
+  color: #fff;
+  font-family: "Gilroy-regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  width: fit-content;
+  align-items: flex-start;
+}
