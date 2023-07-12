@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import graphchart from "../../../assets/images/graphchart.svg";
 import "./timelinegraph.css";
