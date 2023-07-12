@@ -19,3 +19,8 @@
   flex-direction: column;
   gap: 30px;
 }
+@media (max-width: 1248px) {
+  .homepage_main {
+    flex-wrap: wrap;
+  }
+}

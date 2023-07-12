@@ -14,3 +14,8 @@
   font-size: 20px;
   gap: 10px;
 }
+@media (max-width: 1290px) {
+  .Button_main {
+    padding: 10px 15px;
+  }
+}

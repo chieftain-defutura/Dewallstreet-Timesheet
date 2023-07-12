@@ -1,11 +1,10 @@
 .workinghours_main {
-  background-color: #141414;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
   gap: 24px;
   padding: 24px;
+  background-color: #141414;
 }
 .check_workinghours > h4 {
   color: var(--canvas, #fff);
@@ -24,7 +23,6 @@
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  flex-direction: row;
 }
 .clock_timing h5 {
   color: var(--labler-tight, #575757);
@@ -60,23 +58,23 @@
 .checkin_seconds {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 10px;
 }
 .time_checkinhours {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
-  gap: 90px;
+  gap: 10px;
 }
 
-.checkin > button {
+/* .checkin > button {
   display: flex;
   padding: 12px 20px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-}
+} */
 .check {
   display: flex;
   flex-direction: column;
@@ -90,28 +88,18 @@
 .checkin_levels {
   display: flex;
   flex-direction: row;
-  display: flex;
   padding-top: 24px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 130px;
 }
 .first_level,
 .second_level,
 .third_level,
 .fourth_level {
-  display: flex;
-  /* width: 100%;
-  height: 50%; */
   padding: 16px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-shrink: 0;
   border-radius: 40px;
   background: #1e1e1e;
   z-index: 100;
-  text-align: center;
 }
 
 .firstlevel_timing,
@@ -121,7 +109,6 @@
   display: flex;
   flex-direction: column;
   color: var(--labler-tight, #575757);
-  text-align: center;
   font-family: "Gilroy-bold";
   font-size: 12px;
   font-style: normal;
@@ -146,4 +133,12 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 100px;
+}
+@media (max-width: 1290px) {
+  .checkin {
+    flex-wrap: wrap;
+  }
+  .checkin_seconds {
+    display: flex;
+  }
 }
