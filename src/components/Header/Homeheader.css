@@ -13,11 +13,16 @@
   background: #080808;
 }
 .home_main > h2 {
-  font-size: 14px;
+  color: var(--canvas, #fff);
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .header_name > h2 {
   color: var(--outlier, #ececec);
-  font-family: Gilroy;
+  font-family: "Gilroy-Bold";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -25,8 +30,8 @@
 }
 .header_name > p {
   color: var(--labler-tight, #575757);
-  font-family: Gilroy;
-  font-size: 12px;
+  font-family: "Gilroy-Bold";
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
