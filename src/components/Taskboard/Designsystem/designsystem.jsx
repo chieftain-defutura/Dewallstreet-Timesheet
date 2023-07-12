@@ -1,16 +1,23 @@
 /** @format */
 
 import React from "react";
+import "./designsystem.css";
 
 const Designpage = () => {
   return (
-    <div className="design_link">
-      <nav>
-        <a href="">Logs(2)</a>
-        <a href="">Commits(2)</a>
-        <a href="">Audits(2)</a>
-        <a href="">Backlogs(2)</a>
-      </nav>
+    <div className="design_button">
+      <div className="log_button">
+        <button>LOgs(2)</button>
+      </div>
+      <div className="commit_button">
+        <button>Commits(2)</button>
+      </div>
+      <div className="audits_button">
+        <button>Audits(2)</button>
+      </div>
+      <div className="backlog_button">
+        <button>Backlogs(2)</button>
+      </div>
     </div>
   );
 };
