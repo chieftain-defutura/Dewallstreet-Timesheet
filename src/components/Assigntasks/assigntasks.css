@@ -4,15 +4,21 @@
   font-size: 16px;
 }
 .horizontal_line {
-  border: 1px solid rgb(51, 50, 50);
+  border: 1px solid#282828;
   width: 80px;
 }
-.clock_work a,
-.task_board a {
+.clock_work a {
   color: white;
+}
+.task_board a {
+  color: #282828;
 }
 .assign_tasks_main {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
+}
+.task_board img {
+  color: grey;
 }
