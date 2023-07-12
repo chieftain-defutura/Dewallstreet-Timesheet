@@ -1,6 +1,6 @@
 .homepage_main {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 
   flex-direction: row;
   padding: 30px;
