@@ -2,7 +2,7 @@
 .time_calculation {
   display: flex;
   padding: 16px;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   gap: 24px;
   background: #141414;
@@ -13,7 +13,6 @@
   display: flex;
   /* width: fit-content; */
   /* width: 106px; */
-
   flex-direction: column;
   /* justify-content: center; */
   color: var(--canvas, #fff);
@@ -49,7 +48,7 @@
   line-height: 19.5px;
 }
 .timer_verticalline {
-  width: 1px;
-  height: 40px;
+  width: 0.5%;
+  height: 40%;
   background: #1e1e1e;
 }

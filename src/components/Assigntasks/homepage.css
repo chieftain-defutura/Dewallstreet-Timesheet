@@ -2,10 +2,20 @@
 
 .homepage_main {
   display: flex;
+  /* flex-wrap: wrap; */
+
   flex-direction: row;
   justify-content: space-between;
   padding: 30px;
   gap: 30px;
+<<<<<<< HEAD
+=======
+}
+@media (max-width: 1000px) {
+  .homepage_main {
+    display: flex;
+  }
+>>>>>>> 19818e33b04f9b966d05d75c00978235647eadd8
 }
 .hours_deduction {
   display: flex;
