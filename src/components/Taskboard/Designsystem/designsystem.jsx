@@ -5,18 +5,18 @@ import "./designsystem.css";
 
 const Designpage = () => {
   return (
-    <div className="design_button">
-      <div className="log_button">
-        <button>LOgs(2)</button>
+    <div className="design_links">
+      <div className="log_link">
+        <a>Logs(2)</a>
       </div>
-      <div className="commit_button">
-        <button>Commits(2)</button>
+      <div className="commit_link">
+        <a>Commits(2)</a>
       </div>
-      <div className="audits_button">
-        <button>Audits(2)</button>
+      <div className="audits_link">
+        <a>Audits(2)</a>
       </div>
-      <div className="backlog_button">
-        <button>Backlogs(2)</button>
+      <div className="backlog_link">
+        <a>Backlogs(2)</a>
       </div>
     </div>
   );
