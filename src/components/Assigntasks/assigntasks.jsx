@@ -2,7 +2,7 @@ import React from "react";
 import "./assigntasks.css";
 import briefcasetimer from "../../assets/icons/briefcasetimer.svg";
 import tasksheet from "../../assets/icons/tasksheet.svg";
-const Assigntasks = () => {
+const Assigntasks = (props) => {
   return (
     <div className="assign_tasks_main">
       <div className="clock_work">
@@ -20,6 +20,7 @@ const Assigntasks = () => {
           <h4>Board</h4>
         </a>
       </div>
+      {props}
     </div>
   );
 };
