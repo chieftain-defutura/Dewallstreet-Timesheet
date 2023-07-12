@@ -72,7 +72,6 @@
 
 .checkin > button {
   display: flex;
-  width: 132px;
   padding: 12px 20px;
   justify-content: center;
   align-items: center;
@@ -84,7 +83,7 @@
   gap: 3px;
 }
 .centeremptyline {
-  width: 696px;
+  width: 100%;
   height: 1px;
   background: #1e1e1e;
 }
@@ -92,19 +91,18 @@
   display: flex;
   flex-direction: row;
   display: flex;
-  width: 696px;
   padding-top: 24px;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  gap: 130px;
 }
 .first_level,
 .second_level,
 .third_level,
 .fourth_level {
   display: flex;
-  width: 64px;
-  height: 64px;
+  /* width: 100%;
+  height: 50%; */
   padding: 16px;
   justify-content: center;
   align-items: center;
@@ -136,7 +134,7 @@
   position: relative;
 }
 .level_crossing {
-  width: 696px;
+  width: 100%;
   height: 16px;
   background: #1e1e1e;
   top: 50px;
