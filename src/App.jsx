@@ -8,6 +8,7 @@ import Task from "./components/Assigntasks";
 import { Route, Router, Routes } from "react-router-dom";
 import Homepage from "./pages/Home";
 import Login from "./pages/Login";
+import Taskpage from "./pages/Taskpage";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Homepage />} />
+        <Route path="/Taskpage" element={<Taskpage />} />
       </Routes>
     </>
   );
