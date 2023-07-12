@@ -5,6 +5,7 @@ import "./timelinegraph.css";
 const Timelinegraph = () => {
   return (
     <div className="timeline_graph_main">
+      <div></div>
       <div className="timeline_header">
         <form>
           <select>
