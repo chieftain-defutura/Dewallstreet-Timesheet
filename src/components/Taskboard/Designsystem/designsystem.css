@@ -13,7 +13,7 @@
 }
 .log_link > a {
   color: var(--canvas, #fff);
-  font-family: "Gilroy-Light";
+  font-family: "Gilroy-Regular";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
