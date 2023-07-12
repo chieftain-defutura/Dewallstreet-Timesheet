@@ -6,7 +6,6 @@
   align-items: flex-start;
   gap: 24px;
   padding: 24px;
-  width: 39%;
 }
 .check_workinghours > h4 {
   color: var(--canvas, #fff);
