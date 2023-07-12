@@ -1,7 +1,7 @@
 .homepage_main {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 30px;
 }
 .hours_deduction {
