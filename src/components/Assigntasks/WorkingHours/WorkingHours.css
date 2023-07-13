@@ -1,10 +1,10 @@
 .workinghours_main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 24px;
   padding: 24px;
   background-color: #141414;
+  width: 100%;
 }
 .check_workinghours > h4 {
   color: var(--canvas, #fff);
@@ -36,7 +36,7 @@
   display: flex;
   padding: 12px;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   background-color: #1e1e1e;
 }
 .check > h5 {

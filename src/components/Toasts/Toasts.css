@@ -1,6 +1,5 @@
 .toast-main {
   display: flex;
-  padding: 6px 16px;
   gap: 10px;
   background: #1e1e1e;
   color: #fff;
@@ -8,10 +7,39 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 16px;
-  width: fit-content;
-  align-items: flex-start;
+  /* line-height: 16px; */
+  /* width: fit-content; */
+  /* align-items: flex-start; */
   cursor: pointer;
+  position: relative;
+  /* padding: 3px 10px; */
+}
+.toast_line {
+  width: 209px;
+  height: 1px;
+  background: #ffc700;
+  position: absolute;
+  bottom: -1px;
+  left: 2px;
+}
+.message_box {
+  display: flex;
+  gap: 10px;
+}
+.toast_verticalline {
+  width: 1px;
+  height: 30px;
+  background: pink;
+}
+.message_box > img {
+  padding: 10px;
+}
+
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px;
 }
 .success {
   color: green;

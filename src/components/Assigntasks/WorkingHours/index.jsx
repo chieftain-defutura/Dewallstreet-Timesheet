@@ -9,6 +9,8 @@ import secondlevel from "../../../assets/icons/secondlevel.svg";
 import thirdlevel from "../../../assets/icons/thirdlevel.svg";
 import fourthlevel from "../../../assets/icons/fourthlevel.svg";
 import checkin from "../../../assets/icons/checkin.svg";
+import toastcancel from "../../../assets/icons/toastcancel.svg";
+import warning from "../../../assets/icons/warning.svg";
 
 import Button from "../../Button";
 import Toasts from "../../Toasts";
@@ -45,7 +47,7 @@ const WorkingHours = () => {
                   <h4>05m 00s</h4>
                 </div>
               </div>
-              <Button props="Check in" image={checkin} />
+              <Button props="Check in" image={checkin} variant="primary" />
             </div>
           </div>
           <div className="centeremptyline"></div>
@@ -79,14 +81,20 @@ const WorkingHours = () => {
             <div className="level_crossing"></div>
           </div>
         </div>
-        <div className="toasts_main" onClick={() => setOpen(true)}>
-          <Toasts props="Toast" />
-        </div>
-        {open && (
-          <Toasts
-            props="Grace time used.Dead line extended to 6 hours"
-            variant="warning"
-          />
+
+        {open ? (
+          <div onClick={() => setOpen(false)}>
+            <Toasts
+              image={warning}
+              props="Grace time used.Dead line extended to 6 hours."
+              variant="warning"
+              icons={toastcancel}
+            />
+          </div>
+        ) : (
+          <div className="toasts_main" onClick={() => setOpen(true)}>
+            <Button props="Toast" variant="Toast" size="medium" />
+          </div>
         )}
       </div>
     </>
