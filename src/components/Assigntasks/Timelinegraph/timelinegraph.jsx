@@ -1,12 +1,19 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import graphchart from "../../../assets/images/graphchart.svg";
+// import { Link } from "react-router-dom";
 import "./timelinegraph.css";
+// import { useLocation } from "react-router-dom";
 const Timelinegraph = () => {
+  // const location = useLocation();
+  // const { pathname } = location;
+  // const splitLocation = pathname.split("/");
+  const [clickable, setClickable] = useState(true);
   return (
     <div className="timeline_graph_main">
-      <div></div>
       <div className="timeline_header">
         <form>
           <select>
@@ -18,15 +25,39 @@ const Timelinegraph = () => {
         </form>
         <div className="time_period">
           <div className="week">
-            <a href="#">Week</a>
+            {/* <li className={splitLocation[1] === "" ? "active" : ""}> */}
+            <li>
+              {/* <NavLink exact activeClassName="active" to="/wall"> */}
+              <Link
+                style={{ pointerEvents: clickable ? "" : "none" }}
+                to="/home"
+              >
+                Week
+              </Link>
+              {/* </NavLink> */}
+            </li>
+            {/* </li> */}
             <div className="horizontal_line_week"></div>
           </div>
           <div className="month">
-            <a href="#">Months</a>
+            {/* <li className={splitLocation[1] === "months" ? "active" : ""}> */}
+            <a href="#">
+              {/* <NavLink exact activeClassName="active" to="/months"> */}
+              Months
+              {/* </NavLink> */}
+            </a>
+            {/* </li> */}
             <div className="horizontal_line"></div>
           </div>
           <div className="year">
-            <a href="#">Year</a>
+            {/* <li className={splitLocation[1] === "year" ? "active" : ""}> */}
+            <a href="#">
+              {/* <NavLink exact activeClassName="active" to="/year"> */}
+              Year
+              {/* </NavLink> */}
+            </a>
+            {/* </li> */}
+
             <div className="horizontal_line"></div>
           </div>
         </div>

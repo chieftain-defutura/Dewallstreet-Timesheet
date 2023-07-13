@@ -11,15 +11,15 @@ import WorkingHours from "./WorkingHours";
 const Task = () => {
   return (
     <>
-      <Homeheader />
       <div className="homepage_main">
-        <Assigntasks />
         <div className="hours_deduction">
           <Timelinegraph />
           <Timer />
         </div>
+        {/* <div className="working_time"> */}
         <WorkingHours />
       </div>
+      {/* </div> */}
     </>
   );
 };
