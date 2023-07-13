@@ -20,3 +20,6 @@
     padding: 10px 15px;
   }
 }
+.primary {
+  background-color: var(--green, #00ce53);
+}
