@@ -18,10 +18,20 @@
   flex-direction: column;
   gap: 10px;
   align-items: center;
-}
-.assign_tasks_main {
+  border-right: 1px solid gray;
+
+  /* align-items: flex-start; */
   list-style-type: none;
+  /* display: block; */
 }
+@media (max-width: 1000px) {
+  .assign_tasks_main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 /* .inactive {
   pointer-events: none;
   color: #282828;

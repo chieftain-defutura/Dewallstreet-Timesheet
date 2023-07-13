@@ -8,8 +8,6 @@ import Designpage from "./Log/Logs";
 const Taskboard = () => {
   return (
     <div>
-      <Homeheader />
-      <Assigntasks />
       <Designpage />
     </div>
   );
