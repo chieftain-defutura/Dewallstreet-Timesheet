@@ -1,13 +1,14 @@
 /** @format */
 
 import React from "react";
+import Assigntasks from "../../components/Assigntasks/assigntasks";
 import Taskboard from "../../components/Taskboard";
 
 const Taskpage = () => {
   return (
-    <div>
+    <>
       <Taskboard />
-    </div>
+    </>
   );
 };
 export default Taskpage;
