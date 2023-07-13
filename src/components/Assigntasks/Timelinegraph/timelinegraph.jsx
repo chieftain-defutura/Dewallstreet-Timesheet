@@ -26,7 +26,7 @@ const Timelinegraph = () => {
         <div className="time_period">
           <div className="week">
             {/* <li className={splitLocation[1] === "" ? "active" : ""}> */}
-            <li>
+            {/* <li> */}
               {/* <NavLink exact activeClassName="active" to="/wall"> */}
               <Link
                 style={{ pointerEvents: clickable ? "" : "none" }}
@@ -35,7 +35,7 @@ const Timelinegraph = () => {
                 Week
               </Link>
               {/* </NavLink> */}
-            </li>
+            {/* </li> */}
             {/* </li> */}
             <div className="horizontal_line_week"></div>
           </div>
