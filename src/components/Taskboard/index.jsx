@@ -3,7 +3,7 @@
 import React from "react";
 import Homeheader from "../Header/Homeheader";
 import Assigntasks from "../Assigntasks/assigntasks";
-import Designpage from "./Log/Logs";
+import Designpage from "./Logs/Logs";
 
 const Taskboard = () => {
   return (
