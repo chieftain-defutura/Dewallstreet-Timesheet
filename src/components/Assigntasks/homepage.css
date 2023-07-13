@@ -2,6 +2,10 @@
 
 .homepage_main {
   display: flex;
+<<<<<<< HEAD
+=======
+  /* flex-wrap: wrap; */
+>>>>>>> b4a781a250e609bb9298396a1bad680855971290
   flex-direction: row;
   justify-content: space-between;
   padding: 30px;
