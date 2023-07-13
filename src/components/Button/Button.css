@@ -1,9 +1,8 @@
-.Button_main {
-  background-color: var(--green, #00ce53);
+.Button-main {
+  /* background-color: var(--green, #00ce53); */
   font-family: "Gilroy-medium";
   align-items: center;
   justify-content: center;
-  padding: 12px 20px;
   gap: 8px;
   display: flex;
   cursor: pointer;
@@ -14,6 +13,25 @@
   color: #fff;
   font-size: 20px;
   gap: 10px;
+}
+.primary {
+  background: var(--green, #00ce53);
+}
+.secondary {
+  background: #141414;
+}
+.Toast {
+  background: #1e1e1e;
+  width: fit-content;
+}
+.small {
+  padding: ;
+}
+.medium {
+  padding: 12px 20px;
+}
+.large {
+  width: 10px 12px;
 }
 @media (max-width: 1290px) {
   .Button_main {
