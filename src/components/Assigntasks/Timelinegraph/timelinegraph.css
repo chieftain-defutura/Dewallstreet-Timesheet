@@ -81,3 +81,17 @@
 .year > a {
   color: rgb(115, 105, 105);
 }
+@media (max-width: 480px) {
+  .timeline_graph_main {
+    width: 100%;
+  }
+  .graph > .days > .horizontal_line_graph {
+    width: 100%;
+  }
+  .graph > .days > .total_days {
+    gap: 10px;
+  }
+}
+.active a {
+  background-color: white;
+}

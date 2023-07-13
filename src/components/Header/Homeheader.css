@@ -36,7 +36,7 @@
   font-weight: 500;
   line-height: normal;
 }
-@media (max-width: 0p48x) {
+@media (max-width: 480px) {
   .home_main {
     flex-wrap: wrap;
   }
