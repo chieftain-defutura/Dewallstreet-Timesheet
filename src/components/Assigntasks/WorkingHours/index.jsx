@@ -85,7 +85,7 @@ const WorkingHours = () => {
         {open && (
           <Toasts
             props="Grace time used.Dead line extended to 6 hours"
-            variant="error"
+            variant="warning"
           />
         )}
       </div>
