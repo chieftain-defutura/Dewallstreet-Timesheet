@@ -19,7 +19,7 @@
   font-size: 18px;
 }
 .emptyline {
-  width: 344px;
+  width: 100%;
   height: 1px;
   background-color: #1e1e1e;
 }
@@ -64,6 +64,9 @@
 }
 .passcode > input {
   border-right: none;
+}
+.passcode > img {
+  padding-right: 5px;
 }
 .Login_page > button {
   background-color: var(--green, #00ce53);

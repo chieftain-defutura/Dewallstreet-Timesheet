@@ -6,6 +6,7 @@
   padding: 12px 20px;
   gap: 8px;
   display: flex;
+  cursor: pointer;
 }
 .access {
   display: flex;

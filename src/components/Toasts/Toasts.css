@@ -1,4 +1,4 @@
-.Toasts_main {
+.toast-main {
   display: flex;
   padding: 6px 16px;
   gap: 10px;
@@ -11,4 +11,14 @@
   line-height: 16px;
   width: fit-content;
   align-items: flex-start;
+  cursor: pointer;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
+.warning {
+  color: orange;
 }

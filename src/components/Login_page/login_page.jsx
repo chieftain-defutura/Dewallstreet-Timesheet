@@ -52,7 +52,8 @@ const Login_Page = () => {
             <img src={eye} alt="eye" width="20px" />
           </div>
         </div>
-        <Button props="Access" image={fingerprint} onClick={Setnavigate} />
+        <></>
+        <Button props="Access" image={fingerprint} handleClick={Setnavigate} />
       </div>
     </div>
   );

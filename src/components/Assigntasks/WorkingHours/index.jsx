@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./WorkingHours.css";
 import hoursprograss from "../../../assets/icons/hoursprograss.svg";
 import minutesprograss from "../../../assets/icons/minutesprograss.svg";
@@ -12,7 +12,9 @@ import checkin from "../../../assets/icons/checkin.svg";
 
 import Button from "../../Button";
 import Toasts from "../../Toasts";
+import { Colors } from "chart.js";
 const WorkingHours = () => {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <div className="workingcheckin_page">
@@ -77,9 +79,15 @@ const WorkingHours = () => {
             <div className="level_crossing"></div>
           </div>
         </div>
-        <div className="toasts_button">
-          <Toasts props="Toasts" />
+        <div className="toasts_main" onClick={() => setOpen(true)}>
+          <Toasts props="Toast" />
         </div>
+        {open && (
+          <Toasts
+            props="Grace time used.Dead line extended to 6 hours"
+            variant="error"
+          />
+        )}
       </div>
     </>
   );
