@@ -93,7 +93,7 @@ const WorkingHours = () => {
           </div>
         ) : (
           <div className="toasts_main" onClick={() => setOpen(true)}>
-            <Button props="Toast" variant="Toast" size="medium" />
+            <Button props="Toast" variant="Toast" size="small" />
           </div>
         )}
       </div>
