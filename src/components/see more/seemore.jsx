@@ -6,8 +6,10 @@ import linkimage from "../../assets/icons/link.svg";
 import documentimage from "../../assets/icons/document.svg";
 import clockimage from "../../assets/icons/timer.svg";
 import Button from "../Button";
+import uparrow from "../../assets/icons/chevron-up.svg";
+import Designpage from "../Taskboard/Log/Logs";
 
-const Seeless = ({ Designtype }) => {
+const Seemore = ({ Designtype }) => {
   return (
     <div className="see_more">
       <div className="correction">
@@ -74,7 +76,14 @@ const Seeless = ({ Designtype }) => {
           Commit
         </Button>
       </div>
+      <div className="down_arrow">
+        <button>
+          {Designtype.Less}
+          <img src={uparrow} alt="" />
+        </button>
+      </div>
+      {/* {Seeless && <Seemore Designtype={data} />} */}
     </div>
   );
 };
-export default Seeless;
+export default Seemore;
