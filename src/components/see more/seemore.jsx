@@ -65,7 +65,9 @@ const Seeless = () => {
                     </div>
                   </div>
                   <div className="onclick_button">
-                    <Button />
+                    <Button variant="primary" size="medium">
+                      Commit
+                    </Button>
                   </div>
                 </div>
               </div>
