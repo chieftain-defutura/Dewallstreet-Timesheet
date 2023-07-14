@@ -26,6 +26,11 @@
 /* .Toast {
   background: #1e1e1e;
 } */
+.button-negotiate {
+  background: #141414;
+  border: 2px solid white;
+  color: white;
+}
 .button-small {
   padding: 5px 10px;
 }
