@@ -22,6 +22,10 @@ export const Designlist = [
     Day: "days",
     Hour: "hours",
     Min: "mins",
+    Click: "See more",
+    Onclick: "See less",
+    Up: "uparrow",
+    down: "downarrow",
   },
   {
     Title: "Design system",
@@ -44,5 +48,9 @@ export const Designlist = [
     Day: "days",
     Hour: "hours",
     Min: "mins",
+    Click: "See more",
+    Onclick: "See less",
+    Up: "uparrow",
+    down: "downarrow",
   },
 ];
