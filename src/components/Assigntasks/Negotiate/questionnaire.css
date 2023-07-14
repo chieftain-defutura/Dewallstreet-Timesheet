@@ -1,0 +1,36 @@
+.questionnaire_main h3 {
+  font-family: Gilroy-Bold;
+}
+.question a {
+  color: white;
+  font-family: Gilroy-Light;
+  font-size: 14px;
+}
+.question > .horizontal_line_questionnaire {
+  border: 0.1px solid white;
+  width: 200px;
+}
+.question + div > .horizontal_line_meeting {
+  border: 0.1px solid rgb(23, 20, 20);
+  width: 200px;
+}
+.meet a {
+  font-family: Gilroy-Light;
+  color: rgb(115, 105, 105);
+  font-size: 14px;
+}
+.question,
+.meet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.questionnaire_head {
+  display: flex;
+}
+.qnbtn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
