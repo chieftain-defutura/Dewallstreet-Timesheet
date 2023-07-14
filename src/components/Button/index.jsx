@@ -1,17 +1,38 @@
 /** @format */
 
 import React from "react";
+import PropTypes from "prop-types";
 import "./Button.css";
-const Styles = ["primary", "secondary", "Toast"];
-const Size = ["small", "medium", "large"];
-const Button = ({ props, image, handleClick, variant }) => {
-  const styles = Styles.includes(variant ? variant : Styles[0]);
-  const size = Size.includes(variant ? variant : Size[0]);
+// const Styles = ["primary", "secondary", "Toast"];
+// const Size = ["small", "medium", "large"];
+const Button = ({ variant, size, children, handleClick, image }) => {
+  let className = "button";
+  if (variant === "primary") {
+    className += " button-primary";
+  } else if (variant === "secondary") {
+    className += " button-secondary";
+  }
+  if (size === "small") {
+    className += " button-small";
+  } else if (size === "large") {
+    className += " button-large";
+  } else if (size === "medium") {
+    className += " button-medium";
+  }
   return (
-    <div className={`Button-main ${styles} ${size}`} onClick={handleClick}>
+    <button className={className} onClick={handleClick}>
       <img src={image} alt="" />
-      {props}
-    </div>
+      {children}
+    </button>
   );
+};
+Button.propTypes = {
+  variant: PropTypes.oneOf(["primary", "secondary"]),
+  size: PropTypes.oneOf(["small", "medium", "large"]),
+  children: PropTypes.node.isRequired,
+};
+Button.defaultProps = {
+  variant: "primary",
+  size: "small",
 };
 export default Button;
