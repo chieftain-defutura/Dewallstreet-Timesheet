@@ -2,17 +2,28 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
 // import { NavLink } from "react-router-dom";
 import graphchart from "../../../assets/images/graphchart.svg";
 // import { Link } from "react-router-dom";
 import "./timelinegraph.css";
-// import { useLocation } from "react-router-dom";
+
 const Timelinegraph = () => {
+  const location = useLocation();
+  const { pathname } = location;
+  const splitLocation = pathname.split("/");
+  // console.log(pathname);
   // const location = useLocation();
   // const { pathname } = location;
   // const splitLocation = pathname.split("/");
   const [clickable, setClickable] = useState(true);
+
+  // const clickHandler = (event) => {
+  //   event.preventDefault();
+  // };
   return (
+    // <Router>
     <div className="timeline_graph_main">
       <div className="timeline_header">
         <form>
@@ -27,35 +38,48 @@ const Timelinegraph = () => {
           <div className="week">
             {/* <li className={splitLocation[1] === "" ? "active" : ""}> */}
             {/* <li> */}
-              {/* <NavLink exact activeClassName="active" to="/wall"> */}
-              <Link
-                style={{ pointerEvents: clickable ? "" : "none" }}
-                to="/home"
-              >
-                Week
-              </Link>
-              {/* </NavLink> */}
+            {/* <NavLink exact activeClassName="active" to="/wall"> */}
+            {/* <li className={splitLocation[1] === "week" ? "active" : ""}> */}
+            <Link style={{ pointerEvents: clickable ? "" : "none" }} to="/home">
+              {/* <Link to="/home"> */}
+              {/* {pathname === "/home" ? (
+                  <h5 style={{ color: "white" }}> Week</h5>
+                ) : (
+                  <h5 style={{ color: "grey" }}> Week</h5>
+                )} */}
+              {/* <Link onClick={ClickHandler} to="/home"> */}
+              Week
+            </Link>
+            {/* </li> */}
+
+            {/* <button onClick={() => setClickable(!clickable)}>Toggle</button> */}
+            {/* </NavLink> */}
             {/* </li> */}
             {/* </li> */}
             <div className="horizontal_line_week"></div>
           </div>
           <div className="month">
             {/* <li className={splitLocation[1] === "months" ? "active" : ""}> */}
-            <a href="#">
+            <Link
+              style={{
+                pointerEvents: clickable ? "" : "none",
+              }}
+              to="/months"
+            >
               {/* <NavLink exact activeClassName="active" to="/months"> */}
               Months
               {/* </NavLink> */}
-            </a>
+            </Link>
             {/* </li> */}
             <div className="horizontal_line"></div>
           </div>
           <div className="year">
             {/* <li className={splitLocation[1] === "year" ? "active" : ""}> */}
-            <a href="#">
+            <Link style={{ pointerEvents: clickable ? "" : "none" }} to="/year">
               {/* <NavLink exact activeClassName="active" to="/year"> */}
               Year
               {/* </NavLink> */}
-            </a>
+            </Link>
             {/* </li> */}
 
             <div className="horizontal_line"></div>
@@ -96,6 +120,7 @@ const Timelinegraph = () => {
         </div>
       </div>
     </div>
+    // </Router>
   );
 };
 export default Timelinegraph;

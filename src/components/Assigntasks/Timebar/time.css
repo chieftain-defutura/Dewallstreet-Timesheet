@@ -52,3 +52,8 @@
   height: 60%;
   background: #1e1e1e;
 }
+@media (max-width: 480px) {
+  .time_calculation {
+    width: 90%;
+  }
+}

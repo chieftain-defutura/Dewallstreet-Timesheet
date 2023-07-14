@@ -95,3 +95,19 @@
 .active a {
   background-color: white;
 }
+@media (max-width: 480px) {
+  .timeline_graph_main {
+    width: 360px;
+  }
+  .graph > .days img {
+    width: 100%;
+  }
+  .graph > .total_weeks > .vertical_line_graph {
+    height: 110px;
+  }
+  .week_days,
+  .time_period,
+  .timeline_header {
+    gap: 5px;
+  }
+}
