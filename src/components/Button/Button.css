@@ -13,7 +13,6 @@
   color: #fff;
   font-size: 20px;
   gap: 10px;
-  transition: 0.5 ease-in-out;
 }
 .button-primary {
   background: var(--green, #00ce53) !important;
@@ -38,5 +37,5 @@
   padding: 12px 20px;
 }
 .button-large {
-  padding: 10px 12px;
+  padding: 10px 60px;
 }

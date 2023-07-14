@@ -9,7 +9,6 @@
   font-weight: 500;
   cursor: pointer;
   position: relative;
-  transition: 0.5 ease-in-out;
 }
 .toast_line {
   width: 209px;

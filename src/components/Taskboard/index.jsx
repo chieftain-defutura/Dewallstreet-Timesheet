@@ -5,14 +5,13 @@ import Homeheader from "../Header/Homeheader";
 import Assigntasks from "../Assigntasks/assigntasks";
 import Designpage from "./Log/Logs";
 import Seeless from "../see more/seemore";
-import Questionnaire from "../Assigntasks/Negotiate/questionnaire";
+import CommitPopup from "../commit/commit";
 
 const Taskboard = () => {
   return (
     <div className="design_questionnaire">
       <Designpage />
-      {/* <Seeless /> */}
-      <Questionnaire />
+      <CommitPopup />
     </div>
   );
 };

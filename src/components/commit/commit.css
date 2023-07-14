@@ -1,0 +1,29 @@
+.commit_main {
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: 2px solid black;
+}
+.commit_header > h5 {
+  color: var(--canvas, #fff);
+  font-family: Gilroy-bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.commit_header {
+  display: flex;
+  align-items: flex-start;
+  gap: 237px;
+}
+.commit_emptyline {
+  width: 340px;
+  height: 1px;
+  background: #1e1e1e;
+}
+.commit_main > button {
+}
