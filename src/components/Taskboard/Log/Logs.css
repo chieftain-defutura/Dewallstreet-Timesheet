@@ -73,7 +73,7 @@
   display: flex;
   width: 570px;
   flex-direction: column;
-
+  padding: 16px 24px;
   gap: 24px;
 }
 
@@ -93,7 +93,7 @@
   font-weight: 500;
   line-height: 16px;
 }
-.correction {
+/* .correction {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -106,15 +106,15 @@
   font-style: normal;
   font-weight: 600;
   line-height: 18px;
-}
-.design_link {
+} */
+/* .design_link {
   display: flex;
   align-items: center;
   gap: 3px;
 }
 .design_link > h4 {
   color: var(--canvas, #fff);
-  font-family: " Gilroy-Bold";
+  font-family: "Gilroy-Bold";
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -123,9 +123,9 @@
 .design_link > img {
   width: 14px;
   height: 14px;
-}
+} */
 
-.design_file {
+/* .design_file {
   display: flex;
   align-items: center;
   gap: 3px;
@@ -141,7 +141,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
+} */
 .task_title {
   display: flex;
   flex-direction: column;
@@ -149,15 +149,15 @@
   gap: 16px;
   width: 552px;
 }
-.correction > p {
+/* .correction > p {
   color: var(--labler-tight, #575757);
-  font-family: " Gilroy-Bold";
+  font-family: "Gilroy-Bold";
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
-}
-.rework > h2 {
+} */
+/* .rework > h2 {
   color: var(--canvas, #fff);
   font-family: "Gilroy-Bold";
   font-size: 16px;
@@ -167,13 +167,13 @@
 }
 .rework > p {
   color: var(--labler-tight, #575757);
-  font-family: " Gilroy-Bold";
+  font-family: "Gilroy-Bold";
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
-}
-.link_drive > h1 {
+} */
+/* .link_drive > h1 {
   color: var(--canvas, #fff);
   font-family: "Gilroy-Bold";
   font-size: 16px;
@@ -182,18 +182,18 @@
   line-height: 18px;
 }
 .link_drive > p {
-  font-size: 12px;
-}
-#time {
+  font-size: 13px;
+  color: var(--labler-tight, #575757);
+} */
+/* #time {
   color: var(--labler-tight, #575757);
   text-align: center;
-  font-family: " Gilroy-Bold";
+  font-family: Gilroy;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
-  text-align: center;
 }
 #days {
   color: var(--canvas, #fff);
@@ -202,8 +202,8 @@
   font-style: normal;
   font-weight: 600;
   line-height: 18px;
-}
-.rework {
+} */
+/* .rework {
   display: flex;
   flex-direction: column;
   width: 552px;
@@ -214,6 +214,7 @@
   flex-direction: column;
   width: 552px;
   gap: 8px;
+  cursor: pointer;
 }
 .day_time {
   display: flex;
@@ -221,8 +222,8 @@
   width: 552px;
   gap: 8px;
   align-items: flex-start;
-}
-.design_respond {
+} */
+/* .design_respond {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -233,4 +234,26 @@
 }
 .time_respond {
   display: flex;
+  align-items: center;
+}
+.link_time {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+} */
+.arrows > button {
+  display: flex;
+  color: var(--labler-tight, #575757);
+  font-family: " Gilroy-Bold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  gap: 8px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.arrows {
+  display: flex;
+  justify-content: center;
 }

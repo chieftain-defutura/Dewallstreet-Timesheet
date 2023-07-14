@@ -1,0 +1,160 @@
+/** @format */
+.correction {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 552px;
+}
+.correction > h2 {
+  color: var(--canvas, #fff);
+  font-family: " Gilroy-Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+.design_link {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.design_link > h4 {
+  color: var(--canvas, #fff);
+  font-family: "Gilroy-Bold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.design_link > img {
+  width: 14px;
+  height: 14px;
+}
+
+.design_file {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.design_file > img {
+  width: 14px;
+  height: 14px;
+}
+.design_file > h4 {
+  color: var(--canvas, #fff);
+  font-family: "Gilroy-Bold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.correction > p {
+  color: var(--labler-tight, #575757);
+  font-family: "Gilroy-Bold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+.rework > h2 {
+  color: var(--canvas, #fff);
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+.rework > p {
+  color: var(--labler-tight, #575757);
+  font-family: "Gilroy-Bold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+.link_drive > h1 {
+  color: var(--canvas, #fff);
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+.link_drive > p {
+  font-size: 13px;
+  color: var(--labler-tight, #575757);
+}
+#time {
+  color: var(--labler-tight, #575757);
+  text-align: center;
+  font-family: Gilroy;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+#days {
+  color: var(--canvas, #fff);
+  font-family: " Gilroy-Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+.rework {
+  display: flex;
+  flex-direction: column;
+  width: 552px;
+  gap: 8px;
+}
+.link_drive {
+  display: flex;
+  flex-direction: column;
+  width: 552px;
+  gap: 8px;
+  cursor: pointer;
+}
+.day_time {
+  display: flex;
+  flex-direction: column;
+  width: 552px;
+  gap: 8px;
+  align-items: flex-start;
+}
+.design_respond {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.design_clock {
+  display: flex;
+  gap: 8px;
+}
+.time_respond {
+  display: flex;
+  align-items: center;
+}
+.link_time {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.see_more {
+  display: flex;
+  width: 570px;
+  flex-direction: column;
+  padding: 16px 24px;
+  gap: 24px;
+}
+.onclick_button {
+  display: flex;
+  gap: 8px;
+}
+.logs_button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 8px;
+}
