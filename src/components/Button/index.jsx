@@ -11,6 +11,8 @@ const Button = ({ variant, size, children, handleClick, image }) => {
     className += " button-primary";
   } else if (variant === "secondary") {
     className += " button-secondary";
+  } else if (variant === "negotiate") {
+    className += " button-negotiate";
   }
   if (size === "small") {
     className += " button-small";
