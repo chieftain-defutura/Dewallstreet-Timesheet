@@ -53,7 +53,14 @@ const Login_Page = () => {
           </div>
         </div>
         <></>
-        <Button props="Access" image={fingerprint} handleClick={Setnavigate} />
+        <Button
+          variant="primary"
+          size="large"
+          handleClick={Setnavigate}
+          image={fingerprint}
+        >
+          Access
+        </Button>
       </div>
     </div>
   );

@@ -47,12 +47,9 @@ const WorkingHours = () => {
                   <h4>05m 00s</h4>
                 </div>
               </div>
-              <Button
-                props="Check in"
-                image={checkin}
-                variant="primary"
-                size="medium"
-              />
+              <Button variant="primary" size="medium" image={checkin}>
+                Check in
+              </Button>
             </div>
           </div>
           <div className="centeremptyline"></div>
@@ -98,7 +95,9 @@ const WorkingHours = () => {
           </div>
         ) : (
           <div className="toasts_main" onClick={() => setOpen(true)}>
-            <Button props="Toast" variant="Toast" size="small" />
+            <Button variant="secondary" size="small">
+              Toast
+            </Button>
           </div>
         )}
       </div>
