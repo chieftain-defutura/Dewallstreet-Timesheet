@@ -147,3 +147,14 @@
   padding: 16px 24px;
   gap: 24px;
 }
+.onclick_button {
+  display: flex;
+  gap: 8px;
+}
+.logs_button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 8px;
+}

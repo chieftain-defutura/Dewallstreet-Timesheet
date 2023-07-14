@@ -10,7 +10,7 @@ const Taskboard = () => {
   return (
     <div>
       <Designpage />
-      <Seeless />
+      {/* <Seeless /> */}
     </div>
   );
 };
