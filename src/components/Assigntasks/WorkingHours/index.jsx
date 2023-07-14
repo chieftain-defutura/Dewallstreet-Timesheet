@@ -47,7 +47,12 @@ const WorkingHours = () => {
                   <h4>05m 00s</h4>
                 </div>
               </div>
-              <Button props="Check in" image={checkin} variant="primary" />
+              <Button
+                props="Check in"
+                image={checkin}
+                variant="primary"
+                size="medium"
+              />
             </div>
           </div>
           <div className="centeremptyline"></div>

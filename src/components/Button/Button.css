@@ -1,5 +1,4 @@
 .Button-main {
-  /* background-color: var(--green, #00ce53); */
   font-family: "Gilroy-medium";
   align-items: center;
   justify-content: center;
@@ -22,19 +21,14 @@
 }
 .Toast {
   background: #1e1e1e;
-  width: fit-content;
 }
 .small {
-  padding: 4px 25px;
+  padding: 4px 16px;
+  background-color: red;
 }
 .medium {
   padding: 12px 20px;
 }
 .large {
-  width: 12px 0;
-}
-@media (max-width: 1290px) {
-  .Button_main {
-    padding: 10px 15px;
-  }
+  padding: 12px 30px;
 }
