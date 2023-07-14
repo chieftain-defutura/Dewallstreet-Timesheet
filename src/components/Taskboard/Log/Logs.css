@@ -73,7 +73,7 @@
   display: flex;
   width: 570px;
   flex-direction: column;
-
+  padding: 16px 24px;
   gap: 24px;
 }
 
@@ -114,7 +114,7 @@
 }
 .design_link > h4 {
   color: var(--canvas, #fff);
-  font-family: " Gilroy-Bold";
+  font-family: "Gilroy-Bold";
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -151,7 +151,7 @@
 }
 .correction > p {
   color: var(--labler-tight, #575757);
-  font-family: " Gilroy-Bold";
+  font-family: "Gilroy-Bold";
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -167,7 +167,7 @@
 }
 .rework > p {
   color: var(--labler-tight, #575757);
-  font-family: " Gilroy-Bold";
+  font-family: "Gilroy-Bold";
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -182,7 +182,8 @@
   line-height: 18px;
 }
 .link_drive > p {
-  font-size: 12px;
+  font-size: 13px;
+  color: var(--labler-tight, #575757);
 }
 #time {
   color: var(--labler-tight, #575757);
@@ -214,6 +215,7 @@
   flex-direction: column;
   width: 552px;
   gap: 8px;
+  cursor: pointer;
 }
 .day_time {
   display: flex;
@@ -233,4 +235,10 @@
 }
 .time_respond {
   display: flex;
+  align-items: center;
+}
+.link_time {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
