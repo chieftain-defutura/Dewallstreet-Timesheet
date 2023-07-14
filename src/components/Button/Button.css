@@ -1,10 +1,11 @@
-.Button-main {
+.button {
   font-family: "Gilroy-medium";
   align-items: center;
   justify-content: center;
   gap: 8px;
   display: flex;
   cursor: pointer;
+  outline: none;
 }
 .access {
   display: flex;
@@ -12,23 +13,25 @@
   color: #fff;
   font-size: 20px;
   gap: 10px;
+  transition: 0.5 ease-in-out;
 }
-.primary {
-  background: var(--green, #00ce53);
+.button-primary {
+  background: var(--green, #00ce53) !important;
+  color: WHITE;
 }
-.secondary {
+.button-secondary {
   background: #141414;
+  color: white;
 }
-.Toast {
+/* .Toast {
   background: #1e1e1e;
+} */
+.button-small {
+  padding: 5px 10px;
 }
-.small {
-  padding: 4px 16px;
-  background-color: red;
-}
-.medium {
+.button-medium {
   padding: 12px 20px;
 }
-.large {
-  padding: 12px 30px;
+.button-large {
+  padding: 10px 12px;
 }
