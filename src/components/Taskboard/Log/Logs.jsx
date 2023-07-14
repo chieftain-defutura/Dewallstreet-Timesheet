@@ -7,8 +7,8 @@ import "./Logs.css";
 import Seeless from "../../see more/seemore";
 
 const Designpage = () => {
-  const RenderDesignpage = Designlist.map((Designtype) => {
-    return <DesignContent data={Designtype} />;
+  const RenderDesignpage = Designlist.map((Designtype, i) => {
+    return <DesignContent key={i} data={Designtype} />;
   });
   return (
     <React.Fragment>
@@ -37,6 +37,8 @@ export default Designpage;
 const DesignContent = ({ data }) => {
   const [Seemore, setSeemore] = useState(false);
   console.log("data", data);
+
+  if (!data) return;
   return (
     <div className="task_system">
       <div className="task_title">
@@ -45,11 +47,20 @@ const DesignContent = ({ data }) => {
       </div>
       <div className="arrows">
         <button onClick={() => setSeemore((m) => !m)}>
-          {data.Click}
+          {data.More}
           {<img src={downarrow} alt="" />}
         </button>
       </div>
-      {Seemore && <Seeless Designtype={data} />}
+      {/* {Seemore && <Seeless Designtype={data} />} */}
+      {Seemore ? (
+        <div>
+          <Seeless Designtype={data} />
+        </div>
+      ) : (
+        <div>
+          <DesignContent />
+        </div>
+      )}
     </div>
   );
 };
