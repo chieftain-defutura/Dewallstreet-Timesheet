@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 // import { BrowserRouter as Router } from "react-router-dom";
 // import { NavLink } from "react-router-dom";
 import graphchart from "../../../assets/images/graphchart.svg";
@@ -10,18 +10,20 @@ import graphchart from "../../../assets/images/graphchart.svg";
 import "./timelinegraph.css";
 
 const Timelinegraph = () => {
-  const location = useLocation();
-  const { pathname } = location;
-  const splitLocation = pathname.split("/");
+  // const location = useLocation();
+  // const { pathname } = location;
+  // const splitLocation = pathname.split("/");
   // console.log(pathname);
   // const location = useLocation();
   // const { pathname } = location;
   // const splitLocation = pathname.split("/");
-  const [clickable, setClickable] = useState(true);
+  // const [clickable, setClickable] = useState(true);
 
   // const clickHandler = (event) => {
   //   event.preventDefault();
   // };
+  const [toggle, setToggle] = useState("week");
+  // const handleChange = () => setToggle("month");
   return (
     // <Router>
     <div className="timeline_graph_main">
@@ -36,53 +38,93 @@ const Timelinegraph = () => {
         </form>
         <div className="time_period">
           <div className="week">
-            {/* <li className={splitLocation[1] === "" ? "active" : ""}> */}
-            {/* <li> */}
-            {/* <NavLink exact activeClassName="active" to="/wall"> */}
-            {/* <li className={splitLocation[1] === "week" ? "active" : ""}> */}
-            <Link style={{ pointerEvents: clickable ? "" : "none" }} to="/home">
-              {/* <Link to="/home"> */}
-              {/* {pathname === "/home" ? (
-                  <h5 style={{ color: "white" }}> Week</h5>
-                ) : (
-                  <h5 style={{ color: "grey" }}> Week</h5>
-                )} */}
-              {/* <Link onClick={ClickHandler} to="/home"> */}
-              Week
-            </Link>
-            {/* </li> */}
-
-            {/* <button onClick={() => setClickable(!clickable)}>Toggle</button> */}
-            {/* </NavLink> */}
-            {/* </li> */}
-            {/* </li> */}
-            <div className="horizontal_line_week"></div>
+            {toggle === "week" ? (
+              <>
+                <div
+                  onClick={() => setToggle("week")}
+                  style={{ color: "white" }}
+                >
+                  Week
+                </div>
+                <div
+                  className="horizontal_line"
+                  style={{ border: "1px solid white" }}
+                ></div>
+              </>
+            ) : (
+              <>
+                <div
+                  onClick={() => setToggle("week")}
+                  style={{ color: "grey" }}
+                >
+                  Week
+                </div>
+                <div
+                  className="horizontal_line"
+                  style={{ border: "1px solid grey" }}
+                ></div>
+              </>
+            )}
           </div>
           <div className="month">
-            {/* <li className={splitLocation[1] === "months" ? "active" : ""}> */}
-            <Link
-              style={{
-                pointerEvents: clickable ? "" : "none",
-              }}
-              to="/months"
-            >
-              {/* <NavLink exact activeClassName="active" to="/months"> */}
-              Months
-              {/* </NavLink> */}
-            </Link>
-            {/* </li> */}
-            <div className="horizontal_line"></div>
+            {toggle === "month" ? (
+              <>
+                <div
+                  onClick={() => setToggle("month")}
+                  style={{ color: "white" }}
+                >
+                  Months
+                </div>
+                <div
+                  className="horizontal_line"
+                  style={{ border: "1px solid white" }}
+                ></div>
+              </>
+            ) : (
+              <>
+                <div
+                  onClick={() => setToggle("month")}
+                  style={{ color: "grey" }}
+                >
+                  Months
+                </div>
+                <div
+                  className="horizontal_line"
+                  style={{ border: "1px solid grey" }}
+                ></div>
+              </>
+            )}
           </div>
           <div className="year">
-            {/* <li className={splitLocation[1] === "year" ? "active" : ""}> */}
-            <Link style={{ pointerEvents: clickable ? "" : "none" }} to="/year">
-              {/* <NavLink exact activeClassName="active" to="/year"> */}
-              Year
-              {/* </NavLink> */}
-            </Link>
-            {/* </li> */}
-
-            <div className="horizontal_line"></div>
+            {toggle === "year" ? (
+              <>
+                <div
+                  className="year"
+                  onClick={() => setToggle("year")}
+                  style={{ color: "white" }}
+                >
+                  Year
+                </div>
+                <div
+                  className="horizontal_line"
+                  style={{ border: "1px solid white" }}
+                ></div>
+              </>
+            ) : (
+              <>
+                <div
+                  className="year"
+                  onClick={() => setToggle("year")}
+                  style={{ color: "grey" }}
+                >
+                  Year
+                </div>
+                <div
+                  className="horizontal_line"
+                  style={{ border: "1px solid grey" }}
+                ></div>
+              </>
+            )}
           </div>
         </div>
       </div>
