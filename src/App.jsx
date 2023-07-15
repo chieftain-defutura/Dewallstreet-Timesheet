@@ -10,6 +10,7 @@ import Homepage from "./pages/Home";
 import Login from "./pages/Login";
 import Taskpage from "./pages/Taskpage";
 import Taskpagelist from "./pages/Taskpage";
+import Backlog from "./components/Taskboard/Backlogs";
 function App() {
   return (
     <>
@@ -17,8 +18,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Homepage />} />
         <Route path="/Taskpage" element={<Taskpage />} />
-        <Route path="/Taskpage/Logs" element={<Taskpage />} />
-        <Route path="/Taskpage/Commits" element={<Taskpage />} />
+        <Route path="/Taskpage/backlog" element={<Backlog />} />
       </Routes>
     </>
   );

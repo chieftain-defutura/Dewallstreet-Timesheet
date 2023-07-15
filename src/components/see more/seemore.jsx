@@ -9,7 +9,7 @@ import Button from "../Button";
 import uparrow from "../../assets/icons/chevron-up.svg";
 import Designpage from "../Taskboard/Log/Logs";
 
-const Seemore = ({ Designtype }) => {
+const Seemore = ({ Designtype, setSeemore }) => {
   return (
     <div className="see_more">
       <div className="correction">
@@ -77,7 +77,7 @@ const Seemore = ({ Designtype }) => {
         </Button>
       </div>
       <div className="down_arrow">
-        <button>
+        <button onClick={() => setSeemore(false)}>
           {Designtype.Less}
           <img src={uparrow} alt="" />
         </button>

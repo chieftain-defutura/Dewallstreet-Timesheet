@@ -1,28 +1,21 @@
-import React from "react";
-import Close from "../../assets/icons/cancel.svg";
+import React, { useEffect } from "react";
 import "./Modal.css";
 
-export const ModalBox = ({ isOpen, onClose, children }) => {
-  const overlayRef = React.useRef(null);
-  const handleOverlayClick = (e) => {
-    if (e.target === overlayRef.current) {
-      onClose();
-    }
-  };
+const LayoutModal = ({ children, onClose }) => {
+  useEffect(() => {
+    document.body.style.overflowY = "hidden";
 
-  return isOpen ? (
-    <div className="modal">
-      <div
-        className="modaal-overlay"
-        ref={overlayRef}
-        onClick={handleOverlayClick}
-      />
-      <div className="modal-box">
-        <div className="modal-close-btn" onClick={onClose}>
-          <img src={close} alt="" />
-        </div>
-        <div className="modal-content">{children}</div>
+    return () => {
+      document.body.style.overflowY = "auto";
+    };
+  }, []);
+  return (
+    <div className="layout_modal" onClick={() => onClose && onClose()}>
+      <div className="layout_modal_main" onClick={(e) => e.stopPropagation()}>
+        {children}
       </div>
     </div>
-  ) : null;
+  );
 };
+
+export default LayoutModal;

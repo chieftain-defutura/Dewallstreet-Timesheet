@@ -1,0 +1,31 @@
+/** @format */
+
+.arrows > button {
+  display: flex;
+  color: var(--labler-tight, #575757);
+  font-family: " Gilroy-Bold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  gap: 8px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.arrows {
+  display: flex;
+  justify-content: center;
+}
+.task_system {
+  display: flex;
+  border-right: 1px solid #282828;
+  flex-direction: column;
+  padding: 16px 24px;
+  gap: 24px;
+}
+.task_title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}

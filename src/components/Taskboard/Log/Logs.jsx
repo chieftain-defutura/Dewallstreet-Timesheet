@@ -2,14 +2,18 @@
 
 import React, { useState } from "react";
 import downarrow from "../../../assets/icons/chevron-down.svg";
+import cancel from "../../../assets/icons/cancel.svg";
+import commitimage from "../../../assets/icons/commitimage.svg";
+import commit_timer from "../../../assets/icons/commit_timer.svg";
 import { Designlist } from "./Logos";
 import "./Logs.css";
 import Seeless from "../../see more/seemore";
 import Button from "../../Button";
-// import CommitPopup from "../../commit/commit";
-// import { ModalBox } from "../../Modal/Modal";
+import CommitPopup from "../../commit/commit";
+import { Link } from "react-router-dom";
+import LayoutModal from "../../Modal/Modal";
 
-const Logs = () => {
+const Designpage = () => {
   const RenderDesignpage = Designlist.map((Designtype, i) => {
     return <DesignContent key={i} data={Designtype} />;
   });
@@ -26,16 +30,18 @@ const Logs = () => {
           <div className="audits_link">
             <a>Audits(2)</a>
           </div>
-          <div className="backlog_link">
-            <a>Backlogs(2)</a>
-          </div>
+          <Link to="/Taskpage/backlog">
+            <div className="backlog_link">
+              <a>Backlogs(2)</a>
+            </div>
+          </Link>
         </div>
         <div>{RenderDesignpage}</div>
       </div>
     </React.Fragment>
   );
 };
-export default Logs;
+export default Designpage;
 
 const DesignContent = ({ data }) => {
   const [Seemore, setSeemore] = useState(false);
@@ -49,32 +55,75 @@ const DesignContent = ({ data }) => {
         <h1>{data.Title}</h1>
         <p>{data.Para}</p>
       </div>
-      <div className="logs_button">
-        <div>
-          <Button variant="negotiate" size="medium">
-            Negotiate
-          </Button>
-        </div>
-        <div onClick={() => setAddcommitOpen(true)}>
-          <Button variant="primary" size="medium">
-            Commit
-          </Button>
-        </div>
-      </div>
-      <div className="arrows">
-        <button onClick={() => setSeemore((m) => !m)}>
-          {data.More}
-          {<img src={downarrow} alt="" />}
-        </button>
-      </div>
-      {Seemore && <Seeless Designtype={data} />}
-
-      {/* <CommitPopup trigger={Addcommitopen} setTrigger={setAddcommitOpen} />
-       */}
-
-      {/* <ModalBox isOpen={Addcommitopen} onClose={() => setAddcommitOpen(false)}>
-        hi
-      </ModalBox> */}
+      {!Seemore && (
+        <>
+          <div className="logs_button">
+            <div>
+              <Button variant="negotiate" size="medium">
+                Negotiate
+              </Button>
+            </div>
+            <div onClick={() => setAddcommitOpen(true)}>
+              <Button variant="primary" size="medium">
+                Commit
+              </Button>
+            </div>
+          </div>
+          <div className="arrows">
+            <button onClick={() => setSeemore(true)}>
+              {data.More}
+              {<img src={downarrow} alt="" />}
+            </button>
+          </div>
+        </>
+      )}
+      {Seemore && <Seeless Designtype={data} setSeemore={setSeemore} />}
+      {Addcommitopen && (
+        <LayoutModal onClose={setAddcommitOpen}>
+          {" "}
+          <div className="commit_main">
+            <div className="commit_header">
+              <h5>Commit.</h5>
+              <button
+                onClick={() => props.setAddcommitOpen(false)}
+                id="close_button"
+              >
+                <img src={cancel} alt="cancel" />
+              </button>
+            </div>
+            <div className="commit_emptyline"></div>
+            <img src={commitimage} alt="" />
+            <div className="commit_content">
+              <div className="commit_deadline">
+                <h5>DEADLINE</h5>
+                <h4>06 June,2023.</h4>
+              </div>
+              <div className="commit_daysweeks">
+                <img src={commit_timer} alt="timer" />
+                <div className="commit_weeks">
+                  <h4>01</h4>
+                  <h5>weeks</h5>
+                </div>
+                <div className="commit_days">
+                  <h4>02</h4>
+                  <h5>days</h5>
+                </div>
+                <div className="commit_hours">
+                  <h4>03</h4>
+                  <h5>hours</h5>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectrtur adipiscing elit, set do
+              eiusmed tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <Button variant="primary" size="large">
+              Confirm
+            </Button>
+          </div>
+        </LayoutModal>
+      )}
     </div>
   );
 };
