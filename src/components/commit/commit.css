@@ -9,6 +9,7 @@
   position: absolute;
   left: 480px;
   top: 150px;
+  z-index: 1;
 }
 .commit_popup {
   position: fixed;
@@ -94,7 +95,7 @@
 }
 .commit_main > p {
   color: var(--labler-tight, #575757);
-  text-align: justify;
+  text-align: center;
   font-family: Gilroy-medium;
   font-size: 12px;
   font-style: normal;
@@ -107,4 +108,7 @@
   position: absolute;
   bottom: -1px;
   left: 2px;
+}
+.confirm_button {
+  width: 100%;
 }
