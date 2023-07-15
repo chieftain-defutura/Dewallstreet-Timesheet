@@ -67,8 +67,8 @@ const Questionnaire = () => {
   return (
     <React.Fragment>
       <div className="questionnaire_main">
+        <h3>Negotiate.</h3>
         <div className="all_questionnaires">
-          <h3>Negotiate.</h3>
           <div className="questionnaire_head">
             <div className="question">
               <a href="#">Questionnaire</a>
@@ -99,16 +99,17 @@ const Questionnaire = () => {
               <h4 id="date">08 June 2023.</h4>
             </div>
           </div>
-        </div>
-        {/* <React.Fragment> */}
-        <div className="questionnaire_two_all">
-          <div className="questionnaire_two_head">
-            <h4>Questionnaire 2</h4>
-            <Button variant="secondary" size="small">
-              Answered
-            </Button>
+          {/* </div> */}
+          {/* <React.Fragment> */}
+          <div className="questionnaire_two_all">
+            <div className="questionnaire_two_head">
+              <h4>Questionnaire 2</h4>
+              <Button variant="secondary" size="small">
+                Answered
+              </Button>
+            </div>
+            <div className="questionnaire_two">{renderQuestionnairetwo}</div>
           </div>
-          <div className="questionnaire_two">{renderQuestionnairetwo}</div>
         </div>
         {/* </React.Fragment> */}
       </div>
