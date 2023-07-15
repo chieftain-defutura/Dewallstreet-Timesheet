@@ -48,25 +48,29 @@ const DesignContent = ({ data }) => {
         <h1>{data.Title}</h1>
         <p>{data.Para}</p>
       </div>
-      <div className="logs_button">
-        <div>
-          <Button variant="negotiate" size="medium">
-            Negotiate
-          </Button>
-        </div>
-        <div onClick={() => setAddcommitOpen(true)}>
-          <Button variant="primary" size="medium">
-            Commit
-          </Button>
-        </div>
-      </div>
-      <div className="arrows">
-        <button onClick={() => setSeemore((m) => !m)}>
-          {data.More}
-          {<img src={downarrow} alt="" />}
-        </button>
-      </div>
-      {Seemore && <Seeless Designtype={data} />}
+      {!Seemore && (
+        <>
+          <div className="logs_button">
+            <div>
+              <Button variant="negotiate" size="medium">
+                Negotiate
+              </Button>
+            </div>
+            <div onClick={() => setAddcommitOpen(true)}>
+              <Button variant="primary" size="medium">
+                Commit
+              </Button>
+            </div>
+          </div>
+          <div className="arrows">
+            <button onClick={() => setSeemore(true)}>
+              {data.More}
+              {<img src={downarrow} alt="" />}
+            </button>
+          </div>
+        </>
+      )}
+      {Seemore && <Seeless Designtype={data} setSeemore={setSeemore} />}
 
       <CommitPopup trigger={Addcommitopen} setTrigger={setAddcommitOpen} />
     </div>
