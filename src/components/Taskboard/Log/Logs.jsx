@@ -5,6 +5,8 @@ import downarrow from "../../../assets/icons/chevron-down.svg";
 import { Designlist } from "./Logos";
 import "./Logs.css";
 import Seeless from "../../see more/seemore";
+import Button from "../../Button";
+import CommitPopup from "../../commit/commit";
 
 const Designpage = () => {
   const RenderDesignpage = Designlist.map((Designtype, i) => {
@@ -36,6 +38,7 @@ export default Designpage;
 
 const DesignContent = ({ data }) => {
   const [Seemore, setSeemore] = useState(false);
+  const [Addcommitopen, setAddcommitOpen] = useState(false);
   console.log("data", data);
 
   if (!data) return;
@@ -45,22 +48,23 @@ const DesignContent = ({ data }) => {
         <h1>{data.Title}</h1>
         <p>{data.Para}</p>
       </div>
+      <div className="logs_button" onClick={() => setAddcommitOpen(true)}>
+        <Button variant="negotiate" size="medium">
+          Negotiate
+        </Button>
+        <Button variant="primary" size="medium">
+          Commit
+        </Button>
+      </div>
       <div className="arrows">
         <button onClick={() => setSeemore((m) => !m)}>
           {data.More}
           {<img src={downarrow} alt="" />}
         </button>
       </div>
-      {/* {Seemore && <Seeless Designtype={data} />} */}
-      {Seemore ? (
-        <div>
-          <Seeless Designtype={data} />
-        </div>
-      ) : (
-        <div>
-          <DesignContent />
-        </div>
-      )}
+      {Seemore && <Seeless Designtype={data} />}
+
+      <CommitPopup trigger={Addcommitopen} setTrigger={setAddcommitOpen} />
     </div>
   );
 };
