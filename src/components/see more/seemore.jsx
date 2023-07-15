@@ -8,8 +8,11 @@ import clockimage from "../../assets/icons/timer.svg";
 import Button from "../Button";
 import uparrow from "../../assets/icons/chevron-up.svg";
 import Designpage from "../Taskboard/Log/Logs";
+import { useParams } from "react-router-dom";
 
 const Seemore = ({ Designtype, setSeemore }) => {
+  const { backlog } = useParams();
+
   return (
     <div className="see_more">
       <div className="correction">
@@ -46,36 +49,41 @@ const Seemore = ({ Designtype, setSeemore }) => {
             <h1 id="time">{Designtype.Timing}</h1>
             <h1 id="days">{Designtype.Date}</h1>
           </div>
-          <div className="design_respond">
-            <p>{Designtype.Respond}</p>
-            <div className="button_type">
-              <div className="design_clock">
-                <img src={clockimage} alt="" />
-                <div className="design_days">
-                  <h2>{Designtype.Two}</h2>
-                  <p>{Designtype.Day}</p>
-                </div>
-                <div className="design_hours">
-                  <h2>{Designtype.Three}</h2>
-                  <p>{Designtype.Hour}</p>
-                </div>
-                <div className="design_min">
-                  <h2>{Designtype.One}</h2>
-                  <p>{Designtype.Min}</p>
+          {backlog !== "backlog" && (
+            <div className="design_respond">
+              <p>{Designtype.Respond}</p>
+              <div className="button_type">
+                <div className="design_clock">
+                  <img src={clockimage} alt="" />
+                  <div className="design_days">
+                    <h2>{Designtype.Two}</h2>
+                    <p>{Designtype.Day}</p>
+                  </div>
+                  <div className="design_hours">
+                    <h2>{Designtype.Three}</h2>
+                    <p>{Designtype.Hour}</p>
+                  </div>
+                  <div className="design_min">
+                    <h2>{Designtype.One}</h2>
+                    <p>{Designtype.Min}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
-      <div className="logs_button">
-        <Button variant="negotiate" size="medium">
-          Negotiate
-        </Button>
-        <Button variant="primary" size="medium">
-          Commit
-        </Button>
-      </div>
+      {backlog !== "backlog" && (
+        <div className="logs_button">
+          <Button variant="negotiate" size="medium">
+            Negotiate
+          </Button>
+          <Button variant="primary" size="medium">
+            Commit
+          </Button>
+        </div>
+      )}
+
       <div className="down_arrow">
         <button onClick={() => setSeemore(false)}>
           {Designtype.Less}

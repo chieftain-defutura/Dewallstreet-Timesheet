@@ -11,6 +11,8 @@ import Login from "./pages/Login";
 import Taskpage from "./pages/Taskpage";
 import Taskpagelist from "./pages/Taskpage";
 import Backlog from "./components/Taskboard/Backlogs";
+import Designpage from "./components/Taskboard/Log/Logs";
+import Logboard from "./components/Taskboard/Log";
 function App() {
   return (
     <>
@@ -18,7 +20,8 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Homepage />} />
         <Route path="/Taskpage" element={<Taskpage />} />
-        <Route path="/Taskpage/backlog" element={<Backlog />} />
+        <Route path="/Taskpage/:backlog" element={<Backlog />} />
+        <Route path="/Taskpage/log" element={<Logboard />} />
       </Routes>
     </>
   );
