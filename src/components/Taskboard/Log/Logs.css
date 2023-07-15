@@ -257,3 +257,7 @@
   display: flex;
   justify-content: center;
 }
+.task_system {
+  border-right: 1px solid #282828;
+  height: 100vh;
+}
