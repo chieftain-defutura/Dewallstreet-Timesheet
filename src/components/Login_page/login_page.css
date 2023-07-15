@@ -70,13 +70,16 @@
 }
 .Login_page > button {
   background-color: var(--green, #00ce53);
-  font-family: "Gilroy-bold";
+  font-family: "Gilroy-regular";
   align-items: center;
   justify-content: center;
   width: 100%;
   padding: 12px 0;
   gap: 8px;
   display: flex;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .access {
   display: flex;
