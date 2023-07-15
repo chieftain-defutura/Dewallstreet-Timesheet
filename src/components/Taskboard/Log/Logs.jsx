@@ -6,7 +6,8 @@ import { Designlist } from "./Logos";
 import "./Logs.css";
 import Seeless from "../../see more/seemore";
 import Button from "../../Button";
-import CommitPopup from "../../commit/commit";
+// import CommitPopup from "../../commit/commit";
+// import { ModalBox } from "../../Modal/Modal";
 
 const Logs = () => {
   const RenderDesignpage = Designlist.map((Designtype, i) => {
@@ -68,7 +69,12 @@ const DesignContent = ({ data }) => {
       </div>
       {Seemore && <Seeless Designtype={data} />}
 
-      <CommitPopup trigger={Addcommitopen} setTrigger={setAddcommitOpen} />
+      {/* <CommitPopup trigger={Addcommitopen} setTrigger={setAddcommitOpen} />
+       */}
+
+      {/* <ModalBox isOpen={Addcommitopen} onClose={() => setAddcommitOpen(false)}>
+        hi
+      </ModalBox> */}
     </div>
   );
 };

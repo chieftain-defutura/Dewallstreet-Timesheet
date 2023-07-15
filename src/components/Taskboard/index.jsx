@@ -8,6 +8,7 @@ import Designpage from "./Log/Logs";
 import Seeless from "../see more/seemore";
 import CommitPopup from "../commit/commit";
 import Questionnaire from "../Assigntasks/Negotiate/questionnaire";
+import CommitPage from "./Commits/commits";
 
 const Taskboard = () => {
   return (
@@ -16,9 +17,8 @@ const Taskboard = () => {
         <Designpage />
         <Questionnaire />
       </div>
-      <>
-        <CommitPopup />
-      </>
+      {/* <CommitPopup /> */}
+      <CommitPage />
     </div>
   );
 };

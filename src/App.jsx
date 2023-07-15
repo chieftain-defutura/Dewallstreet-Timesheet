@@ -18,6 +18,7 @@ function App() {
         <Route path="/home" element={<Homepage />} />
         <Route path="/Taskpage" element={<Taskpage />} />
         <Route path="/Taskpage/Logs" element={<Taskpage />} />
+        <Route path="/Taskpage/Commits" element={<Taskpage />} />
       </Routes>
     </>
   );
