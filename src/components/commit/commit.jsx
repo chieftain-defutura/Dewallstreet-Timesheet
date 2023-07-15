@@ -45,7 +45,7 @@ const CommitPopup = (props) => {
           Lorem ipsum dolor sit amet, consectrtur adipiscing elit, set do
           eiusmed tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        {Successopen ? (
+        {/* {Successopen ? (
           <div onClick={() => setSuccessopen(false)}>
             <Toasts
               props="You are committed to this task."
@@ -62,7 +62,7 @@ const CommitPopup = (props) => {
           >
             Confirm
           </Button>
-        )}
+        )} */}
       </div>
     </div>
   ) : (

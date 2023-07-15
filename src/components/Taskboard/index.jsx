@@ -17,8 +17,7 @@ const Taskboard = () => {
         <Questionnaire />
       </div>
       <>
-        {/* <Raisemeeting /> */}
-        <CommitPopup />
+        {/* <CommitPopup /> */}
         {/* <Backlogdesign /> */}
       </>
     </div>

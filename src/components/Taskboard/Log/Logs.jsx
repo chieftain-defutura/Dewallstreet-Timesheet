@@ -2,12 +2,16 @@
 
 import React, { useState } from "react";
 import downarrow from "../../../assets/icons/chevron-down.svg";
+import cancel from "../../../assets/icons/cancel.svg";
+import commitimage from "../../../assets/icons/commitimage.svg";
+import commit_timer from "../../../assets/icons/commit_timer.svg";
 import { Designlist } from "./Logos";
 import "./Logs.css";
 import Seeless from "../../see more/seemore";
 import Button from "../../Button";
 import CommitPopup from "../../commit/commit";
 import { Link } from "react-router-dom";
+import LayoutModal from "../../Modal/Modal";
 
 const Designpage = () => {
   const RenderDesignpage = Designlist.map((Designtype, i) => {
@@ -76,8 +80,52 @@ const DesignContent = ({ data }) => {
         </>
       )}
       {Seemore && <Seeless Designtype={data} setSeemore={setSeemore} />}
-
-      <CommitPopup trigger={Addcommitopen} setTrigger={setAddcommitOpen} />
+      {Addcommitopen && (
+        <LayoutModal onClose={setAddcommitOpen}>
+          {" "}
+          <div className="commit_main">
+            <div className="commit_header">
+              <h5>Commit.</h5>
+              <button
+                onClick={() => props.setAddcommitOpen(false)}
+                id="close_button"
+              >
+                <img src={cancel} alt="cancel" />
+              </button>
+            </div>
+            <div className="commit_emptyline"></div>
+            <img src={commitimage} alt="" />
+            <div className="commit_content">
+              <div className="commit_deadline">
+                <h5>DEADLINE</h5>
+                <h4>06 June,2023.</h4>
+              </div>
+              <div className="commit_daysweeks">
+                <img src={commit_timer} alt="timer" />
+                <div className="commit_weeks">
+                  <h4>01</h4>
+                  <h5>weeks</h5>
+                </div>
+                <div className="commit_days">
+                  <h4>02</h4>
+                  <h5>days</h5>
+                </div>
+                <div className="commit_hours">
+                  <h4>03</h4>
+                  <h5>hours</h5>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectrtur adipiscing elit, set do
+              eiusmed tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <Button variant="primary" size="large">
+              Confirm
+            </Button>
+          </div>
+        </LayoutModal>
+      )}
     </div>
   );
 };
