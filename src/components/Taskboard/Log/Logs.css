@@ -59,7 +59,7 @@
 
 .task_system {
   display: flex;
-  /* width: 570px; */
+  border-right: 1px solid #282828;
   flex-direction: column;
   padding: 16px 24px;
   gap: 24px;
@@ -91,11 +91,11 @@
   font-weight: 600;
   line-height: 18px;
 }
-*/ .design_link > img {
+.design_link > img {
   width: 14px;
   height: 14px;
 }
-*/ .task_title {
+.task_title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -141,7 +141,4 @@
 .arrows {
   display: flex;
   justify-content: center;
-}
-.task_system {
-  border-right: 1px solid #282828;
 }
