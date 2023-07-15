@@ -17,9 +17,11 @@ const Designpage = () => {
     <React.Fragment>
       <div className="logs_main">
         <div className="design_links">
-          <div className="log_link">
-            <a>Logs(2)</a>
-          </div>
+          <Link to="/Taskpage/log">
+            <div className="log_link">
+              <a>Logs(2)</a>
+            </div>
+          </Link>
           <div className="commit_link">
             <a>Commits(2)</a>
           </div>
