@@ -10,8 +10,8 @@ import { render } from "react-dom";
 const Questionnaire = () => {
   const Questionnairetwo = [
     {
-      id: 1,
-      heading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+      // id: 1,
+      heading: "1. Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
       icon1: linkicon,
       icon1para:
         "Ut enim ad minim veniam, quis nostrod exercitation ullamco laboris.",
@@ -21,8 +21,8 @@ const Questionnaire = () => {
       icon2para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
-      id: 2,
-      heading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+      // id: 2,
+      heading: "2. Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
       icon1: linkicon,
       icon1para:
         "Ut enim ad minim veniam, quis nostrod exercitation ullamco laboris.",
@@ -32,8 +32,8 @@ const Questionnaire = () => {
       icon2para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
-      id: 3,
-      heading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+      // id: 3,
+      heading: "3. Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
       icon1: linkicon,
       icon1para:
         "Ut enim ad minim veniam, quis nostrod exercitation ullamco laboris.",
@@ -46,10 +46,10 @@ const Questionnaire = () => {
   const renderQuestionnairetwo = Questionnairetwo.map((questtwolist) => {
     return (
       <div className="individual_questionnaire">
-        <div className="questionnaire_number">
-          <h5>{questtwolist.id}</h5>
+        {/* <div className="questionnaire_number">
+          <h5>{questtwolist.id}</h5> */}
           <h5>{questtwolist.heading}</h5>
-        </div>
+        {/* </div> */}
         <div className="link_para">
           <img src={questtwolist.icon1} alt="icon" />
           <h5> {questtwolist.icon1para} </h5>
@@ -124,10 +124,10 @@ const Questionnaire = () => {
                 <h4>ANSWERED DATE</h4>
                 <h4 id="date">09 June,2023.</h4>
               </div>
-              <div className="negotiate_seedown">
+            </div>
+            <div className="negotiate_seedown">
               <h4>See less</h4>
               <img src={seedownlist} alt="icon" />
-            </div>
             </div>
           </div>
         </div>
