@@ -3,6 +3,8 @@ import "./questionnaire.css";
 import plus from "../../../assets/icons/plus.svg";
 import linkicon from "../../../assets/icons/link.svg";
 import documenticon from "../../../assets/icons/document.svg";
+import seemorelist from "../../../assets/icons/chevron-down.svg";
+import seedownlist from "../../../assets/icons/chevron-up.svg";
 import Button from "../../Button";
 import { render } from "react-dom";
 const Questionnaire = () => {
@@ -96,7 +98,11 @@ const Questionnaire = () => {
             </div>
             <div className="ask_date">
               <h4>ASKED DATE</h4>
-              <h4 id="date">08 June 2023.</h4>
+              <h4 id="date">08 June, 2023.</h4>
+            </div>
+            <div className="negotiate_seemore">
+              <h4>See more</h4>
+              <img src={seemorelist} alt="icon" />
             </div>
           </div>
           {/* </div> */}
@@ -109,6 +115,20 @@ const Questionnaire = () => {
               </Button>
             </div>
             <div className="questionnaire_two">{renderQuestionnairetwo}</div>
+            <div className="ask_answer">
+              <div className="ask_date">
+                <h4>ASKED DATE</h4>
+                <h4 id="date">08 June,2023.</h4>
+              </div>
+              <div className="ans_date">
+                <h4>ANSWERED DATE</h4>
+                <h4 id="date">09 June,2023.</h4>
+              </div>
+              <div className="negotiate_seedown">
+              <h4>See less</h4>
+              <img src={seedownlist} alt="icon" />
+            </div>
+            </div>
           </div>
         </div>
         {/* </React.Fragment> */}

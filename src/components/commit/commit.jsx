@@ -48,11 +48,10 @@ const CommitPopup = (props) => {
         {Successopen ? (
           <div onClick={() => setSuccessopen(false)}>
             <Toasts
-              props="You are committed to this task"
+              props="You are committed to this task."
+              variant="secondary"
               image={check}
-              variant="success"
               icons={toastcancel}
-              className="toast_line"
             />
           </div>
         ) : (

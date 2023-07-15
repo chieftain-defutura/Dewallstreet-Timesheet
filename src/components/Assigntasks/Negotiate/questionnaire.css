@@ -51,18 +51,30 @@
   display: flex;
   justify-content: space-between;
 }
-.ask_date h4 {
+.ask_date h4,
+.negotiate_seemore h4,
+.negotite_seedown h4,
+.ans_date h4 {
   color: rgb(115, 105, 105);
   font-size: 12px;
+  font-family: Gilroy-Medium;
 }
-.ask_date > #date {
+.ask_date > #date,
+.ans_date > #date {
   color: white;
+  font-family: Gilroy-Medium;
+}
+.negotiate_seemore,
+.negotite_seedown {
+  display: flex;
+  justify-content: center;
 }
 .questionnaire_one_all {
   display: flex;
   flex-direction: column;
   gap: 10px;
   background-color: rgb(39, 38, 38);
+  padding: 20px;
 }
 .questionnaire_number,
 .link_para {
@@ -87,13 +99,30 @@
   height: 20px;
   font-size: 12px;
 }
-.questionnaire_two_head {
+.questionnaire_two_head,
+.ask_answer {
   display: flex;
   justify-content: space-between;
 }
 .all_questionnaires {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+.questionnaire_two {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.questionnaire_two_all {
+  border: 1px solid #282828;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 /* .questionnaire_two_all {
   padding: 16px;
   display: flex;

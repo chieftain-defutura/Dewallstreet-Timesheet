@@ -71,7 +71,7 @@
 }
 .task_system {
   display: flex;
-  width: 570px;
+  /* width: 570px; */
   flex-direction: column;
   padding: 16px 24px;
   gap: 24px;
@@ -91,7 +91,7 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  width: 550px;
+  /* width: 550px; */
   line-height: 16px;
 }
 /* .correction {
@@ -148,7 +148,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  width: 552px;
+  /* width: 552px; */
 }
 /* .correction > p {
   color: var(--labler-tight, #575757);
@@ -260,5 +260,4 @@
 }
 .task_system {
   border-right: 1px solid #282828;
-  height: 80%;
 }
