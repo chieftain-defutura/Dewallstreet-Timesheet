@@ -56,12 +56,13 @@ const CommitPopup = (props) => {
             />
           </div>
         ) : (
-          <div onClick={() => setSuccessopen(true)}>
-            <CommitPopup />
-            <Button variant="primary" size="large">
-              Confirm
-            </Button>
-          </div>
+          <Button
+            variant="primary"
+            size="large"
+            handleClick={() => setSuccessopen(true)}
+          >
+            Confirm
+          </Button>
         )}
       </div>
     </div>

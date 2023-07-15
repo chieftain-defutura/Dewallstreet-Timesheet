@@ -8,7 +8,7 @@ import Seeless from "../../see more/seemore";
 import Button from "../../Button";
 import CommitPopup from "../../commit/commit";
 
-const Designpage = () => {
+const Logs = () => {
   const RenderDesignpage = Designlist.map((Designtype, i) => {
     return <DesignContent key={i} data={Designtype} />;
   });
@@ -34,7 +34,7 @@ const Designpage = () => {
     </React.Fragment>
   );
 };
-export default Designpage;
+export default Logs;
 
 const DesignContent = ({ data }) => {
   const [Seemore, setSeemore] = useState(false);

@@ -17,6 +17,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Homepage />} />
         <Route path="/Taskpage" element={<Taskpage />} />
+        <Route path="/Taskpage/Logs" element={<Taskpage />} />
       </Routes>
     </>
   );
