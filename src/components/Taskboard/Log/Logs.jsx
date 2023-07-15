@@ -7,8 +7,9 @@ import "./Logs.css";
 import Seeless from "../../see more/seemore";
 import Button from "../../Button";
 import CommitPopup from "../../commit/commit";
+import { Link } from "react-router-dom";
 
-const Logs = () => {
+const Designpage = () => {
   const RenderDesignpage = Designlist.map((Designtype, i) => {
     return <DesignContent key={i} data={Designtype} />;
   });
@@ -25,16 +26,18 @@ const Logs = () => {
           <div className="audits_link">
             <a>Audits(2)</a>
           </div>
-          <div className="backlog_link">
-            <a>Backlogs(2)</a>
-          </div>
+          <Link to="/Taskpage/backlog">
+            <div className="backlog_link">
+              <a>Backlogs(2)</a>
+            </div>
+          </Link>
         </div>
         <div>{RenderDesignpage}</div>
       </div>
     </React.Fragment>
   );
 };
-export default Logs;
+export default Designpage;
 
 const DesignContent = ({ data }) => {
   const [Seemore, setSeemore] = useState(false);
@@ -48,25 +51,29 @@ const DesignContent = ({ data }) => {
         <h1>{data.Title}</h1>
         <p>{data.Para}</p>
       </div>
-      <div className="logs_button">
-        <div>
-          <Button variant="negotiate" size="medium">
-            Negotiate
-          </Button>
-        </div>
-        <div onClick={() => setAddcommitOpen(true)}>
-          <Button variant="primary" size="medium">
-            Commit
-          </Button>
-        </div>
-      </div>
-      <div className="arrows">
-        <button onClick={() => setSeemore((m) => !m)}>
-          {data.More}
-          {<img src={downarrow} alt="" />}
-        </button>
-      </div>
-      {Seemore && <Seeless Designtype={data} />}
+      {!Seemore && (
+        <>
+          <div className="logs_button">
+            <div>
+              <Button variant="negotiate" size="medium">
+                Negotiate
+              </Button>
+            </div>
+            <div onClick={() => setAddcommitOpen(true)}>
+              <Button variant="primary" size="medium">
+                Commit
+              </Button>
+            </div>
+          </div>
+          <div className="arrows">
+            <button onClick={() => setSeemore(true)}>
+              {data.More}
+              {<img src={downarrow} alt="" />}
+            </button>
+          </div>
+        </>
+      )}
+      {Seemore && <Seeless Designtype={data} setSeemore={setSeemore} />}
 
       <CommitPopup trigger={Addcommitopen} setTrigger={setAddcommitOpen} />
     </div>
