@@ -1,4 +1,4 @@
-import React, { useParams } from "react";
+import React, { useParams, useState } from "react";
 import "./assigntasks.css";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -6,8 +6,8 @@ import briefcasetimer from "../../assets/icons/briefcasetimer.svg";
 import briefcasetimerhide from "../../assets/icons/briefcasetimerhide.svg";
 import tasksheet from "../../assets/icons/tasksheet.svg";
 import tasksheethide from "../../assets/icons/tasksheethide.svg";
-import Homepage from "../../pages/Home";
 const Assigntasks = ({ props, image }) => {
+  const [toggle, setToggle] = useState("/home");
   const location = useLocation();
   const { pathname } = location;
   const splitLocation = pathname.split("/");
@@ -17,12 +17,13 @@ const Assigntasks = ({ props, image }) => {
       <div className="clock_work">
         <li className={splitLocation[1] === "clockwork" ? "active" : ""}>
           <Link to="/home">
-            {pathname === "/home" ? (
+            {/* {pathname === "/home" ? (
               <img src={briefcasetimer} alt="icon" />
             ) : (
               <img src={briefcasetimerhide} alt="icon" />
               // "sjs"
             )}
+
             {pathname === "/home" ? (
               <h4 style={{ color: "white" }}>
                 Clock
@@ -35,6 +36,31 @@ const Assigntasks = ({ props, image }) => {
                 <br />
                 Works
               </h4>
+            )} */}
+            {pathname === "/home" ? (
+              <>
+                <div onClick={() => setToggle(toggle)}>
+                  <img src={briefcasetimer} alt="icon" />
+                  <h4 style={{ color: "white" }}>
+                    Clock
+                    <br />
+                    Works
+                  </h4>
+                </div>
+              </>
+            ) : (
+              <>
+                <div onClick={() => setToggle(toggle)}>
+                  <img src={briefcasetimerhide} alt="icon" />
+                </div>
+                <div>
+                  <h4 style={{ color: "grey" }}>
+                    Clock
+                    <br />
+                    Works
+                  </h4>
+                </div>
+              </>
             )}
           </Link>
         </li>

@@ -14,10 +14,21 @@ import Button from "../../Button";
 import { Link } from "react-router-dom";
 import LayoutModal from "../../Modal/Modal";
 import Toasts from "../../Toasts";
+import { useLocation } from "react-router-dom";
+import TaskHeader from "../Taskheader";
+import Negotiate from "../../Assigntasks/Negotiate";
+
+// console.log(setNegotiateOpen);
 
 const Designpage = () => {
   const RenderDesignpage = Designlist.map((Designtype, i) => {
-    return <DesignContent key={i} data={Designtype} />;
+    return (
+      <DesignContent
+        key={i}
+        data={Designtype}
+        // setNegotiateOpen={setNegotiateOpen}
+      />
+    );
   });
   return (
     <React.Fragment>
@@ -49,10 +60,12 @@ const Designpage = () => {
 };
 export default Designpage;
 
-const DesignContent = ({ data }) => {
+const DesignContent = ({ data, setNegotiateOpen }) => {
   const [Seemore, setSeemore] = useState(false);
   const [Addcommitopen, setAddcommitOpen] = useState(false);
   const [Toastopen, setToastopen] = useState(false);
+
+  // const [openSeemore, setOpenSeemore] = useState(false);
   console.log("data", data);
 
   if (!data) return;
@@ -65,7 +78,7 @@ const DesignContent = ({ data }) => {
       {!Seemore && (
         <>
           <div className="logs_button">
-            <div>
+            <div onClick={() => setNegotiateOpen((m) => !m)}>
               <Button variant="negotiate" size="medium">
                 Negotiate
               </Button>
@@ -85,8 +98,8 @@ const DesignContent = ({ data }) => {
         </>
       )}
       {Seemore && <Seeless Designtype={data} setSeemore={setSeemore} />}
-      {Addcommitopen && !Toastopen && (
-        <LayoutModal onClose={() => setAddcommitOpen(false)}>
+      {Addcommitopen && (
+        <LayoutModal>
           <div className="commit_main">
             <div className="commit_header">
               <h5>Commit.</h5>

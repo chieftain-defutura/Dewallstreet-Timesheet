@@ -3,7 +3,7 @@ import documenticon from "../../../../../assets/icons/document.svg";
 
 export const QuestionnaireDetails = [
   {
-    title: "Questionnarie1",
+    title: "Questionnaire1",
     content: [
       {
         heading: " Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
@@ -38,7 +38,7 @@ export const QuestionnaireDetails = [
     ],
   },
   {
-    title: "Questionnarie2",
+    title: "Questionnaire2",
     content: [
       {
         heading: " Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
