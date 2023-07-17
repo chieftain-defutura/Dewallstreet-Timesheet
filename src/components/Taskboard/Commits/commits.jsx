@@ -45,7 +45,7 @@ const Commitcontent = ({ data }) => {
                 Raise a meeting
               </Button>
             </div>
-            <div onClick={() => setAddcommitOpen(true)}>
+            <div>
               <Button variant="secondary" size="medium">
                 Extend request
               </Button>
