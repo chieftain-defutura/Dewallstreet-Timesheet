@@ -1,18 +1,18 @@
 /** @format */
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 const TaskHeader = ({ Renderdesign }) => {
-  const { path } = useParams();
-  console.log(path);
+  const location = window.location.pathname.split("/");
+  console.log(location[2]);
   return (
     <div className="logs_main">
       <div className="design_links">
-        {path === "log" ? (
+        {location[2] === "log" ? (
           <Link to="/Taskpage/log">
-            <div className="log_link" style={{ background: "red" }}>
+            <div className="log_link" style={{ background: "#141414" }}>
               <a>Logs(2)</a>
             </div>
           </Link>
@@ -23,9 +23,9 @@ const TaskHeader = ({ Renderdesign }) => {
             </div>
           </Link>
         )}
-        {path === "commit" ? (
+        {location[2] === "commit" ? (
           <Link to="/Taskpage/commit">
-            <div className="commit_link" style={{ background: "red" }}>
+            <div className="commit_link" style={{ background: "#141414" }}>
               <a>Commits(2)</a>
             </div>
           </Link>
@@ -37,7 +37,7 @@ const TaskHeader = ({ Renderdesign }) => {
           </Link>
         )}
 
-        {path === "audits" ? (
+        {location[2] === "audits" ? (
           <div className="audits_link" style={{ background: "red" }}>
             <a>Audits(2)</a>
           </div>
@@ -47,9 +47,9 @@ const TaskHeader = ({ Renderdesign }) => {
           </div>
         )}
 
-        {path === "backlog" ? (
+        {location[2] === "backlog" ? (
           <Link to="/Taskpage/backlog">
-            <div className="backlog_link" style={{ background: "red" }}>
+            <div className="backlog_link" style={{ background: "#141414" }}>
               <a>Backlogs(2)</a>
             </div>
           </Link>
