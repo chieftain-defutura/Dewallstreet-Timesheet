@@ -10,40 +10,20 @@ import { Designlist } from "./Logos";
 import "./Logs.css";
 import Seeless from "../../see more/seemore";
 import Button from "../../Button";
-
+0;
 import { Link } from "react-router-dom";
 import LayoutModal from "../../Modal/Modal";
 import Toasts from "../../Toasts";
-
+import { useLocation } from "react-router-dom";
+import TaskHeader from "../Taskheader";
 const Designpage = () => {
+  const [Tasktoggle, setTasktoggle] = useState("logs");
   const RenderDesignpage = Designlist.map((Designtype, i) => {
     return <DesignContent key={i} data={Designtype} />;
   });
   return (
     <React.Fragment>
-      <div className="logs_main">
-        <div className="design_links">
-          <Link to="/Taskpage/log">
-            <div className="log_link">
-              <a>Logs(2)</a>
-            </div>
-          </Link>
-          <Link to="/Taskpage/commit">
-            <div className="commit_link">
-              <a>Commits(2)</a>
-            </div>
-          </Link>
-          <div className="audits_link">
-            <a>Audits(2)</a>
-          </div>
-          <Link to="/Taskpage/backlog">
-            <div className="backlog_link">
-              <a>Backlogs(2)</a>
-            </div>
-          </Link>
-        </div>
-        <div>{RenderDesignpage}</div>
-      </div>
+      <TaskHeader Renderdesign={RenderDesignpage} />
     </React.Fragment>
   );
 };
@@ -132,8 +112,7 @@ const DesignContent = ({ data }) => {
             ) : (
               <div
                 onClick={() => setToastopen(true)}
-                className="confirm_button"
-              >
+                className="confirm_button">
                 <Button variant="primary" size="large">
                   Confirm
                 </Button>
