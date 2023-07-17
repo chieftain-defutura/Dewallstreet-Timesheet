@@ -14,16 +14,36 @@ import Button from "../../Button";
 import { Link } from "react-router-dom";
 import LayoutModal from "../../Modal/Modal";
 import Toasts from "../../Toasts";
-import { useLocation } from "react-router-dom";
-import TaskHeader from "../Taskheader";
+
 const Designpage = () => {
-  const [Tasktoggle, setTasktoggle] = useState("logs");
   const RenderDesignpage = Designlist.map((Designtype, i) => {
     return <DesignContent key={i} data={Designtype} />;
   });
   return (
     <React.Fragment>
-      <TaskHeader Renderdesign={RenderDesignpage} />
+      <div className="logs_main">
+        <div className="design_links">
+          <Link to="/Taskpage/log">
+            <div className="log_link">
+              <a>Logs(2)</a>
+            </div>
+          </Link>
+          <Link to="/Taskpage/commit">
+            <div className="commit_link">
+              <a>Commits(2)</a>
+            </div>
+          </Link>
+          <div className="audits_link">
+            <a>Audits(2)</a>
+          </div>
+          <Link to="/Taskpage/backlog">
+            <div className="backlog_link">
+              <a>Backlogs(2)</a>
+            </div>
+          </Link>
+        </div>
+        <div>{RenderDesignpage}</div>
+      </div>
     </React.Fragment>
   );
 };
@@ -102,23 +122,22 @@ const DesignContent = ({ data }) => {
               eiusmed tempor incididunt ut labore et dolore magna aliqua.
             </p>
 
-            {Toastopen ? (
-              <div onClick={() => setToastopen(false)}>
-                <Toasts
-                  props="You are committed for this task"
-                  icons={toastcancel}
-                />
-              </div>
-            ) : (
-              <div
-                onClick={() => setToastopen(true)}
-                className="confirm_button"
-              >
-                <Button variant="primary" size="large">
-                  Confirm
-                </Button>
-              </div>
-            )}
+            <div onClick={() => setToastopen(true)} className="confirm_button">
+              <Button variant="primary" size="large">
+                Confirm
+              </Button>
+            </div>
+          </div>
+        </LayoutModal>
+      )}
+      {Toastopen && (
+        <LayoutModal onClose={() => setAddcommitOpen(false)}>
+          <div onClick={() => setToastopen(false)}>
+            <Toasts
+              props="You are committed for this task"
+              icons={toastcancel}
+            />
+            <div className="toast_successline"></div>
           </div>
         </LayoutModal>
       )}
