@@ -16,9 +16,10 @@ import LayoutModal from "../../Modal/Modal";
 import Toasts from "../../Toasts";
 import { useLocation } from "react-router-dom";
 import TaskHeader from "../Taskheader";
-const Designpage = () => {
+import Negotiate from "../../Assigntasks/Negotiate";
+const Designpage = ({ setNegotiateOpen }) => {
   const [Tasktoggle, setTasktoggle] = useState("logs");
-  const[negotiateOpen,setNegotiateOpen]=useState(false)
+  console.log(setNegotiateOpen);
   const RenderDesignpage = Designlist.map((Designtype, i) => {
     return (
       <DesignContent
@@ -54,7 +55,7 @@ const DesignContent = ({ data, setNegotiateOpen }) => {
       {!Seemore && (
         <>
           <div className="logs_button">
-            <div onClick={() => setNegotiateOpen(true)}>
+            <div onClick={() => setNegotiateOpen((m) => !m)}>
               <Button variant="negotiate" size="medium">
                 Negotiate
               </Button>
@@ -74,7 +75,6 @@ const DesignContent = ({ data, setNegotiateOpen }) => {
         </>
       )}
       {Seemore && <Seeless Designtype={data} setSeemore={setSeemore} />}
-
       {Addcommitopen && (
         <LayoutModal>
           <div className="commit_main">
@@ -122,7 +122,8 @@ const DesignContent = ({ data, setNegotiateOpen }) => {
             ) : (
               <div
                 onClick={() => setToastopen(true)}
-                className="confirm_button">
+                className="confirm_button"
+              >
                 <Button variant="primary" size="large">
                   Confirm
                 </Button>

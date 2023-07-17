@@ -22,9 +22,9 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Homepage />} />
         <Route path="/Taskpage" element={<Taskpage />} />
-        <Route path="/Taskpage/:path" element={<Backlog />} />
-        <Route path="/Taskpage/:path" element={<Logboard />} />
-        <Route path="/Taskpage/:path" element={<Commitboard />} />
+        <Route path="/Taskpage/backlog" element={<Backlog />} />
+        <Route path="/Taskpage/log" element={<Logboard />} />
+        <Route path="/Taskpage/commit" element={<Commitboard />} />
       </Routes>
     </>
   );

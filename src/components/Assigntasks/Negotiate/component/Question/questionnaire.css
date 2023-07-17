@@ -8,17 +8,17 @@
 }
 .question > .horizontal_line_questionnaire {
   border: 0.1px solid white;
-  width: 310px;
+  width: 300px;
 }
-/* .question + div > .horizontal_line_meeting {
+.question + div > .horizontal_line_meeting {
   border: 0.1px solid #282828;
-  width: 310px;
-} */
-/* .meet a {
+  width: 300px;
+}
+.meet a {
   font-family: Gilroy-Light;
   color: rgb(115, 105, 105);
   font-size: 14px;
-} */
+}
 .question,
 .meet {
   display: flex;
