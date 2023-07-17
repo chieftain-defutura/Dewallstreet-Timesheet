@@ -1,0 +1,88 @@
+/** @format */
+
+.arrows > button {
+  display: flex;
+  color: var(--labler-tight, #575757);
+  font-family: " Gilroy-Bold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  gap: 8px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.arrows {
+  display: flex;
+  justify-content: center;
+}
+.task_system {
+  display: flex;
+  border-right: 1px solid #282828;
+  flex-direction: column;
+  padding: 16px 24px;
+  gap: 24px;
+  width: 45%;
+}
+.task_title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.design_links {
+  display: flex;
+  font-style: normal;
+}
+.backlog_link {
+  display: flex;
+  height: 48px;
+  padding: 16px 51px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--canvas, #fff);
+  background: #141414;
+}
+.backlog_link > a {
+  color: var(--canvas, #fff);
+  font-family: "Gilroy-medium";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  background-color: #141414;
+}
+.commit_link {
+  display: flex;
+  height: 48px;
+  padding: 16px 37px 16px 38px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--line, #1e1e1e);
+}
+.commit_link > a,
+.audits_link > a,
+.log_link > a {
+  color: var(--labler-tight, #575757);
+  font-family: Gilroy-bold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.audits_link {
+  display: flex;
+  height: 48px;
+  padding: 16px 46px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--line, #1e1e1e);
+}
+
+.log_link {
+  display: flex;
+  height: 48px;
+  padding: 16px 36px 16px 37px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--line, #1e1e1e);
+}

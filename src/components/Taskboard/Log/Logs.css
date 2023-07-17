@@ -141,15 +141,6 @@
   display: flex;
   justify-content: center;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-.task_system {
-  border-right: 1px solid #282828;
-  height: 80vh;
-}
-=======
->>>>>>> 2bc717eb81bf6b838a4dfae9bbeb37e21697d335
-=======
 .commit_main {
   display: inline-flex;
   padding: 24px;
@@ -158,19 +149,12 @@
   align-items: center;
   gap: 16px;
   background: #141414;
-  /* position: absolute;
+  position: absolute;
   left: 480px;
   top: 150px;
-  z-index: 1; */
+  z-index: 1;
 }
-/* .commit_popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(128, 128, 128, 0.25);
-  width: 100%;
-  height: 100vh;
-} */
+
 .commit_header > h5 {
   color: var(--canvas, #fff);
   font-family: Gilroy-bold;
@@ -190,7 +174,7 @@
 #close_button {
   background: #141414;
 }
-.commit_main > button {
+.confirm_button > Button {
   width: 100%;
   color: #fff;
   text-align: center;
@@ -253,7 +237,7 @@
   font-style: normal;
   width: 340px;
 }
-.toast_line {
+.toast_successline {
   width: 209px;
   height: 1px;
   background: green;
@@ -264,4 +248,4 @@
 .confirm_button {
   width: 100%;
 }
->>>>>>> 107d607dab7597ef0d9743fe5811ccdedc2116f6
+/* >>>>>>> 107d607dab7597ef0d9743fe5811ccdedc2116f6 */

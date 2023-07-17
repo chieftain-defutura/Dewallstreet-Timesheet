@@ -5,13 +5,15 @@ import downarrow from "../../../assets/icons/chevron-down.svg";
 import cancel from "../../../assets/icons/cancel.svg";
 import commitimage from "../../../assets/icons/commitimage.svg";
 import commit_timer from "../../../assets/icons/commit_timer.svg";
+import toastcancel from "../../../assets/icons/toastcancel.svg";
 import { Designlist } from "./Logos";
 import "./Logs.css";
 import Seeless from "../../see more/seemore";
 import Button from "../../Button";
-import CommitPopup from "../../commit/commit";
+
 import { Link } from "react-router-dom";
 import LayoutModal from "../../Modal/Modal";
+import Toasts from "../../Toasts";
 
 const Designpage = () => {
   const RenderDesignpage = Designlist.map((Designtype, i) => {
@@ -26,9 +28,11 @@ const Designpage = () => {
               <a>Logs(2)</a>
             </div>
           </Link>
-          <div className="commit_link">
-            <a>Commits(2)</a>
-          </div>
+          <Link to="/Taskpage/commit">
+            <div className="commit_link">
+              <a>Commits(2)</a>
+            </div>
+          </Link>
           <div className="audits_link">
             <a>Audits(2)</a>
           </div>
@@ -48,6 +52,7 @@ export default Designpage;
 const DesignContent = ({ data }) => {
   const [Seemore, setSeemore] = useState(false);
   const [Addcommitopen, setAddcommitOpen] = useState(false);
+  const [Toastopen, setToastopen] = useState(false);
   console.log("data", data);
 
   if (!data) return;
@@ -81,15 +86,11 @@ const DesignContent = ({ data }) => {
       )}
       {Seemore && <Seeless Designtype={data} setSeemore={setSeemore} />}
       {Addcommitopen && (
-        <LayoutModal onClose={setAddcommitOpen}>
-          {" "}
+        <LayoutModal>
           <div className="commit_main">
             <div className="commit_header">
               <h5>Commit.</h5>
-              <button
-                onClick={() => props.setAddcommitOpen(false)}
-                id="close_button"
-              >
+              <button onClick={() => setAddcommitOpen(false)} id="close_button">
                 <img src={cancel} alt="cancel" />
               </button>
             </div>
@@ -120,9 +121,24 @@ const DesignContent = ({ data }) => {
               Lorem ipsum dolor sit amet, consectrtur adipiscing elit, set do
               eiusmed tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <Button variant="primary" size="large">
-              Confirm
-            </Button>
+
+            {Toastopen ? (
+              <div onClick={() => setToastopen(false)}>
+                <Toasts
+                  props="You are committed for this task"
+                  icons={toastcancel}
+                />
+              </div>
+            ) : (
+              <div
+                onClick={() => setToastopen(true)}
+                className="confirm_button"
+              >
+                <Button variant="primary" size="large">
+                  Confirm
+                </Button>
+              </div>
+            )}
           </div>
         </LayoutModal>
       )}

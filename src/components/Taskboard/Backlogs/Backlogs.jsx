@@ -6,7 +6,7 @@ import "./backlogs.css";
 import { Backloglist } from "./Backlog";
 import { Link } from "react-router-dom";
 import Seemore from "../../see more/seemore";
-import CommitPopup from "../../commit/commit";
+
 export const Backlogdesign = () => {
   const RenderBacklogdesign = Backloglist.map((Designtype, i) => {
     return <DesignContent key={i} data={Designtype} />;
@@ -20,9 +20,11 @@ export const Backlogdesign = () => {
               <a>Logs(2)</a>
             </div>
           </Link>
-          <div className="commit_link">
-            <a>Commits(2)</a>
-          </div>
+          <Link to="/Taskpage/commit">
+            <div className="commit_link">
+              <a>Commits(2)</a>
+            </div>
+          </Link>
           <div className="audits_link">
             <a>Audits(2)</a>
           </div>
@@ -62,7 +64,7 @@ const DesignContent = ({ data }) => {
         </>
       )}
       {openSeemore && <Seemore Designtype={data} setSeemore={setOpenSeemore} />}
-      <CommitPopup trigger={Addcommitopen} setTrigger={setAddcommitOpen} />
+      {/* <CommitPopup trigger={Addcommitopen} setTrigger={setAddcommitOpen} /> */}
     </div>
   );
 };

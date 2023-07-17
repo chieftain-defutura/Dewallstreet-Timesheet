@@ -137,6 +137,14 @@
   /* padding: 20px; */
   padding: 20px 20px 0 0;
 }
+.toast_warning {
+  width: 209px;
+  height: 1px;
+  background: #ffc700;
+  position: absolute;
+  bottom: -1px;
+  left: 2px;
+}
 @media (max-width: 1290px) {
   .checkin {
     flex-wrap: wrap;
