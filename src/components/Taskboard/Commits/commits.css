@@ -22,7 +22,7 @@
   flex-direction: column;
   padding: 16px 24px;
   gap: 24px;
-  width: 45%;
+  /* width: 45%; */
 }
 .task_title {
   display: flex;
