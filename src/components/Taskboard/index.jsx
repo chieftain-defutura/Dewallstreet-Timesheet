@@ -15,7 +15,6 @@ const Taskboard = () => {
         <Designpage setNegotiateOpen={setNegotiateOpen} />
         {negotiateopen && <Negotiate />}
       </div>
-      
     </div>
   );
 };
