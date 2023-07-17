@@ -8,8 +8,10 @@ const Meeting = () => {
       <h5>AGENDA</h5>
       <div className="agenda">
         <h5>Enter agenda</h5>
-        <Button variant="secondary"></Button>
       </div>
+      <Button variant="secondary" size="large">
+        Raise a Meeting
+      </Button>
     </div>
   );
 };

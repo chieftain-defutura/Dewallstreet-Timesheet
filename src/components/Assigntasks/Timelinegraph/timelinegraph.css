@@ -26,9 +26,7 @@
 .time_period > .week > a {
   color: white;
 }
-.week,
-.month,
-.year {
+.week {
   display: flex;
   flex-direction: column;
   align-items: center;
