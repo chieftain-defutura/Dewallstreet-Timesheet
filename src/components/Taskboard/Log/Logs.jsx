@@ -20,13 +20,13 @@ import Negotiate from "../../Assigntasks/Negotiate";
 
 // console.log(setNegotiateOpen);
 
-const Designpage = () => {
+const Designpage = ({ setNegotiateOpen }) => {
   const RenderDesignpage = Designlist.map((Designtype, i) => {
     return (
       <DesignContent
         key={i}
         data={Designtype}
-        // setNegotiateOpen={setNegotiateOpen}
+        setNegotiateOpen={setNegotiateOpen}
       />
     );
   });
