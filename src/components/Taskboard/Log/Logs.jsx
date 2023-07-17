@@ -10,7 +10,6 @@ import { Designlist } from "./Logos";
 import "./Logs.css";
 import Seeless from "../../see more/seemore";
 import Button from "../../Button";
-
 import { Link } from "react-router-dom";
 import LayoutModal from "../../Modal/Modal";
 import Toasts from "../../Toasts";
@@ -85,8 +84,8 @@ const DesignContent = ({ data }) => {
         </>
       )}
       {Seemore && <Seeless Designtype={data} setSeemore={setSeemore} />}
-      {Addcommitopen && (
-        <LayoutModal>
+      {Addcommitopen && !Toastopen && (
+        <LayoutModal onClose={() => setAddcommitOpen(false)}>
           <div className="commit_main">
             <div className="commit_header">
               <h5>Commit.</h5>
@@ -122,23 +121,22 @@ const DesignContent = ({ data }) => {
               eiusmed tempor incididunt ut labore et dolore magna aliqua.
             </p>
 
-            {Toastopen ? (
-              <div onClick={() => setToastopen(false)}>
-                <Toasts
-                  props="You are committed for this task"
-                  icons={toastcancel}
-                />
-              </div>
-            ) : (
-              <div
-                onClick={() => setToastopen(true)}
-                className="confirm_button"
-              >
-                <Button variant="primary" size="large">
-                  Confirm
-                </Button>
-              </div>
-            )}
+            <div onClick={() => setToastopen(true)} className="confirm_button">
+              <Button variant="primary" size="large">
+                Confirm
+              </Button>
+            </div>
+          </div>
+        </LayoutModal>
+      )}
+      {Toastopen && Addcommitopen && (
+        <LayoutModal onClose={() => setAddcommitOpen(false)}>
+          <div onClick={() => setToastopen(false)}>
+            <Toasts
+              props="You are committed for this task"
+              icons={toastcancel}
+            />
+            <div className="toast_successline"></div>
           </div>
         </LayoutModal>
       )}

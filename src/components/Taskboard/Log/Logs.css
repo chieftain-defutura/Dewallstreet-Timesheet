@@ -149,7 +149,6 @@
   align-items: center;
   gap: 16px;
   background: #141414;
-  position: absolute;
   left: 480px;
   top: 150px;
   z-index: 1;
@@ -242,8 +241,6 @@
   height: 1px;
   background: green;
   position: absolute;
-  bottom: -1px;
-  left: 2px;
 }
 .confirm_button {
   width: 100%;

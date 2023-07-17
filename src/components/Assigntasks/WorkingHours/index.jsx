@@ -92,6 +92,7 @@ const WorkingHours = () => {
               variant="warning"
               icons={toastcancel}
             />
+            <div className="toast_warning"></div>
           </div>
         ) : (
           <div className="toasts_main" onClick={() => setOpen(true)}>

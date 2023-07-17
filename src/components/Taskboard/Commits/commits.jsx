@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./commits.css";
-import { Commitlist } from "./commits";
+import { Commitlist } from "./commit";
 import { Link } from "react-router-dom";
 import Seemore from "../../see more/seemore";
 import downarrow from "../../../assets/icons/chevron-down.svg";
-export const CommitDesignsystem = () => {
-  const RenderCommitdesign = Commitlist.map((CommitDesigntype, i) => {
-    return <Commitcontent key={i} data={CommitDesigntype} />;
+import Button from "../../Button";
+import Commitseemore from "../../Commitseemore/commitseemore";
+import LayoutModal from "../../Modal/Modal";
+
+const CommitDesignsystem = () => {
+  const RenderCommitdesign = Commitlist.map((Designtype, i) => {
+    return <Designcontent key={i} data={Designtype} />;
   });
   return (
     <React.Fragment>
@@ -37,7 +41,9 @@ export const CommitDesignsystem = () => {
   );
 };
 
-const Commitcontent = ({ data }) => {
+export default CommitDesignsystem;
+
+const Designcontent = ({ data }) => {
   const [openSeemore, setOpenSeemore] = useState(false);
   const [Addcommitopen, setAddcommitOpen] = useState(false);
   console.log("data", data);
@@ -52,6 +58,18 @@ const Commitcontent = ({ data }) => {
 
       {!openSeemore && (
         <>
+          <div className="logs_button">
+            <div onClick={() => setAddcommitOpen(true)}>
+              <Button variant="secondary" size="medium">
+                Raise a meeting
+              </Button>
+            </div>
+            <div onClick={() => setAddcommitOpen(true)}>
+              <Button variant="secondary" size="medium">
+                Extend request
+              </Button>
+            </div>
+          </div>
           <div className="arrows">
             <button onClick={() => setOpenSeemore(true)}>
               {data.More}
@@ -60,8 +78,12 @@ const Commitcontent = ({ data }) => {
           </div>
         </>
       )}
-      {openSeemore && <Seemore Designtype={data} setSeemore={setOpenSeemore} />}
-      {/* <CommitPopup trigger={Addcommitopen} setTrigger={setAddcommitOpen} /> */}
+      {openSeemore && (
+        <Commitseemore Designtype={data} setSeemore={setOpenSeemore} />
+      )}
+      {Addcommitopen && (
+        <LayoutModal onClose={() => setAddcommitOpen(false)}>hiii</LayoutModal>
+      )}
     </div>
   );
 };

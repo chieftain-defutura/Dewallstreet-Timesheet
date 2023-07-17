@@ -8,6 +8,9 @@
   padding: 2rem;
   border-radius: 10px;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .layout_modal_main {
