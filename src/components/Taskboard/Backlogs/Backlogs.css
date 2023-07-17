@@ -22,7 +22,7 @@
   flex-direction: column;
   padding: 16px 24px;
   gap: 24px;
-  /* width: 45%; */
+  width: 45%;
 }
 .task_title {
   display: flex;
@@ -41,7 +41,7 @@
   justify-content: center;
   align-items: center;
   /* border-bottom: 1px solid var(--canvas, #fff); */
-  background: #141414;
+  /* background: red; */
 }
 .backlog_link > a {
   color: var(--canvas, #fff);

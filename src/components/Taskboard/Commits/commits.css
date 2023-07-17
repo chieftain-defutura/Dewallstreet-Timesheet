@@ -39,8 +39,8 @@
   padding: 16px 51px;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid var(--canvas, #fff);
-  background: #141414;
+  /* border-bottom: 1px solid var(--canvas, #fff); */
+  /* background: red; */
 }
 .backlog_link > a {
   color: var(--canvas, #fff);

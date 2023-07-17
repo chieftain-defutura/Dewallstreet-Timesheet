@@ -25,6 +25,7 @@ function App() {
         <Route path="/Taskpage/backlog" element={<Backlog />} />
         <Route path="/Taskpage/log" element={<Logboard />} />
         <Route path="/Taskpage/commit" element={<Commitboard />} />
+        <Route path="/Taskpage/audits" element={<Commitboard />} />
       </Routes>
     </>
   );
