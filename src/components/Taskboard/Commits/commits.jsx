@@ -1,49 +1,29 @@
+/** @format */
+
 import React, { useState } from "react";
 import "./commits.css";
 import { Commitlist } from "./commit";
 import { Link } from "react-router-dom";
 import Seemore from "../../see more/seemore";
 import downarrow from "../../../assets/icons/chevron-down.svg";
+import TaskHeader from "../Taskheader";
 import Button from "../../Button";
 import Commitseemore from "../../Commitseemore/commitseemore";
 import LayoutModal from "../../Modal/Modal";
-
-const CommitDesignsystem = () => {
-  const RenderCommitdesign = Commitlist.map((Designtype, i) => {
-    return <Designcontent key={i} data={Designtype} />;
+export const CommitDesignsystem = () => {
+  const RenderCommitdesign = Commitlist.map((CommitDesigntype, i) => {
+    return <Commitcontent key={i} data={CommitDesigntype} />;
   });
   return (
     <React.Fragment>
-      <div className="logs_main">
-        <div className="design_links">
-          <Link to="/Taskpage/log">
-            <div className="log_link">
-              <a>Logs(2)</a>
-            </div>
-          </Link>
-          <Link to="/Taskpage/commit">
-            <div className="commit_link">
-              <a>Commits(2)</a>
-            </div>
-          </Link>
-          <div className="audits_link">
-            <a>Audits(2)</a>
-          </div>
-          <Link to="/Taskpage/backlog">
-            <div className="backlog_link">
-              <a>Backlogs(2)</a>
-            </div>
-          </Link>
-        </div>
-        <div>{RenderCommitdesign}</div>
-      </div>
+      <TaskHeader Renderdesign={RenderCommitdesign} />
     </React.Fragment>
   );
 };
 
 export default CommitDesignsystem;
 
-const Designcontent = ({ data }) => {
+const Commitcontent = ({ data }) => {
   const [openSeemore, setOpenSeemore] = useState(false);
   const [Addcommitopen, setAddcommitOpen] = useState(false);
   console.log("data", data);
@@ -82,7 +62,7 @@ const Designcontent = ({ data }) => {
         <Commitseemore Designtype={data} setSeemore={setOpenSeemore} />
       )}
       {Addcommitopen && (
-        <LayoutModal onClose={() => setAddcommitOpen(false)}>hiii</LayoutModal>
+        <LayoutModal onClose={() => setAddcommitOpen(false)}>hii</LayoutModal>
       )}
     </div>
   );
