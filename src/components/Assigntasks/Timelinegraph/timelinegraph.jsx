@@ -75,10 +75,10 @@ const Timelinegraph = () => {
                 >
                   Months
                 </div>
-                <div
+                {/* <div
                   className="horizontal_line"
                   style={{ border: "1px solid white" }}
-                ></div>
+                ></div> */}
               </>
             ) : (
               <>
@@ -88,10 +88,10 @@ const Timelinegraph = () => {
                 >
                   Months
                 </div>
-                <div
+                {/* <div
                   className="horizontal_line"
                   style={{ border: "1px solid grey" }}
-                ></div>
+                ></div> */}
               </>
             )}
           </div>
@@ -105,10 +105,10 @@ const Timelinegraph = () => {
                 >
                   Year
                 </div>
-                <div
+                {/* <div
                   className="horizontal_line"
                   style={{ border: "1px solid white" }}
-                ></div>
+                ></div> */}
               </>
             ) : (
               <>
@@ -119,10 +119,10 @@ const Timelinegraph = () => {
                 >
                   Year
                 </div>
-                <div
+                {/* <div
                   className="horizontal_line"
                   style={{ border: "1px solid grey" }}
-                ></div>
+                ></div> */}
               </>
             )}
           </div>
