@@ -1,6 +1,7 @@
 /** @format */
 
 import React, { useState } from "react";
+import "./questionnaire.css";
 import Button from "../../../../Button";
 import plus from "../../../../../assets/icons/plus.svg";
 import seemorelist from "../../../../../assets/icons/chevron-up.svg";
@@ -20,35 +21,42 @@ export default QuestionContent;
 
 const QuestionSection = ({ data }) => {
   const [openSeemore, setOpenSeemore] = useState(false);
+
   return (
-    <div>
-      <div className="question_button">
-        <Button variant="secondary" size="medium" image={plus}>
-          Add questionnaire
-        </Button>
-      </div>
-      <div className="questionnaire_one_all">
-        <div className="questionnaire_one">
-          <h4>{data.title}</h4>
-          <div className="wait_button">
-            <Button variant="secondary" size="small">
-              Waiting for answer
-            </Button>
+    <div className="question_overall">
+      <div className="question_one">
+        <div className="question_button">
+          <Button variant="secondary" size="medium" image={plus}>
+            Add questionnaire
+          </Button>
+        </div>
+        <div className="questionnaire_one_all">
+          <div className="questionnaire_one">
+            <h4>{data.title}</h4>
+            <div className="wait_button">
+              <Button variant="secondary" size="small">
+                Waiting for answer
+              </Button>
+            </div>
+          </div>
+          <div className="ask_date">
+            <h4>ASKED DATE</h4>
+            <h4 id="date">08 June, 2023.</h4>
+          </div>
+          <div
+            className="negotiate_seemore"
+            onClick={() => setOpenSeemore(true)}
+          >
+            <h4>See more</h4>
+            <img src={seedownlist} alt="icon" />
           </div>
         </div>
-        <div className="ask_date">
-          <h4>ASKED DATE</h4>
-          <h4 id="date">08 June, 2023.</h4>
-        </div>
-        <div className="negotiate_seemore" onClick={() => setOpenSeemore(true)}>
-          <h4>See more</h4>
-          <img src={seemorelist} alt="icon" />
-        </div>
       </div>
+
       {openSeemore && (
         <div className="questionnaire_two_all">
           <div className="questionnaire_two_head">
-            <h4>Questionnaire 2</h4>
+            <h4>{data.title}</h4>
             <Button variant="secondary" size="small">
               Answered
             </Button>
@@ -93,7 +101,7 @@ const QuestionSection = ({ data }) => {
             onClick={() => setOpenSeemore(false)}
           >
             <h4>See less</h4>
-            <img src={seedownlist} alt="icon" />
+            <img src={seemorelist} alt="icon" />
           </div>
         </div>
       )}
