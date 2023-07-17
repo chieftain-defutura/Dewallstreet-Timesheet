@@ -218,3 +218,8 @@
   font-weight: 600;
   line-height: normal;
 }
+.commit_button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

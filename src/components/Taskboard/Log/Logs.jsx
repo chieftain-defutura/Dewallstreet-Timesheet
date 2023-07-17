@@ -98,8 +98,8 @@ const DesignContent = ({ data, setNegotiateOpen }) => {
         </>
       )}
       {Seemore && <Seeless Designtype={data} setSeemore={setSeemore} />}
-      {Addcommitopen && (
-        <LayoutModal>
+      {Addcommitopen && !Toastopen && (
+        <LayoutModal onClose={() => setAddcommitOpen(false)}>
           <div className="commit_main">
             <div className="commit_header">
               <h5>Commit.</h5>

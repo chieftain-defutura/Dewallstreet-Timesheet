@@ -22,7 +22,6 @@
   flex-direction: column;
   padding: 16px 24px;
   gap: 24px;
-  width: 45%;
 }
 .task_title {
   display: flex;
@@ -36,7 +35,7 @@
 }
 .backlog_link {
   display: flex;
-  height: 48px;
+  /* height: 48px; */
   padding: 16px 51px;
   justify-content: center;
   align-items: center;
