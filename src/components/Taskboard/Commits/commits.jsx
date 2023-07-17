@@ -6,6 +6,7 @@ import { Commitlist } from "./commit";
 import { Link } from "react-router-dom";
 import Seemore from "../../see more/seemore";
 import downarrow from "../../../assets/icons/chevron-down.svg";
+import cancel from "../../../assets/icons/cancel.svg";
 import TaskHeader from "../Taskheader";
 import Button from "../../Button";
 import Commitseemore from "../../Commitseemore/commitseemore";
@@ -62,7 +63,30 @@ const Commitcontent = ({ data }) => {
         <Commitseemore Designtype={data} setSeemore={setOpenSeemore} />
       )}
       {Addcommitopen && (
-        <LayoutModal onClose={() => setAddcommitOpen(false)}>hii</LayoutModal>
+        <LayoutModal onClose={() => setAddcommitOpen(false)}>
+          <div className="Raise_meeting">
+            <div className="raisemeeting_header">
+              <h5>Raise a meeting</h5>
+              <button onClick={() => setAddcommitOpen(false)} id="close_button">
+                <img src={cancel} alt="cancel" />
+              </button>
+            </div>
+            <div className="meeting_emptyline"></div>
+            <div className="request_box">
+              <div className="agenda">
+                <p>AGENDA</p>
+              </div>
+              <div className="enter_request">
+                <p>Enter agenda</p>
+              </div>
+            </div>
+            <div className="request_button">
+              <Button size="large" variant="secondary">
+                Send request
+              </Button>
+            </div>
+          </div>
+        </LayoutModal>
       )}
     </div>
   );

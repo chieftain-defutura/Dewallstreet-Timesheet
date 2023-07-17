@@ -22,6 +22,7 @@
   flex-direction: column;
   padding: 16px 24px;
   gap: 24px;
+  width: 45%;
 }
 .task_title {
   display: flex;
@@ -84,4 +85,71 @@
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--line, #1e1e1e);
+}
+.Raise_meeting {
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background: #141414;
+  left: 480px;
+  top: 150px;
+  z-index: 1;
+}
+.raisemeeting_header {
+  display: flex;
+  align-items: flex-start;
+  gap: 150px;
+}
+.raisemeeting_header > h5 {
+  color: var(--canvas, #fff);
+  font-family: Gilroy-bold;
+  font-size: 20px;
+  font-style: normal;
+}
+.meeting_emptyline {
+  width: 340px;
+  height: 1px;
+  background: #1e1e1e;
+}
+.agenda > p {
+  color: var(--outlier, #ececec);
+  font-family: Gilroy-medium;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.request_box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.enter_request {
+  display: flex;
+  width: 340px;
+  height: 128px;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 8px;
+  border: 1px solid var(--line, #1e1e1e);
+}
+.request_button > Button {
+  display: flex;
+  padding: 12px 104px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background: #252525;
+}
+.enter_request > p {
+  color: var(--labler-tight, #575757);
+  font-family: Gilroy-medium;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
 }
