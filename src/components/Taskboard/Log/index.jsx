@@ -8,10 +8,12 @@ import Negotiate from "../../Assigntasks/Negotiate";
 const Logboard = () => {
   const [negotiateopen, setNegotiateOpen] = useState(false);
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
-      <Designpage setNegotiateOpen={setNegotiateOpen} />
-      {negotiateopen && <Negotiate />}
-    </div>
+    <Layout>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+        <Designpage setNegotiateOpen={setNegotiateOpen} />
+        {negotiateopen && <Negotiate />}
+      </div>
+    </Layout>
   );
 };
 
