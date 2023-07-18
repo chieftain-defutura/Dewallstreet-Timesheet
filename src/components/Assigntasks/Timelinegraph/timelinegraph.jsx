@@ -42,14 +42,16 @@ const Timelinegraph = () => {
               <>
                 <div
                   onClick={() => setToggle("week")}
-                  style={{ color: "white" }}
+                  style={
+                    ({ color: "white" }, { borderBottom: "1px solid #fff" })
+                  }
                 >
                   Week
                 </div>
-                <div
+                {/* <div
                   className="horizontal_line"
                   style={{ border: "1px solid white" }}
-                ></div>
+                ></div> */}
               </>
             ) : (
               <>
@@ -59,10 +61,10 @@ const Timelinegraph = () => {
                 >
                   Week
                 </div>
-                <div
+                {/* <div
                   className="horizontal_line"
                   style={{ border: "1px solid grey" }}
-                ></div>
+                ></div> */}
               </>
             )}
           </div>
@@ -71,7 +73,9 @@ const Timelinegraph = () => {
               <>
                 <div
                   onClick={() => setToggle("month")}
-                  style={{ color: "white" }}
+                  style={
+                    ({ color: "white" }, { borderBottom: "1px solid #fff" })
+                  }
                 >
                   Months
                 </div>
@@ -101,7 +105,9 @@ const Timelinegraph = () => {
                 <div
                   className="year"
                   onClick={() => setToggle("year")}
-                  style={{ color: "white" }}
+                  style={
+                    ({ color: "white" }, { borderBottom: "1px solid #fff" })
+                  }
                 >
                   Year
                 </div>

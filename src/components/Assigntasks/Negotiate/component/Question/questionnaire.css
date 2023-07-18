@@ -1,6 +1,11 @@
 .questionnaire_main h3 {
   font-family: Gilroy-Bold;
 }
+.questionnaire_main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .question a {
   color: white;
   font-family: Gilroy-Light;

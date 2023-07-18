@@ -21,3 +21,18 @@
   border-bottom: 0.1px solid #575757;
   padding-bottom: 20px;
 }
+.reject_button > Button {
+  color: rgb(239, 63, 63);
+  border: 1px solid rgb(239, 63, 63);
+  font-size: 13px;
+  font-family: var(--font-Light);
+}
+.logs_button > Button {
+  font-family: var(--font-medium);
+  font-size: 14px;
+  background-color: #2e2c2c;
+}
+.arrows {
+  display: flex;
+  justify-content: center;
+}

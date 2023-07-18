@@ -10,7 +10,27 @@ import { QuestionnaireDetails } from "./Question";
 
 const QuestionContent = () => {
   return (
-    <div>
+    <div className="questionnaire_main">
+      <h3>Negotiate.</h3>
+      <div className="questionnaire_head">
+        <div
+          className="question"
+          onClick={() => setQuestionHeading("question")}
+        >
+          <a href="#">Questionnaire</a>
+          <div className="horizontal_line_questionnaire"></div>
+        </div>
+
+        <div className="meet" onClick={() => setQuestionHeading("meeting")}>
+          <a href="#">Meeting</a>
+          <div className="horizontal_line_meeting"></div>
+        </div>
+      </div>
+      <div className="question_button">
+        <Button variant="secondary" size="medium" image={plus}>
+          Add questionnaire
+        </Button>
+      </div>
       {QuestionnaireDetails.map((f, i) => (
         <QuestionSection key={i} data={f} />
       ))}
@@ -25,8 +45,8 @@ const QuestionSection = ({ data }) => {
   return (
     <div className="question_overall">
       <div className="question_one">
-        <h3>Negotiate.</h3>
-        <div className="questionnaire_head">
+        {/* <h3>Negotiate.</h3> */}
+        {/* <div className="questionnaire_head">
           <div
             className="question"
             onClick={() => setQuestionHeading("question")}
@@ -39,13 +59,13 @@ const QuestionSection = ({ data }) => {
             <a href="#">Meeting</a>
             <div className="horizontal_line_meeting"></div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="question_button">
+        {/* <div className="question_button">
           <Button variant="secondary" size="medium" image={plus}>
             Add questionnaire
           </Button>
-        </div>
+        </div> */}
         {!openSeemore && (
           <>
             <div className="questionnaire_one_all">

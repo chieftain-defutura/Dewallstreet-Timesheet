@@ -5,7 +5,10 @@ import documentimage from "../../assets/icons/document.svg";
 import clockimage from "../../assets/icons/timer.svg";
 import uparrow from "../../assets/icons/chevron-up.svg";
 import Button from "../Button";
-const Auditseemore = () => {
+import { useParams } from "react-router-dom";
+const Auditseemore = ({ Designtype, setSeemore }) => {
+  const { audits } = useParams();
+
   return (
     <div className="see_more">
       <div className="correction">
@@ -65,6 +68,12 @@ const Auditseemore = () => {
             </div>
           )}
         </div>
+      </div>
+      <div className="down_arrow">
+        <button onClick={() => setSeemore(false)}>
+          {Designtype.Less}
+          <img src={uparrow} alt="" />
+        </button>
       </div>
       {/* <div className="reject_revisiondetails">
         <Button variant="secondary" size="small">
