@@ -62,7 +62,6 @@
   flex-direction: column;
   padding: 16px 24px;
   gap: 24px;
-  width: 50%;
 }
 
 .task_title > h1 {
@@ -254,6 +253,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 0 20px;
+}
+.logs_render {
+  padding: 0 10px;
 }
 /* >>>>>>> 107d607dab7597ef0d9743fe5811ccdedc2116f6 */

@@ -2,17 +2,14 @@
 
 import React, { useState } from "react";
 import "./taskboard.css";
-
+import Layout from "../../components/Layout";
 import Logboard from "./Log";
-import Designpage from "./Log/Logs";
+import Homepage from "../../pages/Home";
 
 const Taskboard = () => {
   return (
-    <div>
-      <div className="design_questionnaire">
-        <Logboard />
-        <Designpage />
-      </div>
+    <div className="design_questionnaire">
+      <Logboard />
     </div>
   );
 };
