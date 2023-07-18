@@ -24,6 +24,7 @@
   padding: 16px 24px;
   gap: 24px;
   background: #1a1a1a;
+  width: 50%;
 }
 .task_title {
   display: flex;
@@ -230,5 +231,5 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 0 20px;
+  padding: 0 10px;
 }
