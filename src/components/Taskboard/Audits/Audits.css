@@ -22,9 +22,9 @@
   padding-bottom: 20px;
 }
 .reject_button > Button {
-  color: red;
-  border: 1px solid red;
-  font-size: 12px;
+  color: rgb(239, 63, 63);
+  border: 1px solid rgb(239, 63, 63);
+  font-size: 13px;
   font-family: var(--font-Light);
 }
 .logs_button > Button {

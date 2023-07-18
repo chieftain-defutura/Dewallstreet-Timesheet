@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./audits.css";
-import downarrow from "../../../assets/icons/chevron-down.svg";
+import downarrow from "../../../assets/icons/seemorebutton.svg";
 import uparrow from "../../../assets/icons/chevron-up.svg";
 import TaskHeader from "../Taskheader";
 import { Auditlist } from "./Audit.JS";
