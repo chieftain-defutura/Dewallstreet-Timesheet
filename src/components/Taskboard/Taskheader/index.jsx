@@ -4,7 +4,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
-const TaskHeader = ({ Renderdesign }) => {
+const TaskHeader = () => {
   const location = window.location.pathname.split("/");
   console.log(location[2]);
   return (
@@ -61,7 +61,6 @@ const TaskHeader = ({ Renderdesign }) => {
           </Link>
         )}
       </div>
-      <div>{Renderdesign}</div>
     </div>
   );
 };

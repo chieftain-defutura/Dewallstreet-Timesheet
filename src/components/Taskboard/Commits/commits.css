@@ -10,7 +10,7 @@
   line-height: normal;
   gap: 8px;
   border: none;
-  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0); */
 }
 .arrows {
   display: flex;
@@ -22,6 +22,7 @@
   flex-direction: column;
   padding: 16px 24px;
   gap: 24px;
+  background: #1a1a1a;
 }
 .task_title {
   display: flex;
@@ -53,7 +54,7 @@
 .commit_link {
   display: flex;
   height: 48px;
-  padding: 16px 37px 16px 38px;
+  /* padding: 16px 37px 16px 38px; */
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--line, #1e1e1e);
@@ -85,7 +86,8 @@
   align-items: center;
   border-bottom: 1px solid var(--line, #1e1e1e);
 }
-.Raise_meeting {
+.Raise_meeting,
+.extend_request {
   display: inline-flex;
   padding: 24px;
   flex-direction: column;
@@ -97,18 +99,22 @@
   top: 150px;
   z-index: 1;
 }
-.raisemeeting_header {
+.raisemeeting_header,
+.extend_heading {
   display: flex;
   align-items: flex-start;
-  gap: 150px;
+  justify-content: center;
+  gap: 167px;
 }
-.raisemeeting_header > h5 {
+.raisemeeting_header > h5,
+.extend_heading > h5 {
   color: var(--canvas, #fff);
   font-family: Gilroy-bold;
-  font-size: 20px;
+  font-size: 19px;
   font-style: normal;
 }
-.meeting_emptyline {
+.meeting_emptyline,
+.extend_emptyline {
   width: 340px;
   height: 1px;
   background: #1e1e1e;
@@ -122,12 +128,23 @@
   line-height: normal;
   text-transform: uppercase;
 }
-.request_box {
+.reason > p {
+  color: var(--labler-tight, #575757);
+  font-family: Gilroy-medium;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.request_box,
+.reason_box {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.enter_request {
+.enter_request,
+.enter_reason {
   display: flex;
   width: 340px;
   height: 128px;
@@ -136,6 +153,7 @@
   gap: 8px;
   border: 1px solid var(--line, #1e1e1e);
 }
+
 .request_button > Button {
   display: flex;
   padding: 12px 104px;
@@ -143,12 +161,73 @@
   align-items: center;
   gap: 4px;
   background: #252525;
+  width: 350px;
 }
 .enter_request > p {
   color: var(--labler-tight, #575757);
-  font-family: Gilroy-medium;
+  font-family: Gilroy-regular;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
+}
+.enter_reason > p {
+  color: var(--canvas, #fff);
+  font-family: Gilroy-regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+.extend_button > Button {
+  background: #252525;
+}
+.logs_button p {
+  font-size: 14px;
+}
+
+.extenddate_text,
+.extendtime_text {
+  display: flex;
+  width: 166px;
+  padding: 12px;
+  gap: 4px;
+  border: 1px solid var(--line, #1e1e1e);
+}
+.extend_date > p,
+.extend_time > p {
+  color: var(--labler-tight, #575757);
+  font-family: Gilroy-medium;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.extend_date,
+.extend_time {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.extend_section {
+  display: flex;
+  gap: 8px;
+}
+.extenddate_text > p,
+.extendtime_text > p {
+  color: var(--canvas, #fff);
+  text-align: center;
+  font-family: Gilroy-medium;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.commits_mapping,
+.commit_render {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 20px;
 }

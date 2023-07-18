@@ -10,7 +10,7 @@ const Logboard = () => {
   return (
     <Layout>
       <Designpage />
-      {/* <QuestionContent /> */}
+
       <Questionnaire />
     </Layout>
   );

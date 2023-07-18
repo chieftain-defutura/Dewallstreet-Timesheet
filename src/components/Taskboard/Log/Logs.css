@@ -248,5 +248,9 @@
 .confirm_button {
   width: 100%;
 }
+.success_alert > image {
+  display: flex;
+  align-items: center;
+}
 
 /* >>>>>>> 107d607dab7597ef0d9743fe5811ccdedc2116f6 */

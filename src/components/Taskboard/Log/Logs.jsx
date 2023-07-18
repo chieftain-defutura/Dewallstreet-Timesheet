@@ -6,6 +6,7 @@ import cancel from "../../../assets/icons/cancel.svg";
 import commitimage from "../../../assets/icons/commitimage.svg";
 import commit_timer from "../../../assets/icons/commit_timer.svg";
 import toastcancel from "../../../assets/icons/toastcancel.svg";
+import successtick from "../../../assets/icons/successtick.svg";
 import { Designlist } from "./Logos";
 import "./Logs.css";
 import Seeless from "../../see more/seemore";
@@ -145,8 +146,9 @@ const DesignContent = ({ data, setNegotiateOpen }) => {
       )}
       {Toastopen && (
         <LayoutModal onClose={() => setAddcommitOpen(false)}>
-          <div onClick={() => setToastopen(false)}>
+          <div onClick={() => setToastopen(false)} className="success_alert">
             <Toasts
+              image={successtick}
               props="You are committed for this task"
               icons={toastcancel}
             />
