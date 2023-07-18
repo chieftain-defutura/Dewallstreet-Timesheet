@@ -25,12 +25,53 @@ const QuestionSection = ({ data }) => {
   return (
     <div className="question_overall">
       <div className="question_one">
+        <h3>Negotiate.</h3>
+        <div className="questionnaire_head">
+          <div
+            className="question"
+            onClick={() => setQuestionHeading("question")}
+          >
+            <a href="#">Questionnaire</a>
+            <div className="horizontal_line_questionnaire"></div>
+          </div>
+
+          <div className="meet" onClick={() => setQuestionHeading("meeting")}>
+            <a href="#">Meeting</a>
+            <div className="horizontal_line_meeting"></div>
+          </div>
+        </div>
+
         <div className="question_button">
           <Button variant="secondary" size="medium" image={plus}>
             Add questionnaire
           </Button>
         </div>
-        <div className="questionnaire_one_all">
+        {!openSeemore && (
+          <>
+            <div className="questionnaire_one_all">
+              <div className="questionnaire_one">
+                <h4>{data.title}</h4>
+                <div className="wait_button">
+                  <Button variant="secondary" size="small">
+                    Waiting for answer
+                  </Button>
+                </div>
+              </div>
+              <div className="ask_date">
+                <h4>ASKED DATE</h4>
+                <h4 id="date">08 June, 2023.</h4>
+              </div>
+              <div
+                className="negotiate_seemore"
+                onClick={() => setOpenSeemore(true)}
+              >
+                <h4>See more</h4>
+                <img src={seedownlist} alt="icon" />
+              </div>
+            </div>
+          </>
+        )}
+        {/* <div className="questionnaire_one_all">
           <div className="questionnaire_one">
             <h4>{data.title}</h4>
             <div className="wait_button">
@@ -50,7 +91,7 @@ const QuestionSection = ({ data }) => {
             <h4>See more</h4>
             <img src={seedownlist} alt="icon" />
           </div>
-        </div>
+        </div> */}
       </div>
 
       {openSeemore && (

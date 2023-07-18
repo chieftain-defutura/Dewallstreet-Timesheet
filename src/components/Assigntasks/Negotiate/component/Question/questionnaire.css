@@ -126,7 +126,7 @@
 .question_one {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 .question_overall {
   padding-bottom: 20px;

@@ -14,6 +14,7 @@ import Backlog from "./components/Taskboard/Backlogs";
 import Designpage from "./components/Taskboard/Log/Logs";
 import Logboard from "./components/Taskboard/Log";
 import Commitboard from "./components/Taskboard/Commits";
+import Auditboard from "./components/Taskboard/Audits";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
         <Route path="/Taskpage/backlog" element={<Backlog />} />
         <Route path="/Taskpage/log" element={<Logboard />} />
         <Route path="/Taskpage/commit" element={<Commitboard />} />
-        <Route path="/Taskpage/audits" element={<Commitboard />} />
+        <Route path="/Taskpage/audit" element={<Auditboard />} />
       </Routes>
     </>
   );

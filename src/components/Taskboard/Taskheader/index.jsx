@@ -38,13 +38,17 @@ const TaskHeader = ({ Renderdesign }) => {
         )}
 
         {location[2] === "audits" ? (
-          <div className="audits_link" style={{ background: "red" }}>
-            <a>Audits(2)</a>
-          </div>
+          <Link to="/Taskpage/audit">
+            <div className="audits_link" style={{ background: "#141414" }}>
+              <a>Audits(2)</a>
+            </div>
+          </Link>
         ) : (
-          <div className="audits_link">
-            <a>Audits(2)</a>
-          </div>
+          <Link to="/Taskpage/audit">
+            <div className="audits_link">
+              <a>Audits(2)</a>
+            </div>
+          </Link>
         )}
 
         {location[2] === "backlog" ? (

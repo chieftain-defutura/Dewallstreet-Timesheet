@@ -42,7 +42,7 @@ const Commitcontent = ({ data }) => {
           <div className="logs_button">
             <div onClick={() => setAddcommitOpen(true)}>
               <Button variant="secondary" size="medium">
-                Raise a meeting
+                Raise meeting
               </Button>
             </div>
             <div onClick={() => setAddcommitOpen(true)}>

@@ -72,23 +72,23 @@ button {
   transition: border-color 0.25s;
   transition: 0.5 ease-in-out;
 }
-button:hover {
-  /* border-color: #646cff; */
+/* button:hover {
+   border-color: #646cff; 
 }
 button:focus,
 button:focus-visible {
-  /* outline: 4px auto -webkit-focus-ring-color; */
+  outline: 4px auto -webkit-focus-ring-color; 
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    /* color: #213547; */
-    /* background-color: #ffffff;  */
+    color: #213547; 
+    background-color: #ffffff ;
   }
-  /* a:hover {
+  a:hover {
     color: #747bff;
-  } */
+  }
   button {
     background-color: #f9f9f9;
   }
-}
+} */

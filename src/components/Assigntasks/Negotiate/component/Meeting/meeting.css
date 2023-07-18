@@ -1,0 +1,24 @@
+.raisemeet_button > Button {
+  background-color: rgb(39, 38, 38);
+  width: 100%;
+}
+.meeting_main > h5,
+.raisemeet_button > Button {
+  font-size: 12px;
+}
+.meeting_main > .agendameet_button > .agenda {
+  color: rgb(115, 105, 105);
+  border: 0.1px solid #282828;
+  width: 100%;
+  height: 120px;
+}
+.meeting_main {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.meeting_main > .agendameet_button {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -1,0 +1,23 @@
+.header_archive {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Gilroy-Light;
+}
+.audit_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  /* background-color: #575757; */
+}
+.archive_task > button {
+  display: flex;
+  gap: 420px;
+  color: white;
+  font-family: Gilroy-Light;
+  font-size: 14px;
+  background-color: none;
+  border-bottom: 0.1px solid #575757;
+  padding-bottom: 20px;
+}
