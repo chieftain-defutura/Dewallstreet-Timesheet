@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useState } from "react";
-import downarrow from "../../../assets/icons/chevron-down.svg";
+import downarrow from "../../../assets/icons/seemorebutton.svg";
 import "./backlogs.css";
 import { Backloglist } from "./Backlog";
 import { Link } from "react-router-dom";

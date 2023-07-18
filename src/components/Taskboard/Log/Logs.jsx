@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useState } from "react";
-import downarrow from "../../../assets/icons/chevron-down.svg";
+import downarrow from "../../../assets/icons/seemorebutton.svg";
 import cancel from "../../../assets/icons/cancel.svg";
 import commitimage from "../../../assets/icons/commitimage.svg";
 import commit_timer from "../../../assets/icons/commit_timer.svg";
