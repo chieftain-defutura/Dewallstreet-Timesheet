@@ -32,28 +32,9 @@ const Designpage = ({ setNegotiateOpen }) => {
   });
   return (
     <React.Fragment>
-      <div className="logs_main">
-        <div className="design_links">
-          <Link to="/Taskpage/log">
-            <div className="log_link">
-              <a>Logs(2)</a>
-            </div>
-          </Link>
-          <Link to="/Taskpage/commit">
-            <div className="commit_link">
-              <a>Commits(2)</a>
-            </div>
-          </Link>
-          <div className="audits_link">
-            <a>Audits(2)</a>
-          </div>
-          <Link to="/Taskpage/backlog">
-            <div className="backlog_link">
-              <a>Backlogs(2)</a>
-            </div>
-          </Link>
-        </div>
-        <div>{RenderDesignpage}</div>
+      <div className="logs_mapping">
+        <TaskHeader />
+        <div className="logs_render">{RenderDesignpage}</div>
       </div>
     </React.Fragment>
   );
