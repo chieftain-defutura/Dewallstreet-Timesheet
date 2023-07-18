@@ -3,8 +3,10 @@
   flex-direction: column;
   gap: 20px;
   font-family: Gilroy-Light;
+  padding: 20px;
 }
-.audit_cards {
+.audit_cards,
+.audit_main {
   display: flex;
   flex-direction: column;
   gap: 20px;

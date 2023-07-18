@@ -10,8 +10,7 @@ const Taskboard = () => {
   return (
     <div>
       <div className="design_questionnaire">
-        {/* <Logboard /> */}
-        <Designpage />
+        <Logboard />
       </div>
     </div>
   );
