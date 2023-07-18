@@ -33,7 +33,6 @@
 
 .alert {
   display: flex;
-  align-items: flex-start;
   gap: 8px;
   padding: 10px;
 }

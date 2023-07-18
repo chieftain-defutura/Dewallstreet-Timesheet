@@ -5,8 +5,6 @@ import "./taskboard.css";
 import Designpage from "./Log/Logs";
 import Negotiate from "../Assigntasks/Negotiate";
 
-// import Questionnaire from "../Assigntasks/Negotiate/questionnaire";
-
 const Taskboard = () => {
   const [negotiateopen, setNegotiateOpen] = useState(false);
   return (

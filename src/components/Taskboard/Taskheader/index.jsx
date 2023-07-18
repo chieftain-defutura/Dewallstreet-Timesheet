@@ -3,8 +3,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import "./taskheader.css";
-const TaskHeader = ({ Renderdesign }) => {
+
+const TaskHeader = () => {
   const location = window.location.pathname.split("/");
   console.log(location[2]);
   return (
@@ -22,7 +22,7 @@ const TaskHeader = ({ Renderdesign }) => {
         ) : (
           <Link to="/Taskpage/log">
             <div className="log_link">
-              <p style={{ color: "#575757" }}>Logs(2)</p>
+              <a>Logs(2)</a>
             </div>
           </Link>
         )}
@@ -37,8 +37,8 @@ const TaskHeader = ({ Renderdesign }) => {
           </Link>
         ) : (
           <Link to="/Taskpage/commit">
-            <div>
-              <p>Commits(2)</p>
+            <div className="commit_link">
+              <a>Commits(2)</a>
             </div>
           </Link>
         )}
@@ -68,13 +68,12 @@ const TaskHeader = ({ Renderdesign }) => {
           </Link>
         ) : (
           <Link to="/Taskpage/backlog">
-            <div className="log_link">
-              <p>Backlogs(2)</p>
+            <div className="backlog_link">
+              <a>Backlogs(2)</a>
             </div>
           </Link>
         )}
       </div>
-      <div>{Renderdesign}</div>
     </div>
   );
 };

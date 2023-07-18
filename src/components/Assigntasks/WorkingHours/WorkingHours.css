@@ -4,7 +4,6 @@
   gap: 24px;
   padding: 24px;
   background-color: #141414;
-  width: 100%;
 }
 .check_workinghours > h4 {
   color: var(--canvas, #fff);

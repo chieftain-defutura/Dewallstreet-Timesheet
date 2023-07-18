@@ -3,21 +3,27 @@
 import React, { useState } from "react";
 import "./commits.css";
 import { Commitlist } from "./commit";
-import { Link } from "react-router-dom";
-import Seemore from "../../see more/seemore";
+import calendar from "../../../assets/icons/calendar.svg";
+import clock from "../../../assets/icons/clock.svg";
 import downarrow from "../../../assets/icons/chevron-down.svg";
+import successtick from "../../../assets/icons/successtick.svg";
 import cancel from "../../../assets/icons/cancel.svg";
+import toastcancel from "../../../assets/icons/toastcancel.svg";
 import TaskHeader from "../Taskheader";
 import Button from "../../Button";
 import Commitseemore from "../../Commitseemore/commitseemore";
 import LayoutModal from "../../Modal/Modal";
+import Toasts from "../../Toasts";
 export const CommitDesignsystem = () => {
   const RenderCommitdesign = Commitlist.map((CommitDesigntype, i) => {
     return <Commitcontent key={i} data={CommitDesigntype} />;
   });
   return (
     <React.Fragment>
-      <TaskHeader Renderdesign={RenderCommitdesign} />
+      <div className="commits_mapping">
+        <TaskHeader />
+        <div className="commit_render"> {RenderCommitdesign}</div>
+      </div>
     </React.Fragment>
   );
 };
@@ -27,6 +33,8 @@ export default CommitDesignsystem;
 const Commitcontent = ({ data }) => {
   const [openSeemore, setOpenSeemore] = useState(false);
   const [Addcommitopen, setAddcommitOpen] = useState(false);
+  const [Extendopen, setExtendopen] = useState(false);
+  const [Successopen, setSuccessOpen] = useState(false);
   console.log("data", data);
 
   if (!data) return;
@@ -34,6 +42,7 @@ const Commitcontent = ({ data }) => {
     <div className="task_system">
       <div className="task_title">
         <h1>{data.Title}</h1>
+        <div>Extended</div>
         <p>{data.Para}</p>
       </div>
 
@@ -41,13 +50,13 @@ const Commitcontent = ({ data }) => {
         <>
           <div className="logs_button">
             <div onClick={() => setAddcommitOpen(true)}>
-              <Button variant="secondary" size="medium">
-                Raise meeting
+              <Button variant="negotiate" size="small">
+                <p>Raise a meeting</p>
               </Button>
             </div>
-            <div onClick={() => setAddcommitOpen(true)}>
-              <Button variant="secondary" size="medium">
-                Extend request
+            <div onClick={() => setExtendopen(true)} className="extend_button">
+              <Button variant="secondary" size="small">
+                <p>Extend request</p>
               </Button>
             </div>
           </div>
@@ -82,9 +91,65 @@ const Commitcontent = ({ data }) => {
             </div>
             <div className="request_button">
               <Button size="large" variant="secondary">
-                Send request
+                Sent request
               </Button>
             </div>
+          </div>
+        </LayoutModal>
+      )}
+      {Extendopen && !Successopen && (
+        <LayoutModal onClose={() => setExtendopen(false)}>
+          <div className="extend_request">
+            <div className="extend_heading">
+              <h5>Extend Request</h5>
+              <button onClick={() => setExtendopen(false)} id="close_button">
+                <img src={cancel} alt="cancel" />
+              </button>
+            </div>
+            <div className="extend_emptyline"></div>
+            <div className="reason_box">
+              <div className="reason">
+                <p>AGENDA</p>
+              </div>
+              <div className="enter_reason">
+                <p>Enter agenda</p>
+              </div>
+            </div>
+            <div className="extend_section">
+              <div className="extend_date">
+                <p>EXTEND DATE</p>
+                <div className="extenddate_text">
+                  <img src={calendar} alt="calendar" />
+                  <p>Select date</p>
+                </div>
+              </div>
+              <div className="extend_time">
+                <p>EXTEND TIME</p>
+                <div className="extendtime_text">
+                  <img src={clock} alt="clock" />
+                  <p>Select time</p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="request_button"
+              onClick={() => setSuccessOpen(true)}
+            >
+              <Button size="large" variant="secondary">
+                Sent request
+              </Button>
+            </div>
+          </div>
+        </LayoutModal>
+      )}
+      {Successopen && (
+        <LayoutModal onClose={() => setAddcommitOpen(false)}>
+          <div onClick={() => setSuccessOpen(false)}>
+            <Toasts
+              image={successtick}
+              props="Your extended request sent."
+              icons={toastcancel}
+            />
           </div>
         </LayoutModal>
       )}

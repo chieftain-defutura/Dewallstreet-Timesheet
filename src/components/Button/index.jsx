@@ -21,6 +21,7 @@ const Button = ({ variant, size, children, handleClick, image }) => {
   } else if (size === "medium") {
     className += " button-medium";
   }
+
   return (
     <button className={className} onClick={handleClick}>
       <img src={image} alt="" />

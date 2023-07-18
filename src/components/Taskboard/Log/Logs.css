@@ -62,8 +62,11 @@
   flex-direction: column;
   padding: 16px 24px;
   gap: 24px;
+<<<<<<< HEAD
+=======
   background: #1a1a1a;
   /* width: 552px; */
+>>>>>>> 6bb81a5fb4070f1c4d298b6dfe969f7a144226be
 }
 
 .task_title > h1 {
@@ -250,6 +253,13 @@
 .confirm_button {
   width: 100%;
 }
+<<<<<<< HEAD
+.success_alert > image {
+  display: flex;
+  align-items: center;
+}
+
+=======
 .logs_mapping,
 .logs_render {
   display: flex;
@@ -257,4 +267,5 @@
   gap: 16px;
   padding: 0 20px;
 }
+>>>>>>> 6bb81a5fb4070f1c4d298b6dfe969f7a144226be
 /* >>>>>>> 107d607dab7597ef0d9743fe5811ccdedc2116f6 */

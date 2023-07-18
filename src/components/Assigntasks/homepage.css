@@ -13,14 +13,13 @@
 } */
 .homepage_main {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  gap: 10px;
 }
 .hours_deduction {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 20px;
+  padding: 10px;
   border-right: 1px solid #282828;
 }
 @media (max-width: 1000px) {
