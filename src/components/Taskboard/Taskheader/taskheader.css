@@ -1,0 +1,15 @@
+/** @format */
+
+.design_links {
+  display: flex;
+  font-style: normal;
+}
+
+.log_link {
+  display: flex;
+  height: 48px;
+  padding: 16px 36px 16px 37px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--line, #1e1e1e);
+}

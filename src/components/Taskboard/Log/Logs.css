@@ -1,5 +1,5 @@
 /** @format */
-.design_links {
+/* .design_links {
   display: flex;
   font-style: normal;
 }
@@ -11,14 +11,14 @@
   align-items: center;
   border-bottom: 1px solid var(--canvas, #fff);
   background: #141414;
-}
-.log_link > a {
+} */
+/* .log_link > a {
   color: var(--canvas, #fff);
-  font-family: "Gilroy-medium";
-  font-size: 16px;
+  font-family: Gilroy;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  background-color: #141414;
+  line-height: normal;
 }
 .commit_link {
   display: flex;
@@ -54,7 +54,7 @@
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--line, #1e1e1e);
-}
+} */
 
 .task_system {
   display: flex;
@@ -62,6 +62,11 @@
   flex-direction: column;
   padding: 16px 24px;
   gap: 24px;
+<<<<<<< HEAD
+=======
+  background: #1a1a1a;
+  /* width: 552px; */
+>>>>>>> 6bb81a5fb4070f1c4d298b6dfe969f7a144226be
 }
 
 .task_title > h1 {
@@ -248,9 +253,19 @@
 .confirm_button {
   width: 100%;
 }
+<<<<<<< HEAD
 .success_alert > image {
   display: flex;
   align-items: center;
 }
 
+=======
+.logs_mapping,
+.logs_render {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 20px;
+}
+>>>>>>> 6bb81a5fb4070f1c4d298b6dfe969f7a144226be
 /* >>>>>>> 107d607dab7597ef0d9743fe5811ccdedc2116f6 */
