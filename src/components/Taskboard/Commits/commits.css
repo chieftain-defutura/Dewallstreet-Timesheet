@@ -22,15 +22,16 @@
   flex-direction: column;
   padding: 16px 24px;
   gap: 24px;
-  width: 45%;
+  /* width: 45%; */
 }
 .task_title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  justify-content: center;
 }
-.design_links {
+/* .design_links {
   display: flex;
   font-style: normal;
 }
@@ -40,8 +41,8 @@
   padding: 16px 51px;
   justify-content: center;
   align-items: center;
-  /* border-bottom: 1px solid var(--canvas, #fff); */
-  /* background: red; */
+  border-bottom: 1px solid var(--canvas, #fff);
+  background: red;
 }
 .backlog_link > a {
   color: var(--canvas, #fff);
@@ -85,7 +86,7 @@
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--line, #1e1e1e);
-}
+} */
 .Raise_meeting {
   display: inline-flex;
   padding: 24px;
