@@ -254,6 +254,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.logs_render {
   padding: 0 20px;
 }
-/* >>>>>>> 107d607dab7597ef0d9743fe5811ccdedc2116f6 */
