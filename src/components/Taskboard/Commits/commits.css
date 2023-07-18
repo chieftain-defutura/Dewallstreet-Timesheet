@@ -2,6 +2,7 @@
 
 .arrows > button {
   display: flex;
+  align-items: center;
   color: var(--labler-tight, #575757);
   font-family: " Gilroy-Bold";
   font-size: 12px;
