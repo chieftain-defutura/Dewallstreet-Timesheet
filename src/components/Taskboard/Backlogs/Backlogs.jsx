@@ -13,9 +13,10 @@ export const Backlogdesign = () => {
     return <DesignContent key={i} data={Designtype} />;
   });
   return (
-    <React.Fragment>
-      <TaskHeader Renderdesign={RenderBacklogdesign} />
-    </React.Fragment>
+    <div className="logs_mapping">
+      <TaskHeader />
+      <div className="logs_render">{RenderBacklogdesign}</div>
+    </div>
   );
 };
 

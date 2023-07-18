@@ -19,9 +19,8 @@ import { useLocation } from "react-router-dom";
 import TaskHeader from "../Taskheader";
 import Negotiate from "../../Assigntasks/Negotiate";
 
-// console.log(setNegotiateOpen);
-
 const Designpage = ({ setNegotiateOpen }) => {
+  console.log(setNegotiateOpen);
   const RenderDesignpage = Designlist.map((Designtype, i) => {
     return (
       <DesignContent

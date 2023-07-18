@@ -2,16 +2,14 @@
 
 import React, { useState } from "react";
 import "./taskboard.css";
-import Designpage from "./Log/Logs";
-import Negotiate from "../Assigntasks/Negotiate";
+
+import Logboard from "./Log";
 
 const Taskboard = () => {
-  const [negotiateopen, setNegotiateOpen] = useState(false);
   return (
     <div>
       <div className="design_questionnaire">
-        <Designpage setNegotiateOpen={setNegotiateOpen} />
-        {negotiateopen && <Negotiate />}
+        <Logboard />
       </div>
     </div>
   );
