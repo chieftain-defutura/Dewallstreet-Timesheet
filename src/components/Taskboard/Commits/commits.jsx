@@ -5,7 +5,7 @@ import "./commits.css";
 import { Commitlist } from "./commit";
 import calendar from "../../../assets/icons/calendar.svg";
 import clock from "../../../assets/icons/clock.svg";
-import downarrow from "../../../assets/icons/chevron-down.svg";
+import downarrow from "../../../assets/icons/seemorebutton.svg";
 import successtick from "../../../assets/icons/successtick.svg";
 import cancel from "../../../assets/icons/cancel.svg";
 import toastcancel from "../../../assets/icons/toastcancel.svg";
@@ -50,12 +50,12 @@ const Commitcontent = ({ data }) => {
         <>
           <div className="logs_button">
             <div onClick={() => setAddcommitOpen(true)}>
-              <Button variant="negotiate" size="small">
+              <Button variant="negotiate" size="medium">
                 <p>Raise a meeting</p>
               </Button>
             </div>
             <div onClick={() => setExtendopen(true)} className="extend_button">
-              <Button variant="secondary" size="small">
+              <Button variant="secondary" size="medium">
                 <p>Extend request</p>
               </Button>
             </div>
