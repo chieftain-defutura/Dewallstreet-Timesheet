@@ -38,9 +38,12 @@
   justify-content: center;
 }
 .audit_main {
+  padding: 0 30px;
   border-right: 1px solid #282828;
   height: 230vh;
-  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .reject_revision {
   display: flex;

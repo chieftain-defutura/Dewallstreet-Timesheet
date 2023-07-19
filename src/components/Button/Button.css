@@ -22,9 +22,7 @@
   background: #1e1e1e;
   color: white;
 }
-/* .Toast {
-  background: #1e1e1e;
-} */
+
 .button-negotiate {
   background: #141414;
   border: 2px solid white;
@@ -34,7 +32,7 @@
   padding: 3px 18px;
 }
 .button-medium {
-  padding: 8px 20px;
+  padding: 12px 25px;
 }
 .button-large {
   padding: 10px 70px;

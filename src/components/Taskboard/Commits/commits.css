@@ -220,15 +220,17 @@
   font-weight: 500;
   line-height: normal;
 }
-.commits_mapping,
-.commit_render {
+.commits_mapping {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 25px;
   padding: 20px;
 }
 .commit_render {
-  padding: 0 15px;
+  padding: 0 30px;
   border-right: 1px solid #282828;
   height: 230vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

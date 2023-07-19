@@ -1,7 +1,6 @@
 /** @format */
 import React, { useState } from "react";
 import "./seemore.css";
-import { Designlist } from "../Taskboard/Log/Logos";
 import linkimage from "../../assets/icons/link.svg";
 import documentimage from "../../assets/icons/document.svg";
 import cancel from "../../assets/icons/cancel.svg";
@@ -12,14 +11,12 @@ import Button from "../Button";
 import uparrow from "../../assets/icons/chevron-up.svg";
 import successtick from "../../assets/icons/successtick.svg";
 import toastcancel from "../../assets/icons/toastcancel.svg";
-import Designpage from "../Taskboard/Log/Logs";
 import { useParams } from "react-router-dom";
 import LayoutModal from "../Modal/Modal";
 import Toasts from "../Toasts";
 
 const Seemore = ({ Designtype, setSeemore }) => {
   const { backlog } = useParams();
-
   const [Addcommitopen, setAddcommitOpen] = useState(false);
   const [Toastopen, setToastopen] = useState(false);
 

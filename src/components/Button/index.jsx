@@ -3,8 +3,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Button.css";
-// const Styles = ["primary", "secondary", "Toast"];
-// const Size = ["small", "medium", "large"];
 const Button = ({ variant, size, children, handleClick, image }) => {
   let className = "button";
   if (variant === "primary") {
