@@ -21,7 +21,7 @@
   gap: 30px;
   padding: 20px;
   border-right: 1px solid #282828;
-  height: 100vh;
+  
 }
 @media (max-width: 1000px) {
   .homepage_main {
