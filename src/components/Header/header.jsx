@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState } from "react";
+import React from "react";
 import logo from "../../assets/icons/name.svg";
 import "./header.css";
 

@@ -1,21 +1,10 @@
 import React, { useState } from "react";
 import "./questionnaire.css";
-// import plus from "../../../assets/icons/plus.svg";
-
-// import seemorelist from "../../../assets/icons/chevron-down.svg";
-// import seedownlist from "../../../assets/icons/chevron-up.svg";
-// import Button from "../../Button";
-// import { render } from "react-dom";
-// import { Questionnairetwo } from "./component/Question/Question";
 import QuestionContent from "./component/Question/QuestionContent";
 import Meeting from "./component/Meeting/meeting";
 const Questionnaire = () => {
   const [questionHeading, setQuestionHeading] = useState("Question");
-  // const renderQuestionnairetwo = Questionnairetwo.map((questtwolist) => {
-  //   return (
 
-  //   );
-  // });
   return (
     <React.Fragment>
       <div className="questionnaire_main">

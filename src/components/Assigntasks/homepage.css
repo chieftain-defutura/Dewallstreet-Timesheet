@@ -1,27 +1,27 @@
 /** @format */
 
-/* .homepage_main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 30px;
-  gap: 30px;
-} */
-/* .working_time {
-  display: flex;
-} */
 .homepage_main {
   display: flex;
   gap: 10px;
+}
+.working_grid {
+  padding: 30px;
 }
 .hours_deduction {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 20px;
+  padding: 40px;
   border-right: 1px solid #282828;
-  
+}
+@media (max-width: 1169px) {
+  .homepage_main {
+    flex-direction: column;
+    align-content: center;
+  }
+  .hours_deduction {
+    border-right: none;
+  }
 }
 @media (max-width: 1000px) {
   .homepage_main {
@@ -32,12 +32,7 @@
     border-right: none;
   }
 }
-/* @media (max-width: 1000px) {
-  .homepage_main {
-    flex-wrap: wrap;
-    justify-content: left;
-  }
-} */
+
 @media (max-width: 813px) {
   .homepage_main {
     flex-wrap: wrap;

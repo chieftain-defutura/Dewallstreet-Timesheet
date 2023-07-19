@@ -46,6 +46,7 @@ const Timelinegraph = () => {
                     color: "white",
                     borderBottom: "1px solid #fff",
                     width: "100px",
+                    textalign: "center",
                   }}
                 >
                   Week

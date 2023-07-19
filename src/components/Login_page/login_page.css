@@ -1,7 +1,4 @@
 .Login_page {
-  /* position: absolute;
-  left: 620px;
-  bottom: 100px; */
   color: var(--canvas, #fff);
   font-family: "Gilroy-bold";
   background-color: #141414;
@@ -40,7 +37,6 @@
   padding: 10px;
   outline: none;
   color: var(--labler-tight, #575757);
-  /* background-color: rgb(24, 24, 24); */
   font-size: 15px;
   font-family: "Gilroy-regular";
   border: 1px solid var(--line, #1e1e1e);

@@ -44,7 +44,6 @@ const DesignContent = ({ data }) => {
         </>
       )}
       {openSeemore && <Seemore Designtype={data} setSeemore={setOpenSeemore} />}
-      {/* <CommitPopup trigger={Addcommitopen} setTrigger={setAddcommitOpen} /> */}
     </div>
   );
 };

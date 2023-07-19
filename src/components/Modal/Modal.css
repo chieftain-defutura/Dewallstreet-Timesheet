@@ -12,27 +12,3 @@
   justify-content: center;
   align-items: center;
 }
-
-.layout_modal_main {
-  /* position: absolute;
-  top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* background: rgba(128, 128, 128, 0.75); */
-  /* background: #141414;
-  backdrop-filter: blur(20px);
-  border-radius: 10px; */
-  /* max-width: 480px;
-  width: 100%; */
-  /* text-align: center;
-  display: inline-flex;
-  padding: 24px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px; */
-}
-
-/* @media (max-width: 500px) {
-    max-width: 330px;
-  } */

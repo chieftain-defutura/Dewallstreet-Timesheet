@@ -20,7 +20,7 @@
   gap: 3px;
 }
 .design_link > h4 {
-  color: var(--canvas, green);
+  color: var(--canvas, #fff);
   font-family: " Gilroy-Ligth";
   font-size: 11px;
   font-style: normal;
