@@ -21,9 +21,8 @@ const AuditDesignsystem = () => {
               Archived tasks ( 2 )
               <img src={downarrow} alt="icon" />
             </button>
-            <div className="archivetask_horizontalline"></div>
           </div>
-
+          {/* <div className="archivetask_horizontalline"></div> */}
           <div className="audit_cards">{RenderAuditdesign}</div>
         </div>
       </div>
@@ -69,15 +68,17 @@ const Auditcontent = ({ data }) => {
       )} */}
       {!seemore && (
         <>
-          <div className="reject_button">
-            <Button variant="secondary" size="small">
-              Rejected
-            </Button>
-          </div>
-          <div className="logs_button">
-            <Button variant="secondary" size="medium">
-              Revision details
-            </Button>
+          <div className="reject_revision">
+            <div className="reject_button">
+              <Button variant="secondary" size="small">
+                Rejected
+              </Button>
+            </div>
+            <div className="logs_button">
+              <Button variant="secondary" size="medium">
+                Revision details
+              </Button>
+            </div>
           </div>
           <div className="arrows">
             <button onClick={() => setSeemore(true)}>

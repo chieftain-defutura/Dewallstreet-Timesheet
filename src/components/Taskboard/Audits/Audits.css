@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 20px;
   font-family: Gilroy-Light;
+  padding: 20px;
 }
 .audit_cards,
 .audit_main {
@@ -11,9 +12,8 @@
   gap: 20px;
   /* background-color: #575757; */
 }
+
 .archive_task > button {
-  display: flex;
-  gap: 420px;
   color: white;
   font-family: var(--font-Light);
   font-size: 15px;
@@ -27,6 +27,7 @@
   font-size: 13px;
   font-family: var(--font-Light);
 }
+
 .logs_button > Button {
   font-family: var(--font-medium);
   font-size: 14px;
@@ -40,4 +41,9 @@
   border-right: 1px solid #282828;
   height: 230vh;
   padding: 0 10px;
+}
+.reject_revision {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
