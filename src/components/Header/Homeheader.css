@@ -38,11 +38,9 @@
 }
 @media (max-width: 480px) {
   .home_main {
-    /* flex-wrap: wrap; */
     display: flex;
     flex-direction: column;
     align-content: center;
     height: 150px;
-    /* align-items: center; */
   }
 }

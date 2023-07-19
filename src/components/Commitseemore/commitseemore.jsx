@@ -1,7 +1,6 @@
 /** @format */
 import React, { useState } from "react";
 import "./commitseemore.css";
-import { Designlist } from "../Taskboard/Log/Logos";
 import linkimage from "../../assets/icons/link.svg";
 import documentimage from "../../assets/icons/document.svg";
 import successtick from "../../assets/icons/successtick.svg";
@@ -12,7 +11,6 @@ import calendar from "../../assets/icons/calendar.svg";
 import clock from "../../assets/icons/clock.svg";
 import Button from "../Button";
 import uparrow from "../../assets/icons/chevron-up.svg";
-import Designpage from "../Taskboard/Log/Logs";
 import { useParams } from "react-router-dom";
 import LayoutModal from "../Modal/Modal";
 import Toasts from "../Toasts";

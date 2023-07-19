@@ -11,10 +11,9 @@ import fourthlevel from "../../../assets/icons/fourthlevel.svg";
 import checkin from "../../../assets/icons/checkin.svg";
 import toastcancel from "../../../assets/icons/toastcancel.svg";
 import warning from "../../../assets/icons/warning.svg";
-
 import Button from "../../Button";
 import Toasts from "../../Toasts";
-import { Colors } from "chart.js";
+
 const WorkingHours = () => {
   const [open, setOpen] = useState(false);
   return (

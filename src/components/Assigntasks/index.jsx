@@ -16,8 +16,9 @@ const Task = () => {
           <Timelinegraph />
           <Timer />
         </div>
-        <WorkingHours />
-      
+        <div className="working_grid">
+          <WorkingHours />
+        </div>
       </div>
     </>
   );
