@@ -7,8 +7,7 @@
 }
 .correction > h2 {
   color: var(--canvas, #fff);
-
-  font-family: " Gilroy-Bold";
+  font-family: var(--font-bold);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -20,8 +19,8 @@
   gap: 3px;
 }
 .design_link > h4 {
-  color: var(--canvas, green);
-  font-family: " Gilroy-Ligth";
+  color: var(--canvas, #fff);
+  font-family: var(--font-bold);
   font-size: 11px;
   font-style: normal;
   font-weight: 500;
@@ -43,7 +42,7 @@
 }
 .design_file > h4 {
   color: var(--canvas, #fff);
-  font-family: "Gilroy-Bold";
+  font-family: var(--font-bold);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -51,7 +50,7 @@
 }
 .correction > p {
   color: var(--labler-tight, #575757);
-  font-family: "Gilroy-Bold";
+  font-family: var(--font-bold);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -59,7 +58,7 @@
 }
 .rework > h2 {
   color: var(--canvas, #fff);
-  font-family: "Gilroy-Bold";
+  font-family: var(--font-bold);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -67,7 +66,7 @@
 }
 .rework > p {
   color: var(--labler-tight, #575757);
-  font-family: "Gilroy-Bold";
+  font-family: var(--font-bold);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -75,7 +74,7 @@
 }
 .link_drive > h1 {
   color: var(--canvas, #fff);
-  font-family: "Gilroy-Bold";
+  font-family: var(--font-bold);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -88,7 +87,7 @@
 #time {
   color: var(--labler-tight, #575757);
   text-align: center;
-  font-family: Gilroy;
+  font-family: var(--font-bold);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -97,7 +96,7 @@
 }
 #days {
   color: var(--canvas, #fff);
-  font-family: " Gilroy-Bold";
+  font-family: var(--font-medium);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -130,7 +129,7 @@
 }
 .design_respond > p {
   color: var(--labler-tight, #575757);
-  font-family: Gilroy;
+  font-family: var(--font-bold);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -164,12 +163,12 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end;
-  gap: 8px;
+  gap: 10px;
 }
 .down_arrow > button {
   display: flex;
   color: var(--labler-tight, #575757);
-  font-family: " Gilroy-Bold";
+  font-family: var(--font-bold);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -187,7 +186,7 @@
 .design_hours > p,
 .design_days > p {
   color: var(--canvas, #fff);
-  font-family: Gilroy;
+  font-family: var(--font-bold);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -212,7 +211,7 @@
   text-align: center;
   text-shadow: 10.804594993591309px 10.804594993591309px 324.1378479003906px 0px
     rgba(183, 183, 183, 0.5);
-  font-family: Gilroy;
+  font-family: var(--font-bold);
   font-size: 20px;
   font-style: normal;
   font-weight: 600;

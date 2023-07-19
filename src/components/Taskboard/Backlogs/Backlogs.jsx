@@ -7,6 +7,7 @@ import { Backloglist } from "./Backlog";
 import { Link } from "react-router-dom";
 import Seemore from "../../see more/seemore";
 import TaskHeader from "../Taskheader";
+import Backlogseemore from "../../backlogseemore/backlogseemore";
 
 export const Backlogdesign = () => {
   const RenderBacklogdesign = Backloglist.map((Designtype, i) => {
@@ -43,7 +44,9 @@ const DesignContent = ({ data }) => {
           </div>
         </>
       )}
-      {openSeemore && <Seemore Designtype={data} setSeemore={setOpenSeemore} />}
+      {openSeemore && (
+        <Backlogseemore Designtype={data} setSeemore={setOpenSeemore} />
+      )}
       {/* <CommitPopup trigger={Addcommitopen} setTrigger={setAddcommitOpen} /> */}
     </div>
   );

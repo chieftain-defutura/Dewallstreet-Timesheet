@@ -66,7 +66,7 @@
 
 .task_title > h1 {
   color: var(--canvas, #fff);
-  font-family: "Gilroy-Bold";
+  font-family: var(--font-bold);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -74,8 +74,8 @@
 }
 .task_title > p {
   color: var(--labler-tight, #575757);
-  font-family: "Gilroy-Bold";
-  font-size: 12px;
+  font-family: var(--font-bold);
+  font-size: 13px;
   font-style: normal;
   font-weight: 500;
 
@@ -84,7 +84,7 @@
 
 .correction > h2 {
   color: var(--canvas, #fff);
-  font-family: " Gilroy-Bold";
+  font-family: var(--font-bold);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -103,7 +103,7 @@
 
 .rework > p {
   color: var(--labler-tight, #575757);
-  font-family: "Gilroy-Bold";
+  font-family: var(--font-bold);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -131,7 +131,7 @@
 .arrows > button {
   display: flex;
   color: var(--labler-tight, #575757);
-  font-family: " Gilroy-Bold";
+  font-family: var(--font-bold);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -159,7 +159,7 @@
 
 .commit_header > h5 {
   color: var(--canvas, #fff);
-  font-family: Gilroy-bold;
+  font-family: var(--font-bold);
   font-size: 20px;
   font-style: normal;
 }
@@ -180,7 +180,7 @@
   width: 100%;
   color: #fff;
   text-align: center;
-  font-family: Gilroy-medium;
+  font-family: var(--font-bold);
   font-size: 14px;
   font-style: normal;
 }
@@ -199,7 +199,7 @@
 }
 .commit_deadline > h5 {
   color: var(--labler-tight, #575757);
-  font-family: Gilroy-bold;
+  font-family: var(--font-bold);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -208,7 +208,7 @@
 }
 .commit_deadline > h4 {
   color: var(--canvas, #fff);
-  font-family: Gilroy-bold;
+  font-family: var(--font-bold) d;
   font-size: 16px;
   font-style: normal;
 }
@@ -219,7 +219,7 @@
   text-align: center;
   text-shadow: 10.804594993591309px 10.804594993591309px 324.1378479003906px 0px
     rgba(183, 183, 183, 0.5);
-  font-family: Gilroy-bold;
+  font-family: var(--font-bold);
   font-size: 20px;
   font-style: normal;
 }
@@ -227,14 +227,14 @@
 .commit_days > h5,
 .commit_hours > h5 {
   color: var(--canvas, #fff);
-  font-family: Gilroy-medium;
+  font-family: var(--font-medium);
   font-size: 14px;
   font-style: normal;
 }
 .commit_main > p {
   color: var(--labler-tight, #575757);
   text-align: center;
-  font-family: Gilroy-medium;
+  font-family: var(--font-medium);
   font-size: 12px;
   font-style: normal;
   width: 340px;

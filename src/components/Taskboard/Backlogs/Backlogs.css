@@ -3,7 +3,7 @@
 .arrows > button {
   display: flex;
   color: var(--labler-tight, #575757);
-  font-family: " Gilroy-Bold";
+  font-family: var(--font-bold);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;

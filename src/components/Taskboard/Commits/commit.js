@@ -1,3 +1,5 @@
+/** @format */
+
 export const Commitlist = [
   {
     Title: "Design system",
@@ -11,7 +13,7 @@ export const Commitlist = [
     Linktitle: "Drive link",
     Link: "https://drive.google.com/drive/u/0/folders/1P4q7gb09-L6GgMe5RJlEKDOoGnA66PyH",
     Timing: "DEADLINE",
-    Date: "06 JUNE,3.",
+    Date: "06 JUNE,2023.",
     Respond: "Respond back in",
     Clock: "clockimage",
     Two: "02",
@@ -37,7 +39,7 @@ export const Commitlist = [
     Linktitle: "Drive link",
     Link: "https://drive.google.com/drive/u/0/folders/1P4q7gb09-L6GgMe5RJlEKDOoGnA66PyH",
     Timing: "DEADLINE",
-    Date: "06 JUNE,3.",
+    Date: "06 JUNE,2023.",
     Respond: "Respond back in",
     Clock: "clockimage",
     Two: "02",

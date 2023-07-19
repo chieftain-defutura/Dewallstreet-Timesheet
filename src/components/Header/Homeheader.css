@@ -14,7 +14,7 @@
 }
 .home_main > h2 {
   color: var(--canvas, #fff);
-  font-family: "Gilroy-Bold";
+  font-family: "var(--font-bold)";
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
@@ -22,7 +22,7 @@
 }
 .header_name > h2 {
   color: var(--outlier, #ececec);
-  font-family: "Gilroy-Bold";
+  font-family: "var(--font-bold)";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -30,7 +30,7 @@
 }
 .header_name > p {
   color: var(--labler-tight, #575757);
-  font-family: "Gilroy-Bold";
+  font-family: "var(--font-bold)";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
