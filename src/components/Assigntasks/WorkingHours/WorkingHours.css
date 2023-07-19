@@ -64,7 +64,7 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 /* .checkin > button {

@@ -1,4 +1,4 @@
-/** @format */
+/* * @format
 .correction {
   display: flex;
   flex-direction: column;
@@ -215,7 +215,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-}
+} */
 .commit_button {
   display: flex;
   justify-content: flex-end;

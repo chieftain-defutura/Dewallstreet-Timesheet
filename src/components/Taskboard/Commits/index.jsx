@@ -5,7 +5,9 @@ import CommitDesignsystem from "./commits";
 const Commitboard = () => {
   return (
     <Layout>
-      <CommitDesignsystem />
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+        <CommitDesignsystem />
+      </div>
     </Layout>
   );
 };

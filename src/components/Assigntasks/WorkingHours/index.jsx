@@ -47,7 +47,7 @@ const WorkingHours = () => {
                   <h4>05m 00s</h4>
                 </div>
               </div>
-              <Button variant="primary" size="medium" image={checkin}>
+              <Button variant="primary" size="regular" image={checkin}>
                 Check in
               </Button>
             </div>
@@ -95,7 +95,7 @@ const WorkingHours = () => {
             <div className="toast_warning"></div>
           </div>
         ) : (
-          <div className="toasts_main" onClick={() => setOpen(true)}>
+          <div onClick={() => setOpen(true)}>
             <Button variant="secondary" size="small">
               Toast
             </Button>

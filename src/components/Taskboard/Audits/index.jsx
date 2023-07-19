@@ -5,8 +5,9 @@ import AuditDesignsystem from "./Audits";
 const Auditboard = () => {
   return (
     <Layout>
-      <AuditDesignsystem />
-      {/* <Revisiondetails /> */}
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+        <AuditDesignsystem />
+      </div>
     </Layout>
   );
 };

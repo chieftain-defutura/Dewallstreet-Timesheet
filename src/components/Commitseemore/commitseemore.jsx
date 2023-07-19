@@ -87,11 +87,11 @@ const Commitseemore = ({ Designtype, setSeemore }) => {
       {commits !== "commits" && !openSeemore && (
         <div className="commit_button">
           <div onClick={() => setAddcommitOpen(true)}>
-            <Button variant="secondary" size="medium">
+            <Button variant="negotiate" size="medium">
               Raise a meeting
             </Button>
           </div>
-          <div onClick={() => setExtendopen(true)}>
+          <div onClick={() => setExtendopen(true)} className="extend_button">
             <Button variant="secondary" size="medium">
               Extend request
             </Button>
