@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 20px;
   font-family: Gilroy-Light;
-  padding: 20px;
 }
 .audit_cards,
 .audit_main {
@@ -36,4 +35,9 @@
 .arrows {
   display: flex;
   justify-content: center;
+}
+.audit_main {
+  border-right: 1px solid #282828;
+  height: 230vh;
+  padding: 0 10px;
 }

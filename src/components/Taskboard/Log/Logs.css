@@ -254,6 +254,9 @@
   flex-direction: column;
   gap: 16px;
   padding: 0 10px;
+}
+.logs_render {
+  padding: 0 10px;
   border-right: 1px solid #282828;
   height: 230vh;
 }
