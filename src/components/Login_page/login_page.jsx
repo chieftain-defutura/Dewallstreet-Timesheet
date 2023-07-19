@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 const Login_Page = () => {
   const navigate = useNavigate();
   const Setnavigate = (e) => {
-    navigate("/Home");
+    navigate("/home");
   };
 
   return (

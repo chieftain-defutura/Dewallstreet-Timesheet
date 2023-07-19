@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import "./questionnaire.css";
 import Button from "../../../../Button";
 import plus from "../../../../../assets/icons/plus.svg";
-import seemorelist from "../../../../../assets/icons/chevron-up.svg";
-import seedownlist from "../../../../../assets/icons/chevron-down.svg";
+import seemorelist from "../../../../../assets/icons/seelessbutton.svg";
+import seedownlist from "../../../../../assets/icons/seemorebutton.svg";
 import { QuestionnaireDetails } from "./Question";
 
 const QuestionContent = () => {
