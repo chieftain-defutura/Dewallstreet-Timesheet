@@ -1,10 +1,14 @@
 .header_archive {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   font-family: Gilroy-Light;
   padding: 20px;
 }
+/* .archive_task {
+  display: flex;
+  justify-content: space-between;
+} */
 .audit_cards,
 .audit_main {
   display: flex;
@@ -12,14 +16,21 @@
   gap: 20px;
   /* background-color: #575757; */
 }
-
-.archive_task > button {
+.arch {
+  display: flex;
+  justify-content: space-between;
+}
+/* .audit_main > button {
   color: white;
   font-family: var(--font-Light);
   font-size: 15px;
   background-color: #141414;
-  border-bottom: 1px solid #242424;
   padding: 10px;
+  text-align: left;
+} */
+.archivetask_horizontalline {
+  border: 1px solid gray;
+  width: 100%;
 }
 .reject_button > Button {
   color: rgb(239, 63, 63);
@@ -48,5 +59,10 @@
 .reject_revision {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+.audit_main > button {
+  background-color: #282828;
+}
+.revision_button {
+  font-size: 14px;
 }

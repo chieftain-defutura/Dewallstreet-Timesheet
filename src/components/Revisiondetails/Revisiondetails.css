@@ -1,0 +1,48 @@
+.design_system > h1 {
+  color: var(--canvas, #fff);
+  font-family: var(--font-bold);
+  font-size: 20px;
+}
+.revisiondetails_main {
+  color: var(--labler-tight, #575757);
+  font-family: var(--font-Medium);
+  font-size: 12px;
+}
+.revisiondetails_main h3 {
+  color: white;
+  font-size: 15px;
+}
+.information_link > a,
+.menu_information > a {
+  color: #575757;
+  text-decoration: underline;
+}
+.information_link,
+.file_information,
+.document_information {
+  display: flex;
+  gap: 5px;
+}
+.period_deadline,
+.week_day_hour {
+  display: flex;
+  /* gap: 10px; */
+  justify-content: space-between;
+}
+.periodic_time {
+  display: flex;
+  gap: 10px;
+}
+.day_two,
+.week_one,
+.hour_third {
+  color: var(--canvas, #575757);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.re_submit {
+  display: flex;
+  justify-content: flex-end;
+}

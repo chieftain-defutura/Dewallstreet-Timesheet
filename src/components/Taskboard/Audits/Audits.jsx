@@ -1,28 +1,35 @@
 import React, { useState } from "react";
 import "./audits.css";
-import downarrow from "../../../assets/icons/seemorebutton.svg";
+import downarrow from "../../../assets/icons/archivedown.svg";
 import uparrow from "../../../assets/icons/chevron-up.svg";
 import TaskHeader from "../Taskheader";
 import { Auditlist } from "./Audit.JS";
 import Button from "../../Button";
 import Auditseemore from "../../Auditsseemore/Auditseemore";
 
-const AuditDesignsystem = () => {
+const AuditDesignsystem = ({ setRevisiondetails }) => {
+  console.log(setRevisiondetails);
   const RenderAuditdesign = Auditlist.map((Designtype, i) => {
-    return <Auditcontent key={i} data={Designtype} />;
+    return (
+      <Auditcontent
+        key={i}
+        data={Designtype}
+        setRevisiondetails={setRevisiondetails}
+      />
+    );
   });
   return (
     <React.Fragment>
       <div className="header_archive">
         <TaskHeader />
         <div className="audit_main">
-          <div className="archive_task">
-            <button>
-              Archived tasks ( 2 )
+          <button>
+            <div className="arch">
+              <h4> Archived tasks ( 2 )</h4>
               <img src={downarrow} alt="icon" />
-            </button>
-          </div>
-          {/* <div className="archivetask_horizontalline"></div> */}
+            </div>
+          </button>
+          <div className="archivetask_horizontalline"></div>
           <div className="audit_cards">{RenderAuditdesign}</div>
         </div>
       </div>
@@ -31,7 +38,7 @@ const AuditDesignsystem = () => {
 };
 export default AuditDesignsystem;
 
-const Auditcontent = ({ data }) => {
+const Auditcontent = ({ data, setRevisiondetails }) => {
   const [seemore, setSeemore] = useState(false);
   // const [archivetask, setArchivetask] = useState(false);
   console.log("data", data);
@@ -74,7 +81,10 @@ const Auditcontent = ({ data }) => {
                 Rejected
               </Button>
             </div>
-            <div className="logs_button">
+            <div
+              className="revision_button"
+              onClick={() => setRevisiondetails((m) => !m)}
+            >
               <Button variant="secondary" size="medium">
                 Revision details
               </Button>
