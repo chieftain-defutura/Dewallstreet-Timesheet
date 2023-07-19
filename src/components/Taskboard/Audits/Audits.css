@@ -17,11 +17,11 @@
   display: flex;
   gap: 420px;
   color: white;
-  font-family: Gilroy-Light;
-  font-size: 14px;
-  background-color: none;
-  border-bottom: 0.1px solid #575757;
-  padding-bottom: 20px;
+  font-family: var(--font-Light);
+  font-size: 15px;
+  background-color: #141414;
+  border-bottom: 1px solid #242424;
+  padding: 10px;
 }
 .reject_button > Button {
   color: rgb(239, 63, 63);

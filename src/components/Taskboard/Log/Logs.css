@@ -253,6 +253,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 0 20px;
+
+  border-right: 1px solid #282828;
+  height: 230vh;
 }
-/* >>>>>>> 107d607dab7597ef0d9743fe5811ccdedc2116f6 */
