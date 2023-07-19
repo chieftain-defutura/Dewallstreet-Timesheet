@@ -253,6 +253,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 0 10px;
 }
 .logs_render {
   padding: 0 10px;

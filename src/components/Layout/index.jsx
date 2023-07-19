@@ -5,7 +5,7 @@ import Homeheader from "../../components/Header/Homeheader";
 import Assigntasks from "../../components/Assigntasks/assigntasks";
 import "./Layout.css";
 
-const Homepage = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <div className="layout_container">
       <div className="layout_heading">
@@ -18,4 +18,4 @@ const Homepage = ({ children }) => {
     </div>
   );
 };
-export default Homepage;
+export default Layout;

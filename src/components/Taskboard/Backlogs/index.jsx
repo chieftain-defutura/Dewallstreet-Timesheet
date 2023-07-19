@@ -7,7 +7,9 @@ import Layout from "../../../components/Layout";
 const Backlog = () => {
   return (
     <Layout>
-      <Backlogdesign />
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+        <Backlogdesign />
+      </div>
     </Layout>
   );
 };

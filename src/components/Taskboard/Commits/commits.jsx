@@ -42,7 +42,6 @@ const Commitcontent = ({ data }) => {
     <div className="task_system">
       <div className="task_title">
         <h1>{data.Title}</h1>
-        <div>Extended</div>
         <p>{data.Para}</p>
       </div>
 

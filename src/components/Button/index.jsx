@@ -20,8 +20,9 @@ const Button = ({ variant, size, children, handleClick, image }) => {
     className += " button-large";
   } else if (size === "medium") {
     className += " button-medium";
+  } else if (size === "regular") {
+    className += " button-regular";
   }
-
   return (
     <button className={className} onClick={handleClick}>
       <img src={image} alt="" />
@@ -31,7 +32,7 @@ const Button = ({ variant, size, children, handleClick, image }) => {
 };
 Button.propTypes = {
   variant: PropTypes.oneOf(["primary", "secondary"]),
-  size: PropTypes.oneOf(["small", "medium", "large"]),
+  size: PropTypes.oneOf(["small", "medium", "large", "regular"]),
   children: PropTypes.node.isRequired,
 };
 Button.defaultProps = {
