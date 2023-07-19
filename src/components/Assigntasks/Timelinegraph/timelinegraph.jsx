@@ -45,8 +45,7 @@ const Timelinegraph = () => {
                   style={{
                     color: "white",
                     borderBottom: "1px solid #fff",
-                    width: "100px",
-                    textalign: "center",
+                    width: "40px",
                   }}
                 >
                   Week
@@ -79,7 +78,7 @@ const Timelinegraph = () => {
                   style={{
                     color: "white",
                     borderBottom: "1px solid #fff",
-                    width: "100px",
+                    width: "40px",
                   }}
                 >
                   Months
@@ -113,7 +112,7 @@ const Timelinegraph = () => {
                   style={{
                     color: "white",
                     borderBottom: "1px solid #fff",
-                    width: "100px",
+                    width: "40px",
                   }}
                 >
                   Year
