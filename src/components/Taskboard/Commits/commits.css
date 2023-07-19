@@ -11,7 +11,10 @@
   line-height: normal;
   gap: 8px;
   border: none;
+<<<<<<< HEAD
+=======
   background-color: rgba(0, 0, 0, 0);
+>>>>>>> 78e92a9c21c27df7121e69cc7503e74dc56f586c
 }
 .arrows {
   display: flex;
@@ -37,12 +40,9 @@
 }
 .backlog_link {
   display: flex;
-  /* height: 48px; */
   padding: 16px 51px;
   justify-content: center;
   align-items: center;
-  /* border-bottom: 1px solid var(--canvas, #fff); */
-  /* background: red; */
 }
 .backlog_link > a {
   color: var(--canvas, #fff);
@@ -55,7 +55,6 @@
 .commit_link {
   display: flex;
   height: 48px;
-  /* padding: 16px 37px 16px 38px; */
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--line, #1e1e1e);
@@ -234,4 +233,6 @@
 }
 .commit_render {
   padding: 0 15px;
+  border-right: 1px solid #282828;
+  height: 230vh;
 }

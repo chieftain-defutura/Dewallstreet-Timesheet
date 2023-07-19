@@ -6,18 +6,23 @@ import { useParams } from "react-router-dom";
 
 const TaskHeader = () => {
   const location = window.location.pathname.split("/");
-  console.log(location[2]);
+  console.log(location[1]);
   return (
     <div className="logs_main">
       <div className="design_links">
         {location[2] === "log" ? (
-          <Link to="/Taskpage/log">
-            <div
-              className="log_link"
-              style={{ background: "#141414", borderBottom: "1px solid #fff" }}>
-              <p style={{ color: "#fff" }}>Logs(2)</p>
-            </div>
-          </Link>
+          location[1] === "Taskpage" && (
+            <Link to="/Taskpage/log">
+              <div
+                className="log_link"
+                style={{
+                  background: "#141414",
+                  borderBottom: "1px solid #fff",
+                }}>
+                <p style={{ color: "#fff" }}>Logs(2)</p>
+              </div>
+            </Link>
+          )
         ) : (
           <Link to="/Taskpage/log">
             <div className="log_link">
@@ -41,7 +46,7 @@ const TaskHeader = () => {
           </Link>
         )}
 
-        {location[2] === "audits" ? (
+        {location[2] === "audit" ? (
           <Link to="/Taskpage/audit">
             <div
               className="log_link"
