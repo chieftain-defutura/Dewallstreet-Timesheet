@@ -151,7 +151,6 @@
   display: flex;
   width: 570px;
   flex-direction: column;
-  padding: 16px 24px;
   gap: 24px;
 }
 .onclick_button {

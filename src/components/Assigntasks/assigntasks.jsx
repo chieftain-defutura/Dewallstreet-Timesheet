@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useParams, useState } from "react";
 import "./assigntasks.css";
 import { Link } from "react-router-dom";
@@ -68,25 +70,29 @@ const Assigntasks = ({ props, image }) => {
       <div className="horizontal_line"></div>
       <div className="task_board">
         <li className={splitLocation[1] === "taskboard" ? "active" : ""}>
-          <Link to="/taskpage">
-            {pathname === "/taskpage" ? (
-              <img src={tasksheethide} alt="icon" />
+          <Link to="/Taskpage/log">
+            {pathname === "/Taskpage" ||
+            pathname === "/Taskpage/log" ||
+            pathname === "/Taskpage/audit" ||
+            pathname === "/Taskpage/backlog" ||
+            pathname === "/Taskpage/commit" ? (
+              <>
+                <img src={tasksheethide} alt="icon" />
+                <h4 style={{ color: "white" }}>
+                  Task
+                  <br />
+                  Board
+                </h4>
+              </>
             ) : (
-              <img src={tasksheet} alt="icon" />
-            )}
-
-            {pathname === "/taskpage" ? (
-              <h4 style={{ color: "white" }}>
-                Task
-                <br />
-                Board
-              </h4>
-            ) : (
-              <h4 style={{ color: "grey" }}>
-                Task
-                <br />
-                Board
-              </h4>
+              <>
+                <img src={tasksheet} alt="icon" />
+                <h4 style={{ color: "grey" }}>
+                  Task
+                  <br />
+                  Board
+                </h4>
+              </>
             )}
           </Link>
         </li>
