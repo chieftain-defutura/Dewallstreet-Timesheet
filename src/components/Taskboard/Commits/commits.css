@@ -11,10 +11,6 @@
   line-height: normal;
   gap: 8px;
   border: none;
-<<<<<<< HEAD
-=======
-  background-color: rgba(0, 0, 0, 0);
->>>>>>> 78e92a9c21c27df7121e69cc7503e74dc56f586c
 }
 .arrows {
   display: flex;
@@ -229,7 +225,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 0 10px;
+  padding: 20px;
 }
 .commit_render {
   padding: 0 15px;
