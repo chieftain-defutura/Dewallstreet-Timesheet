@@ -17,9 +17,9 @@ const Assigntasks = ({ props, image }) => {
   return (
     <div className="assign_tasks_main">
       <div className="clock_work">
-        <li className={splitLocation[1] === "clockwork" ? "active" : ""}>
-          <Link to="/home">
-            {/* {pathname === "/home" ? (
+        {/* <li className={splitLocation[1] === "clockwork" ? "active" : ""}> */}
+        <Link to="/home">
+          {/* {pathname === "/home" ? (
               <img src={briefcasetimer} alt="icon" />
             ) : (
               <img src={briefcasetimerhide} alt="icon" />
@@ -39,33 +39,33 @@ const Assigntasks = ({ props, image }) => {
                 Works
               </h4>
             )} */}
-            {pathname === "/home" ? (
-              <>
-                <div onClick={() => setToggle(toggle)}>
-                  <img src={briefcasetimer} alt="icon" />
-                  <h4 style={{ color: "white" }}>
-                    Clock
-                    <br />
-                    Works
-                  </h4>
-                </div>
-              </>
-            ) : (
-              <>
-                <div onClick={() => setToggle(toggle)}>
-                  <img src={briefcasetimerhide} alt="icon" />
-                </div>
-                <div>
-                  <h4 style={{ color: "grey" }}>
-                    Clock
-                    <br />
-                    Works
-                  </h4>
-                </div>
-              </>
-            )}
-          </Link>
-        </li>
+          {pathname === "/home" ? (
+            <>
+              <div onClick={() => setToggle(toggle)}>
+                <img src={briefcasetimer} alt="icon" />
+                <h4 style={{ color: "white" }}>
+                  Clock
+                  <br />
+                  Works
+                </h4>
+              </div>
+            </>
+          ) : (
+            <>
+              <div onClick={() => setToggle(toggle)}>
+                <img src={briefcasetimerhide} alt="icon" />
+              </div>
+              <div>
+                <h4 style={{ color: "grey" }}>
+                  Clock
+                  <br />
+                  Works
+                </h4>
+              </div>
+            </>
+          )}
+        </Link>
+        {/* </li> */}
       </div>
       <div className="horizontal_line"></div>
       <div className="task_board">

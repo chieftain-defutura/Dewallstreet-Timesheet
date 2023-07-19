@@ -253,4 +253,10 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+<<<<<<< HEAD
+=======
+
+  border-right: 1px solid #282828;
+  height: 230vh;
+>>>>>>> 78e92a9c21c27df7121e69cc7503e74dc56f586c
 }

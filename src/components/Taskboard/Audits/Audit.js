@@ -52,3 +52,15 @@ export const Auditlist = [
     down: "downarrow",
   },
 ];
+export const Archivetaskslist = [
+  {
+    Title: "Design system",
+    Para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+    More: "See more",
+  },
+  {
+    Title: "Design system",
+    Para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+    More: "See more",
+  },
+];
