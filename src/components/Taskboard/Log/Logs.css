@@ -253,12 +253,15 @@
   flex-direction: column;
   gap: 25px;
   padding: 20px;
+  border-right: 1px solid #282828;
 }
 .logs_render {
   padding: 0 30px;
-  border-right: 1px solid #282828;
   height: 230vh;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.grid {
+  padding: 20px;
 }

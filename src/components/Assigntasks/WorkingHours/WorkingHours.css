@@ -15,7 +15,7 @@
 .check_workinghours {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   gap: 15px;
 }
 .clock_timing {
@@ -123,17 +123,19 @@
 .workingcheckin_page {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   gap: 100px;
-  width: 100%;
+  margin: auto;
 }
 .toast_warning {
   width: 209px;
   height: 1px;
   background: #ffc700;
-  position: absolute;
 }
-@media (max-width: 1290px) {
+.toast_button {
+  display: flex;
+  justify-content: flex-end;
+}
+/* @media (max-width: 1290px) {
   .checkin {
     flex-wrap: wrap;
     padding: 8px;
@@ -144,9 +146,10 @@
   .time_checkinhours {
     flex-wrap: wrap;
   }
-}
-@media (max-width: 813px) {
+} */
+
+/* @media (max-width: 813px) {
   .workingcheckin_page {
     padding: 20px;
   }
-}
+} */

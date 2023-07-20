@@ -8,13 +8,13 @@ const Auditboard = () => {
 
   return (
     <Layout>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
-        <AuditDesignsystem
-          setRevisiondetails={setRevisiondetails}
-        />
+      <div
+        style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
+        className="grid"
+      >
+        <AuditDesignsystem setRevisiondetails={setRevisiondetails} />
         {revisiondetails && <Revisiondetails />}
       </div>
-   
     </Layout>
   );
 };

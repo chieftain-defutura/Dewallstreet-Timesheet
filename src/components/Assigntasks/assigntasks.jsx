@@ -14,31 +14,11 @@ const Assigntasks = ({ props, image }) => {
   const { pathname } = location;
   const splitLocation = pathname.split("/");
   console.log(pathname);
+
   return (
     <div className="assign_tasks_main">
       <div className="clock_work">
-        {/* <li className={splitLocation[1] === "clockwork" ? "active" : ""}> */}
         <Link to="/home">
-          {/* {pathname === "/home" ? (
-              <img src={briefcasetimer} alt="icon" />
-            ) : (
-              <img src={briefcasetimerhide} alt="icon" />
-              // "sjs"
-            )}
-
-            {pathname === "/home" ? (
-              <h4 style={{ color: "white" }}>
-                Clock
-                <br />
-                Works
-              </h4>
-            ) : (
-              <h4 style={{ color: "grey" }}>
-                Clock
-                <br />
-                Works
-              </h4>
-            )} */}
           {pathname === "/home" ? (
             <>
               <div onClick={() => setToggle(toggle)}>
@@ -65,7 +45,6 @@ const Assigntasks = ({ props, image }) => {
             </>
           )}
         </Link>
-        {/* </li> */}
       </div>
       <div className="horizontal_line"></div>
       <div className="task_board">

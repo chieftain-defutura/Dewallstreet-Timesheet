@@ -84,7 +84,7 @@ const WorkingHours = () => {
         </div>
 
         {open ? (
-          <div onClick={() => setOpen(false)}>
+          <div onClick={() => setOpen(false)} style={{ margin: "auto" }}>
             <Toasts
               image={warning}
               props="Grace time used.Dead line extended to 6 hours."
@@ -94,7 +94,7 @@ const WorkingHours = () => {
             <div className="toast_warning"></div>
           </div>
         ) : (
-          <div onClick={() => setOpen(true)}>
+          <div onClick={() => setOpen(true)} className="toast_button">
             <Button variant="secondary" size="small">
               Toast
             </Button>
