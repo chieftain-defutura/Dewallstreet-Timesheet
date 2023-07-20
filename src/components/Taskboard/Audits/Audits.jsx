@@ -6,8 +6,10 @@ import TaskHeader from "../Taskheader";
 import { Auditlist } from "./Audit.JS";
 import Button from "../../Button";
 import Auditseemore from "../../Auditsseemore/Auditseemore";
+import Archivedtasks from "../../Archivedtasks";
 
 const AuditDesignsystem = ({ setRevisiondetails }) => {
+  const [archivedtasks, setArchivedtasks] = useState(false);
   console.log(setRevisiondetails);
   const RenderAuditdesign = Auditlist.map((Designtype, i) => {
     return (
@@ -23,14 +25,19 @@ const AuditDesignsystem = ({ setRevisiondetails }) => {
       <div className="header_archive">
         <TaskHeader />
         <div className="audit_main">
-          <button>
-            <div className="arch">
-              <h4> Archived tasks ( 2 )</h4>
+          <div
+            className="archive_button"
+            onClick={() => setArchivedtasks((m) => !m)}
+          >
+            <button>
+              Archived tasks ( 2 )
               <img src={downarrow} alt="icon" />
-            </div>
-          </button>
+            </button>
+          </div>
+
           <div className="archivetask_horizontalline"></div>
-          <div className="audit_cards">{RenderAuditdesign}</div>
+         
+          {archivedtasks ? <div className="audit_cards">{RenderAuditdesign}</div>:<Archivedtasks />}
         </div>
       </div>
     </React.Fragment>
@@ -38,9 +45,9 @@ const AuditDesignsystem = ({ setRevisiondetails }) => {
 };
 export default AuditDesignsystem;
 
-const Auditcontent = ({ data, setRevisiondetails }) => {
+const Auditcontent = ({ data, setRevisiondetails, setArchivedtasks }) => {
   const [seemore, setSeemore] = useState(false);
-  // const [archivetask, setArchivetask] = useState(false);
+
   console.log("data", data);
   if (!data) return;
   return (
@@ -106,22 +113,6 @@ const Auditcontent = ({ data, setRevisiondetails }) => {
         </>
       )} */}
       {seemore && <Auditseemore Designtype={data} setSeemore={setSeemore} />}
-      {/* <div className="reject_button">
-        <Button variant="secondary" size="small">
-          Rejected
-        </Button>
-      </div>
-      <div className="logs_button">
-        <Button variant="secondary" size="medium">
-          Revision details
-        </Button>
-      </div>
-      <div className="arrows">
-        <button>
-          {data.More}
-          {<img src={downarrow} alt="icon" />}
-        </button>
-      </div> */}
     </div>
   );
 };

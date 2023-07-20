@@ -1,0 +1,15 @@
+.passed > Button {
+  color: rgb(37, 239, 37);
+  border: 1px solid rgb(37, 239, 37);
+  font-size: 13px;
+  font-family: var(--font-Regular);
+}
+.archive_render {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* position: absolute;
+  left: 138px;
+  bottom: -10px;
+  width: 39%; */
+}

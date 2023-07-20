@@ -47,11 +47,15 @@ const Homeheader = () => {
   const Sidebar = (
     <div className="sidebar">
       <div className="sidebar_content">
-        <h2>Workspace</h2>
-        <div className="header_name">
-          <h2>Ravishankar Varma</h2>
-          <p>DEWALLED1</p>
+        <div className="headercontent_name">
+          <h2>Workspace</h2>
+
+          <div className="sidebar_name">
+            <h3>Ravishankar Varma</h3>
+            <p>DEWALLED1</p>
+          </div>
         </div>
+
         <Link to="/home">
           {pathname === "/home" ? (
             <>
