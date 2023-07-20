@@ -7,6 +7,12 @@
   color: var(--labler-tight, #575757);
   font-family: var(--font-Medium);
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #1a1a1a;
+  padding: 20px;
+  height: fit-content;
 }
 .revisiondetails_main h3 {
   color: white;
@@ -23,19 +29,19 @@
   display: flex;
   gap: 5px;
 }
-.period_deadline,
+.period_deadline {
+  display: flex;
+  /* gap: 300px; */
+  justify-content: space-between;
+}
 .week_day_hour {
   display: flex;
-  /* gap: 10px; */
-  justify-content: space-between;
+  gap: 2px;
 }
 .periodic_time {
   display: flex;
   gap: 10px;
-}
-.day_two,
-.week_one,
-.hour_third {
+  font-family: var(--font-bold);
   color: var(--canvas, #575757);
   font-size: 14px;
   font-style: normal;
@@ -45,4 +51,32 @@
 .re_submit {
   display: flex;
   justify-content: flex-end;
+}
+.re_submit > Button {
+  background-color: var(--labler-tight, #3d3a3a);
+  font-size: 14px;
+}
+.design_system {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.deadline {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.file_document {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.home_information,
+.menu_information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.all_revisiondetails {
+  padding: 30px 40px 0;
 }
