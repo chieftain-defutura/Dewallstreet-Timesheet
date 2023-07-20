@@ -8,8 +8,10 @@ import Button from "../../../../Button";
 import plus from "../../../../../assets/icons/plus.svg";
 import seemorelist from "../../../../../assets/icons/seelessbutton.svg";
 import seedownlist from "../../../../../assets/icons/seemorebutton.svg";
+import cancel from "../../../../../assets/icons/cancel.svg";
+import close from "../../../../../assets/icons/toastcancel.svg";
 import { QuestionnaireDetails } from "./Question";
-
+import LayoutModal from "../../../../Modal/Modal";
 const QuestionContent = () => {
   const [toggle, setToggle] = useState("Questinnary");
   return (
@@ -187,6 +189,67 @@ const QuestionSection = ({ data }) => {
           </div>
         </div>
       )}
+      <LayoutModal>
+        <div className="questions_overall">
+          <div className="createquestion_main">
+            <div className="create_question">
+              <h2>Create questionnaire.</h2>
+              <img src={cancel} alt="icon" />
+            </div>
+            <div className="questionnaires">
+              <h4>Questionnaires.</h4>
+              <div className="question_reference">
+                <div className="one_question">
+                  <h4 id="query_one">QUESTIONNAIRE 1</h4>
+                  <img src={plus} alt="icon" />
+                </div>
+                <div className="question_lists">
+                  <p>
+                    1. Lorem ipsum dolor sit amet, consecuter adipiscing elit?
+                  </p>
+                  <p>
+                    2. Lorem ipsum dolor sit amet, consecuter adipiscing elit,
+                    sed do
+                  </p>
+                  <div className="second_para">
+                    <p>eiusmod tempor incididunt.</p>
+                    <img src={close} alt="icon" />
+                  </div>
+                  <p>
+                    3. Lorem ipsum dolor sit amet, consecuter adipiscing elit?
+                  </p>
+                  <p>
+                    4. Lorem ipsum dolor sit amet, consecuter adipiscing elit?
+                  </p>
+                </div>
+                <div className="reference">
+                  <h4>Reference links.</h4>
+                  <div className="first_link">
+                    <h4>LINK 1</h4>
+                    <img src={plus} alt="icon" />
+                  </div>
+                  <div className="overall_link">
+                    <nav>
+                      <a href="#">
+                        https://www.figmacom/file/s8pn7kOuTojgGIhbxqJgKm/wireframer?
+                      </a>
+                      <a href="#">
+                        type=design&node-i=87-37&t=/XEsrKG9Kt9nesyKF-O
+                      </a>
+                    </nav>
+                    <img src={close} alt="icon" />
+                  </div>
+                </div>
+                <div className="askquestion_button">
+                  <Button variant="secondary" size="large">
+                    Ask questionnaire
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </LayoutModal>
     </div>
   );
 };
