@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   color: var(--labler-tight, #575757);
-  font-family: " Gilroy-Bold";
+  font-family: var(--font-medium);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -77,7 +77,7 @@
 .log_link {
   display: flex;
   height: 48px;
-  padding: 16px 36px 16px 37px;
+  padding: 20px 40px 20px 50px;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--line, #1e1e1e);

@@ -1,3 +1,5 @@
+/** @format */
+
 .raisemeet_button > Button {
   background-color: rgb(39, 38, 38);
   width: 100%;
@@ -21,4 +23,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.meeting_toast {
+  padding: 50px;
 }
