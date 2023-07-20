@@ -33,7 +33,9 @@ const Designpage = ({ setNegotiateOpen }) => {
   return (
     <React.Fragment>
       <div className="logs_mapping">
-        <TaskHeader />
+        <div className="task_link">
+          <TaskHeader />
+        </div>
         <div className="logs_render">{RenderDesignpage}</div>
       </div>
     </React.Fragment>
