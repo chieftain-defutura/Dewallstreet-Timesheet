@@ -8,16 +8,8 @@
   font-style: normal;
   font-weight: 500;
   cursor: pointer;
-  position: relative;
 }
-/* .toast_line {
-  width: 209px;
-  height: 1px;
-  background: #ffc700;
-  position: absolute;
-  bottom: -1px;
-  left: 2px;
-} */
+
 .message_box {
   display: flex;
   gap: 10px;

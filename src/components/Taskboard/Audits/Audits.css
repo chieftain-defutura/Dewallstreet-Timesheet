@@ -4,6 +4,7 @@
   gap: 10px;
   font-family: Gilroy-Light;
   padding: 20px;
+  border-right: 1px solid #282828;
 }
 /* .archive_task {
   display: flex;
@@ -50,7 +51,7 @@
 }
 .audit_main {
   padding: 0 30px;
-  border-right: 1px solid #282828;
+
   height: 230vh;
   display: flex;
   flex-direction: column;
@@ -65,4 +66,7 @@
 }
 .revision_button {
   font-size: 14px;
+}
+.grid {
+  padding: 20px;
 }

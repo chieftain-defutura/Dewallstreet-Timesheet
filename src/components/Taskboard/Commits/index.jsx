@@ -5,7 +5,10 @@ import CommitDesignsystem from "./commits";
 const Commitboard = () => {
   return (
     <Layout>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+      <div
+        style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
+        className="grid"
+      >
         <CommitDesignsystem />
       </div>
     </Layout>
