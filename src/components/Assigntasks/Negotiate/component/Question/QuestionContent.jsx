@@ -1,6 +1,8 @@
 /** @format */
 
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./questionnaire.css";
 import Button from "../../../../Button";
 import plus from "../../../../../assets/icons/plus.svg";
@@ -9,23 +11,42 @@ import seedownlist from "../../../../../assets/icons/seemorebutton.svg";
 import { QuestionnaireDetails } from "./Question";
 
 const QuestionContent = () => {
+  const [toggle, setToggle] = useState("Questinnary");
   return (
     <div className="questionnaire_main">
-      <h3>Negotiate.</h3>
+      {/* <h3>Negotiate.</h3>
       <div className="questionnaire_head">
-        <div
-          className="question"
-          onClick={() => setQuestionHeading("question")}
-        >
-          <a href="#">Questionnaire</a>
-          <div className="horizontal_line_questionnaire"></div>
-        </div>
-
-        <div className="meet" onClick={() => setQuestionHeading("meeting")}>
-          <a href="#">Meeting</a>
-          <div className="horizontal_line_meeting"></div>
-        </div>
-      </div>
+        {toggle === "Questinnary" ? (
+          <div
+            className="negotiate_link"
+            style={{
+              background: "#141414",
+              borderBottom: "1px solid #fff",
+            }}
+          >
+            <p style={{ color: "#fff" }}>Questionnaire</p>
+          </div>
+        ) : (
+          <div className="negotiate_link" onClick={()=>setToggle("Questinnary")}>
+            <a>Questionnaire</a>
+          </div>
+        )}
+        {toggle === "meeting" ? (
+          <div
+            className="negotiate_link"
+            style={{
+              background: "#141414",
+              borderBottom: "1px solid #fff",
+            }}
+          >
+            <p style={{ color: "#fff" }}>Meeting</p>
+          </div>
+        ) : (
+          <div className="negotiate_link" onClick={()=> setToggle("meeting")}>
+            <a>Meeting</a>
+          </div>
+        )}
+      </div> */}
       <div className="question_button">
         <Button variant="secondary" size="medium" image={plus}>
           Add questionnaire

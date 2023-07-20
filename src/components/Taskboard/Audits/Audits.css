@@ -5,21 +5,17 @@
   font-family: Gilroy-Light;
   padding: 20px;
 }
-/* .archive_task {
+.archive_button {
   display: flex;
   justify-content: space-between;
-} */
+}
 .audit_cards,
 .audit_main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* background-color: #575757; */
 }
-.arch {
-  display: flex;
-  justify-content: space-between;
-}
+
 /* .audit_main > button {
   color: white;
   font-family: var(--font-Light);
