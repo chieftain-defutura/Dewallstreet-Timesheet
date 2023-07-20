@@ -5,8 +5,9 @@
   gap: 10px;
 }
 .working_grid {
-  padding: 30px;
+  padding: 40px;
 }
+
 .hours_deduction {
   display: flex;
   flex-direction: column;
@@ -14,7 +15,57 @@
   padding: 40px;
   border-right: 1px solid #282828;
 }
-@media (max-width: 1169px) {
+.hamimage {
+  display: none;
+}
+.sidebar {
+  display: none;
+  position: absolute;
+  top: 68px;
+  right: 0;
+  background-color: #282828;
+  padding: 20px;
+  width: 70%;
+  height: 100vh;
+}
+.sidebar_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.sidebar_content a {
+  font-size: 25px;
+}
+.headercontent_name {
+  display: flex;
+  gap: 150px;
+}
+.headercontent_name > h2 {
+  color: var(--outlier, #ececec);
+  font-family: var(--font-bold);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.sidebar_name > h3 {
+  color: var(--outlier, #ececec);
+  font-family: var(--font-bold);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.sidebar_name > p {
+  color: var(--labler-tight, #575757);
+  font-family: var(--font-bold);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 1245px) {
   .homepage_main {
     flex-direction: column;
     align-content: center;
@@ -37,6 +88,25 @@
   .homepage_main {
     flex-wrap: wrap;
     align-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .hamimage {
+    display: block;
+    cursor: pointer;
+  }
+  .sidebar {
+    display: block;
+    cursor: pointer;
+  }
+  .clock_work,
+  .task_board,
+  .home_main > h2,
+  .header_name > h2,
+  .header_name > p,
+  .assign_tasks_main {
+    display: none;
+    border-right: none;
   }
 }
 /* @media (max-width: 480px) {

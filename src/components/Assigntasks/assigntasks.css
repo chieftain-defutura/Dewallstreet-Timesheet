@@ -39,3 +39,11 @@
   pointer-events: none;
   color: #282828;
 } */
+@media (max-width: 700px) {
+  .assign_tasks_main {
+    border-right: none;
+  }
+  .horizontal_line {
+    border: none;
+  }
+}

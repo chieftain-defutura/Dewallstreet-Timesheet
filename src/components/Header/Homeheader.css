@@ -36,6 +36,7 @@
   font-weight: 500;
   line-height: normal;
 }
+
 @media (max-width: 480px) {
   .home_main {
     display: flex;
