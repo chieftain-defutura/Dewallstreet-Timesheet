@@ -14,15 +14,15 @@
 }
 .home_main > h2 {
   color: var(--canvas, #fff);
-  font-family: "var(--font-bold)";
+  font-family: var(--font-bold);
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .header_name > h2 {
-  color: var(--outlier, #ececec);
-  font-family: "var(--font-bold)";
+  color: var(--canvas, #ececec);
+  font-family: "var(--font-light)";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
