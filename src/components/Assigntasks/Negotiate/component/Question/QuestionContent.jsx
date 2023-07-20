@@ -14,6 +14,7 @@ import { QuestionnaireDetails } from "./Question";
 import LayoutModal from "../../../../Modal/Modal";
 const QuestionContent = () => {
   const [toggle, setToggle] = useState("Questinnary");
+  const [layout, setLayout] = useState(false);
   return (
     <div className="questionnaire_main">
       {/* <h3>Negotiate.</h3>
@@ -49,7 +50,8 @@ const QuestionContent = () => {
           </div>
         )}
       </div> */}
-      <div className="question_button">
+
+      <div className="question_button" onClick={() => setLayout(true)}>
         <Button variant="secondary" size="medium" image={plus}>
           Add questionnaire
         </Button>
@@ -64,7 +66,7 @@ export default QuestionContent;
 
 const QuestionSection = ({ data }) => {
   const [openSeemore, setOpenSeemore] = useState(false);
-
+  const [layout, setLayout] = useState(false);
   return (
     <div className="question_overall">
       <div className="question_one">
@@ -189,7 +191,71 @@ const QuestionSection = ({ data }) => {
           </div>
         </div>
       )}
-      <LayoutModal>
+      {layout && (
+        <LayoutModal onClose={() => setLayout(false)}>
+          <div className="questions_overall">
+            <div className="createquestion_main">
+              <div className="create_question">
+                <h2>Create questionnaire.</h2>
+                <button onClick={() => setLayout(false)} >
+                <img src={cancel} alt="icon" /></button>
+              </div>
+              <div className="questionnaires">
+                <h4>Questionnaires.</h4>
+                <div className="question_reference">
+                  <div className="one_question">
+                    <h4 id="query_one">QUESTIONNAIRE 1</h4>
+                    <img src={plus} alt="icon" />
+                  </div>
+                  <div className="question_lists">
+                    <p>
+                      1. Lorem ipsum dolor sit amet, consecuter adipiscing elit?
+                    </p>
+                    <p>
+                      2. Lorem ipsum dolor sit amet, consecuter adipiscing elit,
+                      sed do
+                    </p>
+                    <div className="second_para">
+                      <p>eiusmod tempor incididunt.</p>
+                      <img src={close} alt="icon" />
+                    </div>
+                    <p>
+                      3. Lorem ipsum dolor sit amet, consecuter adipiscing elit?
+                    </p>
+                    <p>
+                      4. Lorem ipsum dolor sit amet, consecuter adipiscing elit?
+                    </p>
+                  </div>
+                  <div className="reference">
+                    <h4>Reference links.</h4>
+                    <div className="first_link">
+                      <h4>LINK 1</h4>
+                      <img src={plus} alt="icon" />
+                    </div>
+                    <div className="overall_link">
+                      <nav>
+                        <a href="#">
+                          https://www.figmacom/file/s8pn7kOuTojgGIhbxqJgKm/wireframer?
+                        </a>
+                        <a href="#">
+                          type=design&node-i=87-37&t=/XEsrKG9Kt9nesyKF-O
+                        </a>
+                      </nav>
+                      <img src={close} alt="icon" />
+                    </div>
+                  </div>
+                  <div className="askquestion_button">
+                    <Button variant="secondary" size="large">
+                      Ask questionnaire
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </LayoutModal>
+      )}
+      {/* <LayoutModal onClose={() => setLayout(false)}>
         <div className="questions_overall">
           <div className="createquestion_main">
             <div className="create_question">
@@ -249,7 +315,7 @@ const QuestionSection = ({ data }) => {
             </div>
           </div>
         </div>
-      </LayoutModal>
+      </LayoutModal> */}
     </div>
   );
 };
