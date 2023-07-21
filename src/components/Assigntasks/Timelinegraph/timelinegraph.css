@@ -69,11 +69,6 @@
   .graph > .days > .total_days {
     gap: 10px;
   }
-}
-@media (max-width: 480px) {
-  .timeline_graph_main {
-    width: 360px;
-  }
   .graph > .days img {
     width: 100%;
   }

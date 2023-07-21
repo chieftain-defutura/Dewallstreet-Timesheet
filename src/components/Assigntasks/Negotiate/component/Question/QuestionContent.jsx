@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import "./questionnaire.css";
+import successtick from "../../../../../assets/icons/successtick.svg";
 import Button from "../../../../Button";
 import plus from "../../../../../assets/icons/plus.svg";
 import seemorelist from "../../../../../assets/icons/seelessbutton.svg";
@@ -12,9 +13,12 @@ import cancel from "../../../../../assets/icons/cancel.svg";
 import close from "../../../../../assets/icons/toastcancel.svg";
 import { QuestionnaireDetails } from "./Question";
 import LayoutModal from "../../../../Modal/Modal";
+import Toasts from "../../../../Toasts";
 const QuestionContent = () => {
   const [addquestionnaireopen, setAddquestionnaireOpen] = useState(false);
   const [questionnareoneopen, setQuestionnaireoneOpen] = useState(false);
+  const [toastmessage, setToastMessage] = useState(false);
+  const [Closebutton, setCloseButton] = useState(false);
   return (
     <div className="questionnaire_main">
       <div className="question_button">
@@ -30,7 +34,7 @@ const QuestionContent = () => {
       {QuestionnaireDetails.map((f, i) => (
         <QuestionSection key={i} data={f} />
       ))}
-      {addquestionnaireopen && (
+      {addquestionnaireopen && !questionnareoneopen && (
         <LayoutModal onClose={() => setAddquestionnaireOpen(false)}>
           <div className="createquery_main">
             <div className="create_question">
@@ -69,7 +73,7 @@ const QuestionContent = () => {
           </div>
         </LayoutModal>
       )}
-      {questionnareoneopen && (
+      {questionnareoneopen && !toastmessage && (
         <LayoutModal onClose={() => setQuestionnaireoneOpen(false)}>
           <div className="questionsoverall_main">
             <div className="createquestion_main">
@@ -110,18 +114,23 @@ const QuestionContent = () => {
                       <img src={plus} alt="icon" />
                     </div>
                     <div className="overall_link">
-                      <nav>
+                      <div className="first_link">
                         <a href="#">
                           https://www.figmacom/file/s8pn7kOuTojgGIhbxqJgKm/wireframer?
                         </a>
+                      </div>
+                      <div className="second_link">
                         <a href="#">
                           type=design&node-i=87-37&t=/XEsrKG9Kt9nesyKF-O
                         </a>
-                      </nav>
-                      <img src={close} alt="icon" />
+                        <img src={close} alt="icon" />
+                      </div>
                     </div>
                   </div>
-                  <div className="askquestion_button">
+                  <div
+                    className="askquestion_button"
+                    onClick={() => setToastMessage(true)}
+                  >
                     <Button variant="negotiate" size="large">
                       Ask questionnaire
                     </Button>
@@ -131,6 +140,24 @@ const QuestionContent = () => {
             </div>
           </div>
         </LayoutModal>
+      )}
+
+      {toastmessage && (
+        <div
+          className="questionnaire_toast"
+          onClick={() => {
+            setToastMessage(false),
+              setAddquestionnaireOpen(true),
+              setQuestionnaireoneOpen(false);
+          }}
+          style={{ margin: "auto" }}
+        >
+          <Toasts
+            image={successtick}
+            props="Your questionnaires sent successfully!"
+            icons={close}
+          />
+        </div>
       )}
     </div>
   );
@@ -232,103 +259,6 @@ const QuestionSection = ({ data }) => {
           </div>
         </div>
       )}
-      {/* {addquestionnaireopen && (
-        <LayoutModal>
-          <div className="createquery_main">
-            <div className="create_question">
-              <h2>Create questionnaire.</h2>
-              <img src={cancel} alt="icon" />
-            </div>
-            <div className="questionnaire_reference">
-              <div className="questionone_details">
-                <div className="overall_queries">
-                  <h4>QUESTIONNAIRES</h4>
-                  <img src={plus} alt="icon" />
-                </div>
-                <div className="questionone_details">
-                  <h4>Questionnaire 1</h4>
-                  <img src={close} alt="icon" />
-                </div>
-              </div>
-              <div className="reference_main">
-                <div className="links_refer">
-                  <h4>REFERENCE LINKS</h4>
-                  <img src={plus} alt="icon" />
-                </div>
-                <div className="link_details">
-                  <h4>Link</h4>
-                  <img src={close} alt="icon" />
-                </div>
-                <Button variant="negotiate" size="large">
-                  Ask questionnaire
-                </Button>
-              </div>
-            </div>
-          </div>
-        </LayoutModal>
-      )} */}
-
-      {/* <LayoutModal onClose={() => setLayout(false)}>
-        <div className="questions_overall">
-          <div className="createquestion_main">
-            <div className="create_question">
-              <h2>Create questionnaire.</h2>
-              <img src={cancel} alt="icon" />
-            </div>
-            <div className="questionnaires">
-              <h4>Questionnaires.</h4>
-              <div className="question_reference">
-                <div className="one_question">
-                  <h4 id="query_one">QUESTIONNAIRE 1</h4>
-                  <img src={plus} alt="icon" />
-                </div>
-                <div className="question_lists">
-                  <p>
-                    1. Lorem ipsum dolor sit amet, consecuter adipiscing elit?
-                  </p>
-                  <p>
-                    2. Lorem ipsum dolor sit amet, consecuter adipiscing elit,
-                    sed do
-                  </p>
-                  <div className="second_para">
-                    <p>eiusmod tempor incididunt.</p>
-                    <img src={close} alt="icon" />
-                  </div>
-                  <p>
-                    3. Lorem ipsum dolor sit amet, consecuter adipiscing elit?
-                  </p>
-                  <p>
-                    4. Lorem ipsum dolor sit amet, consecuter adipiscing elit?
-                  </p>
-                </div>
-                <div className="reference">
-                  <h4>Reference links.</h4>
-                  <div className="first_link">
-                    <h4>LINK 1</h4>
-                    <img src={plus} alt="icon" />
-                  </div>
-                  <div className="overall_link">
-                    <nav>
-                      <a href="#">
-                        https://www.figmacom/file/s8pn7kOuTojgGIhbxqJgKm/wireframer?
-                      </a>
-                      <a href="#">
-                        type=design&node-i=87-37&t=/XEsrKG9Kt9nesyKF-O
-                      </a>
-                    </nav>
-                    <img src={close} alt="icon" />
-                  </div>
-                </div>
-                <div className="askquestion_button">
-                  <Button variant="secondary" size="large">
-                    Ask questionnaire
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </LayoutModal> */}
     </div>
   );
 };
