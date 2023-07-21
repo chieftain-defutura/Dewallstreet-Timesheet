@@ -135,7 +135,7 @@
   display: flex;
   justify-content: flex-end;
 }
-/* @media (max-width: 1290px) {
+@media (max-width: 1290px) {
   .checkin {
     flex-wrap: wrap;
     padding: 8px;
@@ -146,10 +146,10 @@
   .time_checkinhours {
     flex-wrap: wrap;
   }
-} */
+}
 
-/* @media (max-width: 813px) {
+@media (max-width: 813px) {
   .workingcheckin_page {
     padding: 20px;
   }
-} */
+}

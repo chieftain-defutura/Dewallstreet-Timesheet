@@ -1,9 +1,11 @@
+/** @format */
+
 .header_archive {
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-family: Gilroy-Light;
-  padding: 20px;
+  padding: 10px;
   border-right: 1px solid #282828;
 }
 .archive_button > button {
