@@ -35,7 +35,7 @@
   display: flex;
   padding: 12px;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   background-color: #1e1e1e;
 }
 .check > h5 {
@@ -135,9 +135,8 @@
   display: flex;
   justify-content: flex-end;
 }
-@media (max-width: 1290px) {
+@media (max-width: 1420px) {
   .checkin {
-    flex-wrap: wrap;
     padding: 8px;
   }
   .checkin_seconds {
@@ -147,9 +146,36 @@
     flex-wrap: wrap;
   }
 }
+@media (max-width: 1290px) {
+  .checkin {
+    padding: 8px;
+  }
+  .checkin_seconds {
+    display: flex;
+  }
+  .time_checkinhours {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1267px) {
+  .checkin {
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 781px) {
+  .checkin {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 750px) {
+  .checkin {
+    flex-wrap: wrap;
+  }
+}
 
-@media (max-width: 813px) {
-  .workingcheckin_page {
-    padding: 20px;
+@media (max-width: 480px) {
+  .checkin {
+    flex-wrap: nowrap;
+    gap: 30px;
   }
 }
