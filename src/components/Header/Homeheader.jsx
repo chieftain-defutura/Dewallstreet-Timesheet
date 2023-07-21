@@ -47,67 +47,73 @@ const Homeheader = () => {
   const Sidebar = (
     <div className="sidebar">
       <div className="sidebar_content">
-        <div className="headercontent_name">
-          <h2>Workspace</h2>
-
-          <div className="sidebar_name">
-            <h3>Ravishankar Varma</h3>
-            <p>DEWALLED1</p>
+        <div className="sidebar_header">
+          <div className="headercontent_name">
+            <h2>Workspace</h2>
+            <div className="sidebar_name">
+              <h3>Ravishankar Varma</h3>
+              <p>DEWALLED1</p>
+            </div>
           </div>
+          <div className="sidebar_emptyline"></div>
         </div>
+        <div className="sidebar_link">
+          <Link to="/home">
+            {pathname === "/home" ? (
+              <>
+                <div onClick={() => setToggle(toggle)} className="menu_link">
+                  <img src={briefcasetimer} alt="icon" />
+                  <h4 style={{ color: "white" }}>
+                    Clock
+                    <br />
+                    Works
+                  </h4>
+                </div>
+              </>
+            ) : (
+              <>
+                <div onClick={() => setToggle(toggle)} className="menu_link">
+                  <img src={briefcasetimerhide} alt="icon" />
+                  <h4 style={{ color: "grey" }}>
+                    Clock
+                    <br />
+                    Works
+                  </h4>
+                </div>
+              </>
+            )}
+          </Link>
 
-        <Link to="/home">
-          {pathname === "/home" ? (
-            <>
-              <div onClick={() => setToggle(toggle)}>
-                <img src={briefcasetimer} alt="icon" />
-                <h4 style={{ color: "white" }}>
-                  Clock
-                  <br />
-                  Works
-                </h4>
-              </div>
-            </>
-          ) : (
-            <>
-              <div onClick={() => setToggle(toggle)}>
-                <img src={briefcasetimerhide} alt="icon" />
-              </div>
-              <div>
-                <h4 style={{ color: "grey" }}>
-                  Clock
-                  <br />
-                  Works
-                </h4>
-              </div>
-            </>
-          )}
-        </Link>
-        <Link to="/Taskpage/log">
-          {pathname === "/Taskpage" ||
-          pathname === "/Taskpage/log" ||
-          pathname === "/Taskpage/audit" ||
-          pathname === "/Taskpage/backlog" ||
-          pathname === "/Taskpage/commit" ? (
-            <>
-              <img src={tasksheethide} alt="icon" />
-              <h4 style={{ color: "white" }}>
-                Task
-                <br />
-                Board
-              </h4>
-            </>
-          ) : (
-            <>
-              <img src={tasksheet} alt="icon" />
-              <h4 style={{ color: "grey" }}>
-                Task
-                <br />
-                Board
-              </h4>
-            </>
-          )}
-        </Link>
+          <Link to="/Taskpage/log">
+            {pathname === "/Taskpage" ||
+            pathname === "/Taskpage/log" ||
+            pathname === "/Taskpage/audit" ||
+            pathname === "/Taskpage/backlog" ||
+            pathname === "/Taskpage/commit" ? (
+              <>
+                <div className="menu_link">
+                  <img src={tasksheethide} alt="icon" />
+                  <h4 style={{ color: "white" }}>
+                    Task
+                    <br />
+                    Board
+                  </h4>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="menu_link">
+                  <img src={tasksheet} alt="icon" />
+                  <h4 style={{ color: "grey" }}>
+                    Task
+                    <br />
+                    Board
+                  </h4>
+                </div>
+              </>
+            )}
+          </Link>
+        </div>
       </div>
     </div>
   );

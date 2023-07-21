@@ -11,6 +11,7 @@
   flex-shrink: 0;
   border-bottom: 1px solid var(--line, #1e1e1e);
   background: #080808;
+  flex-wrap: wrap;
 }
 .home_main > h2 {
   color: var(--canvas, #fff);
