@@ -3,6 +3,7 @@
 .design_links {
   display: flex;
   font-style: normal;
+  justify-content: space-between;
 }
 /* 
 .log_link {
