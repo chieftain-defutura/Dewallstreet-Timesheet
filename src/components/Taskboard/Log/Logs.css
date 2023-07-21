@@ -268,8 +268,6 @@
 @media (max-width: 746px) {
   .logs_mapping {
     padding: 0;
-  }
-  .logs_mapping {
     border-right: none;
   }
 }
