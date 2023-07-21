@@ -61,13 +61,13 @@ const DesignContent = ({ data, setNegotiateOpen }) => {
       {!Seemore && (
         <>
           <div className="logs_button">
-            <div onClick={() => setNegotiateOpen((m) => !m)}>
-              <Button variant="negotiate" size="medium">
+            <div>
+              <Button variant="negotiate" handleClick={() => setNegotiateOpen((m) => !m)} size="medium">
                 Negotiate
               </Button>
             </div>
-            <div onClick={() => setAddcommitOpen(true)}>
-              <Button variant="primary" size="medium">
+            <div>
+              <Button variant="primary" handleClick={() => setAddcommitOpen(true)} size="medium">
                 Commit
               </Button>
             </div>

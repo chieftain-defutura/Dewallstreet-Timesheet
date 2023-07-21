@@ -1,13 +1,12 @@
 .clock_work,
 .task_board {
-  font-family: Gilroy-Medium;
+  font-family: var(--font-Medium);
   font-size: 16px;
-  padding: 15px;
 }
 
 .horizontal_line {
   border: 1px solid#282828;
-  width: 80px;
+  width: 67px;
 }
 .clock_work h4 {
   color: white;
@@ -22,9 +21,7 @@
   align-items: center;
   border-right: 1px solid #282828;
   height: 230vh;
-  /* align-items: flex-start; */
-  list-style-type: none;
-  /* display: block; */
+  padding: 15px;
 }
 
 /* @media (max-width: 1000px) {
@@ -35,10 +32,6 @@
   }
 } */
 
-/* .inactive {
-  pointer-events: none;
-  color: #282828;
-} */
 @media (max-width: 700px) {
   .assign_tasks_main {
     border-right: none;
