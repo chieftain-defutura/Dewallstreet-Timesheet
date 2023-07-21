@@ -252,7 +252,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 20px;
+  padding: 10px;
   border-right: 1px solid #282828;
 }
 .logs_render {
@@ -265,3 +265,8 @@
 .grid {
   padding: 20px;
 }
+/* @media (max-width: 1285px) {
+  .logs_mapping {
+    padding: 0%;
+  }
+} */
