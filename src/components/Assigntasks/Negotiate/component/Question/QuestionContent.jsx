@@ -169,16 +169,7 @@ const QuestionSection = ({ data }) => {
 
   return (
     <div className="question_overall">
-      {/* <div className="question_button">
-        <Button
-          variant="secondary"
-          handleClick={() => setAddquestionnaireOpen(true)}
-          size="medium"
-          image={plus}
-        >
-          Add questionnaire
-        </Button>
-      </div> */}
+      
       <div className="question_one">
         {!openSeemore && (
           <>

@@ -256,7 +256,7 @@
   border-right: 1px solid #282828;
 }
 .logs_render {
-  padding: 0 30px;
+  padding: 0 20px;
   height: 230vh;
   display: flex;
   flex-direction: column;
