@@ -168,8 +168,18 @@
   }
 }
 @media (max-width: 750px) {
-  .checkin {
+  .time_checkinhours {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+  }
+  .workinghours_main {
+    width: 80%;
+  }
+  .toast_button {
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -177,5 +187,11 @@
   .checkin {
     flex-wrap: nowrap;
     gap: 30px;
+  }
+  .workinghours_main {
+    width: 100%;
+  }
+  .workingcheckin_page {
+    padding: 30px;
   }
 }

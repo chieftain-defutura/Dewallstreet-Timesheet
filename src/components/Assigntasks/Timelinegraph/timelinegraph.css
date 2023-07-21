@@ -89,14 +89,6 @@
   .graph > .days > .total_days {
     gap: 10px;
   }
-}
-/* .active a {
-  background-color: white;
-} */
-@media (max-width: 480px) {
-  .timeline_graph_main {
-    width: 360px;
-  }
   .graph > .days img {
     width: 100%;
   }

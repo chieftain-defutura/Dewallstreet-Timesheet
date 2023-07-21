@@ -5,14 +5,14 @@
   gap: 10px;
 }
 .working_grid {
-  padding: 40px;
+  padding: 35px;
 }
 
 .hours_deduction {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 40px;
+  padding: 35px;
   border-right: 1px solid #282828;
 }
 .hamimage {
