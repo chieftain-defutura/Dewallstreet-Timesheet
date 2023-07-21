@@ -57,7 +57,7 @@ const TaskHeader = () => {
         ) : (
           <Link to="/Taskpage/audit">
             <div className="log_link">
-              <p style={{ color: "#fff" }}>Audits( 2 )</p>
+              <p style={{ color: "#fff" }}>A udits( 2 )</p>
             </div>
           </Link>
         )}
