@@ -147,7 +147,8 @@
 .first_link,
 .overall_link {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 200px;
 }
 .question_lists,
 .overall_link {
@@ -155,11 +156,10 @@
   padding: 15px;
 }
 .createquestion_main {
- 
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 20px;
+  justify-content: space-between;
+  /* padding: 20px; */
 }
 .questionnaires,
 .reference {
@@ -167,15 +167,55 @@
   flex-direction: column;
   gap: 5px;
 }
-.question_reference {
+.question_reference,
+.questionone_details,
+.reference_main {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.askquestion_button > Button {
-  background-color: #363434;
+
+/* .questions_overall {
+  position: absolute;
+} */
+.reference_main > Button {
+  font-size: 14px;
+}
+.createquery_main {
+  background-color: rgba(25, 25, 25, 1);
+  color: #6b6666;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  font-size: 12px;
+}
+.questionnaire_reference {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.createquery_main h2 {
+  color: white;
+}
+.questionone_information {
+  display: flex;
+  gap: 285px;
+  border: 0.1px solid #484646;
+  padding: 10px;
+}
+.link_details {
+  display: flex;
+  gap: 350px;
+  border: 0.1px solid #484646;
+  padding: 10px;
+}
+.reference_main > Button {
+  border: none;
   width: 100%;
 }
-.questions_overall {
-  position: absolute;
+.overall_queries,
+.links_refer {
+  display: flex;
+  gap: 285px;
 }

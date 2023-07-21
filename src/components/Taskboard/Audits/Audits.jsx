@@ -25,19 +25,18 @@ const AuditDesignsystem = ({ setRevisiondetails }) => {
       <div className="header_archive">
         <TaskHeader />
         <div className="audit_main">
-          <div
-            className="archive_button"
-            onClick={() => setArchivedtasks((m) => !m)}
-          >
-            <button>
+          <button onClick={() => setArchivedtasks((m) => !m)}>
+            <div className="archive_button">
               Archived tasks ( 2 )
               <img src={downarrow} alt="icon" />
-            </button>
-          </div>
+            </div>
+          </button>
 
-          <div className="archivetask_horizontalline"></div>
-         
-          {archivedtasks ? <div className="audit_cards">{RenderAuditdesign}</div>:<Archivedtasks />}
+          {archivedtasks ? (
+            <Archivedtasks />
+          ) : (
+            <div className="audit_cards">{RenderAuditdesign}</div>
+          )}
         </div>
       </div>
     </React.Fragment>

@@ -14,6 +14,8 @@ const Negotiate = () => {
               style={{
                 background: "#141414",
                 borderBottom: "1px solid #fff",
+                width: "300px",
+                textAlign: "center",
               }}
             >
               <p style={{ color: "#fff" }}>Questionnaire</p>
@@ -32,7 +34,8 @@ const Negotiate = () => {
               style={{
                 background: "#141414",
                 borderBottom: "1px solid #fff",
-                width: "100px",
+                width: "300px",
+                textAlign: "center",
               }}
             >
               <p style={{ color: "#fff" }}>Meeting</p>
