@@ -14,6 +14,7 @@ import { QuestionnaireDetails } from "./Question";
 import LayoutModal from "../../../../Modal/Modal";
 const QuestionContent = () => {
   const [addquestionnaireopen, setAddquestionnaireOpen] = useState(false);
+  const [questionnareoneopen, setQuestionnaireoneOpen] = useState(false);
   return (
     <div className="questionnaire_main">
       <div className="question_button">
@@ -30,11 +31,11 @@ const QuestionContent = () => {
         <QuestionSection key={i} data={f} />
       ))}
       {addquestionnaireopen && (
-        <LayoutModal>
+        <LayoutModal onClose={() => setAddquestionnaireOpen(false)}>
           <div className="createquery_main">
             <div className="create_question">
               <h2>Create questionnaire.</h2>
-              <button>
+              <button onClick={() => setAddquestionnaireOpen(false)}>
                 <img src={cancel} alt="icon" />
               </button>
             </div>
@@ -44,7 +45,7 @@ const QuestionContent = () => {
                   <h4>QUESTIONNAIRES.</h4>
                   <img src={plus} alt="icon" />
                 </div>
-                <button>
+                <button onClick={() => setQuestionnaireoneOpen(true)}>
                   <div className="questionone_information">
                     <h4>Questionnaire 1</h4>
                     <img src={close} alt="icon" />
@@ -68,7 +69,7 @@ const QuestionContent = () => {
           </div>
         </LayoutModal>
       )}
-      {/* {addquestionnaireopen && (
+      {questionnareoneopen && (
         <LayoutModal>
           <div className="questions_overall">
             <div className="createquestion_main">
@@ -130,7 +131,7 @@ const QuestionContent = () => {
             </div>
           </div>
         </LayoutModal>
-      )} */}
+      )}
     </div>
   );
 };
