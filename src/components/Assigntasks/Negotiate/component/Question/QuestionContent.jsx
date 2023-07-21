@@ -4,57 +4,161 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import "./questionnaire.css";
+import successtick from "../../../../../assets/icons/successtick.svg";
 import Button from "../../../../Button";
 import plus from "../../../../../assets/icons/plus.svg";
 import seemorelist from "../../../../../assets/icons/seelessbutton.svg";
 import seedownlist from "../../../../../assets/icons/seemorebutton.svg";
+import cancel from "../../../../../assets/icons/cancel.svg";
+import close from "../../../../../assets/icons/toastcancel.svg";
 import { QuestionnaireDetails } from "./Question";
-
+import LayoutModal from "../../../../Modal/Modal";
+import Toasts from "../../../../Toasts";
 const QuestionContent = () => {
-  const [toggle, setToggle] = useState("Questinnary");
+  const [addquestionnaireopen, setAddquestionnaireOpen] = useState(false);
+  const [questionnareoneopen, setQuestionnaireoneOpen] = useState(false);
+  const [toastmessage, setToastMessage] = useState(false);
+  const [Closebutton, setCloseButton] = useState(false);
   return (
     <div className="questionnaire_main">
-      {/* <h3>Negotiate.</h3>
-      <div className="questionnaire_head">
-        {toggle === "Questinnary" ? (
-          <div
-            className="negotiate_link"
-            style={{
-              background: "#141414",
-              borderBottom: "1px solid #fff",
-            }}
-          >
-            <p style={{ color: "#fff" }}>Questionnaire</p>
-          </div>
-        ) : (
-          <div className="negotiate_link" onClick={()=>setToggle("Questinnary")}>
-            <a>Questionnaire</a>
-          </div>
-        )}
-        {toggle === "meeting" ? (
-          <div
-            className="negotiate_link"
-            style={{
-              background: "#141414",
-              borderBottom: "1px solid #fff",
-            }}
-          >
-            <p style={{ color: "#fff" }}>Meeting</p>
-          </div>
-        ) : (
-          <div className="negotiate_link" onClick={()=> setToggle("meeting")}>
-            <a>Meeting</a>
-          </div>
-        )}
-      </div> */}
       <div className="question_button">
-        <Button variant="secondary" size="medium" image={plus}>
+        <Button
+          variant="secondary"
+          size="medium"
+          image={plus}
+          handleClick={() => setAddquestionnaireOpen((m) => !m)}
+        >
           Add questionnaire
         </Button>
       </div>
       {QuestionnaireDetails.map((f, i) => (
         <QuestionSection key={i} data={f} />
       ))}
+      {addquestionnaireopen && !questionnareoneopen && (
+        <LayoutModal onClose={() => setAddquestionnaireOpen(false)}>
+          <div className="createquery_main">
+            <div className="create_question">
+              <h2>Create questionnaire.</h2>
+              <button onClick={() => setAddquestionnaireOpen(false)}>
+                <img src={cancel} alt="icon" />
+              </button>
+            </div>
+            <div className="questionnaire_reference">
+              <div className="questionone_details">
+                <div className="overall_queries">
+                  <h4>QUESTIONNAIRES.</h4>
+                  <img src={plus} alt="icon" />
+                </div>
+                <button onClick={() => setQuestionnaireoneOpen(true)}>
+                  <div className="questionone_information">
+                    <h4>Questionnaire 1</h4>
+                    <img src={close} alt="icon" />
+                  </div>
+                </button>
+              </div>
+              <div className="reference_main">
+                <div className="links_refer">
+                  <h4>REFERENCE LINKS</h4>
+                  <img src={plus} alt="icon" />
+                </div>
+                <div className="link_details">
+                  <h4>Link</h4>
+                  <img src={close} alt="icon" />
+                </div>
+                <Button variant="negotiate" size="large">
+                  Ask questionnaire
+                </Button>
+              </div>
+            </div>
+          </div>
+        </LayoutModal>
+      )}
+      {questionnareoneopen && !toastmessage && (
+        <LayoutModal onClose={() => setQuestionnaireoneOpen(false)}>
+          <div className="questionsoverall_main">
+            <div className="createquestion_main">
+              <div className="create_question">
+                <h2>Create questionnaire.</h2>
+                <img src={cancel} alt="icon" />
+              </div>
+              <div className="questionnaires">
+                <h4>Questionnaires.</h4>
+                <div className="question_reference">
+                  <div className="one_question">
+                    <h4 id="query_one">QUESTIONNAIRE 1</h4>
+                    <img src={plus} alt="icon" />
+                  </div>
+                  <div className="question_lists">
+                    <p>
+                      1. Lorem ipsum dolor sit amet, consecuter adipiscing elit?
+                    </p>
+                    <p>
+                      2. Lorem ipsum dolor sit amet, consecuter adipiscing elit,
+                      sed do
+                    </p>
+                    <div className="second_para">
+                      <p>eiusmod tempor incididunt.</p>
+                      <img src={close} alt="icon" />
+                    </div>
+                    <p>
+                      3. Lorem ipsum dolor sit amet, consecuter adipiscing elit?
+                    </p>
+                    <p>
+                      4. Lorem ipsum dolor sit amet, consecuter adipiscing elit?
+                    </p>
+                  </div>
+                  <div className="reference">
+                    <h4>Reference links.</h4>
+                    <div className="first_link">
+                      <h4>LINK 1</h4>
+                      <img src={plus} alt="icon" />
+                    </div>
+                    <div className="overall_link">
+                      <div className="first_link">
+                        <a href="#">
+                          https://www.figmacom/file/s8pn7kOuTojgGIhbxqJgKm/wireframer?
+                        </a>
+                      </div>
+                      <div className="second_link">
+                        <a href="#">
+                          type=design&node-i=87-37&t=/XEsrKG9Kt9nesyKF-O
+                        </a>
+                        <img src={close} alt="icon" />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="askquestion_button"
+                    onClick={() => setToastMessage(true)}
+                  >
+                    <Button variant="negotiate" size="large">
+                      Ask questionnaire
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </LayoutModal>
+      )}
+
+      {toastmessage && (
+        <div
+          className="questionnaire_toast"
+          onClick={() => {
+            setToastMessage(false),
+              setAddquestionnaireOpen(true),
+              setQuestionnaireoneOpen(false);
+          }}
+          style={{ margin: "auto" }}
+        >
+          <Toasts
+            image={successtick}
+            props="Your questionnaires sent successfully!"
+            icons={close}
+          />
+        </div>
+      )}
     </div>
   );
 };
@@ -65,28 +169,17 @@ const QuestionSection = ({ data }) => {
 
   return (
     <div className="question_overall">
+      {/* <div className="question_button">
+        <Button
+          variant="secondary"
+          handleClick={() => setAddquestionnaireOpen(true)}
+          size="medium"
+          image={plus}
+        >
+          Add questionnaire
+        </Button>
+      </div> */}
       <div className="question_one">
-        {/* <h3>Negotiate.</h3> */}
-        {/* <div className="questionnaire_head">
-          <div
-            className="question"
-            onClick={() => setQuestionHeading("question")}
-          >
-            <a href="#">Questionnaire</a>
-            <div className="horizontal_line_questionnaire"></div>
-          </div>
-
-          <div className="meet" onClick={() => setQuestionHeading("meeting")}>
-            <a href="#">Meeting</a>
-            <div className="horizontal_line_meeting"></div>
-          </div>
-        </div> */}
-
-        {/* <div className="question_button">
-          <Button variant="secondary" size="medium" image={plus}>
-            Add questionnaire
-          </Button>
-        </div> */}
         {!openSeemore && (
           <>
             <div className="questionnaire_one_all">
@@ -112,27 +205,6 @@ const QuestionSection = ({ data }) => {
             </div>
           </>
         )}
-        {/* <div className="questionnaire_one_all">
-          <div className="questionnaire_one">
-            <h4>{data.title}</h4>
-            <div className="wait_button">
-              <Button variant="secondary" size="small">
-                Waiting for answer
-              </Button>
-            </div>
-          </div>
-          <div className="ask_date">
-            <h4>ASKED DATE</h4>
-            <h4 id="date">08 June, 2023.</h4>
-          </div>
-          <div
-            className="negotiate_seemore"
-            onClick={() => setOpenSeemore(true)}
-          >
-            <h4>See more</h4>
-            <img src={seedownlist} alt="icon" />
-          </div>
-        </div> */}
       </div>
 
       {openSeemore && (
@@ -167,7 +239,7 @@ const QuestionSection = ({ data }) => {
               </div>
             </div>
           ))}
-          {/* <div className="questionnaire_two">{data.content.map}</div> */}
+
           <div className="ask_answer">
             <div className="ask_date">
               <h4>ASKED DATE</h4>

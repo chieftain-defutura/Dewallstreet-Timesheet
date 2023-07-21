@@ -2,30 +2,12 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import { useLocation } from "react-router-dom";
-// import { BrowserRouter as Router } from "react-router-dom";
-// import { NavLink } from "react-router-dom";
 import graphchart from "../../../assets/images/graphchart.svg";
-// import { Link } from "react-router-dom";
 import "./timelinegraph.css";
 
 const Timelinegraph = () => {
-  // const location = useLocation();
-  // const { pathname } = location;
-  // const splitLocation = pathname.split("/");
-  // console.log(pathname);
-  // const location = useLocation();
-  // const { pathname } = location;
-  // const splitLocation = pathname.split("/");
-  // const [clickable, setClickable] = useState(true);
-
-  // const clickHandler = (event) => {
-  //   event.preventDefault();
-  // };
   const [toggle, setToggle] = useState("week");
-  // const handleChange = () => setToggle("month");
   return (
-    // <Router>
     <div className="timeline_graph_main">
       <div className="timeline_header">
         <form>
@@ -45,7 +27,8 @@ const Timelinegraph = () => {
                   style={{
                     color: "white",
                     borderBottom: "1px solid #fff",
-                    width: "40px",
+                    width: "50px",
+                    textAlign: "center",
                   }}
                 >
                   Week
@@ -78,7 +61,8 @@ const Timelinegraph = () => {
                   style={{
                     color: "white",
                     borderBottom: "1px solid #fff",
-                    width: "40px",
+                    width: "50px",
+                    textAlign: "center",
                   }}
                 >
                   Months
@@ -112,7 +96,8 @@ const Timelinegraph = () => {
                   style={{
                     color: "white",
                     borderBottom: "1px solid #fff",
-                    width: "40px",
+                    width: "50px",
+                    textAlign: "center",
                   }}
                 >
                   Year
@@ -174,7 +159,6 @@ const Timelinegraph = () => {
         </div>
       </div>
     </div>
-    // </Router>
   );
 };
 export default Timelinegraph;

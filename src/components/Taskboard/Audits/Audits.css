@@ -8,9 +8,22 @@
   padding: 10px;
   border-right: 1px solid #282828;
 }
+.archive_button > button {
+  background-color: none;
+}
 .archive_button {
+  /* display: flex;
+  justify-content: space-between; */
   display: flex;
+  width: 600px;
+  padding: 16px;
+  /* justify-content: center; */
+  /* align-items: center; */
   justify-content: space-between;
+  border-bottom: 1px solid var(--line, #1e1e1e);
+  color: #ffffff;
+
+  /* gap: 432px; */
 }
 .audit_cards,
 .audit_main {
@@ -27,10 +40,7 @@
   padding: 10px;
   text-align: left;
 } */
-.archivetask_horizontalline {
-  border: 1px solid gray;
-  width: 100%;
-}
+
 .reject_button > Button {
   color: rgb(239, 63, 63);
   border: 1px solid rgb(239, 63, 63);

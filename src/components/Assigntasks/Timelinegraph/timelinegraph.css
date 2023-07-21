@@ -1,10 +1,7 @@
 .timeline_header {
-  font-family: Gilroy-Medium;
   color: white;
   font-size: 11px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   gap: 140px;
 }
 .timeline_header form select {
@@ -13,23 +10,15 @@
   background-color: #141414;
   color: white;
   border: 1px solid rgba(39, 36, 36, 0.773);
-  font-family: Gilroy-Medium;
+  font-family: var(--font-Medium);
   outline: none;
 }
 .time_period {
   display: flex;
-  gap: 80px;
+  gap: 40px;
 }
-/* .week > div {
-  width: 64px;
-} */
 .time_period > .week > a {
   color: white;
-}
-.week {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .vertical_line_graph {
   border: 1px solid rgba(39, 36, 36, 0.773);
@@ -45,7 +34,6 @@
 }
 .graph {
   display: flex;
-  font-family: Gilroy-Medium;
   color: rgb(115, 105, 105);
 }
 .total_weeks {
@@ -63,21 +51,13 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 100%;
+  /* width: 100%; */
+  font-family: var(--font-Medium);
 }
 .days {
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
-/* .month > div,
-.year > div {
-  border: 1px solid rgb(21, 20, 20);
-  width: 64px;
-} */
-.month > a,
-.year > a {
-  color: rgb(115, 105, 105);
 }
 @media (max-width: 480px) {
   .timeline_graph_main {
