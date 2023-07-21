@@ -70,8 +70,8 @@ const QuestionContent = () => {
         </LayoutModal>
       )}
       {questionnareoneopen && (
-        <LayoutModal>
-          <div className="questions_overall">
+        <LayoutModal onClose={() => setQuestionnaireoneOpen(false)}>
+          <div className="questionsoverall_main">
             <div className="createquestion_main">
               <div className="create_question">
                 <h2>Create questionnaire.</h2>
