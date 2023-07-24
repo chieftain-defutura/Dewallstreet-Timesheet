@@ -209,6 +209,11 @@
 .grid {
   padding: 20px;
 }
+/* @media (max-width: 1115px) {
+  .design_link {
+    padding: 0;
+  }
+} */
 @media (max-width: 835px) {
   .logs_mapping {
     padding: 0;
@@ -231,6 +236,11 @@
     padding: 0 0 15px 0;
   }
 }
+@media (max-width: 643px) {
+  .task_system {
+    width: 80%;
+  }
+}
 @media (max-width: 480px) {
   .task_title p,
   .correction p,
@@ -246,10 +256,5 @@
   .design_links {
     display: flex;
     gap: 5px;
-  }
-}
-@media (max-width: 643px) {
-  .task_system {
-    width: 80%;
   }
 }
