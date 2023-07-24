@@ -204,7 +204,7 @@
 }
 @media (max-width: 1290px) {
   .log_link > p {
-    padding: 10px 23px;
+    padding: 15px 40px 20px 45px;
   }
 }
 @media (max-width: 1192px) {
@@ -220,5 +220,15 @@
 @media (max-width: 1133px) {
   .log_link > p {
     padding: 8px 15px;
+  }
+  @media (max-width: 1072px) {
+    .log_link > p {
+      padding: 8px 12px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .log_link > p {
+      padding: 8px 8px;
+    }
   }
 }

@@ -3,17 +3,16 @@
 .homepage_main {
   display: flex;
   gap: 20px;
-  padding: 20px;
 }
 .working_grid {
-  padding: 35px;
+  padding: 20px 10px;
 }
 
 .hours_deduction {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 35px;
+  padding: 20px;
   border-right: 1px solid #282828;
 }
 .hamimage {

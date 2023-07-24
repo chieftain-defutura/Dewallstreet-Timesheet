@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useState } from "react";
 import "./WorkingHours.css";
 import hoursprograss from "../../../assets/icons/hoursprograss.svg";
@@ -47,7 +49,7 @@ const WorkingHours = () => {
                 </div>
               </div>
               <Button variant="primary" size="regular" image={checkin}>
-                Check in
+                Checkin
               </Button>
             </div>
           </div>
