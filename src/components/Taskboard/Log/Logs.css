@@ -1,60 +1,4 @@
 /** @format */
-/* .design_links {
-  display: flex;
-  font-style: normal;
-}
-.log_link {
-  display: flex;
-  height: 48px;
-  padding: 16px 51px;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid var(--canvas, #fff);
-  background: #141414;
-} */
-/* .log_link > a {
-  color: var(--canvas, #fff);
-  font-family: Gilroy;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-.commit_link {
-  display: flex;
-  height: 48px;
-  padding: 16px 37px 16px 38px;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid var(--line, #1e1e1e);
-}
-.commit_link > a,
-.audits_link > a,
-.backlog_link > a {
-  color: var(--labler-tight, #575757);
-  font-family: Gilroy-bold;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-.audits_link {
-  display: flex;
-  height: 48px;
-  padding: 16px 46px;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid var(--line, #1e1e1e);
-}
-
-.backlog_link {
-  display: flex;
-  height: 48px;
-  padding: 16px 36px 16px 37px;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid var(--line, #1e1e1e);
-} */
 
 .task_system {
   display: flex;
@@ -112,14 +56,14 @@
 .logsempty {
   color: white;
 }
-*/ .day_time {
+.day_time {
   display: flex;
   flex-direction: column;
   width: 552px;
   gap: 8px;
   align-items: flex-start;
 }
-*/ .time_respond {
+.time_respond {
   display: flex;
   align-items: center;
 }
@@ -265,14 +209,42 @@
 .grid {
   padding: 20px;
 }
-@media (max-width: 746px) {
+@media (max-width: 835px) {
+  .logs_mapping {
+    padding: 0;
+  }
+  .grid {
+    padding: 3px;
+  }
+}
+@media (max-width: 778px) {
   .logs_mapping {
     padding: 0;
     border-right: none;
   }
-
-  .grid {
+  .logs_render {
+    padding: 0 0 0 3px;
+  }
+}
+@media (max-width: 700px) {
+  .task_system {
+    padding: 0 0 15px 0;
+  }
+}
+@media (max-width: 480px) {
+  .task_title p,
+  .correction p,
+  .rework p,
+  .link_drive p,
+  .time_respond h2,
+  .time_respond p {
+    font-size: 10px;
+  }
+  .logs_link {
+    padding: 0;
+  }
+  .design_links {
     display: flex;
-    flex-wrap: wrap;
+    gap: 5px;
   }
 }

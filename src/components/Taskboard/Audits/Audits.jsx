@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./audits.css";
-import downarrow from "../../../assets/icons/archivedown.svg";
+import "./Audits.css";
+import downarrow from "../../../assets/icons/seemorebutton.svg";
+import archivedown from "../../../assets/icons/archivedown.svg";
 import uparrow from "../../../assets/icons/chevron-up.svg";
 import TaskHeader from "../Taskheader";
 import { Auditlist } from "./Audit.JS";
@@ -25,12 +26,13 @@ const AuditDesignsystem = ({ setRevisiondetails }) => {
       <div className="header_archive">
         <TaskHeader />
         <div className="audit_main">
-          <button onClick={() => setArchivedtasks((m) => !m)}>
-            <div className="archive_button">
-              Archived tasks ( 2 )
-              <img src={downarrow} alt="icon" />
-            </div>
-          </button>
+          <div
+            className="archive_tasks"
+            onClick={() => setArchivedtasks((m) => !m)}
+          >
+            Archived tasks ( 2 )
+            <img src={archivedown} alt="icon" />
+          </div>
 
           {archivedtasks ? (
             <Archivedtasks />
@@ -55,30 +57,7 @@ const Auditcontent = ({ data, setRevisiondetails, setArchivedtasks }) => {
         <h1>{data.Title}</h1>
         <p>{data.Para}</p>
       </div>
-      {/* {!archivetask && (
-        <>
-          {!seemore && (
-            <>
-              <div className="reject_button">
-                <Button variant="secondary" size="small">
-                  Rejected
-                </Button>
-              </div>
-              <div className="logs_button">
-                <Button variant="secondary" size="medium">
-                  Revision details
-                </Button>
-              </div>
-              <div className="arrows">
-                <button onClick={() => setSeemore(true)}>
-                  {data.More}
-                  {<img src={downarrow} alt="icon" />}
-                </button>
-              </div>
-            </>
-          )}
-        </>
-      )} */}
+
       {!seemore && (
         <>
           <div className="reject_revision">
@@ -104,13 +83,7 @@ const Auditcontent = ({ data, setRevisiondetails, setArchivedtasks }) => {
           </div>
         </>
       )}
-      {/* {setArchivetask && (
-        <>
-          {seemore && (
-            <Auditseemore Designtype={data} setSeemore={setSeemore} />
-          )}
-        </>
-      )} */}
+
       {seemore && <Auditseemore Designtype={data} setSeemore={setSeemore} />}
     </div>
   );

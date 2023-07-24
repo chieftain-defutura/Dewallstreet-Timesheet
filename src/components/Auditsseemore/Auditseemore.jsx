@@ -4,7 +4,6 @@ import linkimage from "../../assets/icons/link.svg";
 import documentimage from "../../assets/icons/document.svg";
 import clockimage from "../../assets/icons/timer.svg";
 import uparrow from "../../assets/icons/chevron-up.svg";
-import Button from "../Button";
 import { useParams } from "react-router-dom";
 const Auditseemore = ({ Designtype, setSeemore }) => {
   const { audits } = useParams();
@@ -75,18 +74,6 @@ const Auditseemore = ({ Designtype, setSeemore }) => {
           <img src={uparrow} alt="" />
         </button>
       </div>
-      {/* <div className="reject_revisiondetails">
-        <Button variant="secondary" size="small">
-          Rejected
-        </Button>
-        <Button variant="secondary" size="medium">
-          Revision details
-        </Button>
-      </div>
-      <div className="audit_seemore">
-        <button>See more</button>
-        <img src={uparrow} alt="icon" />
-      </div> */}
     </div>
   );
 };

@@ -77,6 +77,7 @@
 .negotiate_seemore,
 .negotiate_seedown {
   display: flex;
+  gap: 10px;
   justify-content: center;
 }
 .questionnaire_one_all {
@@ -86,7 +87,8 @@
   background-color: rgb(39, 38, 38);
   padding: 20px;
 }
-.link_para {
+.link_para,
+.questionnaire_number > h5 {
   color: rgb(115, 105, 105);
   font-family: Gilroy-Medium;
   display: flex;
@@ -121,14 +123,16 @@
   flex-direction: column;
   gap: 20px;
 }
-.questionnaire_two {
+.individual_questionnaire {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 3px;
+  font-size: 14px;
 }
+
 .questionnaire_two_all {
   border: 1px solid #282828;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -144,14 +148,12 @@
 .create_question {
   display: flex;
   justify-content: space-between;
-  /* gap: 200px; */
 }
 
 .createquestion_main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* padding: 20px; */
 }
 
 .reference {
@@ -239,14 +241,12 @@
 .overall_link {
   border: 1px solid var(--line, #2a2828);
   padding: 15px;
-  /* width: 90%; */
 }
 .first_link,
 .one_question,
 .second_link {
   display: flex;
   justify-content: space-between;
-  /* align-content: center; */
 }
 .questionnaire_toast {
   position: absolute;

@@ -1,10 +1,9 @@
 import React from "react";
 import "./Archivedtasksseemore.css";
-import downarrow from "../../assets/icons/archivedown.svg";
 import linkimage from "../../assets/icons/link.svg";
 import documentimage from "../../assets/icons/document.svg";
 import clockimage from "../../assets/icons/timer.svg";
-import uparrow from "../../assets/icons/archiveup.svg";
+import uparrow from "../../assets/icons/seelessbutton.svg";
 import Button from "../Button";
 import { useParams } from "react-router-dom";
 const Archivedtasksseemore = ({ Designtype, setSeemore }) => {

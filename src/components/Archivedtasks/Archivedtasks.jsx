@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Archivedtasks.css";
 import downarrow from "../../assets/icons/archivedown.svg";
-import uparrow from "../../assets/icons/archiveup.svg";
 import { Archivetasklist } from "./Archivetask";
 
 import Button from "../Button";
@@ -21,7 +20,7 @@ const Archivedesignsystem = ({}) => {
 export default Archivedesignsystem;
 const Archivecontent = ({ data }) => {
   const [seemore, setSeemore] = useState(false);
- 
+
   console.log("data", data);
   if (!data) return;
   return (
@@ -38,7 +37,7 @@ const Archivecontent = ({ data }) => {
               Passed
             </Button>
           </div>
-          <div className="arrows">
+          <div className="archive_arrows">
             <button onClick={() => setSeemore(true)}>
               {data.More}
               <img src={downarrow} alt="icon" />
@@ -46,34 +45,10 @@ const Archivecontent = ({ data }) => {
           </div>
         </>
       )}
-      {/* <Button variant="primary" size="small">
-        Passed
-      </Button>
-      <div className="arrows">
-        <button>
-          {data.more}
-          <img src={downarrow} alt="icon" />
-        </button>
-      </div> */}
+
       {seemore && (
         <Archivedtasksseemore Designtype={data} setSeemore={setSeemore} />
       )}
-      {/* {!archivetasks && (
-        <>
-          <div className="arrows">
-            <button onClick={() => setSeemore(true)}>
-              {data.More}
-              {<img src={downarrow} alt="icon" />}
-            </button>
-          </div>
-        </>
-      )}
-      {archivetasks && (
-        <Archivedesignsystem
-          Designtype={data}
-          setArchivetasks={setArchivetasks}
-        />
-      )} */}
     </div>
   );
 };

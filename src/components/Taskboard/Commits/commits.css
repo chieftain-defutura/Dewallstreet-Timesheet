@@ -30,62 +30,19 @@
   align-items: flex-start;
   gap: 16px;
 }
-/* .design_links {
+.design_links {
   display: flex;
   font-style: normal;
-} */
-/* .backlog_link {
-  display: flex;
-  padding: 16px 51px;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
-.backlog_link > a {
-  color: var(--canvas, #fff);
-  font-family: "Gilroy-medium";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  background-color: #141414;
-}
-.commit_link {
-  display: flex;
-  height: 48px;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid var(--line, #1e1e1e);
-}
-.commit_link > a,
-.audits_link > a,
-.log_link > a {
-  color: var(--labler-tight, #575757);
-  font-family: Gilroy-bold;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-} */
-/* .audits_link {
-  display: flex;
-  height: 48px;
-  padding: 16px 46px;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid var(--line, #1e1e1e);
-} */
 
-/* .log_link {
+.log_link {
   display: flex;
   height: 48px;
-  padding: 20px 40px 20px 50px;
-  padding: 10px 25px;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--line, #1e1e1e);
-} */
-/* .log_link > p {
-  padding: 10px 25px;
-} */
+}
 .Raise_meeting,
 .extend_request {
   display: inline-flex;

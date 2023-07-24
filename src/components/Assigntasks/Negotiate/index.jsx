@@ -18,14 +18,16 @@ const Negotiate = () => {
                 textAlign: "center",
               }}
             >
-              <p style={{ color: "#fff" }}>Questionnaire</p>
+              <a href="#" style={{ color: "#fff" }}>
+                Questionnaire
+              </a>
             </div>
           ) : (
             <div
               className="negotiate_link"
               onClick={() => setToggle("Questionnarie")}
             >
-              <a>Questionnaire</a>
+              <a href="#">Questionnaire</a>
             </div>
           )}
           {toggle === "meeting" ? (
@@ -38,14 +40,16 @@ const Negotiate = () => {
                 textAlign: "center",
               }}
             >
-              <p style={{ color: "#fff" }}>Meeting</p>
+              <a href="#" style={{ color: "#fff" }}>
+                Meeting
+              </a>
             </div>
           ) : (
             <div
               className="negotiate_link"
               onClick={() => setToggle("meeting")}
             >
-              <a>Meeting</a>
+              <a href="#">Meeting</a>
             </div>
           )}
         </div>

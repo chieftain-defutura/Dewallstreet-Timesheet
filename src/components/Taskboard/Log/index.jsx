@@ -17,6 +17,7 @@ const Logboard = () => {
         className="grid"
       >
         <Designpage setNegotiateOpen={setNegotiateOpen} />
+
         {negotiateopen && <Negotiate />}
       </div>
     </Layout>

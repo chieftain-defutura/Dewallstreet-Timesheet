@@ -14,12 +14,10 @@ import toastcancel from "../../assets/icons/toastcancel.svg";
 import { useParams } from "react-router-dom";
 import LayoutModal from "../Modal/Modal";
 import Toasts from "../Toasts";
-
 const Seemore = ({ Designtype, setSeemore }) => {
   const { backlog } = useParams();
   const [Addcommitopen, setAddcommitOpen] = useState(false);
   const [Toastopen, setToastopen] = useState(false);
-
   return (
     <div className="see_more">
       <div className="correction">
@@ -94,7 +92,6 @@ const Seemore = ({ Designtype, setSeemore }) => {
           </div>
         </div>
       )}
-
       <div className="down_arrow">
         <button onClick={() => setSeemore(false)}>
           {Designtype.Less}
@@ -137,7 +134,6 @@ const Seemore = ({ Designtype, setSeemore }) => {
               Lorem ipsum dolor sit amet, consectrtur adipiscing elit, set do
               eiusmed tempor incididunt ut labore et dolore magna aliqua.
             </p>
-
             <div onClick={() => setToastopen(true)} className="confirm_button">
               <Button variant="primary" size="large">
                 Confirm

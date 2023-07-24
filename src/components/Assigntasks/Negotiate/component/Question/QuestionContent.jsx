@@ -1,8 +1,6 @@
 /** @format */
 
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { useParams } from "react-router-dom";
 import "./questionnaire.css";
 import successtick from "../../../../../assets/icons/successtick.svg";
 import Button from "../../../../Button";
@@ -18,7 +16,7 @@ const QuestionContent = () => {
   const [addquestionnaireopen, setAddquestionnaireOpen] = useState(false);
   const [questionnareoneopen, setQuestionnaireoneOpen] = useState(false);
   const [toastmessage, setToastMessage] = useState(false);
-  const [Closebutton, setCloseButton] = useState(false);
+
   return (
     <div className="questionnaire_main">
       <div className="question_button">
@@ -169,7 +167,6 @@ const QuestionSection = ({ data }) => {
 
   return (
     <div className="question_overall">
-      
       <div className="question_one">
         {!openSeemore && (
           <>
@@ -215,7 +212,7 @@ const QuestionSection = ({ data }) => {
                   </h5>
                 </div>
                 <div className="link_para">
-                  <img src={f.icon1} alt="icon" />
+                  <img src={f.icon1another} alt="icon" />
                   <h5> {f.icon1para} </h5>
                 </div>
                 <p> {f.paragraph} </p>

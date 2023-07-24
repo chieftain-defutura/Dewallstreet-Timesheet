@@ -4,26 +4,17 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-family: Gilroy-Light;
   padding: 10px;
   border-right: 1px solid #282828;
 }
-.archive_button > button {
-  background-color: none;
-}
-.archive_button {
-  /* display: flex;
-  justify-content: space-between; */
+
+.archive_tasks {
   display: flex;
-  width: 600px;
+  cursor: pointer;
   padding: 16px;
-  /* justify-content: center; */
-  /* align-items: center; */
+  font-size: 14px;
   justify-content: space-between;
   border-bottom: 1px solid var(--line, #1e1e1e);
-  color: #ffffff;
-
-  /* gap: 432px; */
 }
 .audit_cards,
 .audit_main {
@@ -31,15 +22,6 @@
   flex-direction: column;
   gap: 20px;
 }
-
-/* .audit_main > button {
-  color: white;
-  font-family: var(--font-Light);
-  font-size: 15px;
-  background-color: #141414;
-  padding: 10px;
-  text-align: left;
-} */
 
 .reject_button > Button {
   color: rgb(239, 63, 63);
@@ -69,12 +51,7 @@
   display: flex;
   justify-content: space-between;
 }
-.audit_main > button {
-  background-color: #282828;
-}
+
 .revision_button {
   font-size: 14px;
 }
-/* .grid {
-  padding: 20px;
-} */

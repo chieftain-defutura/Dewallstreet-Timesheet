@@ -31,7 +31,6 @@
 }
 .period_deadline {
   display: flex;
-  /* gap: 300px; */
   justify-content: space-between;
 }
 .week_day_hour {

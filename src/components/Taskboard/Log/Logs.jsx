@@ -11,13 +11,9 @@ import { Designlist } from "./Logos";
 import "./Logs.css";
 import Seeless from "../../see more/seemore";
 import Button from "../../Button";
-
-import { Link } from "react-router-dom";
 import LayoutModal from "../../Modal/Modal";
 import Toasts from "../../Toasts";
-import { useLocation } from "react-router-dom";
 import TaskHeader from "../Taskheader";
-import Negotiate from "../../Assigntasks/Negotiate";
 
 const Designpage = ({ setNegotiateOpen }) => {
   console.log(setNegotiateOpen);
@@ -48,7 +44,6 @@ const DesignContent = ({ data, setNegotiateOpen }) => {
   const [Addcommitopen, setAddcommitOpen] = useState(false);
   const [Toastopen, setToastopen] = useState(false);
 
-  // const [openSeemore, setOpenSeemore] = useState(false);
   console.log("data", data);
 
   if (!data) return;
@@ -62,12 +57,20 @@ const DesignContent = ({ data, setNegotiateOpen }) => {
         <>
           <div className="logs_button">
             <div>
-              <Button variant="negotiate" handleClick={() => setNegotiateOpen((m) => !m)} size="medium">
+              <Button
+                variant="negotiate"
+                handleClick={() => setNegotiateOpen((m) => !m)}
+                size="medium"
+              >
                 Negotiate
               </Button>
             </div>
             <div>
-              <Button variant="primary" handleClick={() => setAddcommitOpen(true)} size="medium">
+              <Button
+                variant="primary"
+                handleClick={() => setAddcommitOpen(true)}
+                size="medium"
+              >
                 Commit
               </Button>
             </div>
