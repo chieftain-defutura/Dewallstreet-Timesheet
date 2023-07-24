@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import "./meeting.css";
-// import meetingcancel from "../../assets/icons/cancel.svg";
 import Button from "../../../../Button";
 import successtick from "../../../../../assets/icons/successtick.svg";
 import toastcancel from "../../../../../assets/icons/toastcancel.svg";
@@ -27,7 +26,8 @@ const Meeting = () => {
         <div
           onClick={() => setMeetingopen(false)}
           className="meeting_toast"
-          style={{ margin: "auto" }}>
+          style={{ margin: "auto" }}
+        >
           <Toasts
             image={successtick}
             props="your meeting request sent"

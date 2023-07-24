@@ -16,7 +16,7 @@ const Homeheader = () => {
   const [toggle, setToggle] = useState("/home");
   const location = useLocation();
   const { pathname } = location;
-  const splitLocation = pathname.split("/");
+
   console.log(pathname);
   const Hamburger = (
     <>

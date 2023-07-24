@@ -148,14 +148,12 @@
 .create_question {
   display: flex;
   justify-content: space-between;
-  /* gap: 200px; */
 }
 
 .createquestion_main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* padding: 20px; */
 }
 
 .reference {
@@ -243,14 +241,12 @@
 .overall_link {
   border: 1px solid var(--line, #2a2828);
   padding: 15px;
-  /* width: 90%; */
 }
 .first_link,
 .one_question,
 .second_link {
   display: flex;
   justify-content: space-between;
-  /* align-content: center; */
 }
 .questionnaire_toast {
   position: absolute;
@@ -263,4 +259,9 @@
 .one_question > h4,
 .first_link > h4 {
   color: #656565;
+}
+@media (max-width: 690px) {
+  .questionnaire_main {
+    flex-wrap: wrap;
+  }
 }

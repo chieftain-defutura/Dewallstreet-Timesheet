@@ -1,6 +1,5 @@
 import React from "react";
 import "./Archivedtasksseemore.css";
-import downarrow from "../../assets/icons/archivedown.svg";
 import linkimage from "../../assets/icons/link.svg";
 import documentimage from "../../assets/icons/document.svg";
 import clockimage from "../../assets/icons/timer.svg";

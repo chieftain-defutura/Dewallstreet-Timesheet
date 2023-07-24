@@ -1,7 +1,6 @@
 /** @format */
 
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import graphchart from "../../../assets/images/graphchart.svg";
 import "./timelinegraph.css";
 
@@ -33,10 +32,6 @@ const Timelinegraph = () => {
                 >
                   Week
                 </div>
-                {/* <div
-                  className="horizontal_line"
-                  style={{ border: "1px solid white" }}
-                ></div> */}
               </>
             ) : (
               <>
@@ -46,10 +41,6 @@ const Timelinegraph = () => {
                 >
                   Week
                 </div>
-                {/* <div
-                  className="horizontal_line"
-                  style={{ border: "1px solid grey" }}
-                ></div> */}
               </>
             )}
           </div>
@@ -67,10 +58,6 @@ const Timelinegraph = () => {
                 >
                   Months
                 </div>
-                {/* <div
-                  className="horizontal_line"
-                  style={{ border: "1px solid white" }}
-                ></div> */}
               </>
             ) : (
               <>
@@ -80,10 +67,6 @@ const Timelinegraph = () => {
                 >
                   Months
                 </div>
-                {/* <div
-                  className="horizontal_line"
-                  style={{ border: "1px solid grey" }}
-                ></div> */}
               </>
             )}
           </div>
@@ -102,10 +85,6 @@ const Timelinegraph = () => {
                 >
                   Year
                 </div>
-                {/* <div
-                  className="horizontal_line"
-                  style={{ border: "1px solid white" }}
-                ></div> */}
               </>
             ) : (
               <>
@@ -116,10 +95,6 @@ const Timelinegraph = () => {
                 >
                   Year
                 </div>
-                {/* <div
-                  className="horizontal_line"
-                  style={{ border: "1px solid grey" }}
-                ></div> */}
               </>
             )}
           </div>

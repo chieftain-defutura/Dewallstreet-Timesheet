@@ -13,9 +13,6 @@ const Toasts = ({ image, props, variant, icons }) => {
         <div className="alert">
           <img src={image} alt="" />
           <div className="toast_msg">{props}</div>
-          {/* <div className="toast_line"></div> */}
-          {/* <div className="toast_warningline"></div>
-            <div className="toast_successline"></div> */}
         </div>
         <div className="toast_verticalline"></div>
         <img src={icons} alt="" />

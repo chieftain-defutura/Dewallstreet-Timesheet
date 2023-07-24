@@ -57,30 +57,7 @@ const Auditcontent = ({ data, setRevisiondetails, setArchivedtasks }) => {
         <h1>{data.Title}</h1>
         <p>{data.Para}</p>
       </div>
-      {/* {!archivetask && (
-        <>
-          {!seemore && (
-            <>
-              <div className="reject_button">
-                <Button variant="secondary" size="small">
-                  Rejected
-                </Button>
-              </div>
-              <div className="logs_button">
-                <Button variant="secondary" size="medium">
-                  Revision details
-                </Button>
-              </div>
-              <div className="arrows">
-                <button onClick={() => setSeemore(true)}>
-                  {data.More}
-                  {<img src={downarrow} alt="icon" />}
-                </button>
-              </div>
-            </>
-          )}
-        </>
-      )} */}
+
       {!seemore && (
         <>
           <div className="reject_revision">
@@ -106,13 +83,7 @@ const Auditcontent = ({ data, setRevisiondetails, setArchivedtasks }) => {
           </div>
         </>
       )}
-      {/* {setArchivetask && (
-        <>
-          {seemore && (
-            <Auditseemore Designtype={data} setSeemore={setSeemore} />
-          )}
-        </>
-      )} */}
+
       {seemore && <Auditseemore Designtype={data} setSeemore={setSeemore} />}
     </div>
   );
