@@ -81,7 +81,6 @@
   flex-direction: row;
   padding-top: 24px;
   justify-content: space-between;
-  align-items: center;
 }
 .first_level,
 .second_level,
@@ -193,5 +192,9 @@
   }
   .workingcheckin_page {
     padding: 30px;
+  }
+  .secondlevel_timing p,
+  .thirdlevel_timing p {
+    text-align: center;
   }
 }

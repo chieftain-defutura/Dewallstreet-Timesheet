@@ -1,8 +1,7 @@
 /** @format */
 
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
-import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./taskheader.css";
 
 const TaskHeader = () => {
@@ -19,7 +18,8 @@ const TaskHeader = () => {
                 style={{
                   background: "#141414",
                   borderBottom: "1px solid #fff",
-                }}>
+                }}
+              >
                 <p style={{ color: "#fff" }}>Logs ( 2 )</p>
               </div>
             </Link>
@@ -27,7 +27,7 @@ const TaskHeader = () => {
         ) : (
           <Link to="/Taskpage/log">
             <div className="log_link">
-              <p style={{ color: "#fff" }}>Logs( 2 )</p>
+              <p style={{ color: "grey" }}>Logs ( 2 )</p>
             </div>
           </Link>
         )}
@@ -35,14 +35,15 @@ const TaskHeader = () => {
           <Link to="/Taskpage/commit">
             <div
               className="log_link"
-              style={{ background: "#141414", borderBottom: "1px solid #fff" }}>
-              <p style={{ color: "#fff" }}>Commits( 2 )</p>
+              style={{ background: "#141414", borderBottom: "1px solid #fff" }}
+            >
+              <p style={{ color: "#fff" }}>Commits ( 2 )</p>
             </div>
           </Link>
         ) : (
           <Link to="/Taskpage/commit">
             <div className="log_link">
-              <p style={{ color: "#fff" }}>Commits( 2 )</p>
+              <p style={{ color: "grey" }}>Commits ( 2 )</p>
             </div>
           </Link>
         )}
@@ -51,14 +52,15 @@ const TaskHeader = () => {
           <Link to="/Taskpage/audit">
             <div
               className="log_link"
-              style={{ background: "#141414", borderBottom: "1px solid #fff" }}>
-              <p style={{ color: "#fff" }}>Audits( 2 )</p>
+              style={{ background: "#141414", borderBottom: "1px solid #fff" }}
+            >
+              <p style={{ color: "#fff" }}>Audits ( 2 )</p>
             </div>
           </Link>
         ) : (
           <Link to="/Taskpage/audit">
             <div className="log_link">
-              <p style={{ color: "#fff" }}>Audits( 2 )</p>
+              <p style={{ color: "grey" }}>Audits ( 2 )</p>
             </div>
           </Link>
         )}
@@ -67,14 +69,15 @@ const TaskHeader = () => {
           <Link to="/Taskpage/backlog">
             <div
               className="log_link"
-              style={{ background: "#141414", borderBottom: "1px solid #fff" }}>
-              <p style={{ color: "#fff" }}>Backlogs( 2 )</p>
+              style={{ background: "#141414", borderBottom: "1px solid #fff" }}
+            >
+              <p style={{ color: "#fff" }}>Backlogs ( 2 )</p>
             </div>
           </Link>
         ) : (
           <Link to="/Taskpage/backlog">
             <div className="log_link">
-              <p style={{ color: "#fff" }}>Backlogs( 2 )</p>
+              <p style={{ color: "grey" }}>Backlogs ( 2 )</p>
             </div>
           </Link>
         )}

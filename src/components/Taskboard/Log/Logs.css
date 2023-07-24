@@ -253,4 +253,9 @@
     display: flex;
     gap: 5px;
   }
+
+  .grid {
+    display: grid;
+    grid-template-columns: none;
+  }
 }
