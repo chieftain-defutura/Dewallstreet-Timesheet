@@ -1,0 +1,26 @@
+/* display: flex;
+color: var(--labler-tight, #575757);
+font-family: var(--font-bold);
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+gap: 8px;
+border: none;
+background-color: rgba(0, 0, 0, 0); */
+.down_arrow {
+  display: flex;
+  justify-content: center;
+}
+.down_arrow > button {
+  display: flex;
+  align-items: center;
+  color: var(--labler-tight, #575757);
+  font-family: var(--font-medium);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  gap: 8px;
+  border: none;
+}

@@ -31,7 +31,16 @@
     align-items: flex-start;
   }
 } */
-
+@media (max-width: 778px) {
+  .assign_tasks_main {
+    padding: 2px 2px 0 1px;
+  }
+}
+@media (max-width: 715px) {
+  .assign_tasks_main {
+    padding: 10px 0 0;
+  }
+}
 @media (max-width: 700px) {
   .assign_tasks_main {
     border-right: none;

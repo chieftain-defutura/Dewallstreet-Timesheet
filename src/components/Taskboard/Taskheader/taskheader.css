@@ -4,16 +4,9 @@
   display: flex;
   font-style: normal;
   justify-content: space-between;
+  width: 100%;
 }
-/* 
+
 .log_link {
-  display: flex;
-  height: 48px;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid var(--line, #1e1e1e);
-} */
-/* .log_link > p {
-  padding: 20px 40px;
-} */
+  padding: 10px 50px;
+}

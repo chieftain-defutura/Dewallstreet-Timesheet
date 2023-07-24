@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Archivedtasks.css";
 import downarrow from "../../assets/icons/archivedown.svg";
-import uparrow from "../../assets/icons/archiveup.svg";
+// import uparrow from "../../assets/icons/archiveup.svg";
 import { Archivetasklist } from "./Archivetask";
 
 import Button from "../Button";
@@ -38,7 +38,7 @@ const Archivecontent = ({ data }) => {
               Passed
             </Button>
           </div>
-          <div className="arrows">
+          <div className="archive_arrows">
             <button onClick={() => setSeemore(true)}>
               {data.More}
               <img src={downarrow} alt="icon" />

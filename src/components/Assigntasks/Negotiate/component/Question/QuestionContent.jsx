@@ -169,7 +169,6 @@ const QuestionSection = ({ data }) => {
 
   return (
     <div className="question_overall">
-      
       <div className="question_one">
         {!openSeemore && (
           <>
@@ -215,7 +214,7 @@ const QuestionSection = ({ data }) => {
                   </h5>
                 </div>
                 <div className="link_para">
-                  <img src={f.icon1} alt="icon" />
+                  <img src={f.icon1another} alt="icon" />
                   <h5> {f.icon1para} </h5>
                 </div>
                 <p> {f.paragraph} </p>

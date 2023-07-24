@@ -1,5 +1,6 @@
 import linkicon from "../../../../../assets/icons/link.svg";
 import documenticon from "../../../../../assets/icons/document.svg";
+import linkiconblur from "../../../../../assets/icons/linkiconblur.svg";
 
 export const QuestionnaireDetails = [
   {
@@ -7,6 +8,7 @@ export const QuestionnaireDetails = [
     content: [
       {
         heading: " Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        icon1another: linkiconblur,
         icon1: linkicon,
         icon1para:
           "Ut enim ad minim veniam, quis nostrod exercitation ullamco laboris.",
@@ -17,6 +19,7 @@ export const QuestionnaireDetails = [
       },
       {
         heading: " Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        icon1another: linkiconblur,
         icon1: linkicon,
         icon1para:
           "Ut enim ad minim veniam, quis nostrod exercitation ullamco laboris.",
@@ -27,6 +30,7 @@ export const QuestionnaireDetails = [
       },
       {
         heading: " Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        icon1another: linkiconblur,
         icon1: linkicon,
         icon1para:
           "Ut enim ad minim veniam, quis nostrod exercitation ullamco laboris.",
@@ -42,6 +46,7 @@ export const QuestionnaireDetails = [
     content: [
       {
         heading: " Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        icon1another: linkiconblur,
         icon1: linkicon,
         icon1para:
           "Ut enim ad minim veniam, quis nostrod exercitation ullamco laboris.",
@@ -52,6 +57,7 @@ export const QuestionnaireDetails = [
       },
       {
         heading: " Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        icon1another: linkiconblur,
         icon1: linkicon,
         icon1para:
           "Ut enim ad minim veniam, quis nostrod exercitation ullamco laboris.",
@@ -62,6 +68,7 @@ export const QuestionnaireDetails = [
       },
       {
         heading: " Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+        icon1another: linkiconblur,
         icon1: linkicon,
         icon1para:
           "Ut enim ad minim veniam, quis nostrod exercitation ullamco laboris.",

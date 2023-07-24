@@ -62,12 +62,20 @@ const DesignContent = ({ data, setNegotiateOpen }) => {
         <>
           <div className="logs_button">
             <div>
-              <Button variant="negotiate" handleClick={() => setNegotiateOpen((m) => !m)} size="medium">
+              <Button
+                variant="negotiate"
+                handleClick={() => setNegotiateOpen((m) => !m)}
+                size="medium"
+              >
                 Negotiate
               </Button>
             </div>
             <div>
-              <Button variant="primary" handleClick={() => setAddcommitOpen(true)} size="medium">
+              <Button
+                variant="primary"
+                handleClick={() => setAddcommitOpen(true)}
+                size="medium"
+              >
                 Commit
               </Button>
             </div>
