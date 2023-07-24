@@ -26,7 +26,7 @@ const Timelinegraph = () => {
                   style={{
                     color: "white",
                     borderBottom: "1px solid #fff",
-                    width: "50px",
+                    // width: "30px",
                     textAlign: "center",
                   }}
                 >
@@ -52,7 +52,7 @@ const Timelinegraph = () => {
                   style={{
                     color: "white",
                     borderBottom: "1px solid #fff",
-                    width: "50px",
+                    // width: "0px",
                     textAlign: "center",
                   }}
                 >
@@ -79,7 +79,7 @@ const Timelinegraph = () => {
                   style={{
                     color: "white",
                     borderBottom: "1px solid #fff",
-                    width: "50px",
+                    // width: "40px",
                     textAlign: "center",
                   }}
                 >

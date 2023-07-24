@@ -202,3 +202,13 @@
   padding: 20px 34px 20px 32px;
   display: flex;
 }
+@media (max-width: 1115px) {
+  .log_link > p {
+    padding: 0;
+  }
+}
+@media (max-width: 763px) {
+  .log_link > p {
+    padding: 20px 34px 20px 32px;
+  }
+}

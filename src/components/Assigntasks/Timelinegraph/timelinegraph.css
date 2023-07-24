@@ -2,7 +2,13 @@
   color: white;
   font-size: 11px;
   display: flex;
-  gap: 140px;
+  justify-content: space-between;
+}
+/* .timeline_header form option {
+  background-color: #141414;
+} */
+form option:hover {
+  background-color: #141414;
 }
 .timeline_header form select {
   width: 150px;
@@ -13,12 +19,17 @@
   font-family: var(--font-Medium);
   outline: none;
 }
-.time_period {
+/* .time_period {
   display: flex;
   gap: 40px;
+} */
+.time_period {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
 }
-.time_period > .week > a {
-  color: white;
+.time_period > div {
+  cursor: pointer;
 }
 .vertical_line_graph {
   border: 1px solid rgba(39, 36, 36, 0.773);

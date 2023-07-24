@@ -209,11 +209,7 @@
 .grid {
   padding: 20px;
 }
-/* @media (max-width: 1115px) {
-  .design_link {
-    padding: 0;
-  }
-} */
+
 @media (max-width: 835px) {
   .logs_mapping {
     padding: 0;
@@ -248,7 +244,7 @@
   .link_drive p,
   .time_respond h2,
   .time_respond p {
-    font-size: 10px;
+    font-size: 14px;
   }
   .logs_link {
     padding: 0;

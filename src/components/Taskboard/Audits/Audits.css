@@ -50,6 +50,7 @@
 .reject_revision {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .revision_button {
