@@ -4,3 +4,17 @@
   padding: 12px 32px;
   border-bottom: 1px solid var(--line, #1e1e1e);
 }
+@media (max-width: 768px) {
+  .header_main > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .header_main > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}

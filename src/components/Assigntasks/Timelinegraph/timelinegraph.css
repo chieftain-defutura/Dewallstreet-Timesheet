@@ -59,6 +59,7 @@
   flex-direction: column;
   gap: 8px;
 }
+
 @media (max-width: 480px) {
   .timeline_graph_main {
     width: 100%;

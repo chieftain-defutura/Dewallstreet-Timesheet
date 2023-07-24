@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./audits.css";
-import downarrow from "../../../assets/icons/archivedown.svg";
+import downarrow from "../../../assets/icons/seemorebutton.svg";
+import archivedown from "../../../assets/icons/archivedown.svg";
 import uparrow from "../../../assets/icons/chevron-up.svg";
 import TaskHeader from "../Taskheader";
 import { Auditlist } from "./Audit.JS";
@@ -25,12 +26,13 @@ const AuditDesignsystem = ({ setRevisiondetails }) => {
       <div className="header_archive">
         <TaskHeader />
         <div className="audit_main">
-          <button onClick={() => setArchivedtasks((m) => !m)}>
-            <div className="archive_button">
-              Archived tasks ( 2 )
-              <img src={downarrow} alt="icon" />
-            </div>
-          </button>
+          <div
+            className="archive_tasks"
+            onClick={() => setArchivedtasks((m) => !m)}
+          >
+            Archived tasks ( 2 )
+            <img src={archivedown} alt="icon" />
+          </div>
 
           {archivedtasks ? (
             <Archivedtasks />
