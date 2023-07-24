@@ -248,3 +248,8 @@
     gap: 5px;
   }
 }
+@media (max-width: 643px) {
+  .task_system {
+    width: 80%;
+  }
+}
