@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./audits.css";
+import "./Audits.css";
 import downarrow from "../../../assets/icons/seemorebutton.svg";
 import archivedown from "../../../assets/icons/archivedown.svg";
 import uparrow from "../../../assets/icons/chevron-up.svg";
