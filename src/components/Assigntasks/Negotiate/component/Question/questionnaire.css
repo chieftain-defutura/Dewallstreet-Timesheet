@@ -260,3 +260,8 @@
 .first_link > h4 {
   color: #656565;
 }
+@media (max-width: 690px) {
+  .questionnaire_main {
+    flex-wrap: wrap;
+  }
+}
