@@ -49,7 +49,7 @@ const WorkingHours = () => {
                 </div>
               </div>
               <Button variant="primary" size="regular" image={checkin}>
-                Checkin
+                Check in
               </Button>
             </div>
           </div>
