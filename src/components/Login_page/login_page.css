@@ -1,6 +1,6 @@
 .Login_page {
   color: var(--canvas, #fff);
-  font-family: "Gilroy-bold";
+  font-family: var(--font-Bold);
   background-color: #141414;
   box-shadow: 0px 0px 64px 0px rgba(0, 0, 0, 0.8);
   border-bottom: 1.1em;
@@ -38,7 +38,7 @@
   outline: none;
   color: var(--labler-tight, #575757);
   font-size: 15px;
-  font-family: "Gilroy-regular";
+  font-family: var(--font-regular);
   border: 1px solid var(--line, #1e1e1e);
   width: 100%;
 }
@@ -66,7 +66,7 @@
 }
 .Login_page > button {
   background-color: var(--green, #00ce53);
-  font-family: "Gilroy-regular";
+  font-family: var(--font-regular);
   align-items: center;
   justify-content: center;
   width: 100%;

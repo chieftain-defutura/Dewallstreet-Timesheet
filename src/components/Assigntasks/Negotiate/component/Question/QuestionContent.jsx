@@ -1,8 +1,6 @@
 /** @format */
 
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { useParams } from "react-router-dom";
 import "./questionnaire.css";
 import successtick from "../../../../../assets/icons/successtick.svg";
 import Button from "../../../../Button";
@@ -18,7 +16,7 @@ const QuestionContent = () => {
   const [addquestionnaireopen, setAddquestionnaireOpen] = useState(false);
   const [questionnareoneopen, setQuestionnaireoneOpen] = useState(false);
   const [toastmessage, setToastMessage] = useState(false);
-  const [Closebutton, setCloseButton] = useState(false);
+
   return (
     <div className="questionnaire_main">
       <div className="question_button">

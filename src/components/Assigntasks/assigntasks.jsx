@@ -8,11 +8,10 @@ import briefcasetimer from "../../assets/icons/briefcasetimer.svg";
 import briefcasetimerhide from "../../assets/icons/briefcasetimerhide.svg";
 import tasksheet from "../../assets/icons/tasksheet.svg";
 import tasksheethide from "../../assets/icons/tasksheethide.svg";
-const Assigntasks = ({ props, image }) => {
+const Assigntasks = ({}) => {
   const [toggle, setToggle] = useState("/home");
   const location = useLocation();
   const { pathname } = location;
-  const splitLocation = pathname.split("/");
   console.log(pathname);
 
   return (
