@@ -93,3 +93,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+option:hover {
+  background-color: black;
+}

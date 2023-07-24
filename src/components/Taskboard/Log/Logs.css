@@ -234,11 +234,7 @@
 }
 @media (max-width: 643px) {
   .task_system {
-    width: 100%;
-    align-items: center;
-  }
-  .button-medium {
-    padding: 8px 18px;
+    width: 80%;
   }
 }
 @media (max-width: 480px) {

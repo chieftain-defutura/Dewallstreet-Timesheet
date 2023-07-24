@@ -27,7 +27,11 @@ const TaskHeader = () => {
         ) : (
           <Link to="/Taskpage/log">
             <div className="log_link">
+<<<<<<< HEAD
               <p style={{ color: "grey" }}>Logs( 2 )</p>
+=======
+              <p style={{ color: "grey" }}>Logs ( 2 )</p>
+>>>>>>> 2e023c542f208e08dff334b610e6622f7454822e
             </div>
           </Link>
         )}
@@ -43,7 +47,11 @@ const TaskHeader = () => {
         ) : (
           <Link to="/Taskpage/commit">
             <div className="log_link">
+<<<<<<< HEAD
               <p style={{ color: "grey" }}>Commits( 2 )</p>
+=======
+              <p style={{ color: "grey" }}>Commits ( 2 )</p>
+>>>>>>> 2e023c542f208e08dff334b610e6622f7454822e
             </div>
           </Link>
         )}
@@ -60,7 +68,11 @@ const TaskHeader = () => {
         ) : (
           <Link to="/Taskpage/audit">
             <div className="log_link">
+<<<<<<< HEAD
               <p style={{ color: "grey" }}>Audits( 2 )</p>
+=======
+              <p style={{ color: "grey" }}>Audits ( 2 )</p>
+>>>>>>> 2e023c542f208e08dff334b610e6622f7454822e
             </div>
           </Link>
         )}
@@ -77,7 +89,11 @@ const TaskHeader = () => {
         ) : (
           <Link to="/Taskpage/backlog">
             <div className="log_link">
+<<<<<<< HEAD
               <p style={{ color: "grey" }}>Backlogs( 2 )</p>
+=======
+              <p style={{ color: "grey" }}>Backlogs ( 2 )</p>
+>>>>>>> 2e023c542f208e08dff334b610e6622f7454822e
             </div>
           </Link>
         )}
