@@ -231,6 +231,15 @@
     padding: 0 0 15px 0;
   }
 }
+@media (max-width: 643px) {
+  .task_system {
+    width: 100%;
+    align-items: center;
+  }
+  .button-medium {
+    padding: 8px 18px;
+  }
+}
 @media (max-width: 480px) {
   .task_title p,
   .correction p,
@@ -238,7 +247,7 @@
   .link_drive p,
   .time_respond h2,
   .time_respond p {
-    font-size: 10px;
+    font-size: 14px;
   }
   .logs_link {
     padding: 0;
@@ -246,10 +255,5 @@
   .design_links {
     display: flex;
     gap: 5px;
-  }
-}
-@media (max-width: 643px) {
-  .task_system {
-    width: 80%;
   }
 }
