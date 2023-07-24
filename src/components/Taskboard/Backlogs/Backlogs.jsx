@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import downarrow from "../../../assets/icons/seemorebutton.svg";
-import "./backlogs.css";
+import "./Backlog.css";
 import { Backloglist } from "./Backlog";
 import { Link } from "react-router-dom";
 import Seemore from "../../see more/seemore";

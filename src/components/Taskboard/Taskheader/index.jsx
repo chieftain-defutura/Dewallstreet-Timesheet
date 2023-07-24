@@ -3,6 +3,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import "./taskheader.css";
 
 const TaskHeader = () => {
   const location = window.location.pathname.split("/");
