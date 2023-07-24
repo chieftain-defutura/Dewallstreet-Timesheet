@@ -1,3 +1,5 @@
+/** @format */
+
 .workinghours_main {
   display: flex;
   flex-direction: column;
@@ -35,7 +37,7 @@
   display: flex;
   padding: 12px;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
   background-color: #1e1e1e;
 }
 .check > h5 {
@@ -64,7 +66,7 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
 }
 .check {
   display: flex;
@@ -134,7 +136,7 @@
   display: flex;
   justify-content: flex-end;
 }
-@media (max-width: 1420px) {
+/* @media (max-width: 1420px) {
   .checkin {
     padding: 8px;
   }
@@ -160,7 +162,7 @@
   .checkin {
     flex-wrap: nowrap;
   }
-}
+} */
 @media (max-width: 781px) {
   .checkin {
     flex-wrap: wrap;
