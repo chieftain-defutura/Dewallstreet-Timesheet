@@ -209,6 +209,7 @@
 .grid {
   padding: 20px;
 }
+
 @media (max-width: 835px) {
   .logs_mapping {
     padding: 0;
@@ -255,5 +256,10 @@
   .design_links {
     display: flex;
     gap: 5px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: none;
   }
 }

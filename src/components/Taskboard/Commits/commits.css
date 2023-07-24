@@ -199,12 +199,12 @@
   padding: 20px;
 }
 .log_link > p {
-  padding: 30px 52px 30px 56px;
+  padding: 30px 52px;
   display: flex;
 }
 @media (max-width: 1435px) {
   .log_link > p {
-    padding: 30px 20px;
+    padding: 30px 10px;
   }
 }
 @media (max-width: 1155px) {
@@ -212,9 +212,19 @@
     padding: 30px 10px;
   }
 }
-@media (max-width: 995) {
+@media (max-width: 995px) {
   .log_link > p {
     padding: 20px 7px;
+  }
+}
+@media (max-width: 950px) {
+  .log_link > p {
+    padding: 20px 4px;
+  }
+}
+@media (max-width: 902px) {
+  .log_link > p {
+    padding: 20px 2px;
   }
 }
 @media (max-width: 670px) {
