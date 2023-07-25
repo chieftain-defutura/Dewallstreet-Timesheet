@@ -4,9 +4,6 @@
   display: flex;
   gap: 20px;
 }
-.working_grid {
-  padding: 20px 10px;
-}
 
 .hours_deduction {
   display: flex;

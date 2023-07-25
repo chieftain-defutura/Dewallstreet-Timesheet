@@ -36,8 +36,11 @@
   gap: 10px;
 }
 .questionnaire_head {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.questionnaire_head a {
+  padding-bottom: 10px;
 }
 .question_button {
   display: flex;

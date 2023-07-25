@@ -136,7 +136,7 @@
   display: flex;
   justify-content: flex-end;
 }
-@media (max-width: 1420px) {
+/* @media (max-width: 1420px) {
   .checkin {
     padding: 8px;
   }
@@ -162,7 +162,7 @@
   .checkin {
     flex-wrap: nowrap;
   }
-}
+} */
 @media (max-width: 781px) {
   .checkin {
     flex-wrap: wrap;
