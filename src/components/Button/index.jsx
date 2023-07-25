@@ -11,6 +11,8 @@ const Button = ({ variant, size, children, handleClick, image }) => {
     className += " button-secondary";
   } else if (variant === "negotiate") {
     className += " button-negotiate";
+  } else if (variant === "checkout") {
+    className += " button-checkout";
   }
   if (size === "small") {
     className += " button-small";
@@ -29,7 +31,7 @@ const Button = ({ variant, size, children, handleClick, image }) => {
   );
 };
 Button.propTypes = {
-  variant: PropTypes.oneOf(["primary", "secondary"]),
+  variant: PropTypes.oneOf(["primary", "secondary", "negotiate", "checkout"]),
   size: PropTypes.oneOf(["small", "medium", "large", "regular"]),
   children: PropTypes.node.isRequired,
 };
