@@ -4,6 +4,12 @@
   display: flex;
   gap: 20px;
 }
+<<<<<<< HEAD
+=======
+.working_grid {
+  padding: 20px 10px;
+}
+>>>>>>> e319e8d0a707595b4e0c5e6acfc53c7a7c943626
 
 .hours_deduction {
   display: flex;

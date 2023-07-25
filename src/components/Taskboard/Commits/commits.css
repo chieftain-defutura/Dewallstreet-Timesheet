@@ -200,7 +200,12 @@
 }
 .log_link > p {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 20px 34px 20px 53px;
+=======
+  padding: 20px 40px 20px 45px;
+  display: flex;
+>>>>>>> e319e8d0a707595b4e0c5e6acfc53c7a7c943626
 =======
   padding: 20px 34px 20px 32px;
   padding: 30px 52px;
@@ -232,6 +237,7 @@
     display: flex;
 >>>>>>> f1987d86c45815621f8ac035dccaa4c0c845f2b0
   }
+>>>>>>> f1987d86c45815621f8ac035dccaa4c0c845f2b0
 }
 @media (max-width: 1290px) {
   .log_link > p {
@@ -250,6 +256,19 @@
 }
 @media (max-width: 1133px) {
   .log_link > p {
+<<<<<<< HEAD
+    padding: 8px 15px;
+  }
+  @media (max-width: 1072px) {
+    .log_link > p {
+      padding: 8px 12px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .log_link > p {
+      padding: 8px 8px;
+    }
+=======
     padding: 20px 4px;
   }
 }

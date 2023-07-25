@@ -136,6 +136,46 @@
   display: flex;
   justify-content: flex-end;
 }
+.grace_time {
+  background-color: #141414;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.gracetime_header {
+  display: flex;
+  align-items: flex-start;
+  gap: 237px;
+}
+.gracetime_header > h5 {
+  color: var(--canvas, #fff);
+  font-family: var(--font-bold);
+  font-size: 20px;
+  font-style: normal;
+}
+.gracetime_para {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
+  color: grey;
+}
+.grace_time > h4 {
+  font-size: 20px;
+}
+b {
+  font-size: 25px;
+}
+span {
+  font-size: 25px;
+  color: grey;
+}
+.grace_time > Button {
+  width: 100%;
+}
 /* @media (max-width: 1420px) {
   .checkin {
     padding: 8px;
