@@ -136,7 +136,8 @@
   display: flex;
   justify-content: flex-end;
 }
-.grace_time {
+.grace_time,
+.gps_location {
   background-color: #141414;
   display: flex;
   padding: 24px;
@@ -145,7 +146,8 @@
   align-items: center;
   gap: 16px;
 }
-.gracetime_header {
+.gracetime_header,
+.gpslocation_header {
   display: flex;
   align-items: flex-start;
   gap: 237px;
@@ -173,9 +175,32 @@ span {
   font-size: 25px;
   color: grey;
 }
-.grace_time > Button {
+.grace_time,
+.gps_location > Button {
   width: 100%;
 }
+
+.gpslocation_header > h5 {
+  color: var(--canvas, #fff);
+  font-family: var(--font-bold);
+  font-size: 25px;
+  font-style: normal;
+}
+.gps_location h4 {
+  color: grey;
+  font-size: 16px;
+}
+.location_para {
+  display: flex;
+  gap: 10px;
+  font-family: var(--font-light);
+}
+.gps_emptyline {
+  width: 430px;
+  height: 1px;
+  background: #1e1e1e;
+}
+
 /* @media (max-width: 1420px) {
   .checkin {
     padding: 8px;
