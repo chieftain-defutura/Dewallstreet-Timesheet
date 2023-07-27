@@ -200,10 +200,6 @@
 }
 .log_link > p {
   padding: 20px 34px 20px 53px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 82a97dc78a09ffdfd635c22317ca218d86f08d29
   display: flex;
 }
 @media (max-width: 1285px) {
@@ -213,23 +209,12 @@
 }
 @media (max-width: 1115px) {
   .log_link > p {
-<<<<<<< HEAD
-=======
-    padding: 0;
->>>>>>> 82a97dc78a09ffdfd635c22317ca218d86f08d29
     padding: 30px 10px;
   }
 }
 @media (max-width: 763px) {
   .log_link > p {
-<<<<<<< HEAD
     padding: 30px 10px;
-=======
-    padding: 20px 34px 20px 32px;
-    padding: 30px 10px;
-    padding: 20px 40px 20px 45px;
-    display: flex;
->>>>>>> 82a97dc78a09ffdfd635c22317ca218d86f08d29
   }
 }
 @media (max-width: 1290px) {
@@ -249,21 +234,7 @@
 }
 @media (max-width: 1133px) {
   .log_link > p {
-<<<<<<< HEAD
     padding: 20px 4px;
-=======
-    padding: 8px 15px;
-  }
-  @media (max-width: 1072px) {
-    .log_link > p {
-      padding: 8px 12px;
-    }
-  }
-  @media (max-width: 1024px) {
-    .log_link > p {
-      padding: 8px 8px;
-    }
->>>>>>> 82a97dc78a09ffdfd635c22317ca218d86f08d29
   }
 }
 @media (max-width: 902px) {
@@ -274,7 +245,6 @@
 @media (max-width: 670px) {
   .design_links {
     justify-content: flex-start;
-<<<<<<< HEAD
 
     padding: 8px 15px;
   }
@@ -287,18 +257,5 @@
     .log_link > p {
       padding: 8px 8px;
     }
-=======
-    padding: 8px 15px;
-  }
-}
-@media (max-width: 1072px) {
-  .log_link > p {
-    padding: 8px 12px;
-  }
-}
-@media (max-width: 1024px) {
-  .log_link > p {
-    padding: 8px 8px;
->>>>>>> 82a97dc78a09ffdfd635c22317ca218d86f08d29
   }
 }

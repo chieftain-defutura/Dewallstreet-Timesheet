@@ -36,10 +36,10 @@ const WorkingHours = () => {
   const [use, setUse] = useState(false);
   const [gps, setGps] = useState(false);
   const [steps, setSteps] = useState(0);
-  const [active, setActive] = useState();
-  const [lunchtime, setLunchtime] = useState();
-  const [breaktime, setBreaktime] = useState();
-  const [exit, setExit] = useState();
+  const [active, setActive] = useState(0);
+  // const [lunchtime, setLunchtime] = useState();
+  // const [breaktime, setBreaktime] = useState();
+  // const [exit, setExit] = useState();
   console.log(steps);
 
   return (
@@ -126,6 +126,7 @@ const WorkingHours = () => {
                 </Button>
               </div>
             )}
+
             {gps && (
               <LayoutModal>
                 <div className="gps_location">
@@ -177,43 +178,24 @@ const WorkingHours = () => {
           <div className="level_progress">
             <div className="checkin_levels">
               <div className="firstlevel_timing">
-                {active === "checkin" ? (
-                  <div
-                    className="first_level"
-                    onClick={() => {
-                      setSteps(1);
-                      setLunchtime(false);
-                      setActive(true);
-                      setBreaktime(false);
-                    }}
-                  >
+                {steps !== 1 && steps !== 0 ? (
+                  <div className="first_level" onClick={() => setSteps(1)}>
                     <img src={firstlevel} alt="first" />
                   </div>
                 ) : (
-                  <div
-                    className="first_level"
-                    onClick={() => {
-                      setSteps(1);
-                      setLunchtime("lunch");
-                      setActive("checkin");
-                    }}
-                  >
+                  <div className="first_level" onClick={() => setSteps(1)}>
                     <img src={firstleveldark} alt="first" />
                   </div>
                 )}
-
                 <p>10:00AM</p>
               </div>
 
               <div className="secondlevel_timing">
-                {lunchtime === "lunch" ? (
+                {steps === 2 ? (
                   <div
                     className="second_level"
                     onClick={() => {
                       setSteps(2);
-                      setActive(false);
-                      setLunchtime(true);
-                      setBreaktime(false);
                     }}
                   >
                     <img src={secondleveldark} alt="second" />
@@ -223,8 +205,6 @@ const WorkingHours = () => {
                     className="second_level"
                     onClick={() => {
                       setSteps(2);
-                      setLunchtime("lunch");
-                      setActive("checkin");
                     }}
                   >
                     <img src={secondlevel} alt="second" />
@@ -234,37 +214,30 @@ const WorkingHours = () => {
               </div>
 
               <div className="thirdlevel_timing">
-                {breaktime === "break" ? (
-                  <div
-                    className="third_level"
-                    onClick={() => {
-                      setSteps(3);
-                      setBreaktime(true);
-                      setLunchtime(false);
-                      setActive(false);
-                    }}
-                  >
+                {steps === 3 ? (
+                  <div className="third_level" onClick={() => setSteps(3)}>
                     <img src={thirdleveldark} alt="third" />
                   </div>
                 ) : (
-                  <div
-                    className="third_level"
-                    onClick={() => {
-                      setSteps(3);
-                      setBreaktime("break");
-                      setLunchtime("lunch");
-                    }}
-                  >
+                  <div className="third_level" onClick={() => setSteps(3)}>
                     <img src={thirdlevel} alt="third" />
                   </div>
                 )}
 
                 <p>05:00PM-05:30PM</p>
               </div>
+
               <div className="fourthlevel_timing">
-                <div className="fourth_level" onClick={() => setGps(true)}>
-                  <img src={fourthlevel} alt="fourth" />
-                </div>
+                {steps === 4 ? (
+                  <div className="fourth_level" onClick={() => setGps(true)}>
+                    <img src={fourthleveldark} alt="fourth" />
+                  </div>
+                ) : (
+                  <div className="fourth_level" onClick={() => setGps(true)}>
+                    <img src={fourthlevel} alt="fourth" />
+                  </div>
+                )}
+
                 <p>06:30PM</p>
               </div>
             </div>
