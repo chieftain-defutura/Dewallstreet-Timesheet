@@ -201,7 +201,7 @@ span {
   background: #1e1e1e;
 }
 
-/* @media (max-width: 1420px) {
+@media (max-width: 1420px) {
   .checkin {
     padding: 8px;
   }
@@ -227,7 +227,7 @@ span {
   .checkin {
     flex-wrap: nowrap;
   }
-} */
+}
 @media (max-width: 781px) {
   .checkin {
     flex-wrap: wrap;

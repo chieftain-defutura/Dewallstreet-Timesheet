@@ -66,7 +66,7 @@
 }
 .Login_page > button {
   background-color: var(--green, #00ce53);
-  font-family: var(--font-regular);
+
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -83,6 +83,7 @@
   color: #fff;
   font-size: 20px;
   gap: 10px;
+  font-family: var(--font-medium);
 }
 .Login_page h5 {
   color: var(--canvas, #fff);
