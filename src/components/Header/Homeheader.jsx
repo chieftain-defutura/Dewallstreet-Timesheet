@@ -125,7 +125,7 @@ const Homeheader = () => {
       <h2>Workspace</h2>
       <div className="header_name">
         <h2>Ravishankar Varma</h2>
-        <p>DEWALLEDX1</p>
+        <p>DEWALLEXD1</p>
       </div>
       {Hamburger}
       {sideBaron && Sidebar}
