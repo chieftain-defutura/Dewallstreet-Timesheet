@@ -44,8 +44,8 @@
 .button-regular {
   padding: 8px 15px;
 }
-@media (max-width: 395px) {
+@media (max-width: 480px) {
   .button-regular {
-    padding: 2px 0px;
+    padding: 3px;
   }
 }
