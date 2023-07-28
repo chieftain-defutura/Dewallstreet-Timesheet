@@ -252,13 +252,12 @@ span {
 @media (max-width: 480px) {
   .checkin {
     flex-wrap: nowrap;
-    gap: 3px;
+    gap: 15px;
   }
   .workinghours_main {
     width: 100%;
   }
   .workingcheckin_page {
-    /* padding: 30px; */
     width: 100%;
   }
   .secondlevel_timing p,
