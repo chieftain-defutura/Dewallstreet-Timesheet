@@ -46,6 +46,6 @@
 }
 @media (max-width: 480px) {
   .button-regular {
-    padding: 4px;
+    padding: 5px 4px;
   }
 }
