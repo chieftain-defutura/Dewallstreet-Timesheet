@@ -14,7 +14,6 @@
   text-shadow: 10.804594993591309px 10.804594993591309px 324.1378479003906px 0px
     rgba(183, 183, 183, 0.5);
   font-size: 18px;
-  width: 100%;
 }
 .emptyline {
   width: 100%;
@@ -24,10 +23,7 @@
 .login_main {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   align-items: flex-start;
-  /* gap: 259px; */
-
   justify-content: space-between;
 }
 .user_name,
@@ -109,5 +105,6 @@
   .login_main > h2 {
     font-size: 20px;
     gap: 200px;
+    width: 100%;
   }
 }
