@@ -37,3 +37,8 @@
 .warning {
   color: orange;
 }
+@media (max-width: 480px) {
+  .toast-main {
+    font-size: 12px;
+  }
+}

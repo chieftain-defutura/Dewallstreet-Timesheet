@@ -259,6 +259,7 @@ span {
   }
   .workingcheckin_page {
     width: 100%;
+    gap: 60px;
   }
   .secondlevel_timing p,
   .thirdlevel_timing p {
