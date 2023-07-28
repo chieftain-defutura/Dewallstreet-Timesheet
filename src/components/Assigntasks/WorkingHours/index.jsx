@@ -31,15 +31,9 @@ import Toasts from "../../Toasts";
 import LayoutModal from "../../Modal/Modal";
 const WorkingHours = () => {
   const [open, setOpen] = useState(false);
-  // const [checkin, setCheckIn] = useState(false);
-  // const [checkout, setCheckout] = useState(false);
   const [use, setUse] = useState(false);
   const [gps, setGps] = useState(false);
   const [steps, setSteps] = useState(0);
-  const [active, setActive] = useState(0);
-  // const [lunchtime, setLunchtime] = useState();
-  // const [breaktime, setBreaktime] = useState();
-  // const [exit, setExit] = useState();
   console.log(steps);
 
   return (
