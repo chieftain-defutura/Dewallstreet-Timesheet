@@ -52,7 +52,7 @@ const Homeheader = () => {
             <h2>Workspace</h2>
             <div className="sidebar_name">
               <h3>Ravishankar Varma</h3>
-              <p>DEWALLED1</p>
+              <p>DEWALLEXD1</p>
             </div>
           </div>
           <div className="sidebar_emptyline"></div>
