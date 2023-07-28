@@ -106,6 +106,10 @@
   .login_main > h2 {
     font-size: 20px;
   }
+  .login_main {
+    justify-content: space-between;
+    display: flex;
+  }
   .Login_page {
     width: 100%;
   }
