@@ -107,10 +107,10 @@
     font-size: 20px;
   }
   .login_main {
-    justify-content: space-between;
+    gap: 250px;
     display: flex;
   }
   .Login_page {
-    width: 100%;
+    width: 90%;
   }
 }
