@@ -42,7 +42,6 @@
   .home_main {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    height: 150px;
+    justify-content: center;
   }
 }
