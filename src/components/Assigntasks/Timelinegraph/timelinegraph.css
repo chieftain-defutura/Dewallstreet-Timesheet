@@ -19,15 +19,16 @@ form option:hover {
   font-family: var(--font-Medium);
   outline: none;
 }
-/* .time_period {
+.time_period {
   display: flex;
   gap: 40px;
-} */
-.time_period {
+}
+/* .time_period {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
-}
+} */
+
 .time_period > div {
   cursor: pointer;
 }
@@ -90,5 +91,9 @@ form option:hover {
   .time_period,
   .timeline_header {
     gap: 5px;
+  }
+  .time_period {
+    display: flex;
+    gap: 25px;
   }
 }
