@@ -52,7 +52,7 @@ const Homeheader = () => {
             <h2>Workspace</h2>
             <div className="sidebar_name">
               <h3>Ravishankar Varma</h3>
-              <p>DEWALLEXD1</p>
+              <p>DEWALLED1</p>
             </div>
           </div>
           <div className="sidebar_emptyline"></div>
@@ -125,7 +125,7 @@ const Homeheader = () => {
       <h2>Workspace</h2>
       <div className="header_name">
         <h2>Ravishankar Varma</h2>
-        <p>DEWALLED1</p>
+        <p>DEWALLEDX1</p>
       </div>
       {Hamburger}
       {sideBaron && Sidebar}
