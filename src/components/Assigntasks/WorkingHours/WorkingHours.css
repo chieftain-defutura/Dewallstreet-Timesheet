@@ -252,7 +252,7 @@ span {
 @media (max-width: 480px) {
   .checkin {
     flex-wrap: nowrap;
-    gap: 30px;
+    gap: 3px;
   }
   .workinghours_main {
     width: 100%;
