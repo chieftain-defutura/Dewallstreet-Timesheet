@@ -26,6 +26,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 259px;
+  /* justify-content: space-between; */
 }
 .user_name,
 .user_password {
@@ -107,7 +108,7 @@
     font-size: 20px;
   }
   .login_main {
-    gap: 250px;
+    gap: 200px;
     display: flex;
   }
   .Login_page {
