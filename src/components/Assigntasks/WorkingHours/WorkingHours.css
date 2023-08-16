@@ -211,7 +211,7 @@ span {
   .time_checkinhours {
     flex-wrap: wrap;
   }
-}
+} */
 @media (max-width: 1290px) {
   .checkin {
     padding: 8px;
@@ -227,7 +227,7 @@ span {
   .checkin {
     flex-wrap: nowrap;
   }
-} */
+}
 @media (max-width: 781px) {
   .checkin {
     flex-wrap: wrap;

@@ -24,6 +24,8 @@ import cancel from "../../../assets/icons/cancel.svg";
 import Checkin from "../../../assets/icons/checkin.svg";
 import usezap from "../../../assets/icons/usezap.svg";
 import usetimer from "../../../assets/icons/usetimer.svg";
+import report from "../../../assets/icons/reportimage.svg";
+import turnongps from "../../../assets/icons/continuegps.svg";
 import toastcancel from "../../../assets/icons/toastcancel.svg";
 import warning from "../../../assets/icons/warning.svg";
 import Button from "../../Button";
@@ -33,6 +35,7 @@ const WorkingHours = () => {
   const [open, setOpen] = useState(false);
   const [use, setUse] = useState(false);
   const [gps, setGps] = useState(false);
+  const [turnOn, setTurnon] = useState(false);
   const [steps, setSteps] = useState(0);
   console.log(steps);
 
@@ -68,7 +71,12 @@ const WorkingHours = () => {
                     <h4>05m 00s</h4>
                   </div>
                 </div>
-                <Button variant="primary" size="regular" image={Checkin}>
+                <Button
+                  variant="primary"
+                  size="regular"
+                  image={Checkin}
+                  onClick={() => setSteps((m) => !m)}
+                >
                   Check in
                 </Button>
               </div>
@@ -120,13 +128,26 @@ const WorkingHours = () => {
                 </Button>
               </div>
             )}
-
+            {steps === 4 && (
+              <div className="checkin">
+                <div className="checkin_seconds">
+                  <img src={report} alt="report" />
+                  <div className="check">
+                    <h5>Daily reporting time ends in</h5>
+                    <h4>20m 00s</h4>
+                  </div>
+                </div>
+                <Button variant="primary" size="regular" image={usezap}>
+                  Report
+                </Button>
+              </div>
+            )}
             {gps && (
               <LayoutModal>
                 <div className="gps_location">
                   <div className="gpslocation_header">
                     <h5>GPS location</h5>
-                    <button onClick={() => setGps(false)}>
+                    <button>
                       <img src={cancel} alt="cancel" />
                     </button>{" "}
                   </div>
@@ -159,9 +180,37 @@ const WorkingHours = () => {
                     variant="primary"
                     size="large"
                     image={turnon}
-                    handleClick={() => setGps(false)}
+                    handleClick={() => {
+                      setGps(false);
+                      setTurnon(true);
+                    }}
                   >
                     Turn on GPS
+                  </Button>
+                </div>
+              </LayoutModal>
+            )}
+            {turnOn && (
+              <LayoutModal onClose={() => setTurnon(false)}>
+                <div className="gps_location">
+                  <div className="gpslocation_header">
+                    <h5>GPS location</h5>
+                    <button onClick={() => setTurnon(false)}>
+                      <img src={cancel} alt="cancel" />
+                    </button>{" "}
+                  </div>
+                  <div className="gps_emptyline"></div>
+                  <h3>Your GPS location enabled.</h3>
+                  <img src={turnongps} alt="turnongps" />
+                  <Button
+                    variant="primary"
+                    size="large"
+                    handleClick={() => {
+                      setGps(false);
+                      setTurnon(false);
+                    }}
+                  >
+                    Continue
                   </Button>
                 </div>
               </LayoutModal>
@@ -223,11 +272,23 @@ const WorkingHours = () => {
 
               <div className="fourthlevel_timing">
                 {steps === 4 ? (
-                  <div className="fourth_level" onClick={() => setGps(true)}>
+                  <div
+                    className="fourth_level"
+                    onClick={() => {
+                      setGps(true);
+                      setSteps(4);
+                    }}
+                  >
                     <img src={fourthleveldark} alt="fourth" />
                   </div>
                 ) : (
-                  <div className="fourth_level" onClick={() => setGps(true)}>
+                  <div
+                    className="fourth_level"
+                    onClick={() => {
+                      setGps(true);
+                      setSteps(4);
+                    }}
+                  >
                     <img src={fourthlevel} alt="fourth" />
                   </div>
                 )}

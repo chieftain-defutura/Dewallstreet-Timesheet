@@ -56,3 +56,7 @@
 .revision_button {
   font-size: 14px;
 }
+/* .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
