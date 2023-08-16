@@ -40,8 +40,6 @@
   justify-content: center;
 }
 .audit_main {
-  padding: 0 30px;
-
   height: 230vh;
   display: flex;
   flex-direction: column;

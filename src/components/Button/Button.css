@@ -48,4 +48,15 @@
   .button-regular {
     padding: 5px 4px;
   }
+  .button-medium {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 432px) {
+  .button-medium {
+    padding: 7px 10px;
+  }
+  .button-regular {
+    padding: 2px 1px;
+  }
 }

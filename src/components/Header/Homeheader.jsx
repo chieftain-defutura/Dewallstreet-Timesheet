@@ -44,6 +44,7 @@ const Homeheader = () => {
       )}
     </>
   );
+
   const Sidebar = (
     <div className="sidebar">
       <div className="sidebar_content">
@@ -128,6 +129,7 @@ const Homeheader = () => {
         <p>DEWALLEXD1</p>
       </div>
       {Hamburger}
+
       {sideBaron && Sidebar}
     </div>
   );
