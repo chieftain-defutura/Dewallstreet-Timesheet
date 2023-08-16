@@ -195,9 +195,11 @@
   flex-direction: column;
   gap: 20px;
 }
-.grid {
+/* .grid {
   padding: 20px;
-}
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
 .log_link > p {
   padding: 20px 34px 20px 53px;
   display: flex;
@@ -213,7 +215,15 @@
     padding: 20px 36px 20px 21px;
   }
 }
+<<<<<<< HEAD
 
+=======
+@media (max-width: 1270px) {
+  .log_link > p {
+    padding: 10px 26px 10px 11px;
+  }
+}
+>>>>>>> c95a3c55cfc85d910a0b1b35f2d4555e1f4076e1
 @media (max-width: 1115px) {
   .log_link > p {
     padding: 30px 10px;
@@ -242,8 +252,6 @@
 }
 @media (max-width: 670px) {
   .design_links {
-    justify-content: flex-start;
-
     padding: 8px 15px;
   }
   @media (max-width: 1072px) {

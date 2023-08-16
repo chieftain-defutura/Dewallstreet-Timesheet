@@ -29,3 +29,7 @@
   align-items: flex-start;
   gap: 16px;
 }
+/* .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */

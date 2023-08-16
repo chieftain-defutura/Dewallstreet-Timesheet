@@ -18,6 +18,9 @@
 .hamimage {
   display: none;
 }
+.hamburger {
+  cursor: pointer;
+}
 .sidebar {
   display: none;
   position: absolute;

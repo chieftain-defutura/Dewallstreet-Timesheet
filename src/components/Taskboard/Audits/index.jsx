@@ -8,10 +8,7 @@ const Auditboard = () => {
 
   return (
     <Layout>
-      <div
-        style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
-        className="grid"
-      >
+      <div className="grid">
         <AuditDesignsystem setRevisiondetails={setRevisiondetails} />
         {revisiondetails && <Revisiondetails />}
       </div>
