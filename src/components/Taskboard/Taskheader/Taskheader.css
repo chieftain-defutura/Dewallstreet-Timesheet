@@ -1,0 +1,49 @@
+.linkbar {
+  display: none;
+  position: absolute;
+  top: 65px;
+  left: 50px;
+  width: 90vw;
+  height: auto;
+  background-color: #282828;
+}
+.links_dots {
+  display: none;
+}
+.links_cancel {
+  cursor: pointer;
+}
+.linkbar_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.linkbar_content p {
+  font-size: 15px;
+}
+@media (max-width: 700px) {
+  .links_dots {
+    display: block;
+    cursor: pointer;
+  }
+  .linkbar {
+    display: block;
+    cursor: pointer;
+  }
+}
+@media (max-width: 510px) {
+  .linkbar_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .linkbar {
+    top: 65px;
+    left: 40px;
+    width: 90vw;
+    height: auto;
+    background-color: #282828;
+  }
+}

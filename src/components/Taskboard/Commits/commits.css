@@ -189,19 +189,14 @@
   border-right: 1px solid #282828;
 }
 .commit_render {
-  padding: 0 30px;
   height: 230vh;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-/* .grid {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
+
 .log_link > p {
-  padding: 20px 34px 20px 53px;
+  padding: 20px 30px 20px 45px;
   display: flex;
 }
 @media (max-width: 1290px) {
@@ -223,6 +218,7 @@
     padding: 10px 26px 10px 11px;
   }
 }
+<<<<<<< HEAD
 >>>>>>> c95a3c55cfc85d910a0b1b35f2d4555e1f4076e1
 @media (max-width: 1115px) {
   .log_link > p {
@@ -235,6 +231,8 @@
   }
 }
 
+=======
+>>>>>>> 8e543d1d90af53777125f3e65592b8d051fcfff2
 @media (max-width: 1144px) {
   .log_link > p {
     padding: 8px 18px;
@@ -245,23 +243,43 @@
     padding: 20px 4px;
   }
 }
+@media (max-width: 1115px) {
+  .log_link > p {
+    padding: 30px 10px;
+  }
+}
+@media (max-width: 1072px) {
+  .log_link > p {
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .log_link > p {
+    padding: 8px 8px;
+  }
+}
 @media (max-width: 902px) {
   .log_link > p {
     padding: 20px 2px;
   }
 }
+@media (max-width: 920px) {
+  .log_link > p {
+    padding: 18px 1px;
+  }
+}
+@media (max-width: 763px) {
+  .log_link > p {
+    padding: 30px 10px;
+  }
+}
+@media (max-width: 700px) {
+  .design_links {
+    display: none;
+  }
+}
 @media (max-width: 670px) {
   .design_links {
     padding: 8px 15px;
-  }
-  @media (max-width: 1072px) {
-    .log_link > p {
-      padding: 8px 12px;
-    }
-  }
-  @media (max-width: 1024px) {
-    .log_link > p {
-      padding: 8px 8px;
-    }
   }
 }
