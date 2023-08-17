@@ -23,18 +23,11 @@ const Login_Page = () => {
       }}
     >
       <div className="Login_page">
-        <div className="login_main">
-          <h2>Log in.</h2>
-          <img src={cancel} alt="cencel" width="24px" height="24px" />
-        </div>
+        {/* <div className="login_main"> */}
+        <h2>Log in.</h2>
+        {/* </div> */}
         <div className="emptyline"></div>
-        <img
-          src={login}
-          alt="login"
-          width="149.552px"
-          height="150px"
-          id="loginpage_image"
-        />
+        <img src={login} alt="login" width="30%" id="loginpage_image" />
         <div className="username_section">
           <div className="user_name">
             <img src={user} alt="user" width="14px" height="14px" />
