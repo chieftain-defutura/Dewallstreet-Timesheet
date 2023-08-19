@@ -12,9 +12,9 @@ const Timelinegraph = () => {
         <form>
           <select>
             <option value="Grace Time">Grace Time</option>
-            <option value="Week">Week</option>
-            <option value="Months">Months</option>
-            <option value="Year">Year</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
           </select>
         </form>
         <div className="time_period">

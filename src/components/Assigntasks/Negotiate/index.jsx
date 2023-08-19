@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import QuestionContent from "./component/Question/QuestionContent";
 import Meeting from "./component/Meeting/meeting";
 const Negotiate = () => {
-  const [toggle, setToggle] = useState("Questionnarie");
+  const [toggle, setToggle] = useState("Questionnaire");
   return (
     <>
       <div className="questionnaire_main">
         <h3>Negotiate.</h3>
         <div className="questionnaire_head">
-          {toggle === "Questionnarie" ? (
+          {toggle === "Questionnaire" ? (
             <div
               className="negotiate_link"
               style={{
@@ -25,7 +25,7 @@ const Negotiate = () => {
             <div
               style={{ display: "grid", textAlign: "center" }}
               className="negotiate_link"
-              onClick={() => setToggle("Questionnarie")}
+              onClick={() => setToggle("Questionnaire")}
             >
               <a href="#" style={{ color: "grey" }}>
                 Questionnaire
