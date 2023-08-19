@@ -210,16 +210,13 @@
     padding: 20px 36px 20px 21px;
   }
 }
-<<<<<<< HEAD
 
-=======
 @media (max-width: 1270px) {
   .log_link > p {
     padding: 10px 26px 10px 11px;
   }
 }
-<<<<<<< HEAD
->>>>>>> c95a3c55cfc85d910a0b1b35f2d4555e1f4076e1
+
 @media (max-width: 1115px) {
   .log_link > p {
     padding: 30px 10px;
@@ -231,8 +228,6 @@
   }
 }
 
-=======
->>>>>>> 8e543d1d90af53777125f3e65592b8d051fcfff2
 @media (max-width: 1144px) {
   .log_link > p {
     padding: 8px 18px;
