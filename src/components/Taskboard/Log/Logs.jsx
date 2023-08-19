@@ -131,7 +131,12 @@ const DesignContent = ({ data, setNegotiateOpen }) => {
       )}
       {Toastopen && (
         <LayoutModal onClose={() => setAddcommitOpen(false)}>
-          <div onClick={() => setToastopen(false)} className="success_alert">
+          <div
+            onClick={() => {
+              setToastopen(false);
+            }}
+            className="success_alert"
+          >
             <Toasts
               image={successtick}
               props="You are committed for this task"
