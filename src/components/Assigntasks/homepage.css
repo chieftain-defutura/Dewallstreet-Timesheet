@@ -8,13 +8,13 @@
   padding: 20px 10px;
 }
 
-/* .hours_deduction {
+.hours_deduction {
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding: 20px;
   border-right: 1px solid #282828;
-} */
+}
 .logimage {
   display: none;
 }
@@ -123,6 +123,11 @@
 @media (max-width: 805px) {
   .hours_deduction {
     padding: 10px;
+  }
+  .homepage_main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
   }
 }
 @media (max-width: 788px) {
