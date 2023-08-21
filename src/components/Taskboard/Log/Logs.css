@@ -227,7 +227,7 @@
     padding: 0 0 0 3px;
   } */
 }
-@media (max-width: 770px) {
+@media (max-width: 828px) {
   .grid {
     display: block;
   }

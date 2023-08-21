@@ -5,6 +5,9 @@ import "./WorkingHours.css";
 import hoursprograss from "../../../assets/icons/hoursprograss.svg";
 import minutesprograss from "../../../assets/icons/minutesprograss.svg";
 import secondsprograss from "../../../assets/icons/secondsprograss.svg";
+import add from "../../../assets/icons/plussymbol.svg";
+import toastcancel from "../../../assets/icons/toastcancel.svg";
+import successtick from "../../../assets/icons/successtick.svg";
 import suitcase from "../../../assets/icons/suitcase.svg";
 import gracetime from "../../../assets/icons/gracetime.svg";
 import gpslocation from "../../../assets/icons/gpslocation.svg";
@@ -24,19 +27,21 @@ import cancel from "../../../assets/icons/cancel.svg";
 import Checkin from "../../../assets/icons/checkin.svg";
 import usezap from "../../../assets/icons/usezap.svg";
 import usetimer from "../../../assets/icons/usetimer.svg";
-import report from "../../../assets/icons/reportimage.svg";
+import reportimage from "../../../assets/icons/reportimage.svg";
 import turnongps from "../../../assets/icons/continuegps.svg";
-import toastcancel from "../../../assets/icons/toastcancel.svg";
-import warning from "../../../assets/icons/warning.svg";
+import closelink from "../../../assets/icons/closelink.svg";
 import Button from "../../Button";
 import Toasts from "../../Toasts";
 import LayoutModal from "../../Modal/Modal";
 const WorkingHours = () => {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
   const [use, setUse] = useState(false);
   const [gps, setGps] = useState(false);
   const [turnOn, setTurnon] = useState(false);
   const [steps, setSteps] = useState(0);
+  const [report, setReport] = useState(false);
+  const [reportsubmit, setReportsubmit] = useState(false);
+  const [lunchcheckin, setLunchCheckIn] = useState(false);
   console.log(steps);
 
   return (
@@ -61,7 +66,22 @@ const WorkingHours = () => {
                 </div>
               </div>
             </div>
-
+            {lunchcheckin && (
+              <>
+                <div className="checkin">
+                  <div className="checkin_seconds">
+                    <img src={secondleveldark} alt="suitcase" />
+                    <div className="check">
+                      <h5>Lunch break ends in</h5>
+                      <h4>15m 00s</h4>
+                    </div>
+                  </div>
+                  <Button variant="checkout" size="regular" image={Checkout}>
+                    Check in
+                  </Button>
+                </div>
+              </>
+            )}
             {steps === 0 && (
               <div className="checkin">
                 <div className="checkin_seconds">
@@ -95,6 +115,7 @@ const WorkingHours = () => {
                   size="regular"
                   image={usezap}
                   handleClick={() => setUse(true)}
+                  onClick={() => setSteps((m) => !m)}
                 >
                   Use
                 </Button>
@@ -109,7 +130,12 @@ const WorkingHours = () => {
                     <h4>05m 00s</h4>
                   </div>
                 </div>
-                <Button variant="checkout" size="regular" image={Checkout}>
+                <Button
+                  variant="checkout"
+                  size="regular"
+                  image={Checkout}
+                  // handleClick={() => setLunchCheckIn(true)}
+                >
                   Check out
                 </Button>
               </div>
@@ -131,16 +157,110 @@ const WorkingHours = () => {
             {steps === 4 && (
               <div className="checkin">
                 <div className="checkin_seconds">
-                  <img src={report} alt="report" />
+                  <img src={reportimage} alt="report" />
                   <div className="check">
                     <h5>Daily reporting time ends in</h5>
                     <h4>20m 00s</h4>
                   </div>
                 </div>
-                <Button variant="primary" size="regular" image={usezap}>
+                <Button
+                  variant="primary"
+                  size="regular"
+                  image={usezap}
+                  handleClick={() => setReport(true)}
+                >
                   Report
                 </Button>
               </div>
+            )}
+            {report && !reportsubmit && (
+              <LayoutModal onClose={() => setReport(false)}>
+                <div className="report_main">
+                  <div className="report_header">
+                    <h5>Daily report</h5>
+                    <button>
+                      <img
+                        src={cancel}
+                        alt="cancel"
+                        onClick={() => setReport(false)}
+                      />
+                    </button>
+                  </div>
+                  <div className="report_emptyline"></div>
+                  <div className="task_report">
+                    <div className="report_list">
+                      <div className="report-task">
+                        <h5>01</h5>
+                      </div>
+                    </div>
+                    <h4>Task lists</h4>
+                  </div>
+                  <div className="task_status">
+                    <div className="task_name">
+                      <h4>TASK 1</h4>
+                      <h3>Admin panel wireframe</h3>
+                    </div>
+                    <form>
+                      <select>
+                        <option>Completed</option>
+                        <option>Pending</option>
+                        <option>Inprogress</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div className="add_file">
+                    <h4>FILE</h4>
+                    <img src={add} alt="plus" />
+                  </div>
+                  <div className="drag_file">
+                    <h5>Drag and Drop</h5>
+                  </div>
+                  <div className="add_link">
+                    <h4>LINK</h4>
+                    <img src={add} alt="plus" />
+                  </div>
+                  <div className="drag_link">
+                    <h5>Link</h5>
+                    <img src={closelink} alt="close" />
+                  </div>
+                  <div className="completed_taskline"></div>
+                  <div className="current_status">
+                    <div className="another_task">
+                      <h4>TASK 2</h4>
+                      <h3>Mobile UI Correction</h3>
+                    </div>
+                    <form>
+                      <select>
+                        <option>Select status</option>
+                      </select>
+                    </form>
+                  </div>
+
+                  <div
+                    onClick={() => setReportsubmit(true)}
+                    className="confirm_button"
+                  >
+                    <Button variant="primary" size="large">
+                      Submit
+                    </Button>
+                  </div>
+                </div>
+              </LayoutModal>
+            )}
+            {reportsubmit && (
+              <LayoutModal onClose={() => setReport(false)}>
+                <div
+                  onClick={() => setReportsubmit(false)}
+                  className="report_alert"
+                >
+                  <Toasts
+                    image={successtick}
+                    props="your report sent successfully"
+                    icons={toastcancel}
+                  />
+                  <div className="toast_successline"></div>
+                </div>
+              </LayoutModal>
             )}
             {gps && (
               <LayoutModal>
@@ -300,23 +420,6 @@ const WorkingHours = () => {
           </div>
         </div>
 
-        {open ? (
-          <div onClick={() => setOpen(false)} style={{ margin: "auto" }}>
-            <Toasts
-              image={warning}
-              props="Grace time used.Dead line extended to 6 hours."
-              variant="warning"
-              icons={toastcancel}
-            />
-            <div className="toast_warning"></div>
-          </div>
-        ) : (
-          <div onClick={() => setOpen(true)} className="toast_button">
-            <Button variant="secondary" size="small">
-              Toast
-            </Button>
-          </div>
-        )}
         {use && (
           <LayoutModal onClose={() => setUse(false)}>
             <div className="grace_time">

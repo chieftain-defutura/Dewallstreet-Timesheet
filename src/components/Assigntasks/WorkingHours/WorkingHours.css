@@ -137,7 +137,8 @@
   justify-content: flex-end;
 }
 .grace_time,
-.gps_location {
+.gps_location,
+.report_main {
   background-color: #141414;
   display: flex;
   padding: 24px;
@@ -152,7 +153,8 @@
   align-items: flex-start;
   gap: 237px;
 }
-.gracetime_header > h5 {
+.gracetime_header > h5,
+.report_header > h5 {
   color: var(--canvas, #fff);
   font-family: var(--font-bold);
   font-size: 20px;
@@ -195,23 +197,113 @@ span {
   gap: 10px;
   font-family: var(--font-light);
 }
-.gps_emptyline {
+.gps_emptyline,
+.report_emptyline {
   width: 430px;
   height: 1px;
   background: #1e1e1e;
 }
+.report_list {
+  display: flex;
+  padding: 2px 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100%;
+  border: 1px solid var(--canvas, #fff);
+}
+.report_main {
+  background-color: #141414;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 16px;
+}
+.grace_time > Button {
+  width: 100%;
+}
+.task_report {
+  display: flex;
+  gap: 10px;
+}
+.task_name {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.task_name > h4,
+.add_file > h4,
+.add_link > h4,
+.another_task > h4 {
+  color: grey;
+  font-size: 12px;
+}
+.task_status,
+.current_status {
+  display: flex;
+  gap: 100px;
+}
+.add_file,
+.add_link {
+  display: flex;
+  gap: 400px;
+}
+.task_status > form {
+  padding: 10px;
+}
+.task_status select {
+  padding: 3px;
+  background-color: #141414;
+  border: 1px solid rgb(56, 55, 55);
+  color: white;
+}
 
-/* @media (max-width: 1420px) {
-  .checkin {
-    padding: 8px;
-  }
-  .checkin_seconds {
-    display: flex;
-  }
-  .time_checkinhours {
-    flex-wrap: wrap;
-  }
-} */
+.report_header {
+  display: flex;
+  align-items: flex-start;
+  gap: 300px;
+}
+.drag_file {
+  border: 1px dashed rgb(56, 55, 55);
+  width: 100%;
+  height: 100px;
+}
+.drag_file > h5 {
+  color: grey;
+  text-align: center;
+  padding: 35px;
+}
+.drag_link {
+  border: 1px solid rgb(56, 55, 55);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.completed_taskline {
+  border: 1px dotted grey;
+  width: 100%;
+}
+.task_name > h3,
+.another_task {
+  font-size: 15px;
+}
+.current_status > form {
+  padding: 10px;
+}
+.current_status select {
+  padding: 3px;
+  background-color: #141414;
+  border: 1px solid rgb(56, 55, 55);
+  color: grey;
+}
+.report_main > button {
+  width: 100%;
+  padding: 10px;
+}
 @media (max-width: 1290px) {
   .checkin {
     padding: 8px;

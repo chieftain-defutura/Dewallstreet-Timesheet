@@ -15,6 +15,19 @@
   padding: 20px;
   border-right: 1px solid #282828;
 }
+.logimage {
+  display: none;
+}
+.logout {
+  display: none;
+  position: absolute;
+  top: 68px;
+  right: 0;
+  background-color: #282828;
+  padding: 20px;
+  width: 40%;
+  height: 100vh;
+}
 .hamimage {
   display: none;
 }
@@ -28,7 +41,7 @@
   right: 0;
   background-color: #282828;
   padding: 20px;
-  width: 70%;
+  width: 40%;
   height: 100vh;
 }
 .sidebar_link {
@@ -50,7 +63,7 @@
 }
 .headercontent_name {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .headercontent_name > h2 {
   color: var(--outlier, #ececec);
@@ -134,6 +147,14 @@
   .assign_tasks_main {
     display: none;
     border-right: none;
+  }
+  .logimage {
+    display: block;
+    cursor: pointer;
+  }
+  .logout {
+    display: block;
+    cursor: pointer;
   }
 }
 

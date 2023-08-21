@@ -6,18 +6,22 @@ import logo from "../../assets/icons/name.svg";
 import burger from "../../assets/icons/menu.png";
 import cancel from "../../assets/icons/cancel.svg";
 import briefcasetimer from "../../assets/icons/briefcasetimer.svg";
+import logoutmodal from "../../assets/icons/logoutsymbol.svg";
 import tasksheet from "../../assets/icons/tasksheet.svg";
 import tasksheethide from "../../assets/icons/tasksheethide.svg";
 import briefcasetimerhide from "../../assets/icons/briefcasetimerhide.svg";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import logoutimage from "../../assets/icons/logoutimage.svg";
+import Logoutmodal from "../logoutmodal/logoutmodal";
 const Homeheader = () => {
   const [sideBaron, setSideBarOn] = useState(false);
+  const [emplogout, setEmplogout] = useState(false);
   const [toggle, setToggle] = useState("/home");
   const location = useLocation();
   const { pathname } = location;
-
   console.log(pathname);
+
   const Hamburger = (
     <>
       {!sideBaron ? (
@@ -44,17 +48,12 @@ const Homeheader = () => {
       )}
     </>
   );
-
   const Sidebar = (
     <div className="sidebar">
       <div className="sidebar_content">
         <div className="sidebar_header">
           <div className="headercontent_name">
             <h2>Workspace</h2>
-            <div className="sidebar_name">
-              <h3>Ravishankar Varma</h3>
-              <p>DEWALLED1</p>
-            </div>
           </div>
           <div className="sidebar_emptyline"></div>
         </div>
@@ -118,20 +117,47 @@ const Homeheader = () => {
       </div>
     </div>
   );
+
   return (
     <div className="home_main">
       <Link to="/">
         <img src={logo} alt="name" />
       </Link>
       <h2>Workspace</h2>
-      <div className="header_name">
-        <h2>Ravishankar Varma</h2>
-        <p>DEWALLEXD1</p>
+      <div className="header_name" onClick={() => setEmplogout(true)}>
+        <img src={logoutmodal} alt="logout" />
       </div>
-      {Hamburger}
 
+      {Hamburger}
       {sideBaron && Sidebar}
+
+      {emplogout && (
+        <Logoutmodal onClose={() => setEmplogout(false)}>
+          <div className="logout_page">
+            <div className="logout_content">
+              <h5>Ravishankar Varma</h5>
+              <p>DEWALLEXD1</p>
+            </div>
+            <Link to="/">
+              <img src={logoutimage} alt="logout" />
+            </Link>
+          </div>
+        </Logoutmodal>
+      )}
     </div>
   );
 };
 export default Homeheader;
+// const logout_content = () => {
+//   const [emplogout, setEmplogout] = useState(false);
+//   return (
+//     <>
+//       <div className="">hii</div>
+//       {emplogout && (
+//         <>
+//           <Logoutmodal>hii</Logoutmodal>
+//         </>
+//       )}
+//     </>
+//   );
+// };

@@ -37,6 +37,22 @@
   font-weight: 500;
   line-height: normal;
 }
+.logout_content {
+  display: flex;
+  flex-direction: column;
+}
+.logout_page {
+  display: flex;
+  gap: 10px;
+}
+.logout_content > h5 {
+  font-size: 14px;
+}
+.logout_content > p {
+  font-size: 12px;
+  text-align: end;
+  color: grey;
+}
 
 @media (max-width: 480px) {
   .home_main {
