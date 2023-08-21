@@ -33,18 +33,18 @@ const Linechart3 = () => {
   };
   const data = {
     labels: [
-      "January",
-      "February",
-      "March",
-      "April",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
       "May",
       "June",
       "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
+      "Aug",
+      "Sept",
+      "Oct",
+      "Nov",
+      "Dec",
     ],
     color: ["white"],
     datasets: [
@@ -65,7 +65,7 @@ const Linechart3 = () => {
     ],
   };
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="line_graph" style={{ padding: "20px", width: "100%" }}>
       <Line options={options} data={data} />
       <Timerthree />
     </div>

@@ -339,16 +339,16 @@ span {
   .time_checkinhours {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
   }
   .workinghours_main {
     width: 80%;
   }
-  .toast_button {
+  /* .toast_button {
     display: flex;
     justify-content: flex-start;
-  }
+  } */
 }
 
 @media (max-width: 480px) {

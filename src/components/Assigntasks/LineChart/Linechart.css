@@ -8,3 +8,14 @@ button {
   height: 10%;
   padding: 5px;
 }
+.charts {
+  background-color: #1a1a1a;
+}
+.charts_main {
+  padding: 20px;
+}
+@media (max-width: 480px) {
+  .line_graph {
+    width: 100px;
+  }
+}
