@@ -6,6 +6,7 @@ import user from "../../assets/icons/user.svg";
 import lock from "../../assets/icons/lock.svg";
 import eye from "../../assets/icons/eye.svg";
 import fingerprint from "../../assets/icons/fingerprint.svg";
+import loginimage from "../../assets/icons/loginimage.svg";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 const Login_Page = () => {
@@ -27,7 +28,7 @@ const Login_Page = () => {
         <h2>Log in.</h2>
         {/* </div> */}
         <div className="emptyline"></div>
-        <img src={login} alt="login" width="30%" id="loginpage_image" />
+        <img src={loginimage} alt="login" width="40%" id="loginpage_image" />
         <div className="username_section">
           <div className="user_name">
             <img src={user} alt="user" width="14px" height="14px" />
