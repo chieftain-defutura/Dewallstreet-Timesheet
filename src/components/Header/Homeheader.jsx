@@ -6,6 +6,7 @@ import logo from "../../assets/icons/name.svg";
 import burger from "../../assets/icons/menu.png";
 import cancel from "../../assets/icons/cancel.svg";
 import briefcasetimer from "../../assets/icons/briefcasetimer.svg";
+import checkin from "../../assets/icons/checkin.svg";
 import logoutmodal from "../../assets/icons/logoutsymbol.svg";
 import tasksheet from "../../assets/icons/tasksheet.svg";
 import tasksheethide from "../../assets/icons/tasksheethide.svg";
@@ -15,6 +16,7 @@ import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logoutimage from "../../assets/icons/logoutimage.svg";
 import Logoutmodal from "../logoutmodal/logoutmodal";
+import Button from "../Button";
 const Homeheader = () => {
   const [sideBaron, setSideBarOn] = useState(false);
   const [emplogout, setEmplogout] = useState(false);
@@ -52,33 +54,20 @@ const Homeheader = () => {
   const Sidebar = (
     <div className="sidebar">
       <div className="sidebar_content">
-        <div className="sidebar_header">
-          {/* <div className="headercontent_name">
-            <h2>Workspace</h2>
-          </div> */}
-        </div>
         <div className="sidebar_link">
           <Link to="/home">
             {pathname === "/home" ? (
               <>
                 <div onClick={() => setToggle(toggle)} className="menu_link">
-                  <img src={briefcasetimer} alt="icon" />
-                  <h4 style={{ color: "white" }}>
-                    Clock
-                    <br />
-                    Works
-                  </h4>
+                  <img src={briefcasetimer} alt="icon" width="30px" />
+                  <h4 style={{ color: "white" }}>Clock Works</h4>
                 </div>
               </>
             ) : (
               <>
                 <div onClick={() => setToggle(toggle)} className="menu_link">
-                  <img src={briefcasetimerhide} alt="icon" />
-                  <h4 style={{ color: "grey" }}>
-                    Clock
-                    <br />
-                    Works
-                  </h4>
+                  <img src={briefcasetimerhide} alt="icon" width="30px" />
+                  <h4 style={{ color: "grey" }}>Clock Works</h4>
                 </div>
               </>
             )}
@@ -92,28 +81,30 @@ const Homeheader = () => {
             pathname === "/Taskpage/commit" ? (
               <>
                 <div className="menu_link">
-                  <img src={tasksheethide} alt="icon" />
-                  <h4 style={{ color: "white" }}>
-                    Task
-                    <br />
-                    Board
-                  </h4>
+                  <img src={tasksheethide} alt="icon" width="30px" />
+                  <h4 style={{ color: "white" }}>Task Board</h4>
                 </div>
               </>
             ) : (
               <>
                 <div className="menu_link">
-                  <img src={tasksheet} alt="icon" />
-                  <h4 style={{ color: "grey" }}>
-                    Task
-                    <br />
-                    Board
-                  </h4>
+                  <img src={tasksheet} alt="icon" width="30px" />
+                  <h4 style={{ color: "grey" }}>Task Board</h4>
                 </div>
               </>
             )}
           </Link>
         </div>
+      </div>
+      <div className="sidebar_logout">
+        <img src={logoutmodal} alt="logout" />
+        <h5>Ravishankar Varma</h5>
+        <p>DEWALLEXD1</p>
+        <Link to="/">
+          <Button variant="checkout" image={checkin} size="medium">
+            Logout
+          </Button>
+        </Link>
       </div>
     </div>
   );
@@ -148,16 +139,3 @@ const Homeheader = () => {
   );
 };
 export default Homeheader;
-// const logout_content = () => {
-//   const [emplogout, setEmplogout] = useState(false);
-//   return (
-//     <>
-//       <div className="">hii</div>
-//       {emplogout && (
-//         <>
-//           <Logoutmodal>hii</Logoutmodal>
-//         </>
-//       )}
-//     </>
-//   );
-// };

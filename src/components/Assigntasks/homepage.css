@@ -7,6 +7,9 @@
 .working_grid {
   padding: 20px 10px;
 }
+.sidebar_logout > Button {
+  width: 100%;
+}
 
 /* .hours_deduction {
   display: flex;
@@ -40,15 +43,16 @@
   top: 68px;
   right: 0;
   background-color: #282828;
+  justify-content: space-between;
+  flex-direction: column;
   padding: 20px;
   width: 40%;
-  height: 100vh;
+  height: 90vh;
 }
 .sidebar_link {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 50px;
+  gap: 20px;
 }
 .sidebar_emptyline {
   border: 1px solid #575757;
@@ -65,6 +69,7 @@
   display: flex;
   justify-content: center;
 }
+
 .headercontent_name > h2 {
   color: var(--outlier, #ececec);
   font-family: var(--font-bold);
@@ -92,8 +97,18 @@
 .menu_link {
   display: flex;
   font-size: 20px;
-  justify-content: center;
   gap: 20px;
+}
+.sidebar_logout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar_logout > p {
+  color: grey;
+}
+.sidebar_logout > img {
+  width: 15%;
 }
 @media (max-width: 1245px) {
   .homepage_main {
@@ -103,6 +118,11 @@
   .hours_deduction {
     border-right: none;
   }
+  .homepage_main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
 }
 @media (max-width: 1000px) {
   .homepage_main {
@@ -111,6 +131,11 @@
   }
   .hours_deduction {
     border-right: none;
+  }
+  .homepage_main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
   }
 }
 
@@ -130,6 +155,12 @@
     padding: 10px;
   }
 }
+@media (max-width: 770px) {
+  .working_grid {
+    display: flex;
+    align-items: center;
+  }
+}
 @media (max-width: 700px) {
   .hamimage {
     display: block;
@@ -138,6 +169,12 @@
   .sidebar {
     display: block;
     cursor: pointer;
+  }
+  .sidebar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1000;
   }
   .clock_work,
   .task_board,
@@ -156,6 +193,9 @@
     display: block;
     cursor: pointer;
   }
+  .header_name {
+    display: none;
+  }
 }
 
 @media (max-width: 570px) {
@@ -163,9 +203,33 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 530px) {
+  .menu_link {
+    gap: 10px;
+  }
+}
+@media (max-width: 502px) {
+  .menu_link {
+    gap: 8px;
+  }
+}
+@media (max-width: 495px) {
+  .menu_link {
+    gap: 5px;
+  }
+}
+@media (max-width: 486px) {
+  .menu_link {
+    gap: 4px;
+  }
+}
 @media (max-width: 480px) {
   .sidebar {
     top: 65px;
     height: 92%;
+  }
+  .menu_link {
+    gap: 2px;
   }
 }
