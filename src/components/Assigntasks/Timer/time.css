@@ -5,17 +5,17 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
-  background: #141414;
+  /* background: #141414; */
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   width: fit-content;
 }
 .hours_att {
   display: flex;
-
   width: 106px;
   flex-direction: column;
   justify-content: center;
   color: var(--canvas, #fff);
+  /* color: black; */
   text-align: right;
   font-family: var(--font-medium);
   font-size: 20px;
@@ -41,16 +41,17 @@
   flex-direction: column;
   justify-content: center;
   color: var(--canvas, #fff);
+  /* color: black; */
   font-family: var(--font-medium);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 19.5px;
 }
-.timer_verticalline {
+.timer_line {
   width: 0.5%;
   height: 60%;
-  background: #1e1e1e;
+  background: #1f1f1f39;
 }
 @media (max-width: 480px) {
   .time_calculation {
