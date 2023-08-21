@@ -10,6 +10,7 @@ import logoutmodal from "../../assets/icons/logoutsymbol.svg";
 import tasksheet from "../../assets/icons/tasksheet.svg";
 import tasksheethide from "../../assets/icons/tasksheethide.svg";
 import briefcasetimerhide from "../../assets/icons/briefcasetimerhide.svg";
+import headerhamburger from "../../assets/icons/headerhamburger.svg";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logoutimage from "../../assets/icons/logoutimage.svg";
@@ -26,7 +27,7 @@ const Homeheader = () => {
     <>
       {!sideBaron ? (
         <img
-          src={burger}
+          src={headerhamburger}
           alt="burger"
           className="hamimage"
           width="20px"
@@ -52,10 +53,9 @@ const Homeheader = () => {
     <div className="sidebar">
       <div className="sidebar_content">
         <div className="sidebar_header">
-          <div className="headercontent_name">
+          {/* <div className="headercontent_name">
             <h2>Workspace</h2>
-          </div>
-          <div className="sidebar_emptyline"></div>
+          </div> */}
         </div>
         <div className="sidebar_link">
           <Link to="/home">
@@ -137,9 +137,9 @@ const Homeheader = () => {
             <div className="logout_content">
               <h5>Ravishankar Varma</h5>
               <p>DEWALLEXD1</p>
-            </div>
+            </div>{" "}
             <Link to="/">
-              <img src={logoutimage} alt="logout" />
+              <img src={logoutimage} alt="logout" className="logout_image" />
             </Link>
           </div>
         </Logoutmodal>

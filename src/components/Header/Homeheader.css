@@ -21,6 +21,9 @@
   font-weight: 700;
   line-height: normal;
 }
+.header_name {
+  cursor: pointer;
+}
 .header_name > h2 {
   color: var(--canvas, #ececec);
   font-family: var(--font-light);
@@ -44,6 +47,9 @@
 .logout_page {
   display: flex;
   gap: 10px;
+}
+.logout_image {
+  cursor: pointer;
 }
 .logout_content > h5 {
   font-size: 14px;
