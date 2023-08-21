@@ -102,7 +102,7 @@
 }
 .Login_page > img {
   position: relative;
-  left: 120px;
+  left: 110px;
 }
 @media (max-width: 1140px) {
   .Login_page {
@@ -120,14 +120,14 @@
   }
 }
 @media (max-width: 480px) {
-  /* .login_main > h2 {
-    font-size: 20px;
-  } */
+  .login_main > h2 {
+    font-size: 10px;
+  }
   /* .login_main {
     gap: 200px;
     display: flex;
   } */
   .Login_page {
-    width: 100%;
+    width: 90%;
   }
 }
