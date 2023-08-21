@@ -213,6 +213,16 @@ span {
   border-radius: 100%;
   border: 1px solid var(--canvas, #fff);
 }
+.lunch_warningcheckin {
+  display: flex;
+  flex-direction: column;
+}
+.error_alert {
+  display: flex;
+}
+.error_alert > p {
+  color: #d0342c;
+}
 .report_main {
   background-color: #141414;
   display: flex;

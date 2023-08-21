@@ -205,6 +205,9 @@
   flex-direction: column;
   gap: 20px;
 }
+.negotiate_modal {
+  display: none;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -218,6 +221,7 @@
     padding: 3px;
   }
 }
+
 @media (max-width: 778px) {
   .logs_mapping {
     padding: 0;
@@ -229,6 +233,14 @@
 }
 @media (max-width: 828px) {
   .grid {
+    display: block;
+  }
+}
+@media (max-width: 830px) {
+  .negotiate_page {
+    display: none;
+  }
+  .negotiate_modal {
     display: block;
   }
 }

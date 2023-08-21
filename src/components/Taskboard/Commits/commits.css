@@ -364,6 +364,11 @@
     padding: 20px 5px;
   }
 }
+@media (max-width: 870px) {
+  .log_link > p {
+    padding: 20px 4px;
+  }
+}
 @media (max-width: 865px) {
   .log_link > p {
     padding: 20px 4px;

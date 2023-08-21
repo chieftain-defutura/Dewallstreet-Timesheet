@@ -4,15 +4,22 @@ import React, { useReducer, useState } from "react";
 import "./WorkingHours.css";
 import hoursprograss from "../../../assets/icons/hoursprograss.svg";
 import minutesprograss from "../../../assets/icons/minutesprograss.svg";
+import usetimer from "../../../assets/icons/usetimer.svg";
 import secondsprograss from "../../../assets/icons/secondsprograss.svg";
+import errorwarning from "../../../assets/icons/errorwarning.svg";
+import lunchstarts from "../../../assets/icons/lunchstarts.svg";
+import lunchmiddle from "../../../assets/icons/lunchmiddle.svg";
+import coffeestarts from "../../../assets/icons/coffeestarts.svg";
 import add from "../../../assets/icons/plussymbol.svg";
 import toastcancel from "../../../assets/icons/toastcancel.svg";
 import successtick from "../../../assets/icons/successtick.svg";
 import suitcase from "../../../assets/icons/suitcase.svg";
+import lunchends from "../../../assets/icons/lunchends.svg";
 import gracetime from "../../../assets/icons/gracetime.svg";
 import gpslocation from "../../../assets/icons/gpslocation.svg";
 import location from "../../../assets/icons/location.svg";
 import turnon from "../../../assets/icons/turnonimage.svg";
+import reportmiddle from "../../../assets/icons/reportmiddle.svg";
 import firstleveldark from "../../../assets/icons/firstleveldark.svg";
 import firstlevel from "../../../assets/icons/firstlevel.svg";
 import secondlevel from "../../../assets/icons/secondlevel.svg";
@@ -26,7 +33,7 @@ import Checkout from "../../../assets/icons/checkout.svg";
 import cancel from "../../../assets/icons/cancel.svg";
 import Checkin from "../../../assets/icons/checkin.svg";
 import usezap from "../../../assets/icons/usezap.svg";
-import usetimer from "../../../assets/icons/usetimer.svg";
+import gracetimer from "../../../assets/icons/gractimer.svg";
 import reportimage from "../../../assets/icons/reportimage.svg";
 import turnongps from "../../../assets/icons/continuegps.svg";
 import closelink from "../../../assets/icons/closelink.svg";
@@ -34,14 +41,16 @@ import Button from "../../Button";
 import Toasts from "../../Toasts";
 import LayoutModal from "../../Modal/Modal";
 const WorkingHours = () => {
-  // const [open, setOpen] = useState(false);
+  const [usegracetime, setUseGraceTime] = useState(false);
   const [use, setUse] = useState(false);
   const [gps, setGps] = useState(false);
   const [turnOn, setTurnon] = useState(false);
   const [steps, setSteps] = useState(0);
   const [report, setReport] = useState(false);
+  const [timer, setTimer] = useState(0);
   const [reportsubmit, setReportsubmit] = useState(false);
-  const [lunchcheckin, setLunchCheckIn] = useState(false);
+  const [gpscontinue, setGpscontinue] = useState(false);
+
   console.log(steps);
 
   return (
@@ -51,37 +60,122 @@ const WorkingHours = () => {
           <div className="time_checkinhours">
             <div className="check_workinghours">
               <h4>Working hours.</h4>
-              <div className="clock_timing">
-                <div className="hours_prograssbar">
-                  <img src={hoursprograss} alt="hours" />
-                  <h5>Hours</h5>
+              {timer === 0 && (
+                <div className="clock_timing">
+                  <div className="hours_prograssbar">
+                    <img src={hoursprograss} alt="hours" />
+                    <h5>Hours</h5>
+                  </div>
+                  <div className="minutes_prograssbar">
+                    <img src={minutesprograss} alt="minutes" />
+                    <h5>Minutes</h5>
+                  </div>
+                  <div className="seconds_prograssbar">
+                    <img src={secondsprograss} alt="seconds" />
+                    <h5>Seconds</h5>
+                  </div>
                 </div>
-                <div className="minutes_prograssbar">
-                  <img src={minutesprograss} alt="minutes" />
-                  <h5>Minutes</h5>
+              )}
+              {timer === 1 && (
+                <div className="clock_timing">
+                  <div className="hours_prograssbar">
+                    <img src={hoursprograss} alt="hours" />
+                    <h5>Hours</h5>
+                  </div>
+                  <div className="minutes_prograssbar">
+                    <img src={gracetimer} alt="minutes" />
+                    <h5>Minutes</h5>
+                  </div>
+                  <div className="seconds_prograssbar">
+                    <img src={secondsprograss} alt="seconds" />
+                    <h5>Seconds</h5>
+                  </div>
                 </div>
-                <div className="seconds_prograssbar">
-                  <img src={secondsprograss} alt="seconds" />
-                  <h5>Seconds</h5>
+              )}
+              {timer === 2 && (
+                <div className="clock_timing">
+                  <div className="hours_prograssbar">
+                    <img src={lunchstarts} alt="hours" />
+                    <h5>Hours</h5>
+                  </div>
+                  <div className="minutes_prograssbar">
+                    <img src={lunchmiddle} alt="minutes" />
+                    <h5>Minutes</h5>
+                  </div>
+                  <div className="seconds_prograssbar">
+                    <img src={secondsprograss} alt="seconds" />
+                    <h5>Seconds</h5>
+                  </div>
                 </div>
-              </div>
-            </div>
-            {lunchcheckin && (
-              <>
-                <div className="checkin">
-                  <div className="checkin_seconds">
-                    <img src={secondleveldark} alt="suitcase" />
-                    <div className="check">
-                      <h5>Lunch break ends in</h5>
-                      <h4>15m 00s</h4>
+              )}
+              {timer === 3 && (
+                <>
+                  <div className="clock_timing">
+                    <div className="hours_prograssbar">
+                      <img src={lunchends} alt="hours" />
+                      <h5>Hours</h5>
+                    </div>
+                    <div className="minutes_prograssbar">
+                      <img src={lunchmiddle} alt="minutes" />
+                      <h5>Minutes</h5>
+                    </div>
+                    <div className="seconds_prograssbar">
+                      <img src={secondsprograss} alt="seconds" />
+                      <h5>Seconds</h5>
                     </div>
                   </div>
-                  <Button variant="checkout" size="regular" image={Checkout}>
-                    Check in
-                  </Button>
+                </>
+              )}
+              {timer === 4 && (
+                <div className="clock_timing">
+                  <div className="hours_prograssbar">
+                    <img src={coffeestarts} alt="hours" />
+                    <h5>Hours</h5>
+                  </div>
+                  <div className="minutes_prograssbar">
+                    <img src={minutesprograss} alt="minutes" />
+                    <h5>Minutes</h5>
+                  </div>
+                  <div className="seconds_prograssbar">
+                    <img src={secondsprograss} alt="seconds" />
+                    <h5>Seconds</h5>
+                  </div>
                 </div>
-              </>
-            )}
+              )}
+              {timer === 5 && (
+                <div className="clock_timing">
+                  <div className="hours_prograssbar">
+                    <img src={coffeestarts} alt="hours" />
+                    <h5>Hours</h5>
+                  </div>
+                  <div className="minutes_prograssbar">
+                    <img src={lunchmiddle} alt="minutes" />
+                    <h5>Minutes</h5>
+                  </div>
+                  <div className="seconds_prograssbar">
+                    <img src={secondsprograss} alt="seconds" />
+                    <h5>Seconds</h5>
+                  </div>
+                </div>
+              )}
+              {timer === 6 && (
+                <div className="clock_timing">
+                  <div className="hours_prograssbar">
+                    <img src={secondsprograss} alt="hours" />
+                    <h5>Hours</h5>
+                  </div>
+                  <div className="minutes_prograssbar">
+                    <img src={reportmiddle} alt="minutes" />
+                    <h5>Minutes</h5>
+                  </div>
+                  <div className="seconds_prograssbar">
+                    <img src={secondsprograss} alt="seconds" />
+                    <h5>Seconds</h5>
+                  </div>
+                </div>
+              )}
+            </div>
+
             {steps === 0 && (
               <div className="checkin">
                 <div className="checkin_seconds">
@@ -95,7 +189,9 @@ const WorkingHours = () => {
                   variant="primary"
                   size="regular"
                   image={Checkin}
-                  onClick={() => setSteps((m) => !m)}
+                  handleClick={() => {
+                    setSteps(1), setTimer(1);
+                  }}
                 >
                   Check in
                 </Button>
@@ -134,7 +230,12 @@ const WorkingHours = () => {
                   variant="checkout"
                   size="regular"
                   image={Checkout}
-                  // handleClick={() => setLunchCheckIn(true)}
+                  handleClick={() => {
+                    setTimer(2),
+                      setSteps(5),
+                      setTimer(3),
+                      setLunchwarning(true);
+                  }}
                 >
                   Check out
                 </Button>
@@ -145,11 +246,18 @@ const WorkingHours = () => {
                 <div className="checkin_seconds">
                   <img src={breakimage} alt="breakimage" />
                   <div className="check">
-                    <h5>Lunch break starts in</h5>
+                    <h5>coffee break starts in</h5>
                     <h4>05m 00s</h4>
                   </div>
                 </div>
-                <Button variant="checkout" size="regular" image={Checkin}>
+                <Button
+                  variant="checkout"
+                  size="regular"
+                  image={Checkin}
+                  handleClick={() => {
+                    setSteps(6), setTimer(5);
+                  }}
+                >
                   Check out
                 </Button>
               </div>
@@ -173,6 +281,55 @@ const WorkingHours = () => {
                 </Button>
               </div>
             )}
+            {steps === 5 && (
+              <div className="lunch_warningcheckin">
+                <div className="checkin">
+                  <div className="checkin_seconds">
+                    <img src={secondleveldark} alt="suitcase" />
+                    <div className="check">
+                      <h5>Lunch break ends in</h5>
+                      <h4>15m 00s</h4>
+                    </div>
+                  </div>
+                  <Button
+                    variant="primary"
+                    size="regular"
+                    image={Checkin}
+                    handleClick={() => {
+                      setSteps(3), setTimer(4);
+                    }}
+                  >
+                    Check in
+                  </Button>
+                </div>
+                <div className="error_alert">
+                  <img src={errorwarning} alt="error" />
+                  <p>Your are running 30 minutes late.</p>
+                </div>
+              </div>
+            )}
+            {steps === 6 && (
+              <div className="checkin">
+                <div className="checkin_seconds">
+                  <img src={breakimage} alt="breakimage" />
+                  <div className="check">
+                    <h5>coffee break ends in</h5>
+                    <h4>20m 00s</h4>
+                  </div>
+                </div>
+                <Button
+                  variant="primary"
+                  size="regular"
+                  image={Checkin}
+                  handleClick={() => {
+                    setSteps(4), setTimer(6);
+                  }}
+                >
+                  Check in
+                </Button>
+              </div>
+            )}
+
             {report && !reportsubmit && (
               <LayoutModal onClose={() => setReport(false)}>
                 <div className="report_main">
@@ -262,6 +419,36 @@ const WorkingHours = () => {
                 </div>
               </LayoutModal>
             )}
+            {usegracetime && (
+              <LayoutModal onClose={() => setUseGraceTime(false)}>
+                <div
+                  onClick={() => setUseGraceTime(false)}
+                  className="report_alert"
+                >
+                  <Toasts
+                    image={successtick}
+                    props="Successfully used Gracetime"
+                    icons={toastcancel}
+                  />
+                  <div className="toast_successline"></div>
+                </div>
+              </LayoutModal>
+            )}
+            {gpscontinue && (
+              <LayoutModal onClose={() => setGpscontinue(false)}>
+                <div
+                  onClick={() => setGpscontinue(false)}
+                  className="report_alert"
+                >
+                  <Toasts
+                    image={successtick}
+                    props="your location is Turn on"
+                    icons={toastcancel}
+                  />
+                  <div className="toast_successline"></div>
+                </div>
+              </LayoutModal>
+            )}
             {gps && (
               <LayoutModal>
                 <div className="gps_location">
@@ -328,9 +515,42 @@ const WorkingHours = () => {
                     handleClick={() => {
                       setGps(false);
                       setTurnon(false);
+                      setGpscontinue(true);
                     }}
                   >
                     Continue
+                  </Button>
+                </div>
+              </LayoutModal>
+            )}
+            {use && (
+              <LayoutModal onClose={() => setUse(false)}>
+                <div className="grace_time">
+                  <div className="gracetime_header">
+                    <h5>Grace time.</h5>
+                    <button onClick={() => setUse(false)}>
+                      <img src={cancel} alt="cancel" />
+                    </button>{" "}
+                  </div>
+                  <div className="commit_emptyline"></div>
+                  <img src={gracetime} alt="gracetime" />
+                  <h4>
+                    Use your grace time that you have <b> 05</b>/<span>24</span>
+                  </h4>
+                  <div className="gracetime_para">
+                    <p>Your usual checkout time 6.30 will be autochecked </p>
+                    <p>out on confirming. No extra time is calculated as </p>
+                    <p>Over Time.</p>
+                  </div>
+                  <Button
+                    variant="primary"
+                    size="large"
+                    image={usezap}
+                    handleClick={() => {
+                      setUse(false), setUseGraceTime(true);
+                    }}
+                  >
+                    Use grace time
                   </Button>
                 </div>
               </LayoutModal>
@@ -342,11 +562,21 @@ const WorkingHours = () => {
             <div className="checkin_levels">
               <div className="firstlevel_timing">
                 {steps !== 1 && steps !== 0 ? (
-                  <div className="first_level" onClick={() => setSteps(1)}>
+                  <div
+                    className="first_level"
+                    onClick={() => {
+                      setSteps(1), setTimer(0);
+                    }}
+                  >
                     <img src={firstlevel} alt="first" />
                   </div>
                 ) : (
-                  <div className="first_level" onClick={() => setSteps(1)}>
+                  <div
+                    className="first_level"
+                    onClick={() => {
+                      setSteps(1);
+                    }}
+                  >
                     <img src={firstleveldark} alt="first" />
                   </div>
                 )}
@@ -354,16 +584,7 @@ const WorkingHours = () => {
               </div>
 
               <div className="secondlevel_timing">
-                {steps === 2 ? (
-                  <div
-                    className="second_level"
-                    onClick={() => {
-                      setSteps(2);
-                    }}
-                  >
-                    <img src={secondleveldark} alt="second" />
-                  </div>
-                ) : (
+                {steps !== 2 && steps !== 5 ? (
                   <div
                     className="second_level"
                     onClick={() => {
@@ -372,18 +593,28 @@ const WorkingHours = () => {
                   >
                     <img src={secondlevel} alt="second" />
                   </div>
+                ) : (
+                  <div
+                    className="second_level"
+                    onClick={() => {
+                      setSteps(2);
+                      setTimer(2);
+                    }}
+                  >
+                    <img src={secondleveldark} alt="second" />
+                  </div>
                 )}
                 <p>01:00PM-02:00PM</p>
               </div>
 
               <div className="thirdlevel_timing">
-                {steps === 3 ? (
+                {steps !== 3 && steps !== 6 ? (
                   <div className="third_level" onClick={() => setSteps(3)}>
-                    <img src={thirdleveldark} alt="third" />
+                    <img src={thirdlevel} alt="third" />
                   </div>
                 ) : (
                   <div className="third_level" onClick={() => setSteps(3)}>
-                    <img src={thirdlevel} alt="third" />
+                    <img src={thirdleveldark} alt="third" />
                   </div>
                 )}
 
@@ -396,7 +627,7 @@ const WorkingHours = () => {
                     className="fourth_level"
                     onClick={() => {
                       setGps(true);
-                      setSteps(4);
+                      setSteps(1);
                     }}
                   >
                     <img src={fourthleveldark} alt="fourth" />
@@ -419,37 +650,6 @@ const WorkingHours = () => {
             <div className="level_crossing"></div>
           </div>
         </div>
-
-        {use && (
-          <LayoutModal onClose={() => setUse(false)}>
-            <div className="grace_time">
-              <div className="gracetime_header">
-                <h5>Grace time.</h5>
-                <button onClick={() => setUse(false)}>
-                  <img src={cancel} alt="cancel" />
-                </button>{" "}
-              </div>
-              <div className="commit_emptyline"></div>
-              <img src={gracetime} alt="gracetime" />
-              <h4>
-                Use your grace time that you have <b> 05</b>/<span>24</span>
-              </h4>
-              <div className="gracetime_para">
-                <p>Your usual checkout time 6.30 will be autochecked </p>
-                <p>out on confirming. No extra time is calculated as </p>
-                <p>Over Time.</p>
-              </div>
-              <Button
-                variant="primary"
-                size="large"
-                image={usezap}
-                handleClick={() => setUse(false)}
-              >
-                Use grace time
-              </Button>
-            </div>
-          </LayoutModal>
-        )}
       </div>
     </>
   );
