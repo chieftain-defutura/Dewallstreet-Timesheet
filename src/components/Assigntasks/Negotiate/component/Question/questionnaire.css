@@ -8,6 +8,7 @@
   flex-direction: column;
   gap: 10px;
   padding: 25px;
+  background-color: #1a1a1a;
 }
 .negotiate_link a {
   color: white;
@@ -262,6 +263,10 @@
 .one_question > h4,
 .first_link > h4 {
   color: #656565;
+}
+.negotiate_header {
+  display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 690px) {
   .questionnaire_main {

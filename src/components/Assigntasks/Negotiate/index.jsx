@@ -1,12 +1,25 @@
 import React, { useState } from "react";
 import QuestionContent from "./component/Question/QuestionContent";
+import cancel from "../../../assets/icons/cancel.svg";
+
 import Meeting from "./component/Meeting/meeting";
 const Negotiate = () => {
-  const [toggle, setToggle] = useState("Questionnaire");
+  const [toggle, setToggle] = useState("Questionnarie");
+  const [negotiateopen, setNegotiateOpen] = useState(false);
   return (
     <>
       <div className="questionnaire_main">
-        <h3>Negotiate.</h3>
+        <div className="negotiate_header">
+          <h3>Negotiate.</h3>
+          {negotiateopen && (
+            <img
+              src={cancel}
+              alt="cancel"
+              width="20px"
+              onClick={() => setNegotiateOpen(true)}
+            />
+          )}
+        </div>
         <div className="questionnaire_head">
           {toggle === "Questionnaire" ? (
             <div
