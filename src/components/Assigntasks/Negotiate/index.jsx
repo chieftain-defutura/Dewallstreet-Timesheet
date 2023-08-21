@@ -21,7 +21,7 @@ const Negotiate = () => {
           )}
         </div>
         <div className="questionnaire_head">
-          {toggle === "Questionnarie" ? (
+          {toggle === "Questionnaire" ? (
             <div
               className="negotiate_link"
               style={{
@@ -38,7 +38,7 @@ const Negotiate = () => {
             <div
               style={{ display: "grid", textAlign: "center" }}
               className="negotiate_link"
-              onClick={() => setToggle("Questionnarie")}
+              onClick={() => setToggle("Questionnaire")}
             >
               <a href="#" style={{ color: "grey" }}>
                 Questionnaire
