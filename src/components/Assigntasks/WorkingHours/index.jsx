@@ -427,7 +427,7 @@ const WorkingHours = () => {
                 <h5>Grace time.</h5>
                 <button onClick={() => setUse(false)}>
                   <img src={cancel} alt="cancel" />
-                </button>{" "}
+                </button>
               </div>
               <div className="commit_emptyline"></div>
               <img src={gracetime} alt="gracetime" />

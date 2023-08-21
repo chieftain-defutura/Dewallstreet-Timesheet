@@ -1,0 +1,10 @@
+.years_grace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+button {
+  height: 10%;
+  padding: 5px;
+}
