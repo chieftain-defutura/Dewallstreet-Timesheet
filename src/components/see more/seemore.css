@@ -212,3 +212,23 @@
   font-weight: 600;
   line-height: normal;
 }
+@media (max-width: 630px) {
+  .see_more {
+    width: 70%;
+  }
+}
+@media (max-width: 605px) {
+  .see_more {
+    width: 60%;
+  }
+}
+@media (max-width: 530px) {
+  .see_more {
+    width: 50%;
+  }
+}
+@media (max-width: 440px) {
+  .see_more {
+    width: 40%;
+  }
+}
