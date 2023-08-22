@@ -126,7 +126,6 @@
   flex-direction: column;
   gap: 100px;
   margin: auto;
-  align-items: center;
 }
 .toast_warning {
   width: 209px;
@@ -372,7 +371,7 @@ span {
 }
 @media (max-width: 560px) {
   .workinghours_main {
-    width: 70%;
+    width: 100%;
   }
 }
 @media (max-width: 552px) {
@@ -409,6 +408,16 @@ span {
   }
   .checkin > button {
     padding: 10px 15px;
+  }
+}
+@media (max-width: 460px) {
+  .workinghours_main {
+    width: 100%;
+  }
+}
+@media (max-width: 431px) {
+  .workinghours_main {
+    padding: 6px;
   }
 }
 /* @media (max-width: 407px) {

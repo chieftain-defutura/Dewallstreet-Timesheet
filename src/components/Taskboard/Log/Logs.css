@@ -222,15 +222,6 @@
   }
 }
 
-@media (max-width: 778px) {
-  .logs_mapping {
-    padding: 0;
-    border-right: none;
-  }
-  /* .logs_render {
-    padding: 0 0 0 3px;
-  } */
-}
 @media (max-width: 828px) {
   .grid {
     display: block;
@@ -243,6 +234,19 @@
   .negotiate_modal {
     display: block;
   }
+  .logs_mapping {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 778px) {
+  .logs_mapping {
+    padding: 0;
+    border-right: none;
+  }
+  /* .logs_render {
+    padding: 0 0 0 3px;
+  } */
 }
 @media (max-width: 700px) {
   .task_system {
@@ -259,11 +263,16 @@
   }
 }
 @media (max-width: 630px) {
+<<<<<<< HEAD
   .task_title > p {
     font-size: 5px;
   }
   .task_system {
     width: 50%;
+=======
+  .task_system {
+    width: 70%;
+>>>>>>> ecbb978c3f94b697400cf33cbfe79a79085a97d4
   }
 }
 @media (max-width: 480px) {

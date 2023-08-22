@@ -400,9 +400,6 @@
   }
 }
 @media (max-width: 700px) {
-  .design_links {
-    display: none;
-  }
   .log_link > p {
     padding: 20px 30px;
   }
@@ -437,5 +434,21 @@
   }
   .log_link > p {
     padding: 20px 10px;
+  }
+}
+@media (max-width: 475px) {
+  .log_link > p {
+    padding: 15px 8px;
+  }
+}
+@media (max-width: 455px) {
+  .log_link > p {
+    padding: 12px 6px;
+  }
+  .design_links {
+    padding: 0;
+  }
+  .logs_mapping {
+    padding: 0;
   }
 }
