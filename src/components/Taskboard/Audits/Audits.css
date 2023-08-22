@@ -54,7 +54,15 @@
 .revision_button {
   font-size: 14px;
 }
+.audits_modal {
+  display: none;
+}
 /* .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 } */
+@media (max-width: 830px) {
+  .audits_modal {
+    display: block;
+  }
+}

@@ -126,6 +126,7 @@
   flex-direction: column;
   gap: 100px;
   margin: auto;
+  align-items: center;
 }
 .toast_warning {
   width: 209px;
@@ -351,9 +352,13 @@ span {
     display: flex;
     gap: 30px;
   }
-  .indicator_report {
+  .checkin {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    width: 60%;
+  }
+  .button-regular {
+    width: 100%;
   }
 }
 @media (max-width: 750px) {
@@ -375,14 +380,24 @@ span {
   .thirdlevel_timing {
     text-align: center;
   }
+  .checkin {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .workingcheckin_page {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 @media (max-width: 480px) {
   .checkin {
     flex-wrap: nowrap;
     gap: 15px;
+    width: 100%;
   }
   .workinghours_main {
-    width: 60%;
+    width: 70%;
   }
   .workingcheckin_page {
     width: 100%;
@@ -394,5 +409,14 @@ span {
   }
   .checkin > button {
     padding: 10px 15px;
+  }
+}
+@media (max-width: 407px) {
+  .workinghours_main {
+    width: 60%;
+  }
+  .checkin_levels {
+    display: flex;
+    gap: 10px;
   }
 }

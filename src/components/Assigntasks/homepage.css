@@ -11,13 +11,13 @@
   width: 100%;
 }
 
-/* .hours_deduction {
+.hours_deduction {
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding: 20px;
   border-right: 1px solid #282828;
-} */
+}
 .logimage {
   display: none;
 }
@@ -149,6 +149,11 @@
   .hours_deduction {
     padding: 10px;
   }
+  .homepage_main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
 }
 @media (max-width: 788px) {
   .working_grid {
@@ -175,6 +180,9 @@
     justify-content: space-between;
     flex-direction: column;
     z-index: 1000;
+  }
+  .menu_link h4 {
+    font-size: 18px;
   }
   .clock_work,
   .task_board,
@@ -231,5 +239,21 @@
   }
   .menu_link {
     gap: 2px;
+  }
+}
+@media (max-width: 443px) {
+  .menu_link h4 {
+    font-size: 15px;
+  }
+  .menu_link > img {
+    width: 20px;
+  }
+  .button-checkout {
+    padding: 12px 15px;
+  }
+}
+@media (max-width: 390px) {
+  .sidebar {
+    padding: 10px;
   }
 }

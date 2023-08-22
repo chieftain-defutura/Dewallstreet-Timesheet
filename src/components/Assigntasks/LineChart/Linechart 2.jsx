@@ -33,18 +33,18 @@ const Linechart2 = () => {
   };
   const data = {
     labels: [
-      "January",
-      "February",
-      "March",
-      "April",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
       "May",
       "June",
       "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
+      "Aug",
+      "Sept",
+      "Oct",
+      "Nov",
+      "Dec",
     ],
     datasets: [
       {
@@ -64,7 +64,7 @@ const Linechart2 = () => {
     ],
   };
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="line_graph" style={{ padding: "20px", width: "100%" }}>
       <Line options={options} data={data} />
       <Timertwo />
     </div>

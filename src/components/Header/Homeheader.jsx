@@ -59,14 +59,14 @@ const Homeheader = () => {
             {pathname === "/home" ? (
               <>
                 <div onClick={() => setToggle(toggle)} className="menu_link">
-                  <img src={briefcasetimer} alt="icon" width="30px" />
+                  <img src={briefcasetimer} alt="icon" width="25px" />
                   <h4 style={{ color: "white" }}>Clock Works</h4>
                 </div>
               </>
             ) : (
               <>
                 <div onClick={() => setToggle(toggle)} className="menu_link">
-                  <img src={briefcasetimerhide} alt="icon" width="30px" />
+                  <img src={briefcasetimerhide} alt="icon" width="25px" />
                   <h4 style={{ color: "grey" }}>Clock Works</h4>
                 </div>
               </>
@@ -81,14 +81,14 @@ const Homeheader = () => {
             pathname === "/Taskpage/commit" ? (
               <>
                 <div className="menu_link">
-                  <img src={tasksheethide} alt="icon" width="30px" />
+                  <img src={tasksheethide} alt="icon" width="25px" />
                   <h4 style={{ color: "white" }}>Task Board</h4>
                 </div>
               </>
             ) : (
               <>
                 <div className="menu_link">
-                  <img src={tasksheet} alt="icon" width="30px" />
+                  <img src={tasksheet} alt="icon" width="25px" />
                   <h4 style={{ color: "grey" }}>Task Board</h4>
                 </div>
               </>
