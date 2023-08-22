@@ -11,9 +11,35 @@ const Linechart = () => {
       <div className="charts">
         <div className="years_grace">
           <h4>Grace Time</h4>
-          <button onClick={() => setLineCharts(0)}>2020</button>
-          <button onClick={() => setLineCharts(1)}>2021</button>
-          <button onClick={() => setLineCharts(2)}>2022</button>
+          {linecharts === 0 ? (
+            <button onClick={() => setLineCharts(0)} style={{ color: "white" }}>
+              2020
+            </button>
+          ) : (
+            <button onClick={() => setLineCharts(0)} style={{ color: "grey" }}>
+              2020
+            </button>
+          )}
+
+          {linecharts === 1 ? (
+            <button onClick={() => setLineCharts(1)} style={{ color: "white" }}>
+              2021
+            </button>
+          ) : (
+            <button onClick={() => setLineCharts(1)} style={{ color: "grey" }}>
+              2021
+            </button>
+          )}
+
+          {linecharts === 2 ? (
+            <button onClick={() => setLineCharts(2)} style={{ color: "white" }}>
+              2022
+            </button>
+          ) : (
+            <button onClick={() => setLineCharts(2)} style={{ color: "grey" }}>
+              2022
+            </button>
+          )}
         </div>
         {linecharts === 0 && <Linechart1 />}
         {linecharts === 1 && <Linechart2 />}
