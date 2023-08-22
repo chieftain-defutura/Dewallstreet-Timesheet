@@ -126,7 +126,6 @@
   flex-direction: column;
   gap: 100px;
   margin: auto;
-  align-items: center;
 }
 .toast_warning {
   width: 209px;
