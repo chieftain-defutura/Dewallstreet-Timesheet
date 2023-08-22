@@ -205,7 +205,13 @@
     display: none;
   }
 }
-
+/* @media (max-width: 1115px) {
+  .homepage_main {
+    display: flex;
+    align-content: center;
+    width: 100%;
+  }
+} */
 @media (max-width: 570px) {
   .headercontent_name {
     flex-wrap: wrap;

@@ -397,7 +397,7 @@ span {
     width: 100%;
   }
   .workinghours_main {
-    width: 70%;
+    width: 90%;
   }
   .workingcheckin_page {
     width: 100%;
@@ -411,12 +411,20 @@ span {
     padding: 10px 15px;
   }
 }
-@media (max-width: 407px) {
+/* @media (max-width: 407px) {
   .workinghours_main {
-    width: 60%;
+    width: 95%;
   }
   .checkin_levels {
     display: flex;
     gap: 10px;
   }
-}
+} */
+/* @media (max-width: 370px) {
+  .check_workinghours > h4 {
+    text-align: center;
+  }
+  .checkin {
+    width: 80%;
+  }
+} */

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Linechart.css";
 import {
   Chart as ChartJS,
   CategoryScale,

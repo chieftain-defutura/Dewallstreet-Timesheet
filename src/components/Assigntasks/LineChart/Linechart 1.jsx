@@ -1,4 +1,5 @@
 import React from "react";
+import "./Linechart.css";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -64,7 +65,7 @@ const Linechart1 = () => {
     ],
   };
   return (
-    <div className="line_graph" style={{ padding: "20px", width: "100%" }}>
+    <div className="line_graph" style={{ padding: "5px", width: "90%" }}>
       <Line options={options} data={data} />
       <Timerone />
     </div>

@@ -17,7 +17,7 @@ button {
 .charts_main {
   padding: 20px;
 }
-@media (max-width: 480px) {
+@media (max-width: 815px) {
   .charts_main {
     padding: 0;
   }
@@ -27,3 +27,21 @@ button {
     padding: 0;
   }
 }
+@media (max-width: 729px) {
+  .line_graph {
+    width: 50%;
+  }
+}
+/* @media (max-width: 480px) {
+  .charts_main {
+    padding: 0;
+  }
+  .line_graph {
+    width: 90%;
+  }
+} */
+/* @media (max-width: 430px) {
+  .charts_main {
+    padding: 0;
+  }
+} */
