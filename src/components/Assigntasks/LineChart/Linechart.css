@@ -15,7 +15,12 @@ button {
   padding: 20px;
 }
 @media (max-width: 480px) {
-  .line_graph {
-    width: 100px;
+  .charts_main {
+    padding: 0;
+  }
+}
+@media (max-width: 736px) {
+  .charts_main {
+    padding: 0;
   }
 }

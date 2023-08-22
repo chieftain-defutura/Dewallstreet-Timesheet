@@ -64,7 +64,7 @@ const Linechart1 = () => {
     ],
   };
   return (
-    <div className="line_graph" style={{ padding: "20px", width: "500px" }}>
+    <div className="line_graph" style={{ padding: "20px", width: "100%" }}>
       <Line options={options} data={data} />
       <Timerone />
     </div>
