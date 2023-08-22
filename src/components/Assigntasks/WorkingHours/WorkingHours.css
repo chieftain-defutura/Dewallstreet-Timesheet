@@ -66,7 +66,7 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
 }
 .check {
   display: flex;
@@ -126,6 +126,7 @@
   flex-direction: column;
   gap: 100px;
   margin: auto;
+  align-items: center;
 }
 .toast_warning {
   width: 209px;
@@ -304,6 +305,7 @@ span {
 .current_status > form {
   padding: 10px;
 }
+
 .current_status select {
   padding: 3px;
   background-color: #141414;
@@ -335,29 +337,67 @@ span {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 770px) {
+  .check_workinghours {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+  .workinghours_main {
+    width: 90%;
+    display: flex;
+  }
+  .checkin_levels {
+    display: flex;
+    gap: 30px;
+  }
+  .checkin {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .button-regular {
+    width: 100%;
+  }
+}
 @media (max-width: 750px) {
   .time_checkinhours {
     display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
     align-items: center;
   }
   .workinghours_main {
     width: 80%;
   }
-  /* .toast_button {
-    display: flex;
-    justify-content: flex-start;
-  } */
 }
-
+@media (max-width: 560px) {
+  .workinghours_main {
+    width: 70%;
+  }
+}
+@media (max-width: 552px) {
+  .secondlevel_timing,
+  .thirdlevel_timing {
+    text-align: center;
+  }
+  .checkin {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .workingcheckin_page {
+    display: flex;
+    align-items: flex-start;
+  }
+}
 @media (max-width: 480px) {
   .checkin {
     flex-wrap: nowrap;
     gap: 15px;
+    width: 100%;
   }
   .workinghours_main {
-    width: 100%;
+    width: 70%;
   }
   .workingcheckin_page {
     width: 100%;
@@ -366,5 +406,17 @@ span {
   .secondlevel_timing p,
   .thirdlevel_timing p {
     text-align: center;
+  }
+  .checkin > button {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 407px) {
+  .workinghours_main {
+    width: 60%;
+  }
+  .checkin_levels {
+    display: flex;
+    gap: 10px;
   }
 }

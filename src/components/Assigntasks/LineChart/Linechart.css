@@ -8,8 +8,11 @@ button {
   height: 10%;
   padding: 5px;
 }
+.years_grace > button {
+  background-color: #141414;
+}
 .charts {
-  background-color: #1a1a1a;
+  background-color: #141414;
 }
 .charts_main {
   padding: 20px;
