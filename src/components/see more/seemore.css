@@ -231,4 +231,28 @@
   .see_more {
     width: 100%;
   }
+  .link_drive > p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 432px) {
+  .button-medium {
+    padding: 14px;
+  }
+}
+@media (max-width: 379px) {
+  .button-medium {
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+  #days {
+    font-size: 12px;
+  }
+  .design_respond > p {
+    font-size: 10px;
+  }
+  .design_clock {
+    gap: 2px;
+  }
 }
