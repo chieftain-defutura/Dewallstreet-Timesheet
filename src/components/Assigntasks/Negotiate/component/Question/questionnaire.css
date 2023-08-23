@@ -285,12 +285,12 @@
     padding: 10px;
   }
 }
-@media (max-width: 376px) {
+/* @media (max-width: 376px) {
   .wait_button > Button {
     font-size: 9px;
     padding: 16px;
   }
-}
+} */
 @media (max-width: 360px) {
   .individual_questionnaire {
     font-size: 10px;
@@ -308,4 +308,8 @@
   .questionnaire_two_all {
     padding: 0;
   }
+  /* .questionnaire_one {
+    display: flex;
+    gap: 5px;
+  } */
 }
