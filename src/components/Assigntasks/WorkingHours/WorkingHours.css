@@ -447,4 +447,20 @@ span {
     display: flex;
     align-items: center;
   }
+  .gpslocation_header {
+    font-size: 10px;
+    gap: 200px;
+  }
+  .gps_location > h4 {
+    font-size: 10px;
+  }
+  .gpslocation_header > h5 {
+    font-size: 16px;
+  }
+  .location_para > p {
+    font-size: 10px;
+  }
+  .gps_location > button {
+    width: 60%;
+  }
 }
