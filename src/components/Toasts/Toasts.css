@@ -25,7 +25,6 @@
 
 .alert {
   display: flex;
-  gap: 8px;
   padding: 10px;
 }
 .success {
