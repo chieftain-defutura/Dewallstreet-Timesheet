@@ -25,7 +25,6 @@
 
 .alert {
   display: flex;
-  gap: 8px;
   padding: 10px;
 }
 .success {
@@ -42,6 +41,5 @@
     font-size: 12px;
   }
 }
-@media(max-width:360px){
-  
+@media (max-width: 360px) {
 }
