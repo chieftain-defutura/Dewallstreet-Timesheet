@@ -291,3 +291,21 @@
     padding: 12px;
   }
 }
+@media (max-width: 360px) {
+  .individual_questionnaire {
+    font-size: 10px;
+  }
+  .individual_questionnaire > p {
+    font-size: 1px;
+  }
+  .questionnaire_main {
+    padding: 2px;
+    gap: 5px;
+  }
+  .button-medium {
+    padding: 10px;
+  }
+  .questionnaire_two_all {
+    padding: 0;
+  }
+}

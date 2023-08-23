@@ -112,11 +112,11 @@ const Commitcontent = ({ data }) => {
 
                 <h5>MEETING LINK</h5>
                 <div className="revision_meeting">
-                  <h4>
+                  <p>
                     https://www.figma.com/file/s8pn7k0uTojgGlhbxqJgKm/wireframe?
-                  </h4>
-                  <h4>type=design&node-</h4>
-                  <h4>id=2166-2158&mode=design&t=oMjiGmR6d4rU9mHF-0</h4>
+                  </p>
+                  <p>type=design&node-</p>
+                  <p>id=2166-2158&mode=design&t=oMjiGmR6d4rU9mHF-0</p>
                 </div>
               </div>
             </div>

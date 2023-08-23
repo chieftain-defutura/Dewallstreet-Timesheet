@@ -79,3 +79,47 @@
 .all_revisiondetails {
   padding: 30px 40px 0;
 }
+@media (max-width: 480px) {
+  .revisiondetails_main {
+    gap: 0;
+    font-size: 8px;
+  }
+  .re_submit > Button {
+    padding: 5px;
+  }
+  .deadline > h3 {
+    font-size: 10px;
+  }
+  .periodic_time {
+    gap: 5px;
+  }
+  .report_main {
+    width: 60%;
+  }
+  .task_status,
+  .current_status {
+    gap: 50px;
+  }
+}
+@media (max-width: 360px) {
+  .revisiondetails_main {
+    gap: 0;
+    font-size: 8px;
+  }
+  .re_submit > Button {
+    padding: 5px;
+  }
+  .deadline > h3 {
+    font-size: 10px;
+  }
+  .periodic_time {
+    gap: 5px;
+  }
+  .report_main {
+    width: 60%;
+  }
+  .task_status,
+  .current_status {
+    gap: 50px;
+  }
+}

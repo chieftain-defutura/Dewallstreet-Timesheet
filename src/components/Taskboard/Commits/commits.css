@@ -440,6 +440,9 @@
   .log_link > p {
     padding: 15px 8px;
   }
+  .commits_mapping {
+    padding: 0;
+  }
 }
 @media (max-width: 455px) {
   .log_link > p {
@@ -451,5 +454,48 @@
   }
   .logs_mapping {
     padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .revision_main {
+    width: 90%;
+  }
+  .revision_dateandtime {
+    gap: 50px;
+  }
+  .revision_meeting p {
+    font-size: 10px;
+  }
+  .revision_content > p {
+    font-size: 10px;
+  }
+  .date > h3,
+  .time > h3 {
+    font-size: 13px;
+  }
+  .copy_link {
+    width: 50%;
+  }
+}
+@media (max-width: 360px) {
+  .revision_main {
+    width: 80%;
+  }
+  .revision_dateandtime {
+    gap: 50px;
+  }
+  .revision_meeting p {
+    font-size: 10px;
+  }
+  .revision_content > p {
+    font-size: 10px;
+  }
+  .date > h3,
+  .time > h3 {
+    font-size: 13px;
+  }
+  .copy_link {
+    width: 50%;
   }
 }
