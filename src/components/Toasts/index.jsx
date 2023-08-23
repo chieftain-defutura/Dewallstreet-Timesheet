@@ -11,7 +11,7 @@ const Toasts = ({ image, props, variant, icons }) => {
     <div className={`toast-main ${styles}`}>
       <div className="message_box">
         <div className="alert">
-          <img src={image} alt="" />
+          <img src={image} alt="" width="5%" />
           <div className="toast_msg">{props}</div>
         </div>
         <div className="toast_verticalline"></div>
