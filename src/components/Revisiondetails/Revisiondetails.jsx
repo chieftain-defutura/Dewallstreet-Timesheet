@@ -11,6 +11,7 @@ import "./Revisiondetails.css";
 import Button from "../Button";
 import LayoutModal from "../Modal/Modal";
 import Toasts from "../Toasts";
+
 const Revisiondetails = () => {
   const [resubmit, setResubmit] = useState(false);
   const [reportResubmit, setReportresubmit] = useState(false);
@@ -20,7 +21,9 @@ const Revisiondetails = () => {
         <LayoutModal onClose={() => setResubmit(false)}>
           <div className="report_main">
             <div className="report_header">
-              <h5>Daily report</h5>
+              <>
+                <h5>Daily report</h5>
+              </>
               <button>
                 <img
                   src={cancel}
