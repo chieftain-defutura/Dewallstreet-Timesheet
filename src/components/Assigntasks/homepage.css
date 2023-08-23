@@ -263,3 +263,11 @@
     padding: 10px;
   }
 }
+@media (max-width: 360px) {
+  .hours_deduction {
+    width: 100%;
+  }
+  .working_grid {
+    width: 100%;
+  }
+}

@@ -462,7 +462,7 @@
 
 @media (max-width: 480px) {
   .revision_main {
-    width: 90%;
+    width: 100%;
   }
   .revision_dateandtime {
     gap: 50px;
@@ -478,7 +478,7 @@
     font-size: 13px;
   }
   .copy_link {
-    width: 50%;
+    width: 35%;
   }
 }
 @media (max-width: 360px) {

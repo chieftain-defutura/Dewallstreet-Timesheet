@@ -420,20 +420,31 @@ span {
     padding: 6px;
   }
 }
-/* @media (max-width: 407px) {
+@media (max-width: 407px) {
   .workinghours_main {
-    width: 95%;
+    width: 80%;
   }
   .checkin_levels {
     display: flex;
     gap: 10px;
   }
-} */
-/* @media (max-width: 370px) {
+  .workingcheckin_page {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 360px) {
   .check_workinghours > h4 {
     text-align: center;
   }
   .checkin {
     width: 80%;
   }
-} */
+  .workinghours_main {
+    width: 100%;
+  }
+  .workingcheckin_page {
+    display: flex;
+    align-items: center;
+  }
+}
