@@ -14,10 +14,11 @@ import toastcancel from "../../assets/icons/toastcancel.svg";
 import { useParams } from "react-router-dom";
 import LayoutModal from "../Modal/Modal";
 import Toasts from "../Toasts";
-const Seemore = ({ Designtype, setSeemore }) => {
+const Seemore = ({ Designtype, setSeemore, setNegotiateOpen }) => {
   const { backlog } = useParams();
   const [Addcommitopen, setAddcommitOpen] = useState(false);
   const [Toastopen, setToastopen] = useState(false);
+
   return (
     <div className="see_more">
       <div className="correction">
@@ -80,7 +81,7 @@ const Seemore = ({ Designtype, setSeemore }) => {
       </div>
       {backlog !== "backlog" && (
         <div className="logs_button">
-          <div>
+          <div onClick={() => setNegotiateOpen(true)}>
             <Button variant="negotiate" size="medium">
               Negotiate
             </Button>

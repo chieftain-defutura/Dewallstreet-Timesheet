@@ -4,7 +4,7 @@ import cancel from "../../../assets/icons/cancel.svg";
 
 import Meeting from "./component/Meeting/meeting";
 const Negotiate = () => {
-  const [toggle, setToggle] = useState("Questionnarie");
+  const [toggle, setToggle] = useState("Questionnaire");
   const [negotiateopen, setNegotiateOpen] = useState(false);
   return (
     <>
@@ -26,9 +26,10 @@ const Negotiate = () => {
               className="negotiate_link"
               style={{
                 borderBottom: "1px solid #fff",
-
+                display: "grid",
                 textAlign: "center",
               }}
+              onClick={() => setToggle("Questionnaire")}
             >
               <a href="#" style={{ color: "#fff" }}>
                 Questionnaire
@@ -36,7 +37,11 @@ const Negotiate = () => {
             </div>
           ) : (
             <div
-              style={{ display: "grid", textAlign: "center" }}
+              style={{
+                display: "grid",
+                textAlign: "center",
+                borderBottom: "1px solid grey",
+              }}
               className="negotiate_link"
               onClick={() => setToggle("Questionnaire")}
             >
@@ -50,10 +55,10 @@ const Negotiate = () => {
               className="negotiate_link"
               style={{
                 borderBottom: "1px solid #fff",
-
                 textAlign: "center",
                 display: "grid",
               }}
+              onClick={() => setToggle("meeting")}
             >
               <a href="#" style={{ color: "#fff" }}>
                 Meeting
@@ -61,7 +66,11 @@ const Negotiate = () => {
             </div>
           ) : (
             <div
-              style={{ display: "grid", textAlign: "center" }}
+              style={{
+                display: "grid",
+                textAlign: "center",
+                borderBottom: "1px solid grey",
+              }}
               className="negotiate_link"
               onClick={() => setToggle("meeting")}
             >

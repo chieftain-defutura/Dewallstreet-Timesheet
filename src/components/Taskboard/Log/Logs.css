@@ -263,16 +263,15 @@
   }
 }
 @media (max-width: 630px) {
-<<<<<<< HEAD
-  .task_title > p {
-    font-size: 5px;
+  .task_system {
+    width: 100%;
   }
-  .task_system {
-    width: 50%;
-=======
-  .task_system {
-    width: 70%;
->>>>>>> ecbb978c3f94b697400cf33cbfe79a79085a97d4
+  .logs_render {
+    width: 100%;
+  }
+  .design_links {
+    display: flex;
+    gap: 20px;
   }
 }
 @media (max-width: 480px) {
@@ -292,14 +291,32 @@
     gap: 5px;
   }
 
-  .grid {
+  /* .grid {
     display: grid;
     grid-template-columns: none;
+  } */
+  .task_system {
+    width: 100%;
   }
 }
 @media (max-width: 450px) {
   .design_links {
     display: flex;
     gap: 2px;
+  }
+}
+@media (max-width: 415px) {
+  .task_system {
+    width: 90%;
+  }
+}
+@media (max-width: 403px) {
+  .task_system {
+    width: 100%;
+  }
+}
+@media (max-width: 387px) {
+  .task_system {
+    width: 100%;
   }
 }
